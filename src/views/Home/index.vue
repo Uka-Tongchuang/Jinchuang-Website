@@ -5,7 +5,7 @@
                <Header />
             </el-header>
             <el-main>
-                <template v-if="routerPath!=='Home'&&routerCurrent!=='Home'">
+                <template v-if="routerPath!=='Home'&&routerPath||routerCurrent!=='Home'">
                    <router-view/>
                 </template>
                 <template v-else>
@@ -28,7 +28,7 @@ import {ref,onMounted} from "vue"
 import { onBeforeRouteUpdate,useRouter } from 'vue-router';
 
 
-const routerPath=ref("12")
+const routerPath=ref()
 const routerCurrent=ref()
 const router=useRouter()
 onMounted(()=>{
