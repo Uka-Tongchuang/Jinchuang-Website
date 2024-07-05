@@ -117,6 +117,7 @@
 .footer_box{
     width: 100%;
     height: 100%;
+    margin: 0 auto;
     // 公司客服
     .customer_box{
         width: 100%;
@@ -151,9 +152,6 @@
                 width: calc(30% - 10rem);
                 padding: 0 5rem;
                 .hot_spot_top{
-                    h4{
-                        
-                    }
                     .hot_content_ui{
                         width: 100%;
                         height:3rem;

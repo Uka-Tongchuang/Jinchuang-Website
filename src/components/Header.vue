@@ -1,7 +1,7 @@
 <template>
   <div class="header_box">
     <div class="nav_left_box">
-      <li>logo</li>
+      <li @click="goHomeFun">logo</li>
       <li v-for="(item, index) in routerChildren" :key="index">
         <router-link  :to="item.path"
           >{{ item.meta?.title }}
@@ -22,6 +22,11 @@
 <script setup lang="ts">
 import { routerChildren } from "../router";
 import { ArrowDown } from "@element-plus/icons-vue";
+
+
+const goHomeFun=()=>{
+  window.location.href = "/home"
+}
 </script> 
 
 <style scoped lang="scss">
@@ -42,6 +47,9 @@ import { ArrowDown } from "@element-plus/icons-vue";
     margin: 0 100px;
     justify-content: space-around;
     align-items: center;
+    li{
+      cursor: pointer;
+    }
     li:hover {
       a {
         color: aqua !important;
