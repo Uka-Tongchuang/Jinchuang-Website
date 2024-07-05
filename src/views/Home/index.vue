@@ -69,10 +69,7 @@ onBeforeRouteUpdate((to, from) => {
     transform: translateY(-50%);
   }
 }
-.el-header,
-.el-footer {
-  padding: 0;
-}
+
 .el-footer {
   width: 100%;
   height: 40rem;

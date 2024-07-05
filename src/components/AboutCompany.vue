@@ -1,7 +1,7 @@
 <template>
     <div class="about_compony_box">
-        <h1 class="title_about">关于今创，了解今创</h1>
-        <h3 class="title_english">About Jinchuang, learn about Jinchuang</h3>
+        <h1  class="title_about animate__animated animate__bounceInRight">关于今创，了解今创</h1>
+        <h3 class="title_english animate__animated animate__bounceInRight animate__slow	1s">About Jinchuang, learn about Jinchuang</h3>
         <div class="about_content">
             <p>
                 今创人力资源于2024年开始布局并深耕，是国内最早开展中高端人才访寻业务的机构之一。 我们针对中高级管理、专业技术人才短缺，提供深入的行
@@ -11,18 +11,20 @@
 </template>
 
 <script setup lang="ts">
-
+import 'animate.css';
 </script>
 
 <style scoped lang="scss">
 .about_compony_box{
     width: 100%;
     height: 40rem;
+    margin: 0 auto;
     color: #fff;
     background-image: url("https://ts1.cn.mm.bing.net/th/id/R-C.fb386fec342259e489fc2c256a81e250?rik=qLrPQiB%2b27haVQ&riu=http%3a%2f%2fwww.langyugz.com%2fuploads%2fallimg%2f190416%2f1-1Z416103G3H1.jpg&ehk=PCuyJG8ag8Wo3mGFsJ91k09KQESekMpAc5jkyhzoGYE%3d&risl=&pid=ImgRaw&r=0");
     background-size: 100% 100%;
     position: relative;
     .title_about{
+        display: inline-block;
         position: absolute;
         left: 15rem;
         top: 8rem;
@@ -43,6 +45,7 @@
         font-size: 1.2rem;
         p{
             text-indent: 2.4rem;
+            color: #736666;
         }
     }
 }
