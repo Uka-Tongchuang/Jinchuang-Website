@@ -1,10 +1,12 @@
 <template>
   <div class="home_child_box">
     <!-- 第一块区域————————轮播图 -->
-    <div class="block text-center">
+    <div >
       <el-carousel height="40rem" autoplay :interval="3000">
         <el-carousel-item v-for="item in arr.arr" :key="item.id">
-          <h2>文本显示</h2>
+          <div class="description_box">
+            <p class="description">文本显示1231452154</p>  
+          </div>
           <img :src="item.idVieo" alt="" />
         </el-carousel-item>
       </el-carousel>
@@ -64,6 +66,18 @@ const arr = reactive({
 .Slideshow_img {
   width: 100%;
   height: 100%;
+}
+.description_box{
+  position: fixed;
+  top: 5rem;
+  left: 30rem;
+  width: 60%;
+  height: 100%;
+  margin: 10rem auto;
+  .description{
+    font-size: 2rem;
+    font-weight: 700;
+  }
 }
 // 第二个区域
 .main_content {

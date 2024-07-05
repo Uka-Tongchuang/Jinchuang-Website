@@ -14,9 +14,12 @@
           <p class="time">2024-06-25</p>
           <h4 class="headline">今创集团积极践行社会责任照亮乡村振兴之路</h4>
           <span class="introduce"
-            >2024年6月20-21日，锐博集团参加了广州市天河区人社局组织的梅州兴宁市坭陂镇结对帮扶工作座谈会及捐</span
+            >&emsp;
+            &emsp;2024年6月20-21日，锐博集团参加了广州市天河区人社局组织的梅州兴宁市坭陂镇结对帮扶工作座谈会及捐</span
           >
-          <el-button type="primary" class="operation">查看更多</el-button>
+          <el-button type="primary" class="operation" @click="detailsEvent(e)"
+            >查看更多 <el-icon size="16"><Right /></el-icon></el-button
+          >
         </el-card>
       </div>
     </div>
@@ -28,11 +31,12 @@ import swpOne from "../assets/swpOne.jpg";
 import swpTwo from "../assets/swpTwo.jpg";
 import { ref, reactive, onMounted } from "vue";
 import { CollectionTag } from "@element-plus/icons-vue/dist/types";
+import { Right  } from "@element-plus/icons-vue";
 //api
 import { getDataApi } from "@/api/request";
 const imgRef = ref();
 const state = reactive({
-    getNewsData:[],
+  getNewsData: [],
   arr: [
     {
       id: 1,
@@ -43,6 +47,12 @@ const state = reactive({
       idVieo: swpTwo,
     },
   ],
+});
+// 获取新闻数据
+onMounted(async () => {
+  const {data} = await getDataApi();
+  console.log("1232", data);
+  state.getNewsData=data.data
 });
 // 鼠标滑入事件
 const mouseenterEvent = (index) => {
@@ -56,12 +66,10 @@ const mouseleaveEvent = (index) => {
   imgRef.value[index].style.transition = "0.2s";
   imgRef.value[index].style.borderRadius = "0";
 };
-// 获取新闻数据
-onMounted(async () => {
-  state.getNewsData = await getDataApi();
-  console.log("1232", state.getNewsData.data.data);
-});
-
+// 查看详情
+const detailsEvent = (e) => {
+  console.log(e);
+};
 </script>
 
 <style scoped lang="scss">
@@ -85,13 +93,14 @@ onMounted(async () => {
       display: block;
       margin: 0 auto;
     }
-    // img:hover {
-    //   transform: scale(1.1); //设置图片按照比例放大1.3倍
-    //   transition: 0.2s;
-    //   border-radius: 1rem;
-    // }
+    .introduce {
+      font-size: 0.8rem;
+      color: #909399;
+      text-indent: 2rem;
+    }
     .operation {
-      display: inline-block;
+      display: block;
+      margin-top: 2rem;
     }
   }
 }
