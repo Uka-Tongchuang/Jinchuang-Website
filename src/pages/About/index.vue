@@ -1,13 +1,11 @@
 <template>
-    <div>
-        了解公司
-    </div>
+    <AboutCompany/>
 </template>
 
 <script setup lang="ts">
-
+import AboutCompany from '@/components/AboutCompany.vue';
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>

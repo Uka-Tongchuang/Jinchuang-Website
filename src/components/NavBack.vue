@@ -58,7 +58,7 @@ onUnmounted(()=>{
     display: flex;
     flex-direction: column;
     border-radius: 2.5rem;
-    background: #ffffff42;
+    background: #fffdfdcb;
     box-shadow: 0 0 0.1rem 0.1rem #ccc;
     > div {
       font-size: 0.8rem;
@@ -83,7 +83,7 @@ onUnmounted(()=>{
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: #d2d2d240;
+    background: #fffdfdcb;
     border-radius: 2.5rem;
     box-shadow: 0 0 0.1rem 0.1rem #ccc;
     cursor: pointer;
