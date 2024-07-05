@@ -5,7 +5,7 @@
                <Header />
             </el-header>
             <el-main>
-                <template v-if="routerPath!=='Home'&&routerPath">
+                <template v-if="routerPath!=='Home'&&routerCurrent!=='Home'">
                    <router-view/>
                 </template>
                 <template v-else>
@@ -24,9 +24,17 @@ import Footer from "../../components/Footer.vue"
 
 import Home from "@/components/Home.vue"
 
-import {ref} from "vue"
-import { onBeforeRouteUpdate } from 'vue-router';
-const routerPath=ref()
+import {ref,onMounted} from "vue"
+import { onBeforeRouteUpdate,useRouter } from 'vue-router';
+
+
+const routerPath=ref("12")
+const routerCurrent=ref()
+const router=useRouter()
+onMounted(()=>{
+    routerCurrent.value=router.currentRoute.value.name
+    console.log(routerCurrent.value);
+})
 onBeforeRouteUpdate((to, from) => {
   // 在当前路由改变，但是该组件被复用时调用
   // 举例来说，对于一个带有动态参数的路径 `/users/:id`，在 `/users/1` 和 `/users/2` 之间跳转的时候，
