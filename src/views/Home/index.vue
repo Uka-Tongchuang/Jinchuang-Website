@@ -20,12 +20,12 @@
         <Footer />
       </el-footer>
     </el-container>
-    <NavBack class="backCom" >
-        <slot></slot>
+    <NavBack class="backCom">
+      <slot></slot>
     </NavBack>
   </div>
 </template>
-<script setup >
+<script setup>
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
 import Home from "@/components/Home.vue";
@@ -70,8 +70,11 @@ onBeforeRouteUpdate((to, from) => {
   }
 }
 
-.el-footer {
+.el-footer {  
   width: 100%;
   height: 40rem;
+}
+.el-main {
+  overflow-y: hidden;
 }
 </style>
