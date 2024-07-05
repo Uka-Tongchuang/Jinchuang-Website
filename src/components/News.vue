@@ -29,8 +29,7 @@
 <script setup lang="ts">
 import swpOne from "../assets/swpOne.jpg";
 import swpTwo from "../assets/swpTwo.jpg";
-import { ref, reactive, onMounted } from "vue";
-import { CollectionTag } from "@element-plus/icons-vue/dist/types";
+import { ref, reactive, onMounted } from "vue"; 
 import { Right  } from "@element-plus/icons-vue";
 //api
 import { getDataApi } from "@/api/request";
