@@ -34,6 +34,8 @@
 <script setup lang="ts">
 import Company from "./Company.vue";
 import ProductsCom from "./ProductsCom.vue";
+import CompanyAchievement from "./CompanyAchievement.vue";
+import LogoList from "./LogoList.vue";
 import swpOne from "../assets/swpOne.jpg";
 import swpTwo from "../assets/swpTwo.jpg";
 
@@ -100,5 +102,18 @@ const arr = reactive({
   width: 100%;
   height: 32rem;
   background: url("../assets/Slideshow.jpeg") 100%;
+}
+// 第四个区域
+.business-partner{
+ width: calc(80% - 4rem);
+ height: 20rem; 
+ margin: 0 auto;
+ padding: 4rem;
+}
+.company-achievement{
+ width: calc(80% - 4rem);
+ height: 20rem; 
+ margin: 0 auto;
+ padding: 4rem;
 }
 </style>
