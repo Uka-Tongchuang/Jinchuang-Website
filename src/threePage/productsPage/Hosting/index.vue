@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <RouterView />
-  </div>
+    <div>
+托管
+    </div>
 </template>
 
 <script setup lang="ts">

@@ -2,7 +2,7 @@
   <div class="header_box">
     <div class="nav_left_box">
       <li @click="goHomeFun">logo</li>
-      <li v-for="(item, index) in routerChildren" :key="index">
+      <li v-for="(item, index) in routerChildren" :key="index" >
         <router-link  :to="item.path"
           >{{ item.meta?.title }}
           <el-icon v-show="item.children && item.children.length !== 0"
@@ -11,6 +11,7 @@
         </router-link>
       </li>
     </div>
+          
     <div class="nav_right_box">
       <li><span></span> 售前电话: 100-400-600</li>
       <span class="showDemo">预约演示</span>

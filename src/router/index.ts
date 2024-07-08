@@ -59,22 +59,22 @@ export const routerChildren=[
     },
     component: Special
   },
-  {
-    path:"/home/ServiceSupport",
-    name:"ServiceSupport",
-    meta:{
-      title:"服务支持"
-    },
-    component: ServiceSupport
-  },
-  {
-    path:"/home/ResourceCenter",
-    name:"ResourceCenter",
-    meta:{
-      title:"资源中心"
-    },
-    component: ResourceCenter
-  },
+  // {
+  //   path:"/home/ServiceSupport",
+  //   name:"ServiceSupport",
+  //   meta:{
+  //     title:"服务支持"
+  //   },
+  //   component: ServiceSupport
+  // },
+  // {
+  //   path:"/home/ResourceCenter",
+  //   name:"ResourceCenter",
+  //   meta:{
+  //     title:"资源中心"
+  //   },
+  //   component: ResourceCenter
+  // },
   {
     path: "/home/about",
     name: "About",

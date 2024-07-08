@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <RouterView />
-  </div>
+    <div>
+灵活用工
+    </div>
 </template>
 
 <script setup lang="ts">

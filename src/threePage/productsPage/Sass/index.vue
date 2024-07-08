@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <RouterView />
-  </div>
+    <div>
+sass平台
+    </div>
 </template>
 
 <script setup lang="ts">

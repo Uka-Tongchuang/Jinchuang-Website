@@ -13,18 +13,27 @@
     </div>
     <!-- 第二块区域——————公司宣传 -->
     <div class="main_content">
-      <h4>公司宣传广告</h4>
+      <Company/>
     </div>
-    <!-- 第三块区域——————公司宣传 -->
+    <!-- 第三块区域——————业务 -->
     <div class="main_merchant">
-      <h4>公司合作商家</h4>
+      <ProductsCom />
     </div>
-    <News/>
+            <!-- 第四块区域——————合作商家 -->
+     <div class="business-partner">
+       <LogoList/>
+     </div>
+         <!-- 第五块区域——————公司成就 -->
+     <div class="company-achievement"> 
+        <CompanyAchievement/>
+     </div>
+    
   </div>
 </template>
 
 <script setup lang="ts">
-import  News  from "./News.vue";
+import Company from "./Company.vue";
+import ProductsCom from "./ProductsCom.vue";
 import swpOne from "../assets/swpOne.jpg";
 import swpTwo from "../assets/swpTwo.jpg";
 
@@ -82,13 +91,14 @@ const arr = reactive({
 // 第二个区域
 .main_content {
   width: 100%;
-  height: 600px;
+  height: 32rem;
   background: url("../assets/main.jpg") 100%;
+  margin: 5rem 0 ;
 }
 // 第三个区域
 .main_merchant {
   width: 100%;
-  height: 600px;
+  height: 32rem;
   background: url("../assets/Slideshow.jpeg") 100%;
 }
 </style>
