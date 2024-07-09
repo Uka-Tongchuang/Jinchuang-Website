@@ -2,14 +2,25 @@
     <div class="merchant">
         合作商家
     </div>
-  <div class="logo_list">
-    <div v-for="item in state.arr" :key="item.id" class="logo-list-layout">
-        <div class="main">
-            <img :src="item.idVieo" alt="" />
-        </div>
-      
-    </div>
-  </div>
+    <div class="logo-carousel">  
+    <div class="carousel-wrapper">  
+      <div class="carousel-items">  
+        <div class="logo-item" v-for="(logo, index) in state.arr" :key="index">  
+          <div class="logo-image">
+
+            <img :src="logo.idVieo" alt="Logo">  
+          </div>
+        </div>  
+        <!-- 复制前10个logo以实现无缝循环 -->  
+        <div class="logo-item" v-for="(logo, index) in state.arr.slice(0, 10)" :key="state.arr.length + index">  
+          <div class="logo-image">
+
+            <img :src="logo.idVieo" alt="Logo">  
+          </div>
+        </div>  
+      </div>  
+    </div>  
+  </div> 
 </template>
 
 <script setup lang="ts">
@@ -131,40 +142,50 @@ const state = reactive({
     color: red; 
     text-align: center;
 }
-.logo_list {
-    margin-top: 2rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow-y: auto;
-    flex-wrap: wrap; /* 允许内容换行 */
-    justify-content: space-between;
-    margin: 0 auto;
-    -ms-overflow-style: none;  /* IE 和 Edge */  
-    scrollbar-width: none; /* Firefox */  
-    /* Chrome, Safari, Edge */  
-    &::-webkit-scrollbar {  
-        display: none;  
-    }
-  .logo-list-layout { 
-    width: 20%;// 给子元素定宽
-    height: 50%; // height: calc(100% - 40px); 用calc 用的会比较多。
-    line-height: 10rem;
-    .main{
-        width: 4rem;
-        height: 4rem;
-        margin: 0 auto;
-      
-         img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-   
-  }
-}
 
-  .logo_list ::-webkit-scrollbar {
-       display: none;
-    }
+.logo-carousel {  
+  margin-top: 1rem;
+  overflow: hidden;  
+  position: relative;  
+  height: 15rem; /* 例如，如果每个logo高度是50px，则这里是100px */  
+  width: 100%; /* 或者你需要的宽度 */  
+}  
+  
+.carousel-wrapper {  
+  height: 100%;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center; /* 如果需要水平居中 */  
+}  
+  
+.carousel-items {  
+  display: flex;  
+  flex-wrap: wrap;  
+  animation: scrollUp 10s linear infinite; /* 根据需要调整动画时长 */  
+}  
+  
+.logo-item {  
+  width: calc(100% / 5); /* 假设容器宽度足够，每个logo占据20%的宽度 */  
+  height:10rem;  
+  box-sizing: border-box;  
+  /* 可以添加padding, margin等样式来调整logo之间的间距 */  
+}  
+  .logo-image{
+    width: 5rem;
+    height: 5rem;
+  }
+.logo-item img {  
+  width: 100%;  
+  height: 100%;  
+  display: block; /* 移除图片下方的默认间隙 */  
+}  
+  
+@keyframes scrollUp {  
+  0% {  
+    transform: translateY(0);  
+  }  
+  100% {  
+    transform: translateY(-10rem); /* 向上移动两行的距离 */  
+  }  
+} 
 </style>
