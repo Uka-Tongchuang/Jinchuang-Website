@@ -31,64 +31,64 @@
        <div class="service">
         <h1>启动流程</h1>
         <div>
- <div class="process-flow">  
-    <!-- 步骤容器 -->  
-    <div class="steps-container">  
-      <!-- 第一个步骤 -->  
-      <div class="step animate__backInRight animate__animated" style="--step-index: 1;">
-        <div class="step-line-arr" style="--line-direction: right;"></div>  
-        <div class="step-content-placeholder">
-            <h4>1.协议签订</h4>
-            <p> 确认服务形式 、需求人数、时间地点、项目用人标准、工时待遇、服务费结算逻辑、附加条款等</p>
-        </div>  
-      </div>  
-  
-      <!-- 第二个步骤 -->  
-      <div class="step animate__backInLeft animate__animated" style="--step-index: 2;">  
-        <div class="step-line" style="--line-direction: left;"></div>  
-        <div class="step-content-placeholder-arr">
-            <h4>2.人员招募/转签</h4>
-            <p>启动源遣/外包人员劳动合同转签及时做好招聘及现场̃妤犭绂蜡彳蒂卿蒞鈦鏊工作</p>
-        </div>  
-      </div>  
-  
-      <!-- 第三个步骤 -->  
-      <div class="step animate__backInRight animate__animated" style="--step-index: 3;">  
-        <div class="step-line-arr" style="--line-direction: right;"></div>  
-        <div class="step-content-placeholder">
-            <h4>3.劳动合同签署</h4>
-            <p>
-                10日内新合同签署相关保险增员、入职 及人事考勤系统培训
-            </p>
-        </div>  
-      </div>  
-  
-      <!-- 第四个步骤 -->  
-      <div class="step animate__backInLeft animate__animated" style="--step-index: 4;">  
-        <div class="step-line" style="--line-direction: left;"></div>  
-        <div class="step-content-placeholder-arr">
-            <h4>4.项目执行</h4>
-            <p>入、离、调、转等日常人事顶目管理工资表核对及发放费用支付</p>
-        </div>  
-      </div> 
-       <!-- 第四个步骤 -->  
-       <div class="step animate__backInRight animate__animated" style="--step-index: 5;">  
-        <div class="step-line-arr" style="--line-direction: right;"></div>  
-        <div class="step-content-placeholder">
-            <h4>5. 监督、复盘、迭代</h4>
-            <p>
-                月度服务情况跟踪、留存数据盘点、策略调整等
-            </p>
-        </div>  
-      </div>  
-    </div>  
-  
-    <!-- 卡片内容区域（这里仅为示意，实际中可能需要更复杂的布局） -->  
-    <div class="card-contents">  
-      <!-- 你可以在这里放置实际的卡片内容 -->  
-      <!-- 例如，为每个步骤的卡片内容创建一个Vue组件或插槽 -->  
-    </div>  
-  </div> 
+            <div class="process-flow">  
+                <!-- 步骤容器 -->  
+                <div class="steps-container">  
+                <!-- 第一个步骤 -->  
+                <div class="step animate__backInRight animate__animated" style="--step-index: 1;">
+                    <div class="step-line-arr" style="--line-direction: right;"></div>  
+                    <div class="step-content-placeholder">
+                        <h4>1.协议签订</h4>
+                        <p> 确认服务形式 、需求人数、时间地点、项目用人标准、工时待遇、服务费结算逻辑、附加条款等</p>
+                    </div>  
+                </div>  
+            
+                <!-- 第二个步骤 -->  
+                <div class="step animate__backInLeft animate__animated" style="--step-index: 2;">  
+                    <div class="step-line" style="--line-direction: left;"></div>  
+                    <div class="step-content-placeholder-arr">
+                        <h4>2.人员招募/转签</h4>
+                        <p>启动源遣/外包人员劳动合同转签及时做好招聘及现场̃妤犭绂蜡彳蒂卿蒞鈦鏊工作</p>
+                    </div>  
+                </div>  
+            
+                <!-- 第三个步骤 -->  
+                <div class="step animate__backInRight animate__animated" style="--step-index: 3;">  
+                    <div class="step-line-arr" style="--line-direction: right;"></div>  
+                    <div class="step-content-placeholder">
+                        <h4>3.劳动合同签署</h4>
+                        <p>
+                            10日内新合同签署相关保险增员、入职 及人事考勤系统培训
+                        </p>
+                    </div>  
+                </div>  
+            
+                <!-- 第四个步骤 -->  
+                <div class="step animate__backInLeft animate__animated" style="--step-index: 4;">  
+                    <div class="step-line" style="--line-direction: left;"></div>  
+                    <div class="step-content-placeholder-arr">
+                        <h4>4.项目执行</h4>
+                        <p>入、离、调、转等日常人事顶目管理工资表核对及发放费用支付</p>
+                    </div>  
+                </div> 
+                <!-- 第四个步骤 -->  
+                <div class="step animate__backInRight animate__animated" style="--step-index: 5;">  
+                    <div class="step-line-arr" style="--line-direction: right;"></div>  
+                    <div class="step-content-placeholder">
+                        <h4>5. 监督、复盘、迭代</h4>
+                        <p>
+                            月度服务情况跟踪、留存数据盘点、策略调整等
+                        </p>
+                    </div>  
+                </div>  
+                </div>  
+            
+                <!-- 卡片内容区域（这里仅为示意，实际中可能需要更复杂的布局） -->  
+                <div class="card-contents">  
+                <!-- 你可以在这里放置实际的卡片内容 -->  
+                <!-- 例如，为每个步骤的卡片内容创建一个Vue组件或插槽 -->  
+                </div>  
+            </div> 
         </div>
           
        </div>
@@ -112,6 +112,7 @@ const steps = ref([
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow-y: hidden;
         .content{
             background-color: red;
             width: 100%;
