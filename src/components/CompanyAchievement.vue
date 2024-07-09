@@ -46,6 +46,7 @@ import { useTransition } from '@vueuse/core'
 const source1 = ref(0)
 const source2 = ref(0)
 const source3 = ref(0)
+const statisticRef = ref(null);
 const outputValue1 = useTransition(source1, {
   duration: 1500,
 })
@@ -123,7 +124,7 @@ const outputValue3 = useTransition(source3, {
       observer.observe(statisticRef.value);
     });
 
-    const statisticRef = ref(null);
+ 
 </script>
 
 <style lang="scss" scoped>
