@@ -23,7 +23,7 @@
         <span>招聘类服务</span>
         <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
       </div>
-      <div @click="goOperate">
+      <div @click="goOperate" v-show="false">
         <img src="../assets/th.jpg" alt="" />
         <span>产业区园区运营</span>
         <p>主导经营地方产业园区<br />落地服务与税收政策</p>
