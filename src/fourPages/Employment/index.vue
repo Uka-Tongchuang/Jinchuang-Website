@@ -1,6 +1,6 @@
 <template>
     <div>
-        <RouterView/>
+就业小圆桌
     </div>
 </template>
 
@@ -8,6 +8,6 @@
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>

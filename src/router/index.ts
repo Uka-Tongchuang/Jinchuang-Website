@@ -19,7 +19,105 @@ import ResourceCenter from "../pages/ResourceCenter/index.vue"
 //关于公司
 import About from "../pages/About/index.vue"
 
-//三级路由
+
+// 三级路由
+//产品服务 
+// 外包模块
+import OutSource from "../threePage/productsPage/outsource/index.vue"
+//托管模块
+import Hosting from "../threePage/productsPage/Hosting/index.vue"
+//招聘模块
+import Recruitment from "../threePage/productsPage/Recruitment/index.vue" 
+//产业园区
+import Operate from "../threePage/productsPage/operate/index.vue"
+//用工模块
+import Flexible from "../threePage/productsPage/Flexible/index.vue"
+
+
+// 四级路由 用工模块
+//招聘业务
+import FourRectuitments from "@/fourPages/Rectuitments/index.vue"
+//新媒体带货
+import FourNews from "@/fourPages/News/index.vue"
+//就业街小圆桌
+import FourEmployment from "@/fourPages/Employment/index.vue"
+
+
+
+//产品服务(三级) ==> 用工模块 四级
+export const fourChildrenRoute=[
+  {
+    path:"/home/index/flexible/fourectuitments",
+    name:"fourRectuitments",
+    meta:{
+      title:"招聘业务"
+    },
+    component:FourRectuitments
+  },
+  {
+    path:"/home/index/flexible/foruenews",
+    name: "fourNews",
+    meta:{
+      title:"新媒体带货"
+    },
+    component: FourNews
+  },
+  {
+    path:"/home/index/flexible/fouremployment",
+    name: "fourEmployment",
+    meta:{
+      title:"就业小圆桌"
+    },
+    component: FourEmployment
+  }
+]
+
+//产品服务 三级
+export const threeChildrenRoute=[
+  {
+    path:"/home/index/outsource",
+    name: "outsource",
+    meta:{
+      title:"外包模块"
+    },
+    component: OutSource
+  },
+  {
+    path:"/home/index/hosting",
+    name: "hosting",
+    meta:{
+      title:"托管模块"
+    },
+    component: Hosting
+  },
+  {
+    path:"/home/index/recruitment",
+    name: "recruitment",
+    meta:{
+      title:"招聘模块"
+    },
+    component: Recruitment
+  },
+  {
+    path:"/home/index/operate",
+    name: "operate",
+    meta:{
+      title:"产业园区"
+    },
+    component: Operate
+  },
+  {
+    path:"/home/index/flexible",
+    name: "flexible",
+    meta:{
+      title:"用工模块"
+    },
+    component: Flexible,
+    children:fourChildrenRoute
+  }
+]
+
+
 
 
 
@@ -32,16 +130,7 @@ export const routerChildren=[
       title:"产品服务"
     },
     component: MyHome,
-    children:[
-      {
-        path: "/home/index/edit",
-        name: "edit",
-        meta:{
-          title:"编辑"
-        },
-        component: Home
-      }
-    ]
+    children:threeChildrenRoute
   },
   {
     path: "/home/talent",
