@@ -112,6 +112,7 @@ const steps = ref([
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow-y: hidden;
         .content{
             background-color: red;
             width: 100%;
