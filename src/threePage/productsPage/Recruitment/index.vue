@@ -9,7 +9,7 @@
             </p>
         </div>  
        <div class="card-list">
-         <div v-for="item in state.arr" class="card-title">
+         <div v-for="item in state.arr" :key="item.id" class="card-title">
             <el-card >
                 <p class="title">{{ item.title }}</p>
                 <div class="img">
@@ -25,7 +25,7 @@
                 <!-- 步骤容器 -->  
                 <div class="steps-container">  
                 <!-- 第一个步骤 -->  
-                <div class="step animate__backInRight animate__animated" style="--step-index: 1;">
+                <div class="step  animate__animated" ref="boxFirst" style="--step-index: 1;opacity: 0;">
                     <div class="step-line-arr" style="--line-direction: right;"></div>  
                     <div class="step-content-placeholder">
                         <h4>1.前期对接工作</h4>
@@ -35,7 +35,7 @@
                 </div>  
             
                 <!-- 第二个步骤 -->  
-                <div class="step animate__backInLeft animate__animated" style="--step-index: 2;">  
+                <div class="step  animate__animated" ref="boxSecond" style="--step-index: 2;opacity: 0;">  
                     <div class="step-line" style="--line-direction: left;"></div>  
                     <div class="step-content-placeholder-arr">
                         <h4>2.人员寻访</h4>
@@ -47,7 +47,7 @@
                 </div>  
             
                 <!-- 第三个步骤 -->  
-                <div class="step animate__backInRight animate__animated" style="--step-index: 3;">  
+                <div class="step  animate__animated" ref="boxThirdly" style="--step-index: 3;opacity: 0;">  
                     <div class="step-line-arr" style="--line-direction: right;"></div>  
                     <div class="step-content-placeholder">
                         <h4>3.面试邀约及入职</h4>
@@ -58,7 +58,7 @@
                 </div>  
             
                 <!-- 第四个步骤 -->  
-                <div class="step animate__backInLeft animate__animated" style="--step-index: 4;">  
+                <div class="step  animate__animated four_box_class" ref="boxFourthly" style="--step-index: 4;opacity: 0;">  
                     <div class="step-line" style="--line-direction: left;"></div>  
                     <div class="step-content-placeholder-arr">
                         <h4>4.交付、个保温及离补</h4>
@@ -81,8 +81,112 @@
 
 <script setup lang="ts">
 import swpOne from "../../../assets/th.jpg"; 
-import { ref, reactive } from "vue";   
-const imgRef = ref();
+import { ref, reactive,onMounted,onUnmounted } from "vue";   
+const boxFirst = ref();
+const boxSecond = ref();
+const boxThirdly = ref();
+const boxFourthly = ref();
+// 创建第一个Intersection Observer实例
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      // 检查元素是否进入可视区域
+      if (entry.isIntersecting) {
+        console.log("元素已进入可视区域");
+        // 在这里执行你的操作
+        //第一个区域
+        boxFirst.value.classList.add("animate__backInRight");
+        boxFirst.value.style.opacity="1"
+      }
+    });
+  },
+  {
+    rootMargin: "0px", // 你可以根据需要调整这个值
+    threshold: [1], // 当目标元素至少有10%进入视口时触发回调
+  }
+);
+// 创建第二个Intersection Observer实例
+const observerSec = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      // 检查元素是否进入可视区域
+      if (entry.isIntersecting) {
+        console.log("元素已进入可视区域");
+        boxSecond.value.classList.add("animate__backInLeft");
+        boxSecond.value.style.opacity="1"
+      }
+    });
+  },
+  {
+    rootMargin: "0px", // 你可以根据需要调整这个值
+    threshold: [1], // 当目标元素至少有10%进入视口时触发回调
+  }
+);
+// 创建第三个Intersection Observer实例
+const observerThree = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      // 检查元素是否进入可视区域
+      if (entry.isIntersecting) {
+        console.log("元素已进入可视区域");
+        boxThirdly.value.classList.add("animate__backInRight");
+        boxThirdly.value.style.opacity="1"
+      }
+    });
+  },
+  {
+    rootMargin: "0px", // 你可以根据需要调整这个值
+    threshold: [1], // 当目标元素至少有10%进入视口时触发回调
+  }
+);
+// 创建第四个Intersection Observer实例
+const observerFourthly = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      // 检查元素是否进入可视区域
+      if (entry.isIntersecting) {
+        console.log("元素已进入可视区域");
+        boxFourthly.value.classList.add("animate__backInLeft");
+        boxFourthly.value.style.opacity="1"
+      }
+    });
+  },
+  {
+    rootMargin: "0px", // 你可以根据需要调整这个值
+    threshold: [1], // 当目标元素至少有10%进入视口时触发回调
+  }
+);
+// 组件挂载后设置监听
+onMounted(() => {
+  if (boxFirst.value) {
+    observer.observe(boxFirst.value);
+  }
+  if (boxSecond.value) {
+    observerSec.observe(boxSecond.value);
+  }
+  if (boxThirdly.value) {
+    observerThree.observe(boxThirdly.value);
+  }
+  if (boxFourthly.value) {
+    observerFourthly.observe(boxFourthly.value);
+  }
+});
+
+// 组件卸载前移除监听
+onUnmounted(() => {
+  if (boxFirst.value) {
+    observer.unobserve(boxFirst.value);
+  }
+  if (boxSecond.value) {
+    observerSec.observe(boxSecond.value);
+  }
+  if (boxThirdly.value) {
+    observerThree.observe(boxThirdly.value);
+  }
+  if (boxFourthly.value) {
+    observerFourthly.observe(boxFourthly.value);
+  }
+});
 const state = reactive({
   getNewsData: [],
   arr: [
@@ -113,13 +217,13 @@ const state = reactive({
     },
   ],
 });
-const activeStep = ref(0);
-const steps = ref([
-  { title: '1.前期对接工作', cardTitle: 'a.通过项目启动，核对用人需求、岗位职责与录用标准', cardContent: 'b.与客户核对并确认各岗位的面试/入职/合同签约流程' },
-  { title: '2.人员寻访', cardTitle: 'a.外部代理招聘渠道', cardContent: 'b.通过公司内部网招渠道' },
-  { title: '3.面试邀约及入职', cardTitle: 'a.进行线上、线下面试及面试辅导', cardContent: 'b.岗前培训及试岗工作、上岗通知及入职须知宣导' },
-  { title: '4.交付、个保温及离补', cardTitle: 'a.确保员工稳定性，及时答疑化解工作中问题', cardContent: 'b.做好离职补招工作，避免用人压力' },
-]);
+// const activeStep = ref(0);
+// const steps = ref([
+//   { title: '1.前期对接工作', cardTitle: 'a.通过项目启动，核对用人需求、岗位职责与录用标准', cardContent: 'b.与客户核对并确认各岗位的面试/入职/合同签约流程' },
+//   { title: '2.人员寻访', cardTitle: 'a.外部代理招聘渠道', cardContent: 'b.通过公司内部网招渠道' },
+//   { title: '3.面试邀约及入职', cardTitle: 'a.进行线上、线下面试及面试辅导', cardContent: 'b.岗前培训及试岗工作、上岗通知及入职须知宣导' },
+//   { title: '4.交付、个保温及离补', cardTitle: 'a.确保员工稳定性，及时答疑化解工作中问题', cardContent: 'b.做好离职补招工作，避免用人压力' },
+// ]);
 </script>
 
 <style scoped lang="scss">
@@ -171,8 +275,10 @@ const steps = ref([
         }
         .service{
             width: 80%;
+            height: auto;
             margin: 2rem auto;
             text-align: center;
+            overflow-y:hidden ;
             h1{
                 font-size: 2rem;
                 color: red;
@@ -217,7 +323,6 @@ const steps = ref([
     height: 2px;  
     background-color: black;  
     top: 58%;  
-    right: 50%;
     transform: translateY(-50%); 
     right: 95%;
   }
@@ -256,17 +361,20 @@ const steps = ref([
     font-size: 1rem;
   }
 } 
+.four_box_class{
+  height: 12rem!important;
+}
 .step-content-placeholder-arr {  
   /* 这里仅作为占位符，实际中应替换为卡片组件或内容 */  
   border: 1px solid #ccc;  
   padding: 20px;  
-  margin-top: 20px;  
+  // margin-top: 10px;  
   width: 20rem; /* 根据需要调整 */ 
-  margin-left: -3%; 
+  margin-left: -2%; 
 } 
 .card-contents{
     width: 2px;
-    height: 60rem;
+    height: 70rem;
     background-color: red;
     position: absolute;
     }
