@@ -11,12 +11,7 @@
                 <div class="list_box">
                     <div class="concent_business">
                         <ul>
-                            <li class="title_li">了解金创</li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li class="title_li" @click="goAbouRoute">了解金创</li>
                         </ul>
                         <ul>
                             <li class="title_li">产品</li>
@@ -108,6 +103,11 @@
 
 <script lang="ts" setup>
 
+import { useRouter } from "vue-router";
+const router=useRouter()
+const goAbouRoute=()=>{
+    router.push('/home/about')
+}
 </script>
 
 <style scoped lang="scss">
@@ -147,6 +147,9 @@
                 display: flex;
                 justify-content: space-between;
                 border-right: 1px solid #ccc;
+                li{
+                    cursor: pointer;
+                }
             }
             .hot_list{
                 width: calc(30% - 10rem);
