@@ -32,7 +32,8 @@ import Recruitment from "../threePage/productsPage/Recruitment/index.vue"
 import Operate from "../threePage/productsPage/operate/index.vue"
 //用工模块
 import Flexible from "../threePage/productsPage/Flexible/index.vue"
-
+//新闻详情模块
+import newsDetails from "../threePage/newsPages/newsDetails/index.vue"
 
 // 四级路由 用工模块
 //招聘业务
@@ -115,6 +116,7 @@ export const threeChildrenRoute=[
     component: Flexible,
     children:fourChildrenRoute
   }
+
 ]
 
 
@@ -147,6 +149,14 @@ export const routerChildren=[
       title:"客户案例"
     },
     component: Special
+  },
+  {
+    path:"/home/news",
+    name: "newsDetails",
+    meta:{
+      title:"新闻详情"
+    },
+    component: newsDetails
   },
   // {
   //   path:"/home/ServiceSupport",
