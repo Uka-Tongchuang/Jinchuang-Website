@@ -52,7 +52,7 @@ onMounted(async () => {
     // console.log(data);
     window.localStorage.setItem("token", data.jwt);
   } else {
-    const res = await getDataApi();
+    const {res} = await getDataApi();
     console.log(res);
   }
 });
