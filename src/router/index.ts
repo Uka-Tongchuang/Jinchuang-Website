@@ -20,6 +20,8 @@ import ResourceCenter from "../pages/ResourceCenter/index.vue"
 import About from "../pages/About/index.vue"
 //新闻详情模块
 import newsDetails from "../pages/newsPages/newsDetails/index.vue"
+// 新闻出口
+import newsAut from "../pages/news/index.vue"
 
 // 三级路由
 //产品服务 
@@ -33,6 +35,8 @@ import Recruitment from "../threePage/productsPage/Recruitment/index.vue"
 import Operate from "../threePage/productsPage/operate/index.vue"
 //用工模块
 import Flexible from "../threePage/productsPage/Flexible/index.vue"
+// 新闻详情
+import newDetailsList from "../threePage/productsPage/newDetails/index.vue"
 
 
 // 四级路由 用工模块
@@ -119,6 +123,25 @@ export const threeChildrenRoute=[
 
 ]
 
+//新闻详情
+export const newsDetailsList=[
+  {
+    path:'/home/news/newDetailsHome',
+    name:"newDetailsHome",
+    mete:{
+      title:"新闻列表"
+    },
+    component: newsDetails,
+  },
+   {
+    path:"/home/news/newDetailsList/:id",
+    name: "newDetailsList",
+    meta:{
+      title:"新闻详情"
+    },
+    component: newDetailsList, 
+  }
+]
 
 
 
@@ -153,10 +176,13 @@ export const routerChildren=[
   {
     path:"/home/news",
     name: "newsDetails",
-    meta:{
+    component: newsAut,
+     meta:{
       title:"新闻中心"
     },
-    component: newsDetails
+    children:newsDetailsList,
+   redirect: "/home/news/newDetailsHome"
+    
   },
   // {
   //   path:"/home/ServiceSupport",

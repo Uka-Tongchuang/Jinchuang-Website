@@ -2,16 +2,18 @@
   <div class="header_box">
     <div class="nav_left_box">
       <li @click="goHomeFun" class="logo_box">
-        <img src="../assets/logo.png" alt="">
+        <img src="../assets/logo.png" alt="" />
       </li>
       <li
         v-for="(item, index) in routerChildren"
         :key="index"
-       @click="enterProducts(item)"
+        @click="enterProducts(item)"
       >
-        <span v-if="item.children && item.children.length !== 0">
+        <span v-if="item.meta?.title === '产品服务'">
           {{ item.meta?.title }}
-          <el-icon class="icon_two" :class="showDivFlag?'is-rotated':''"><ArrowDown  /></el-icon>
+          <el-icon class="icon_two" :class="showDivFlag ? 'is-rotated' : ''"
+            ><ArrowDown
+          /></el-icon>
         </span>
         <span v-else>
           <router-link :to="item.path">
@@ -21,27 +23,35 @@
       </li>
     </div>
     <!-- //弹出内容 -->
-    <div
-      class="showContent"
-      v-show="showDivFlag"
-      ref="showbox"
-    >
-    <!-- //三级路由列表渲染 -->
-      <div v-for="(item,index) in showDataArray" :key="index" @click="fourRouteFun(item)">
+    <div class="showContent" v-show="showDivFlag" ref="showbox">
+      <!-- //三级路由列表渲染 -->
+      <div
+        v-for="(item, index) in showDataArray"
+        :key="index"
+        @click="fourRouteFun(item)"
+      >
         <router-link v-if="!item.children" :to="item.path">
           <span>{{ item.meta?.title }}</span>
         </router-link>
         <span v-else>
-              {{ item.meta?.title }}<el-icon class="icon_two" :class="showFourDiv?'is-rotateds':''"><ArrowDown /></el-icon>
+          {{ item.meta?.title
+          }}<el-icon class="icon_two" :class="showFourDiv ? 'is-rotateds' : ''"
+            ><ArrowDown
+          /></el-icon>
         </span>
       </div>
       <!-- //四级弹窗 -->
       <div class="content_box_four" v-show="showFourDiv" ref="showFourbBox">
-        <div v-for="(item,index) in fourChildrenRoute" :key="index" class="show_div_list" @click="goFourRoute">
-        <router-link :to="item.path">
-          <span>{{ item.meta?.title }}</span>
-        </router-link>
-      </div>
+        <div
+          v-for="(item, index) in fourChildrenRoute"
+          :key="index"
+          class="show_div_list"
+          @click="goFourRoute"
+        >
+          <router-link :to="item.path">
+            <span>{{ item.meta?.title }}</span>
+          </router-link>
+        </div>
       </div>
     </div>
 
@@ -59,7 +69,7 @@ import { ref } from "vue";
 import { ArrowDown } from "@element-plus/icons-vue";
 import { ChildrenRouteItemType } from "@/typeFile/type";
 import { gsap } from "gsap";
-import {throttle} from "lodash"
+import { throttle } from "lodash";
 //获取弹窗路由的三级路由信息   //四级路由信息
 import { threeChildrenRoute, fourChildrenRoute } from "@/router/index";
 
@@ -75,75 +85,75 @@ const showDataArray = ref(threeChildrenRoute);
 //划过显示弹窗元素
 const showbox = ref();
 //鼠标点击nav元素
-const enterProductsBtn = (item:ChildrenRouteItemType) => {
+const enterProductsBtn = (item: ChildrenRouteItemType) => {
   //判断是否点击的产品
-  if(item.meta.title==="产品服务"){
+  if (item.meta.title === "产品服务") {
     showDivFlag.value = !showDivFlag.value;
     //动画
-  gsap.from(showbox.value, {
-    height: 0,
-    duration: 0.5, // 动画持续时间，单位秒
-  });
-  }else{
+    gsap.from(showbox.value, {
+      height: 0,
+      duration: 0.5, // 动画持续时间，单位秒
+    });
+  } else {
     showDivFlag.value = false;
   }
 };
 //防抖函数
-const enterProducts=throttle(enterProductsBtn,500)
+const enterProducts = throttle(enterProductsBtn, 500);
 //四级页面弹窗
-const showFourDiv=ref(false)
-const showFourbBox=ref()
-const fourRouteFuns=(item:ChildrenRouteItemType)=>{
-console.log(item);
-//判断是否点击的用工
-if(item.meta.title==="用工模块"){
-  showFourDiv.value = !showFourDiv.value;
-   //动画
-   gsap.from(showFourbBox.value, {
-    height: "0rem",
-    duration: 0.5, // 动画持续时间，单位秒
-  });
-  }else{
+const showFourDiv = ref(false);
+const showFourbBox = ref();
+const fourRouteFuns = (item: ChildrenRouteItemType) => {
+  console.log(item);
+  //判断是否点击的用工
+  if (item.meta.title === "用工模块") {
+    showFourDiv.value = !showFourDiv.value;
+    //动画
+    gsap.from(showFourbBox.value, {
+      height: "0rem",
+      duration: 0.5, // 动画持续时间，单位秒
+    });
+  } else {
     showDivFlag.value = false;
   }
-}
-const fourRouteFun=throttle(fourRouteFuns,500)
+};
+const fourRouteFun = throttle(fourRouteFuns, 500);
 
-const goFourRoute=()=>{
+const goFourRoute = () => {
   showDivFlag.value = false;
   showFourDiv.value = false;
-}
-</script> 
+};
+</script>
 
 <style scoped lang="scss">
-.icon_two{
-  transition: transform 0.2s ease-in-out; 
+.icon_two {
+  transition: transform 0.2s ease-in-out;
 }
-.is-rotated {  
-  transform: rotateX(180deg);  
+.is-rotated {
+  transform: rotateX(180deg);
 }
-.is-rotateds {  
-  transform: rotateX(180deg);  
+.is-rotateds {
+  transform: rotateX(180deg);
 }
 .header_box {
   //   background-color: rgb(160, 172, 71);
   margin: 0;
   padding: 0;
   position: relative;
-  border-bottom: 1px solid  #ccc;
+  border-bottom: 1px solid #ccc;
   .showContent {
     width: 100%;
     height: 3rem;
     position: absolute;
     top: 100%;
     left: 0;
-    opacity: .98;
+    opacity: 0.98;
     background-color: #189beb;
     z-index: 66;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .content_box_four{
+    .content_box_four {
       position: absolute;
       width: 25%;
       height: 9rem;
@@ -154,48 +164,48 @@ const goFourRoute=()=>{
       display: flex;
       flex-direction: column;
       align-items: center;
-     .show_div_list{
-      width: 100%;
-      flex: 1;
-      background-color: #fff;
-      box-sizing: border-box;
-      border-bottom: 1px solid #ccc;
-      a{
-        color: #f00!important;
+      .show_div_list {
+        width: 100%;
+        flex: 1;
+        background-color: #fff;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+        a {
+          color: #f00 !important;
+        }
       }
-     }
     }
     // >div:hover{
     //   background-color: #fdddf5;
     // }
-    >div{
+    > div {
       color: #fff;
       flex: 1;
       width: 100%;
       height: 100%;
-      a{
+      a {
         display: inline-block;
         width: 100%;
         height: 100%;
         display: flex;
-      align-items: center;
-      justify-content: center;
+        align-items: center;
+        justify-content: center;
       }
-      span{
+      span {
         display: inline-block;
         width: 100%;
         height: 100%;
         display: flex;
-      align-items: center;
-      justify-content: center;
+        align-items: center;
+        justify-content: center;
       }
-      span:hover{
-        color: #7b04e2!important;
+      span:hover {
+        color: #7b04e2 !important;
         cursor: pointer;
       }
     }
-    a{
-      color: #fff!important;
+    a {
+      color: #fff !important;
     }
   }
 
@@ -214,15 +224,15 @@ const goFourRoute=()=>{
     margin: 0 100px;
     justify-content: space-around;
     align-items: center;
-    .logo_box{
-     width: 100%;
-     height: 100%;
-     img{
-      display: inline-block;
+    .logo_box {
       width: 100%;
-      height:calc(100% + 2rem);
-      overflow: hidden;
-     }
+      height: 100%;
+      img {
+        display: inline-block;
+        width: 100%;
+        height: calc(100% + 2rem);
+        overflow: hidden;
+      }
     }
     li {
       flex: 1;
@@ -231,21 +241,21 @@ const goFourRoute=()=>{
       height: 100%;
       justify-content: center;
       align-items: center;
-      span{
+      span {
         display: flex;
         width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
-        a{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
+        a {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+        }
       }
-      }
-      a{
+      a {
         display: flex;
         width: 100%;
         height: 100%;
@@ -255,9 +265,8 @@ const goFourRoute=()=>{
     li:hover {
       a {
         color: aqua !important;
-        
       }
-      span{
+      span {
         color: aqua;
         .el-icon {
           color: aqua !important;
