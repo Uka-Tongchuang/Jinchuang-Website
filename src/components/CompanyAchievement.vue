@@ -10,7 +10,7 @@
    
     <div class="manpower" ref="statisticRef">
         <div>
-            <el-statistic  :value="outputValue1"  :value-style="{ color: 'red'}" class="my-custom-statistic">
+            <el-statistic  :value="outputValue1"   class="my-custom-statistic">
                 <template #suffix>
                     <p class="plus-sign">+</p>
                 </template>
@@ -18,7 +18,7 @@
             <p class="introduce">省内外企事业单位</p>
         </div>
         <div>
-             <el-statistic  :value="outputValue2"  :value-style="{ color: 'red' }" class="my-custom-statistic">
+             <el-statistic  :value="outputValue2"   class="my-custom-statistic">
                 <template #suffix>
                     <p class="plus-sign">+</p>
                 </template>
@@ -26,10 +26,10 @@
             <p class="introduce">各类中小微企业</p>
         </div>
         <div>
-             <el-statistic  :value="outputValue3"  :value-style="{ color: 'red' }" class="my-custom-statistic">
+             <el-statistic  :value="outputValue3"   class="my-custom-statistic">
                  <template #suffix>
                      <div style="position: relative;">
-                        <p class="plus-sign" style="font-size: 4rem; position: absolute; bottom: -5rem; color: red;">W</p>
+                        <p class="plus-sign" style="font-size: 4rem; position: absolute; bottom: -5rem;">W</p>
                         <p class="plus-sign" style="position: absolute; right: -6rem; bottom: -2.5rem;">+</p>
                     </div>
                 </template>
@@ -135,8 +135,7 @@ const outputValue3 = useTransition(source3, {
             width: 100%;
             height: 75%; 
             font-size: 4rem;
-            font-weight: 700;
-            color: red;
+            font-weight: 700; 
             display: flex;
             justify-content: center;
             .radius{
@@ -148,9 +147,8 @@ const outputValue3 = useTransition(source3, {
                     left: 1.5rem;
                     top: -1.5rem;
                     width: 1rem;
-                    height: 1rem;
-                    color: red;
-                    background-color: red;
+                    height: 1rem; 
+                    background-color: black;
                     border-radius: 50%; 
                 }
             }
@@ -168,6 +166,7 @@ const outputValue3 = useTransition(source3, {
                 font-size: 2rem;
             } 
             .introduce{
+                color: rgba(50, 50, 50, 0.7);
                 letter-spacing: 5px;
                 font-weight: 700;
                 font-size: 1.2rem;
