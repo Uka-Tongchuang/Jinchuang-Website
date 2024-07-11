@@ -140,9 +140,9 @@ const goFourRoute = () => {
 .header_box {
   //   background-color: rgb(160, 172, 71);
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0 0 0 ;
   position: relative;
-  border-bottom: 1px solid #ccc;
+  // border-bottom: 1px solid #ccc;
   .showContent {
     width: 100%;
     height: 3rem;
@@ -240,6 +240,8 @@ const goFourRoute = () => {
       flex: 1;
       cursor: pointer;
       display: flex;
+      font-size: 1.4rem;
+      font-family: 'Courier New', Courier, monospace;
       height: 100%;
       justify-content: center;
       align-items: center;

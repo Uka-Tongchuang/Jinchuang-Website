@@ -20,8 +20,9 @@
 
 <style scoped lang="scss">
 .Company_box {
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
   // background-color: #f00;
   margin-top: 1rem;
   border: 1px solid #ccc;

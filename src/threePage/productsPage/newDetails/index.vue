@@ -1,38 +1,42 @@
 <template>
   <div class="main">
+    
     <div class="content">
       <h1>{{ state?.title }}</h1>
     </div>
+    
     <div class="news-subject">
-      <div class="time">
-        <p>{{ state?.data }}</p>
-        <p>{{ state?.author }}</p>
-      </div>
-      <div>
+      <el-card style="max-width: 100%">
+        <div @click="goBackBtn" style="cursor: pointer;">
+      {{ `<` }} 返回列表
+    </div>
+        <img :src="state?.media" alt="">
+        <p>日期：{{ state?.data }}</p>
+        <p>作者：{{ state?.author }}</p>
         <h3>文章内容</h3>
-        <div v-html="state.content"></div>
-      </div>
+        <div v-html="state?.content" style="text-indent:2rem"></div>
+  </el-card>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { reactive, onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import { getDataApi } from "../../../api/request";
-const state = reactive({
-  title: "",
-  data: "",
-  author: "",
-  content: "",
-});
+import { useRoute,useRouter } from "vue-router";
+const route=useRoute()
+// console.log(route);
+const router=useRouter()
+const id=ref(route.params.id)
+const state = ref();
 onMounted(async () => {
-  const { data } = await getDataApi(13);
-  state.title = data.title;
-  state.data = data.data;
-  state.author = data.author;
-  state.content = data.content;
-  console.log(data, "frjekifghreui");
+  const { data } = await getDataApi(id.value as string);
+  console.log(data,"111");
+  state.value=data
 });
+const goBackBtn=()=>{
+  router.back()
+}
 </script>
 
 <style lang="scss" scoped>
@@ -57,7 +61,7 @@ onMounted(async () => {
   }
   .news-subject {
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
     .time {
       text-align: center;
     }
