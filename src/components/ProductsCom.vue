@@ -30,12 +30,12 @@
       </div>
 
       <div @mouseenter="enterDiv" @mouseleave="leaveDiv" class="show_box">
-        <div v-if="flagDiv" class="showImg animate__animated animate__flipInY">
+        <div v-if="flagDiv" class="showImg animate__animated animate__fadeIn">
           <img src="../assets/th.jpg" alt="" />
           <span>灵活用工服务</span>
           <p>多元化的灵活用工<br />结算解决方案</p>
         </div>
-        <div v-else class="showMou animate__animated animate__flipInY" >
+        <div v-else class="showMou animate__animated animate__jackInTheBox" >
             <div @click="goFourRectuitment">招聘业务</div>
             <div @click="goFourNews">新媒体带货</div>
             <div @click="goFourEmployment">就业街小圆桌</div>

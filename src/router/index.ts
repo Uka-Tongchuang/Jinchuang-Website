@@ -38,7 +38,13 @@ import Flexible from "../threePage/productsPage/Flexible/index.vue"
 // 新闻详情
 import newDetailsList from "../threePage/productsPage/newDetails/index.vue"
 
-
+//三级路由 
+// 客户案例 首页
+import specialHome from "../threePage/pecialPage/homeList/index.vue"
+//案例一
+import specialFirstPage from "../threePage/pecialPage/centerSpecial/index.vue"
+//案例二
+import specialSecondPage from "../threePage/pecialPage/detailSpecial/index.vue"
 // 四级路由 用工模块
 //招聘业务
 import FourRectuitments from "@/fourPages/Rectuitments/index.vue"
@@ -123,7 +129,38 @@ export const threeChildrenRoute=[
 
 ]
 
-//新闻详情
+//客户中心 ==> 三级  ==> 客户详情加列表
+export const specialList=[
+  {
+    path:"/home/special",
+    redirect: "/home/special/specialHome"
+  },
+  {
+    path:'/home/special/specialHome',
+    name:"specialHome",
+    mete:{
+      title:"客户列表"
+    },
+    component: specialHome,
+  },
+   {
+    path:"/home/special/specialfirst",
+    name: "specialfirst",
+    meta:{
+      title:"客户案例First"
+    },
+    component: specialFirstPage, 
+  },
+  {
+    path:"/home/special/specialsecond",
+    name: "specialsecond",
+    meta:{
+      title:"客户案例Second"
+    },
+    component: specialSecondPage, 
+  }
+]
+//新闻中心 ==> 三级  ==> 新闻详情加列表
 export const newsDetailsList=[
   {
     path:'/home/news/newDetailsHome',
@@ -171,6 +208,7 @@ export const routerChildren=[
     meta:{
       title:"客户案例"
     },
+    children:specialList,
     component: Special
   },
   {

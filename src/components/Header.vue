@@ -146,12 +146,12 @@ const goFourRoute = () => {
   // border-bottom: 1px solid #ccc;
   .showContent {
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     position: absolute;
     top: 100%;
     left: 0;
     opacity: 0.98;
-    background-color: #189beb;
+    background-color: #79cbff;
     z-index: 66;
     display: flex;
     justify-content: space-around;
@@ -159,30 +159,24 @@ const goFourRoute = () => {
     .content_box_four {
       position: absolute;
       width: 25%;
-      height: 9rem;
-      background-color: #b4b4b4;
+      height: 12rem;
+      background-color: #79cbff;
       z-index: 66;
       right: 0;
-      top: 3rem;
+      top: 5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       .show_div_list {
         width: 100%;
         flex: 1;
-        background-color: #fff;
         box-sizing: border-box;
         border-bottom: 1px solid #ccc;
-        a {
-          color: #f00 !important;
-        }
+       
       }
     }
-    // >div:hover{
-    //   background-color: #fdddf5;
-    // }
     > div {
-      color: #fff;
+      
       flex: 1;
       width: 100%;
       height: 100%;
@@ -192,6 +186,7 @@ const goFourRoute = () => {
         height: 100%;
         display: flex;
         align-items: center;
+        color: #fff!important;
         justify-content: center;
       }
       span {
@@ -201,15 +196,15 @@ const goFourRoute = () => {
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #fff;
       }
       span:hover {
-        color: #7b04e2 !important;
+        color: #000000 !important;
         cursor: pointer;
+        background-color: #fff;
       }
     }
-    a {
-      color: #fff !important;
-    }
+    
   }
 
   li {
@@ -267,17 +262,7 @@ const goFourRoute = () => {
         justify-content: center;
       }
     }
-    li:hover {
-      a {
-        color: aqua !important;
-      }
-      span {
-        color: aqua;
-        .el-icon {
-          color: aqua !important;
-        }
-      }
-    }
+  
     .el-icon {
       position: relative !important;
       top: 3px !important;
