@@ -96,6 +96,7 @@ const enterProductsBtn = (item: ChildrenRouteItemType) => {
     });
   } else {
     showDivFlag.value = false;
+    showFourDiv.value = false;
   }
 };
 //防抖函数
