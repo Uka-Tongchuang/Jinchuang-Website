@@ -104,7 +104,7 @@ const enterProducts = throttle(enterProductsBtn, 500);
 const showFourDiv = ref(false);
 const showFourbBox = ref();
 const fourRouteFuns = (item: ChildrenRouteItemType) => {
-  console.log(item);
+ 
   //判断是否点击的用工
   if (item.meta.title === "用工模块") {
     showFourDiv.value = !showFourDiv.value;
@@ -114,7 +114,9 @@ const fourRouteFuns = (item: ChildrenRouteItemType) => {
       duration: 0.5, // 动画持续时间，单位秒
     });
   } else {
+    //跳转隐藏两个盒子
     showDivFlag.value = false;
+    showFourDiv.value = false;
   }
 };
 const fourRouteFun = throttle(fourRouteFuns, 500);
