@@ -7,17 +7,15 @@
       <div class="carousel-items">  
         <div class="logo-item" v-for="(logo, index) in state.arr" :key="index">  
           <div class="logo-image">
-
             <img :src="logo.idVieo" alt="Logo">  
           </div>
         </div>  
         <!-- 复制前10个logo以实现无缝循环 -->  
-        <div class="logo-item" v-for="(logo, index) in state.arr.slice(0, 10)" :key="state.arr.length + index">  
+        <!-- <div class="logo-item" v-for="(logo, index) in state.arr.slice(0, 10)" :key="state.arr.length + index">  
           <div class="logo-image">
-
             <img :src="logo.idVieo" alt="Logo">  
           </div>
-        </div>  
+        </div>   -->
       </div>  
     </div>  
   </div> 
@@ -25,80 +23,97 @@
 
 <script setup lang="ts">
 import swpOne from "../assets/th.jpg";
+import ajisen from "../assets/ajisen-ramen.jpg"; //味千拉面
+import alibaba from "../assets/Alibaba.png"; //阿里
+import ane from "../assets/ane.jpg"; //安能
+import boss from "../assets/boss.png"; //boss
+import corporation from "../assets/corporation.jpg"; //中储粮
+import cotti from "../assets/cotti.png"; //库迪咖啡
+import dingtalk from "../assets/DingTalk.png"; //钉钉
+import ems from "../assets/ems.png"; //邮政
+import favicon from "../assets/favicon.png"; //抖音
+import luckin from "../assets/luckin.png"; // 瑞幸
+import meitaun from "../assets/meituan.png";  //美团
+import miduoduo from "../assets/miduoduo.png"; //米多多
+import quick from "../assets/quick.webp"; //快手
+import sfexpress from "../assets/S.F. Express.png"; //顺丰
+import simple from "../assets/simple.jpg"; //朴朴
+import tasting from "../assets/tasting.jpg"; //点米
+import taobao from "../assets/taobao.png"; //淘宝
 import { reactive } from "vue";
 const state = reactive({
   arr: [
     {
       id: 1,
-      idVieo: swpOne,
+      idVieo: favicon,
     },
     {
       id: 2,
-      idVieo: swpOne,
+      idVieo: luckin,
     },
     {
       id: 3,
-      idVieo: swpOne,
+      idVieo: ajisen,
     },
     {
       id: 4,
-      idVieo: swpOne,
+      idVieo: cotti,
     },
     {
       id: 5,
-      idVieo: swpOne,
+      idVieo: cotti,
     },
     {
       id: 6,
-      idVieo: swpOne,
+      idVieo: corporation,
     },
     {
       id: 7,
-      idVieo: swpOne,
+      idVieo: sfexpress,
     },
     {
       id: 8,
-      idVieo: swpOne,
+      idVieo: simple,
     },
     {
       id: 9,
-      idVieo: swpOne,
+      idVieo: meitaun,
     },
     {
       id: 10,
-      idVieo: swpOne,
+      idVieo: boss,
     },
     {
       id: 11,
-      idVieo: swpOne,
+      idVieo: tasting,
     },
     {
       id: 12,
-      idVieo: swpOne,
+      idVieo: ems,
     },
     {
       id: 13,
-      idVieo: swpOne,
+      idVieo: ane,
     },
     {
       id: 14,
-      idVieo: swpOne,
+      idVieo: dingtalk,
     },
     {
       id: 15,
-      idVieo: swpOne,
+      idVieo: alibaba,
     },
     {
       id: 16,
-      idVieo: swpOne,
+      idVieo: taobao,
     },
     {
       id: 17,
-      idVieo: swpOne,
+      idVieo: ems,
     },
     {
       id: 18,
-      idVieo: swpOne,
+      idVieo: miduoduo,
     },
     {
       id: 19,
@@ -106,31 +121,7 @@ const state = reactive({
     },
     {
       id: 20,
-      idVieo: swpOne,
-    },
-    {
-      id: 21,
-      idVieo: swpOne,
-    },
-    {
-      id: 22,
-      idVieo: swpOne,
-    },
-    {
-      id: 23,
-      idVieo: swpOne,
-    },
-    {
-      id: 24,
-      idVieo: swpOne,
-    },
-    {
-      id: 25,
-      idVieo: swpOne,
-    },
-    {
-      id: 26,
-      idVieo: swpOne,
+      idVieo: quick,
     },
   ],
 });
@@ -144,6 +135,7 @@ const state = reactive({
 }
 
 .logo-carousel {  
+  margin-left: 4rem;
   margin-top: 1rem;
   overflow: hidden;  
   position: relative;  
@@ -171,8 +163,8 @@ const state = reactive({
   /* 可以添加padding, margin等样式来调整logo之间的间距 */  
 }  
   .logo-image{
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
 .logo-item img {  
   width: 100%;  

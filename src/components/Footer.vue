@@ -3,12 +3,38 @@
     <div class="customer_box">这里是客服模块</div>
     <!-- //底部信息 -->
     <div class="bottom_content_box">
+      <div class="join_company">
+        <div class="join_company_box">
+          <h4>想了解更多</h4>
+          <h4>欢迎你的加入</h4>
+        </div>
+        <div class="join_company_button">
+          <el-button type="primary">立即加入</el-button>
+        </div>
+      </div>
       <!-- //公司业务模块范围 -->
       <div class="content_box">
         <!-- //业务列表 -->
         <div class="list_box">
+          <div class="list_box_left">
+              <div class="logo">
+                <img src="../assets/logo.png" alt="">
+              </div>
+              <div class="logo_arr">
+                <div class="logo_left">
+                  <img src="../assets/th.jpg" alt="">
+                </div>
+                <p>邮箱地址</p>
+              </div>
+              <div class="logo_arr">
+                <div class="logo_left">
+                  <img src="../assets/th.jpg" alt="">
+                </div>
+                <p>公司地址</p>
+              </div>
+          </div>
           <div class="concent_business">
-            <ul>
+            <!-- <ul>
               <li
                 class="title_li"
                 style="font-weight: bold; margin-bottom: 2rem"
@@ -16,13 +42,13 @@
               >
                 了解金创
               </li>
-            </ul>
+            </ul> -->
             <ul>
               <li
                 class="title_li"
                 style="font-weight: bold; margin-bottom: 2rem"
               >
-                产品
+                产品服务
               </li>
               <li
                 v-for="(item, index) in threeChildrenRoute"
@@ -45,82 +71,59 @@
                 </p>
               </li>
             </ul>
-            <ul>
-              <li
-                class="title_li"
-                style="font-weight: bold; margin-bottom: 2rem"
-                @click="goSpecialRoute"
-              >
-                客户案例
-              </li>
-            </ul>
-            <ul>
-              <li
-                class="title_li"
-                style="font-weight: bold; margin-bottom: 2rem"
-                @click="goTalentRoute"
-              >
-                解决方案
-              </li>
-            </ul>
-            <ul>
-              <li
-                class="title_li"
-                style="font-weight: bold; margin-bottom: 2rem"
-                @click="goNewsRoute"
-              >
-                新闻中心
-              </li>
-            </ul>
-            <ul>
-              <li
-                class="title_li"
-                style="font-weight: bold; margin-bottom: 2rem"
-              >
-                资源中心
-              </li>
-              
-            </ul>
-          </div>
-          <div class="hot_list">
-            <div class="hot_spot_top">
-              <h4>热点内容</h4>
-              <ul class="hot_content_ui">
-                <li v-for="(item,index) in hotNewsData" :key="index">
-                    {{ item.title }}
-               </li>
+            <div class="server_list">
+                <ul>
+                  <li
+                    class="title_li"
+                    style="font-weight: bold; margin-bottom: 2rem"
+                    @click="goTalentRoute"
+                  >
+                    解决方案
+                  </li>
+                </ul>
+                <ul>
+                  <li
+                    class="title_li"
+                    style="font-weight: bold; margin-bottom: 2rem"
+                    @click="goNewsRoute"
+                  >
+                    新闻中心
+                  </li>
+                </ul>
+            </div>
+            <div class="server_list">
+              <ul>
+                <li
+                  class="title_li"
+                  style="font-weight: bold; margin-bottom: 2rem"
+                  @click="goSpecialRoute"
+                >
+                  客户案例
+                </li>
+              </ul>
+              <ul>
+                <li
+                  class="title_li"
+                  style="font-weight: bold; margin-bottom: 2rem"
+                >
+                  了解公司
+                </li>
+                
               </ul>
             </div>
-            <div class="qrcode">
-              <div>
-                <h1>图一</h1>
-              </div>
-              <div>
-                <h1>图二</h1>
-              </div>
-            </div>
+         
           </div>
-        </div>
-        <!-- //公司售前后服务 -->
-        <div class="sell_service">
-          <h3>
-            市场商务合作:internalmarketing@beisen.com
-            友情链接合作:wangxiaorui@beisen.com
-          </h3>
-        </div>
+        </div> 
       </div>
       <!-- 公司信息 -->
       <div class="bottom_ps_box">
         <div class="infoRecord_box">
-          <div class="info_left">
-            ©2024-2024
-            成都今创人力资源有限公司版权所有&emsp;&emsp;川ICP备05051632号-23川公网安备
-            11010802020454号
-          </div>
-          <div class="info_right">
-            <a href="#">网站地图</a>
-            <a href="#">隐私政策</a>
-          </div>
+         <div class="info_left">
+            <span class="time">2024</span>
+            <span class="company">今创人力有限公司</span>
+         </div>
+          <div class="info_right">The&emsp;company&emsp;was&emsp;established&emsp;in&emsp;2024
+          </div> 
         </div>
       </div>
     </div>
@@ -178,28 +181,71 @@ ul li {
   //业务范围
   .bottom_content_box {
     width: 100%;
-    height: 29rem;
+    height: 30rem;
+    // background-color: black;
+    // 加入公司
+    .join_company{
+      width: 70%;
+      height: 6rem;
+      display: flex;
+      margin: 0 auto; 
+      justify-content: space-between; 
+      .join_company_box{ 
+        height:100%;
+        h2{
+          color: black; 
+        }
+      }
+      .join_company_button{
+        line-height: 6rem;
+      }
+    }
     //公司模块
     .content_box {
       width: 80%;
-      height: 25rem;
+      height: 19rem;
       margin: 0 auto;
       //业务列表
       .list_box {
         width: 100%;
         height: 19rem;
         display: flex;
-        justify-content: space-around;
-        border-bottom: 1px solid #ccc;
+        justify-content: space-around; 
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        .list_box_left{
+          width: 20%;
+          height: 100%;
+          margin: 0 auto;
+          .logo{
+            width: 5rem;
+            height: 5rem; 
+            img{
+              display: inline-block; 
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .logo_arr{
+            width: 10rem;
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            .logo_left{
+              width: 4rem;
+              height: 4rem;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
         .concent_business {
           padding: 0 2rem;
           width: 60%;
           display: flex;
-          justify-content: space-between;
-          border-right: 1px solid #ccc;
-          li {
-            cursor: pointer;
-          }
+          justify-content: space-between; 
           .dataListItems {
             line-height: 2rem;
             p {
@@ -236,23 +282,24 @@ ul li {
     //公司信息
     .bottom_ps_box {
       width: 100%;
-      height: 4rem;
-      background-color: #ccc;
+      height: 5rem;
+      // background-color: black;
       //备案信息
       .infoRecord_box {
         width: 90%;
         height: 4rem;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .info_left {
-          width: 80%;
-        }
-        .info_right {
-          width: 10%;
-          display: flex;
-          justify-content: space-around;
+        margin: 0 auto; 
+        text-align: center;
+        color: #ccc;
+        .info_left { 
+          width: 100%;
+          height: 70%; 
+          line-height: 3rem; 
+          .company{ 
+            margin-left: 1rem;
+          }
+          .tiem{ 
+          }
         }
       }
     }
