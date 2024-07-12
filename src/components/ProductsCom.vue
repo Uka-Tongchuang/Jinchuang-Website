@@ -35,7 +35,7 @@
           <span>灵活用工服务</span>
           <p>多元化的灵活用工<br />结算解决方案</p>
         </div>
-        <div v-else class="showMou animate__animated animate__jackInTheBox" >
+        <div v-else class="showMou animate__animated animate__flipInY" >
             <div @click="goFourRectuitment">招聘业务</div>
             <div @click="goFourNews">新媒体带货</div>
             <div @click="goFourEmployment">就业街小圆桌</div>
@@ -99,8 +99,8 @@ window.location.href="/home/index/flexible/fouremployment"
     height: 5rem;
     text-align: center;
     line-height: 5rem;
-    font-size: 2.6rem;
-    color: #f00;
+    font-size: 3rem;
+    color: rgb(11, 11, 11);
   }
   .modules_box {
     width: 100%;
@@ -109,8 +109,9 @@ window.location.href="/home/index/flexible/fouremployment"
     display: flex;
     justify-content: space-between;
     > div:hover {
-      box-shadow: 0 0 0.12rem 0.12rem #ccc;
+      border: 1px solid #dcdcdc;
       transition: 0.2s;
+      box-shadow: 0.4rem 0.4rem 0.6rem 0.1rem #00000073;
     }
    
     .show_box{
@@ -129,20 +130,21 @@ window.location.href="/home/index/flexible/fouremployment"
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(255, 255, 255);
+        border: 1px solid #ededed;
+      background-color: #ededed;
         border-radius: 1rem;
         div{
             width: 70%;
-            height: 2rem;
+            height: 3rem;
             text-align: center;
-            line-height: 2rem;
+            line-height: 3rem;
             // box-sizing: border-box;
             // border: 4px solid #1b1a1a;
             background-color: #5f5e5e;
             color: #ffffff;
-            margin: 2.5rem 0;
+            margin: 2.2rem 0;
             cursor: pointer;
-            border-radius: 2rem;
+            border-radius: 1rem;
         }
        
     }
@@ -154,9 +156,10 @@ window.location.href="/home/index/flexible/fouremployment"
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      border: 1px solid #ccc;
-      border-radius: 1rem;
-
+      border-radius: .4rem;
+      border: 1px solid #ededed;
+      background-color: #ededed;
+      box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem #0000002b;
       img {
         width: 5rem;
         height: 5rem;

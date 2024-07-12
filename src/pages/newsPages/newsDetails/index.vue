@@ -55,7 +55,7 @@ onMounted(async () => {
   padding: 0;
   overflow-y: hidden;
   .content {
-    background-color: red;
+    background-color: #ededed;
     width: 100%;
     height: 20rem;
     margin: 0 auto;
@@ -78,6 +78,7 @@ onMounted(async () => {
       border-bottom: 1px solid #ccc;
       margin: 2rem 0;
       display: flex;
+      cursor: pointer;
       .img {
         width: 20rem;
         display: flex;

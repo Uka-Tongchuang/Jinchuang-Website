@@ -42,87 +42,65 @@
         </p>
       </el-card>
     </div>
+    <!-- 流程图 -->
     <div class="service">
-      <h1>启动流程</h1>
-      <div>
-        <div class="process-flow">
-          <!-- 步骤容器 -->
-          <div class="steps-container">
-            <!-- 第一个步骤 -->
-            <div
-              class="step animate__animated"
-              ref="boxFirst"
-              style="--step-index: 1;opacity: 0;"
-            >
-              <div class="step-line-arr" style="--line-direction: right"></div>
-              <div class="step-content-placeholder">
-                <h4>1.协议签订</h4>
-                <p>
-                  确认服务形式
-                  、需求人数、时间地点、项目用人标准、工时待遇、服务费结算逻辑、附加条款等
-                </p>
-              </div>
-            </div>
+      <h1 style="font-size: 4.5rem;">启动流程</h1>
 
-            <!-- 第二个步骤 -->
-            <div
-              class="step animate__animated"
-              ref="boxSecond"
-              style="--step-index: 2;opacity: 0;"
-            >
-              <div class="step-line" style="--line-direction: left"></div>
-              <div class="step-content-placeholder-arr">
-                <h4>2.人员招募/转签</h4>
-                <p>
-                  启动源遣/外包人员劳动合同转签及时做好招聘及现场̃妤犭绂蜡彳蒂卿蒞鈦鏊工作
-                </p>
-              </div>
+      <div class="content_box">
+        <!-- //放轴线 -->
+        <div class="line_box">
+          <!-- //第一个步骤 -->
+          <div class="box_first animate__animated" ref="boxFirst">
+            <!-- //两个定位盒子 -->
+            <div class="postion_box">
+              <div class="top_box"></div>
+              <h3>1.协议签订</h3>
+              <p>
+                确认服务形式、需求人数、时间地点、项目用人标准、工时待遇、服务费结算逻辑、附加条款等等
+              </p>
             </div>
-
-            <!-- 第三个步骤 -->
-            <div
-              class="step animate__animated"
-              ref="boxThirdly"
-              style="--step-index: 3;opacity: 0;"
-            >
-              <div class="step-line-arr" style="--line-direction: right"></div>
-              <div class="step-content-placeholder">
-                <h4>3.劳动合同签署</h4>
-                <p>10日内新合同签署相关保险增员、入职 及人事考勤系统培训</p>
-              </div>
+          </div>
+          <!-- //第二个步骤 -->
+          <div class="box_two animate__animated" ref="boxSecond">
+            <!-- //两个定位盒子 -->
+            <div class="postion_box">
+              <div class="top_box"></div>
+              <h3>2.人员招募/转签</h3>
+              <p>启动源遣/外包人员劳动合同转签及时做好招聘及现场沟通工作</p>
             </div>
-
-            <!-- 第四个步骤 -->
-            <div
-              class="step animate__animated"
-              ref="boxFourthly"
-              style="--step-index: 4;opacity: 0;"
-            >
-              <div class="step-line" style="--line-direction: left"></div>
-              <div class="step-content-placeholder-arr">
-                <h4>4.项目执行</h4>
-                <p>入、离、调、转等日常人事顶目管理工资表核对及发放费用支付</p>
-              </div>
+          </div>
+          <!-- // 第三个步骤 -->
+            <div class="box_three animate__animated" ref="boxThirdly">
+            <!-- // 两个定位��子 -->
+            <div class="postion_box">
+              <div class="top_box"></div>
+              <h3>3.劳动合同签署</h3>
+              <p>10日内新合同签署，相关保险增员、入职 及人事考勤系统培训</p>
             </div>
-            <!-- 第五个步骤 -->
-            <div
-              class="step animate__animated"
-              ref="boxFifth"
-              style="--step-index: 5;opacity: 0;"
-            >
-              <div class="step-line-arr" style="--line-direction: right"></div>
-              <div class="step-content-placeholder">
-                <h4>5. 监督、复盘、迭代</h4>
-                <p>月度服务情况跟踪、留存数据盘点、策略调整等</p>
-              </div>
+          </div>
+          <!-- // 第四个步骤 -->
+            <div class="box_four animate__animated" ref="boxFourthly">
+            <!-- // 两个定位��子 -->
+            <div class="postion_box">
+              <div class="top_box"></div>
+              <h3>4. 项目执行</h3>
+              <p>
+                入、离、调、转等日常人事顶目管理工资表核对及发放费用支付
+              </p>
+            </div>
+          </div>
+          <!-- // 第五个步骤 -->
+            <div class="box_five animate__animated" ref="boxFifth">
+            <!-- // 两个定位��子 -->
+            <div class="postion_box">
+              <div class="top_box"></div>
+              <h3>5. 监督、复盘、迭代</h3>
+              <p>
+                月度服务情况跟踪、留存数据盘点、策略调正等
+              </p>
             </div>
           </div>
 
-          <!-- 卡片内容区域（这里仅为示意，实际中可能需要更复杂的布局） -->
-          <div class="card-contents">
-            <!-- 你可以在这里放置实际的卡片内容 -->
-            <!-- 例如，为每个步骤的卡片内容创建一个Vue组件或插槽 -->
-          </div>
         </div>
       </div>
     </div>
@@ -171,7 +149,7 @@ const observer = new IntersectionObserver(
         // 在这里执行你的操作
         //第一个区域
         boxFirst.value.classList.add("animate__backInRight");
-        boxFirst.value.style.opacity="1"
+        boxFirst.value.style.opacity = "1";
       }
     });
   },
@@ -188,7 +166,7 @@ const observerSec = new IntersectionObserver(
       if (entry.isIntersecting) {
         console.log("元素已进入可视区域");
         boxSecond.value.classList.add("animate__backInLeft");
-        boxSecond.value.style.opacity="1"
+        boxSecond.value.style.opacity = "1";
       }
     });
   },
@@ -205,7 +183,7 @@ const observerThree = new IntersectionObserver(
       if (entry.isIntersecting) {
         console.log("元素已进入可视区域");
         boxThirdly.value.classList.add("animate__backInRight");
-        boxThirdly.value.style.opacity="1"
+        boxThirdly.value.style.opacity = "1";
       }
     });
   },
@@ -222,7 +200,7 @@ const observerFourthly = new IntersectionObserver(
       if (entry.isIntersecting) {
         console.log("元素已进入可视区域");
         boxFourthly.value.classList.add("animate__backInLeft");
-        boxFourthly.value.style.opacity="1"
+        boxFourthly.value.style.opacity = "1";
       }
     });
   },
@@ -239,7 +217,7 @@ const observerFifth = new IntersectionObserver(
       if (entry.isIntersecting) {
         console.log("元素已进入可视区域");
         boxFifth.value.classList.add("animate__backInRight");
-        boxFifth.value.style.opacity="1"
+        boxFifth.value.style.opacity = "1";
       }
     });
   },
@@ -288,15 +266,15 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-
 .main {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
+  background: linear-gradient(to right,rgb(255, 255, 255),#ffffff,#b9d8e3,#ffffff,rgb(255, 255, 255));
   .content {
-    background-color: red;
+    background-color: #ededed;
     width: 100%;
     height: 20rem;
     margin: 0 auto;
@@ -315,99 +293,199 @@ onUnmounted(() => {
     justify-content: space-between;
   }
   .service {
-    width: 80%;
+    width: 100%;
     margin: 2rem auto;
     text-align: center;
     h1 {
       font-size: 2rem;
-      color: red;
+      color: rgb(0, 0, 0);
+    }
+    .content_box {
+      width: 100%;
+      height: 160rem;
+      // margin: 0 auto;
+      background: linear-gradient(to right,rgb(255, 255, 255),#ffffff,#b9d8e3,#ffffff,rgb(255, 255, 255));
+      .line_box {
+        width: 45rem;
+        height: 160rem;
+        margin: 0 auto;
+        background-image: url("../../../assets/外包轴线.png");
+        background-size: 100% 100%;
+        position: relative;
+        @mixin allClass() {
+          width: 22rem;
+          height: 12rem;
+          position: absolute;
+          border: 2px solid #000;
+          z-index: 66;
+        }
+        //第一个步骤
+        .box_first {
+          @include allClass;
+          opacity: 0;
+          top: 10.4rem;
+          left:48.6rem;
+          background-color: #ffffff;
+          position: relative;
+          .postion_box {
+            @include allClass;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            background-color: #e3e9ec;
+            .top_box {
+              width: 4rem;
+              height: 0.5rem;
+              background-color: #606060;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            h3 {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+            }
+            p {
+              width: 70%;
+              margin: 0 auto;
+              color: #777b7d;
+            }
+          }
+        }
+        //第二个步骤
+        .box_two {
+          @include allClass;
+          opacity: 0;
+          top: 28rem;
+          right: 26rem;
+          background-color: #ffffff;
+          position: relative;
+          .postion_box {
+            @include allClass;
+            background-color: #e3e9ec;
+            right: 0.5rem;
+            bottom: 0.5rem;
+            .top_box {
+              width: 4rem;
+              height: 0.5rem;
+              background-color: #606060;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            h3 {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+            }
+            p {
+              width: 70%;
+              margin: 0 auto;
+              color: #777b7d;
+            }
+          }
+        }
+        //第三个步骤
+        .box_three {
+          @include allClass;
+          opacity: 0;
+          top: 47.5rem;
+          left:48.6rem;
+          background-color: #ffffff;
+          position: relative;
+          .postion_box {
+            @include allClass;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            background-color: #e3e9ec;
+            .top_box {
+              width: 4rem;
+              height: 0.5rem;
+              background-color: #606060;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            h3 {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+            }
+            p {
+              width: 70%;
+              margin: 0 auto;
+              color: #777b7d;
+            }
+          }
+        }
+        //第四个步骤
+        .box_four {
+          @include allClass;
+          opacity: 0;
+          top: 64.2rem;
+          right: 26rem;
+          background-color: #ffffff;
+          position: relative;
+          .postion_box {
+            @include allClass;
+            background-color: #e3e9ec;
+            right: 0.5rem;
+            bottom: 0.5rem;
+            .top_box {
+              width: 4rem;
+              height: 0.5rem;
+              background-color: #606060;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            h3 {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+            }
+            p {
+              width: 70%;
+              margin: 0 auto;
+              color: #777b7d;
+            }
+          }
+        }
+        //第五个步骤
+        .box_five {
+          @include allClass;
+          opacity: 0;
+          top: 83.6rem;
+          left:48.6rem;
+          background-color: #ffffff;
+          position: relative;
+          .postion_box {
+            @include allClass;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            background-color: #e3e9ec;
+            .top_box {
+              width: 4rem;
+              height: 0.5rem;
+              background-color: #606060;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            h3 {
+              padding-top: 1rem;
+              font-size: 1.4rem;
+            }
+            p {
+              width: 70%;
+              margin: 0 auto;
+              color: #777b7d;
+            }
+          }
+        }
+      }
     }
   }
-}
-
-.process-flow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.steps-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 100%;
-}
-
-.step {
-  position: relative;
-  width: 50%;
-  text-align: center;
-  opacity: 0;
-}
-
-.step:nth-child(odd) {
-  align-self: self-end;
-}
-
-.step:nth-child(even) {
-  align-self: auto;
-}
-.step-line-arr {
-  position: absolute;
-  width: 5%;
-  height: 2px;
-  background-color: black;
-  top: 58%;
-  right: 50%;
-  transform: translateY(-50%);
-  right: 95%;
-}
-// .step-number {
-//   font-size: 24px;
-//   font-weight: bold;
-//   margin-bottom: 20px;
-// }
-
-.step-line {
-  position: absolute;
-  width: 5%;
-  height: 2px;
-  background-color: black;
-  top: 58%;
-  right: 50%;
-  transform: translateY(-50%);
-}
-
-.step-line[--line-direction="right"] {
-  right: 0;
-}
-
-.step-line[--line-direction="left"] {
-  left: 0;
-}
-
-.step-content-placeholder {
-  /* 这里仅作为占位符，实际中应替换为卡片组件或内容 */
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-top: 20px;
-  width: 15rem; /* 根据需要调整 */
-  margin-left: 5%;
-}
-.step-content-placeholder-arr {
-  /* 这里仅作为占位符，实际中应替换为卡片组件或内容 */
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-top: 20px;
-  width: 15rem; /* 根据需要调整 */
-  margin-left: 8%;
-}
-.card-contents {
-  width: 2px;
-  height: 70rem;
-  background-color: red;
-  position: absolute;
 }
 </style>

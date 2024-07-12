@@ -53,7 +53,7 @@ const goBack = () => {
   margin: 0;
   padding: 0;
   .content {
-    background-color: red;
+    background-color: #ededed;
     width: 100%;
     height: 20rem;
     margin: 0 auto;

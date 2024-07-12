@@ -28,6 +28,7 @@
   border: 1px solid #ccc;
   box-shadow: 0 0 0.05rem 0.01rem #ccc;
   border-radius: 1rem;
+  background-color: #ededed;
   .img_box{
     float: left;
     width: 40%;

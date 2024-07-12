@@ -151,16 +151,17 @@ const goFourRoute = () => {
     top: calc(100% + 0.5rem);
     left: 0;
     opacity: 0.98;
-    background-color: #77b3f8;
+    background-color: #cbcbcb;
     z-index: 66;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.3rem;
     .content_box_four {
       position: absolute;
       width: 25%;
       height: 12rem;
-      background-color: #77b3f8;
+      background-color: #cbcbcb;
       z-index: 66;
       right: 0;
       top: 5rem;
@@ -204,7 +205,7 @@ const goFourRoute = () => {
         cursor: pointer;
         box-sizing: border-box;
         // border-bottom: .4rem solid #f3fafe;
-        background-color: #51a1fc;
+        background-color: #a2a2a2;
       }
     }
     
@@ -230,8 +231,8 @@ const goFourRoute = () => {
       height: 100%;
       img {
         display: inline-block;
-        width: 100%;
-        height: calc(100% + 2rem);
+        width: 8.6rem;
+        height: 8.2rem;
         overflow: hidden;
       }
     }

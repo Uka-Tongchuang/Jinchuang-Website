@@ -54,7 +54,7 @@ const goBack = () => {
   margin: 0;
   padding: 0;
   .content {
-    background-color: red;
+    background-color: #ededed;
     width: 100%;
     height: 20rem;
     margin: 0 auto;
@@ -108,6 +108,7 @@ const goBack = () => {
           padding: 2rem;
           box-shadow: 0 0 0.4rem 0.2rem #ccc;
           border-radius: 1rem;
+          font-size: 1rem;
         }
       }
     }
