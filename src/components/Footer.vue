@@ -1,6 +1,5 @@
 <template>
-  <div class="footer_box">
-    <div class="customer_box">这里是客服模块</div>
+  <div class="footer_box"> 
     <!-- //底部信息 -->
     <div class="bottom_content_box">
       <div class="join_company">
@@ -9,7 +8,7 @@
           <h4>欢迎你的加入</h4>
         </div>
         <div class="join_company_button">
-          <el-button type="primary">立即加入</el-button>
+          <button>立即加入</button>
         </div>
       </div>
       <!-- //公司业务模块范围 -->
@@ -18,17 +17,17 @@
         <div class="list_box">
           <div class="list_box_left">
               <div class="logo">
-                <img src="../assets/logo.png" alt="">
+                <img src="../assets/logo-footer1.png" alt="">
               </div>
               <div class="logo_arr">
-                <div class="logo_left">
-                  <img src="../assets/th.jpg" alt="">
+                <div class="logo_left" > 
+                  <img src="../assets/信息.png" alt=""> 
                 </div>
                 <p>邮箱地址</p>
               </div>
               <div class="logo_arr">
                 <div class="logo_left">
-                  <img src="../assets/th.jpg" alt="">
+                  <img src="../assets/邮箱.png" alt="">
                 </div>
                 <p>公司地址</p>
               </div>
@@ -113,6 +112,17 @@
             </div>
          
           </div>
+          <div class="list_box_right">
+              <div class="logo-top">
+                <img src="../assets/th.jpg" alt="">
+              </div>
+              <p>关注微信公众号了解更多</p>
+              <div class="logo-arr">
+                <img src="../assets/微信.png" alt="">
+                <img src="../assets/QQ.png" alt="">
+                <img src="../assets/邮箱.png" alt="">
+              </div>
+          </div>
         </div> 
       </div>
       <!-- 公司信息 -->
@@ -164,6 +174,9 @@ const goNewsRoute = () => {
 </script>
 
 <style scoped lang="scss">
+.title_li{
+  font-size: 1.1rem;
+}
 ul li {
   list-style: none;
 }
@@ -172,53 +185,60 @@ ul li {
   height: 100%;
   margin: 0 auto;
   // 公司客服
-  .customer_box {
-    width: 100%;
-    height: 11rem;
-    background-image: url("../assets/swpOne.jpg");
-    background-size: 100% 100%;
-  }
+  // .customer_box {
+  //   width: 100%;
+  //   height: 11rem;
+  //   background-image: url("../assets/swpOne.jpg");
+  //   background-size: 100% 100%;
+  // }
   //业务范围
   .bottom_content_box {
     width: 100%;
-    height: 30rem;
-    // background-color: black;
+    height: 36rem;
+    background-color: black;
     // 加入公司
     .join_company{
       width: 70%;
-      height: 6rem;
+      height: 8rem;
       display: flex;
       margin: 0 auto; 
       justify-content: space-between; 
       .join_company_box{ 
         height:100%;
-        h2{
-          color: black; 
+        h4{
+          font-size: 1.3rem;
+          color: white; 
         }
       }
       .join_company_button{
+        width: 7rem;
+        height: 6rem;
         line-height: 6rem;
+        button{
+          width: 7rem;
+          height: 4rem;
+          background-color: #b4b4b4;
+          color: white;
+        }
       }
     }
     //公司模块
     .content_box {
       width: 80%;
-      height: 19rem;
+      height: 23rem;
       margin: 0 auto;
       //业务列表
       .list_box {
         width: 100%;
         height: 19rem;
+        padding: 2rem 0;
         display: flex;
-        justify-content: space-around; 
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        .list_box_left{
-          width: 20%;
-          height: 100%;
-          margin: 0 auto;
+        justify-content: space-evenly; 
+        border-bottom: 1px solid #aaabab;
+        border-top: 1px solid #aaabab; 
+        .list_box_left{ 
           .logo{
-            width: 5rem;
+            width: 17rem;
             height: 5rem; 
             img{
               display: inline-block; 
@@ -232,27 +252,66 @@ ul li {
             display: flex;
             justify-content: space-between;
             .logo_left{
-              width: 4rem;
-              height: 4rem;
+              width: 2rem;
+              height: 2rem;
+              line-height: 5rem;
               img{
                 width: 100%;
                 height: 100%;
               }
             }
+            p{
+              color: #ccc;
+            }
           }
         }
         .concent_business {
           padding: 0 2rem;
-          width: 60%;
+          width: 40%;
           display: flex;
           justify-content: space-between; 
+          color: white; 
+          .server_list{
+            width: 10rem;
+            height: 20rem; 
+            ul{
+              height: 50%;
+            }
+          }
           .dataListItems {
+            a{
+              color: #ccc !important;
+            }
             line-height: 2rem;
             p {
               line-height: 1rem;
               a {
-                color: #ccc !important;
+                color: #ccc !important; 
               }
+            }
+          }
+        }
+        .list_box_right{
+          width: 10%;
+          .logo-top{
+            width: 9rem;
+            height: 9rem;
+            margin-left: 0.5rem;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          p{
+            color: #ccc;
+          }
+          .logo-arr{
+            width: 10rem;
+            display: flex;
+            justify-content: space-between;
+            img{
+              width: 20%;
+              
             }
           }
         }
@@ -297,9 +356,7 @@ ul li {
           line-height: 3rem; 
           .company{ 
             margin-left: 1rem;
-          }
-          .tiem{ 
-          }
+          } 
         }
       }
     }

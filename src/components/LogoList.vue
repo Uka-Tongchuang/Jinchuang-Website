@@ -1,24 +1,34 @@
 <template>
     <div class="merchant">
         合作商家
-    </div>
-    <div class="logo-carousel">  
-    <div class="carousel-wrapper">  
-      <div class="carousel-items">  
+    </div>   
+      <!-- <div class="carousel-items">  
         <div class="logo-item" v-for="(logo, index) in state.arr" :key="index">  
           <div class="logo-image">
             <img :src="logo.idVieo" alt="Logo">  
           </div>
         </div>  
-        <!-- 复制前10个logo以实现无缝循环 -->  
+        <! 复制前10个logo以实现无缝循环 -->  
         <!-- <div class="logo-item" v-for="(logo, index) in state.arr.slice(0, 10)" :key="state.arr.length + index">  
           <div class="logo-image">
             <img :src="logo.idVieo" alt="Logo">  
           </div>
-        </div>   -->
-      </div>  
-    </div>  
-  </div> 
+        </div>   >
+      </div>   -->
+
+       <!-- <el-carousel :interval="4000" type="card" height="200px">
+          <el-carousel-item v-for="logo in state.arr" :key="logo.id">
+             <img :src="logo.idVieo" alt="Logo">  
+          </el-carousel-item>
+        </el-carousel>
+    </div>  -->
+      <div>
+        <el-carousel :interval="4000" type="card" height="200px" autoplay>
+          <el-carousel-item v-for="item in state.arr" :key="item">
+           <img :src="item.idVieo" alt="Logo">  
+          </el-carousel-item>
+        </el-carousel>
+      </div> 
 </template>
 
 <script setup lang="ts">
@@ -128,6 +138,22 @@ const state = reactive({
 </script>
 
 <style lang="scss" scoped>
+
+.el-carousel__item h3 {
+  color: #475669;
+  opacity: 0.75;
+  line-height: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+}
 .merchant{
     font-size: 4rem;
     color: red; 

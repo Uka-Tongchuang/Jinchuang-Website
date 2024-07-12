@@ -19,13 +19,13 @@
     <div class="main_merchant">
       <ProductsCom />
     </div>
-            <!-- 第四块区域——————合作商家 -->
+    <!-- 第四块区域——————公司成就 -->
+    <div class="company-achievement"> 
+      <CompanyAchievement/>
+    </div>
+      <!-- 第五块区域——————合作商家 -->
      <div class="business-partner">
        <LogoList/>
-     </div>
-         <!-- 第五块区域——————公司成就 -->
-     <div class="company-achievement"> 
-        <CompanyAchievement/>
      </div>
     
   </div>
@@ -106,7 +106,7 @@ const arr = reactive({
 // 第四个区域
 .business-partner{
  width: calc(80% - 4rem);
- height: 20rem; 
+ height:30rem; 
  margin: 0 auto;
  padding: 4rem;
 }

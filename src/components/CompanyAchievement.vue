@@ -15,6 +15,7 @@
                     <p class="plus-sign">+</p>
                 </template>
             </el-statistic>
+            <p class="border-solid"></p>
             <p class="introduce">省内外企事业单位</p>
         </div>
         <div>
@@ -23,6 +24,7 @@
                     <p class="plus-sign">+</p>
                 </template>
             </el-statistic>
+             <p class="border-solid"></p>
             <p class="introduce">各类中小微企业</p>
         </div>
         <div>
@@ -34,6 +36,7 @@
                     </div>
                 </template>
             </el-statistic>
+             <p class="border-solid"></p>
             <p class="introduce" style="line-height: 5rem;">行业涉岗对口人群</p>
         </div>
     </div> 
@@ -165,11 +168,16 @@ const outputValue3 = useTransition(source3, {
                 font-weight: 700;
                 font-size: 2rem;
             } 
+            .border-solid{ 
+              margin-left: 3rem;
+              width: 5rem;
+                border: 4px solid #9ae5e5;
+            }
             .introduce{
                 color: rgba(50, 50, 50, 0.7);
                 letter-spacing: 5px;
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
         }
 
