@@ -148,10 +148,10 @@ const goFourRoute = () => {
     width: 100%;
     height: 5rem;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     left: 0;
     opacity: 0.98;
-    background-color: #79cbff;
+    background-color: #77b3f8;
     z-index: 66;
     display: flex;
     justify-content: space-around;
@@ -160,12 +160,13 @@ const goFourRoute = () => {
       position: absolute;
       width: 25%;
       height: 12rem;
-      background-color: #79cbff;
+      background-color: #77b3f8;
       z-index: 66;
       right: 0;
       top: 5rem;
       display: flex;
       flex-direction: column;
+      border-top: 1px solid #ccc;
       align-items: center;
       .show_div_list {
         width: 100%;
@@ -196,12 +197,14 @@ const goFourRoute = () => {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        color: #000000;
       }
       span:hover {
-        color: #000000 !important;
+        color: #ffffff !important;
         cursor: pointer;
-        background-color: #fff;
+        box-sizing: border-box;
+        // border-bottom: .4rem solid #f3fafe;
+        background-color: #51a1fc;
       }
     }
     

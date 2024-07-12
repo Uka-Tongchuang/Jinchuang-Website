@@ -10,11 +10,7 @@ function setRem () {
     // console.log(width,"width");
     let scale = document.documentElement.clientWidth /width;
     //设置页面根节点字体大小（“Math.min(scale, 2)” 指最高放大比例为2，可根据实际业务需求调整）
-    document.documentElement.style.fontSize = baseSize * Math.min(scale, 2
-        
-    ) + 'px'
-
-    
+    document.documentElement.style.fontSize = baseSize * Math.min(scale, 2) + 'px' 
 }
 setRem(); //初始化
  

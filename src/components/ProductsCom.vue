@@ -112,6 +112,7 @@ window.location.href="/home/index/flexible/fouremployment"
       box-shadow: 0 0 0.12rem 0.12rem #ccc;
       transition: 0.2s;
     }
+   
     .show_box{
         .showImg{
             width: 100%;
@@ -128,15 +129,20 @@ window.location.href="/home/index/flexible/fouremployment"
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
         div{
             width: 70%;
-            height: 1.5rem;
+            height: 2rem;
             text-align: center;
-            line-height: 1.5rem;
+            line-height: 2rem;
             // box-sizing: border-box;
-            border: 4px solid #1b1a1a;
+            // border: 4px solid #1b1a1a;
+            background-color: #5f5e5e;
+            color: #ffffff;
             margin: 2.5rem 0;
             cursor: pointer;
+            border-radius: 2rem;
         }
        
     }
