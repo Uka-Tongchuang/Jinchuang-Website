@@ -22,34 +22,39 @@
           </el-carousel-item>
         </el-carousel>
     </div>  -->
-      <div>
-        <el-carousel :interval="4000" type="card" height="200px" autoplay>
-          <el-carousel-item v-for="item in state.arr" :key="item">
-           <img :src="item.idVieo" alt="Logo">  
-          </el-carousel-item>
-        </el-carousel>
+      <div class="card-list">
+          <el-carousel :interval="1000" arrow="always" indicator-position="none" type="card" style="width: 100%; height: 100%;position: relative;">
+            <el-carousel-item v-for="item in state.arr" :key="item.id">
+              <div class="fake-card">
+               <img :src="item.idVieo" alt="Logo"> 
+              </div>
+            </el-carousel-item>
+          </el-carousel>
       </div> 
 </template>
 
 <script setup lang="ts">
 import swpOne from "../assets/th.jpg";
-import ajisen from "../assets/ajisen-ramen.jpg"; //味千拉面
-import alibaba from "../assets/Alibaba.png"; //阿里
-import ane from "../assets/ane.jpg"; //安能
+import ajisen from "../assets/拉面.png"; //味千拉面
+import alibaba from "../assets/阿里巴巴.png"; //阿里
+import ane from "../assets/安能.png"; //安能
 import boss from "../assets/boss.png"; //boss
-import corporation from "../assets/corporation.jpg"; //中储粮
-import cotti from "../assets/cotti.png"; //库迪咖啡
-import dingtalk from "../assets/DingTalk.png"; //钉钉
-import ems from "../assets/ems.png"; //邮政
-import favicon from "../assets/favicon.png"; //抖音
-import luckin from "../assets/luckin.png"; // 瑞幸
-import meitaun from "../assets/meituan.png";  //美团
-import miduoduo from "../assets/miduoduo.png"; //米多多
-import quick from "../assets/quick.webp"; //快手
-import sfexpress from "../assets/S.F. Express.png"; //顺丰
-import simple from "../assets/simple.jpg"; //朴朴
-import tasting from "../assets/tasting.jpg"; //点米
-import taobao from "../assets/taobao.png"; //淘宝
+import huoguo from "../assets/1718.png"
+import corporation from "../assets/中储粮.png"; //中储粮
+import cotti from "../assets/咖啡.png"; //库迪咖啡
+import dingtalk from "../assets/钉钉.png"; //钉钉
+import ems from "../assets/邮政.png"; //邮政
+import EMS from "../assets/EMS.png"; //邮政
+import favicon from "../assets/抖音.png"; //抖音
+import luckin from "../assets/瑞幸.png"; // 瑞幸
+import meitaun from "../assets/美团.png";  //美团
+import miduoduo from "../assets/米多多.png"; //米多多
+import quick from "../assets/快手.png"; //快手
+import sfexpress from "../assets/顺丰.png"; //顺丰
+import simple from "../assets/朴朴.png"; //朴朴
+import tasting from "../assets/点米科技.png"; //点米
+import taobao from "../assets/淘宝.png"; //淘宝
+import changzuimao from "../assets/微信图片_20240711181538.png"; //淘宝
 import { reactive } from "vue";
 const state = reactive({
   arr: [
@@ -71,7 +76,7 @@ const state = reactive({
     },
     {
       id: 5,
-      idVieo: cotti,
+      idVieo: huoguo,
     },
     {
       id: 6,
@@ -99,7 +104,7 @@ const state = reactive({
     },
     {
       id: 12,
-      idVieo: ems,
+      idVieo: EMS,
     },
     {
       id: 13,
@@ -127,7 +132,7 @@ const state = reactive({
     },
     {
       id: 19,
-      idVieo: swpOne,
+      idVieo: changzuimao,
     },
     {
       id: 20,
@@ -138,7 +143,38 @@ const state = reactive({
 </script>
 
 <style lang="scss" scoped>
+.card-list{
+  margin-top: 2rem;
+}
+.fake-card {
+  position: absolute; 
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  width: 50%; 
+  height: 10rem;
+  box-sizing: border-box;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
 
+.card-content {
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .img-box{
+    width: 10rem;
+    height: 5rem;
+  }
 .el-carousel__item h3 {
   color: #475669;
   opacity: 0.75;
@@ -155,8 +191,8 @@ const state = reactive({
   background-color: #d3dce6;
 }
 .merchant{
-    font-size: 4rem;
-    color: red; 
+    font-size: 4rem; 
+    font-weight: 700;
     text-align: center;
 }
 

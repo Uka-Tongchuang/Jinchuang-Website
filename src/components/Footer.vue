@@ -213,12 +213,15 @@ ul li {
       .join_company_button{
         width: 7rem;
         height: 6rem;
-        line-height: 6rem;
+        line-height: 8rem;
         button{
           width: 7rem;
           height: 4rem;
           background-color: #b4b4b4;
           color: white;
+        }
+       button:hover{
+          cursor: pointer;
         }
       }
     }
