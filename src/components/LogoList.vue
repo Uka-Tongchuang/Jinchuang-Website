@@ -143,6 +143,21 @@ const state = reactive({
 </script>
 
 <style lang="scss" scoped>
+::v-deep(.el-carousel__arrow--right){
+  display: none !important;
+}
+::v-deep(.el-carousel__arrow--left){
+  display: none !important;
+}
+.el-carousel__item[data-v-6d0c6613]:nth-child(2n+1){
+  background-color: white;
+} 
+.el-carousel__item[data-v-6d0c6613]:nth-child(2n){
+  background-color: white;
+} 
+.el-carousel__item--card{
+  width: 20%;
+}
 .card-list{
   margin-top: 2rem;
 }
@@ -154,7 +169,7 @@ const state = reactive({
   bottom: 0;
   margin: auto;
   display: inline-block;
-  width: 50%; 
+  width: 75%; 
   height: 10rem;
   box-sizing: border-box;
   img{
