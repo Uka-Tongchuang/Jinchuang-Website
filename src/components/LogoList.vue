@@ -2,35 +2,38 @@
     <div class="merchant">
         合作商家
     </div>   
-      <!-- <div class="carousel-items">  
-        <div class="logo-item" v-for="(logo, index) in state.arr" :key="index">  
-          <div class="logo-image">
-            <img :src="logo.idVieo" alt="Logo">  
-          </div>
-        </div>  
-        <! 复制前10个logo以实现无缝循环 -->  
-        <!-- <div class="logo-item" v-for="(logo, index) in state.arr.slice(0, 10)" :key="state.arr.length + index">  
-          <div class="logo-image">
-            <img :src="logo.idVieo" alt="Logo">  
-          </div>
-        </div>   >
-      </div>   -->
-
-       <!-- <el-carousel :interval="4000" type="card" height="200px">
-          <el-carousel-item v-for="logo in state.arr" :key="logo.id">
-             <img :src="logo.idVieo" alt="Logo">  
-          </el-carousel-item>
-        </el-carousel>
-    </div>  -->
-      <div class="card-list">
-          <el-carousel :interval="1000" arrow="always" indicator-position="none" type="card" style="width: 100%; height: 100%;position: relative;">
+      <!-- <div class="card-list">
+          <el-carousel :interval="1000" arrow="always"  type="card" style="width: 100%; height: 100%;position: relative;">
             <el-carousel-item v-for="item in state.arr" :key="item.id">
               <div class="fake-card">
                <img :src="item.idVieo" alt="Logo"> 
               </div>
             </el-carousel-item>
           </el-carousel>
-      </div> 
+      </div>  -->
+      <el-carousel :interval="1000" arrow="always" style="margin-top: 3rem">
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card v-for="it in state.arr1" :key="it.id" > 
+              <img :src="it.idVieo" alt="图片描述" style="width: 70%;">
+            </el-card>
+          </el-carousel-item>
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card v-for="it in state.arr2" :key="it.id" > 
+              <img :src="it.idVieo" alt="图片描述" style="width: 70%;">
+            </el-card>
+          </el-carousel-item>
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card v-for="it in state.arr3" :key="it.id" > 
+              <img :src="it.idVieo" alt="图片描述" style="width: 70%;">
+            </el-card>
+          </el-carousel-item>
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card v-for="it in state.arr4" :key="it.id" > 
+              <img :src="it.idVieo" alt="图片描述" style="width: 70%;">
+            </el-card>
+          </el-carousel-item>
+        </el-carousel>
+
 </template>
 
 <script setup lang="ts">
@@ -139,10 +142,111 @@ const state = reactive({
       idVieo: quick,
     },
   ],
+    arr1:[
+     {
+      id: 1,
+      idVieo: favicon,
+    },
+    {
+      id: 2,
+      idVieo: luckin,
+    },
+    {
+      id: 3,
+      idVieo: ajisen,
+    },
+    {
+      id: 4,
+      idVieo: cotti,
+    },
+    {
+      id: 5,
+      idVieo: huoguo,
+    },
+    ],
+    arr2:[
+ {
+      id: 6,
+      idVieo: corporation,
+    },
+    {
+      id: 7,
+      idVieo: sfexpress,
+    },
+    {
+      id: 8,
+      idVieo: simple,
+    },
+    {
+      id: 9,
+      idVieo: meitaun,
+    },
+    {
+      id: 10,
+      idVieo: boss,
+    },
+    ],
+    arr3:[
+       {
+      id: 11,
+      idVieo: tasting,
+    },
+    {
+      id: 12,
+      idVieo: EMS,
+    },
+    {
+      id: 13,
+      idVieo: ane,
+    },
+    {
+      id: 14,
+      idVieo: dingtalk,
+    },
+    {
+      id: 15,
+      idVieo: alibaba,
+    },
+    ],
+    arr4:[
+       {
+      id: 15,
+      idVieo: alibaba,
+    },
+    {
+      id: 16,
+      idVieo: taobao,
+    },
+    {
+      id: 17,
+      idVieo: ems,
+    },
+    {
+      id: 18,
+      idVieo: miduoduo,
+    },
+    {
+      id: 19,
+      idVieo: changzuimao,
+    },
+    {
+      id: 20,
+      idVieo: quick,
+    },
+    ]
 });
 </script>
 
 <style lang="scss" scoped>
+.el-card.is-always-shadow{
+  box-shadow: none ;
+}
+.el-card{
+  border: none;
+}
+.el-carousel__item--card, .el-carousel__item.is-animating{
+  display: flex;
+}
 ::v-deep(.el-carousel__arrow--right){
   display: none !important;
 }

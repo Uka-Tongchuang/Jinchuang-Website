@@ -106,7 +106,7 @@ const arr = reactive({
 // 第四个区域
 .business-partner{
  width: calc(80% - 4rem);
- height:30rem; 
+ height:20rem; 
  margin: 0 auto;
  padding: 4rem;
 }
