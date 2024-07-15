@@ -75,7 +75,7 @@ onBeforeRouteUpdate((to, from) => {
 }
 .el-footer {  
   width: 100%;
-  height: 30rem;
+  height: 40rem;
  
 } 
 </style>

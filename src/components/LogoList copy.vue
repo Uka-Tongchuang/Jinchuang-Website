@@ -1,13 +1,15 @@
 <template>
   <div class="content">
-    <div class="merchant">合作商家</div>
+    <div class="merchant">
+        合作商家
+    </div> 
     <div class="slider">
-      <div class="slide-track">
+    <div class="slide-track">
         <div class="slide" v-for="item in state.arr" :key="item.id">
           <img :src="item.idVieo" height="100" width="250" alt="" />
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 </template>
 
@@ -17,7 +19,7 @@ import ajisen from "../assets/拉面.png"; //味千拉面
 import alibaba from "../assets/阿里巴巴.png"; //阿里
 import ane from "../assets/安能.png"; //安能
 import boss from "../assets/boss.png"; //boss
-import huoguo from "../assets/1718.png";
+import huoguo from "../assets/1718.png"
 import corporation from "../assets/中储粮.png"; //中储粮
 import cotti from "../assets/咖啡.png"; //库迪咖啡
 import dingtalk from "../assets/钉钉.png"; //钉钉
@@ -25,7 +27,7 @@ import ems from "../assets/邮政.png"; //邮政
 import EMS from "../assets/ems.png"; //邮政
 import favicon from "../assets/抖音.png"; //抖音
 import luckin from "../assets/瑞幸.png"; // 瑞幸
-import meitaun from "../assets/美团.png"; //美团
+import meitaun from "../assets/美团.png";  //美团
 import miduoduo from "../assets/米多多.png"; //米多多
 import quick from "../assets/快手.png"; //快手
 import sfexpress from "../assets/顺丰.png"; //顺丰
@@ -117,8 +119,8 @@ const state = reactive({
       idVieo: quick,
     },
   ],
-  arr1: [
-    {
+    arr1:[
+     {
       id: 1,
       idVieo: favicon,
     },
@@ -138,9 +140,9 @@ const state = reactive({
       id: 5,
       idVieo: huoguo,
     },
-  ],
-  arr2: [
-    {
+    ],
+    arr2:[
+ {
       id: 6,
       idVieo: corporation,
     },
@@ -160,9 +162,9 @@ const state = reactive({
       id: 10,
       idVieo: boss,
     },
-  ],
-  arr3: [
-    {
+    ],
+    arr3:[
+       {
       id: 11,
       idVieo: tasting,
     },
@@ -182,9 +184,9 @@ const state = reactive({
       id: 15,
       idVieo: alibaba,
     },
-  ],
-  arr4: [
-    {
+    ],
+    arr4:[
+       {
       id: 15,
       idVieo: alibaba,
     },
@@ -208,21 +210,21 @@ const state = reactive({
       id: 20,
       idVieo: quick,
     },
-  ],
+    ]
 });
 </script>
 
 <style lang="scss" scoped>
-.content {
+.content{
   width: 80%;
   margin: 0 auto;
 }
-.merchant {
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
+.merchant{
+    font-size: 4rem; 
+    font-weight: 700;
+    text-align: center;
 }
-@-webkit-keyframes scroll {
+ @-webkit-keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -240,13 +242,14 @@ const state = reactive({
   }
 }
 .slider {
+
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
-  margin: 2rem auto;
+  margin:2rem auto;
   overflow: hidden;
-  position: relative;
-}
+  position: relative; 
+} 
 .slider::after {
   right: 0;
   top: 0;
@@ -258,7 +261,7 @@ const state = reactive({
 }
 .slider .slide-track {
   -webkit-animation: scroll 40s linear infinite;
-  animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }

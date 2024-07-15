@@ -194,7 +194,7 @@ ul li {
   //业务范围
   .bottom_content_box {
     width: 100%;
-    height: 36rem;
+    height: 40rem;
     background-color: black;
     // 加入公司
     .join_company{
@@ -228,12 +228,12 @@ ul li {
     //公司模块
     .content_box {
       width: 80%;
-      height: 23rem;
+      height: 27rem;
       margin: 0 auto;
       //业务列表
       .list_box {
         width: 100%;
-        height: 19rem;
+        height: 23rem;
         padding: 2rem 0;
         display: flex;
         justify-content: space-evenly; 
