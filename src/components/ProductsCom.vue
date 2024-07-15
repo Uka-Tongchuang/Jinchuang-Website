@@ -3,42 +3,58 @@
     <!-- 业务，产品服务模块 -->
     <h1>业务系统，产品服务</h1>
     <div class="modules_box">
-      <div class="animate__animated" @click="goOutsourcing">
-        <img src="../assets/th.jpg" alt="" />
-        <span>外包类服务</span>
-        <p>岗位，业务流程外包<br />人力资源外包</p>
-      </div>
-      <div v-show="false">
-        <img src="../assets/th.jpg" alt="" />
-        <span>劳务派遣服务</span>
-        <p>事务性劳务派遣服务<br />聚焦派遣员工的劳动</p>
-      </div>
-      <div @click="goHosting">
-        <img src="../assets/th.jpg" alt="" />
-        <span>社保托管平台</span>
-        <p>单工伤与商业保险代理<br />一站式人力资源托管</p>
-      </div>
-      <div @click="goRecruitment">
-        <img src="../assets/th.jpg" alt="" />
-        <span>招聘类服务</span>
-        <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
-      </div>
-      <div @click="goOperate" v-show="false">
-        <img src="../assets/th.jpg" alt="" />
-        <span>产业区园区运营</span>
-        <p>主导经营地方产业园区<br />落地服务与税收政策</p>
-      </div>
-
-      <div @mouseenter="enterDiv" @mouseleave="leaveDiv" class="show_box">
-        <div v-if="flagDiv" class="showImg animate__animated animate__fadeIn">
-          <img src="../assets/th.jpg" alt="" />
-          <span>灵活用工服务</span>
-          <p>多元化的灵活用工<br />结算解决方案</p>
+      <!-- //招聘类服务 -->
+      <!-- //上部分 -->
+      <div class="top_box">
+        <div class="modukrs_boxs">
+          <div class="box_tip_icon"></div>
+          <span>人事管理</span>
+          <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
+          <button @click="goPersonnel">了解更多</button>
         </div>
-        <div v-else class="showMou animate__animated animate__flipInY" >
+
+        <div class="modukrs_boxs two">
+          <div class="box_tip_icon"></div>
+          <span>劳务派遣</span>
+          <p>岗位，业务流程外包<br />人力资源外包</p>
+          <button @click="goOutsourcing">了解更多</button>
+        </div>
+
+        <div class="modukrs_boxs three">
+          <div class="box_tip_icon"></div>
+          <span>岗位外包</span>
+          <p>岗位，业务流程外包<br />人力资源外包</p>
+          <button @click="goOutsourcing">了解更多</button>
+        </div>
+      </div>
+      <!-- //下部分 -->
+      <div class="bottom_box four">
+        <div class="modukrs_boxs">
+          <div class="box_tip_icon"></div>
+          <span>业务外包</span>
+          <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
+          <button @click="goRecruitment">了解更多</button>
+        </div>
+
+        <div class="modukrs_boxs five">
+          <div class="box_tip_icon"></div>
+          <span>招聘流程外包</span>
+          <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
+          <button @click="goRecruitment">了解更多</button>
+        </div>
+
+        <div class="modukrs_boxs six">
+          <div v-if="flagDiv" class="showImg animate__animated animate__fadeIn">
+            <div class="box_tip_icon"></div>
+            <span>灵活用解决方案</span>
+            <p>多元化的灵活用工<br />结算解决方案</p>
+            <button @click="enterDiv">了解更多</button>
+          </div>
+          <div v-else class="showMou animate__animated animate__flipInY">
             <div @click="goFourRectuitment">招聘业务</div>
             <div @click="goFourNews">新媒体带货</div>
             <div @click="goFourEmployment">就业街小圆桌</div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,53 +63,58 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import 'animate.css';
+import { useRouter } from "vue-router";
+import "animate.css";
 const flagDiv = ref(true);
-
+const router = useRouter();
 const enterDiv = () => {
   flagDiv.value = false;
 };
 const leaveDiv = () => {
   flagDiv.value = true;
 };
-
+//跳转人事管理
+const goPersonnel = () => {
+  router.push("/home/index/ersonnel");
+};
 //跳转外包
-const goOutsourcing=()=>{
-  window.location.href="/home/index/outsource"
-}
+const goOutsourcing = () => {
+  router.push("/home/index/outsource");
+};
 //跳转托管
-const goHosting=()=>{
-  window.location.href="/home/index/hosting"
-}
+const goHosting = () => {
+  router.push("/home/index/hosting");
+};
 //跳转招聘
-const goRecruitment=()=>{
-  window.location.href="/home/index/recruitment"
-}
+const goRecruitment = () => {
+  router.push("/home/index/recruitment");
+};
 //跳转园区
-const goOperate=()=>{
-  window.location.href="/home/index/operate"
-}
+const goOperate = () => {
+  router.push("/home/index/operate");
+};
 //跳转灵活用工的四级页面
 //招聘业务
-const goFourRectuitment=()=>{
-  window.location.href=" /home/index/flexible/fourectuitments"
-}
+const goFourRectuitment = () => {
+  router.push("/home/index/flexible/fourectuitments");
+};
 //新媒体带货
-const goFourNews=()=>{
-window.location.href="/home/index/flexible/foruenews"
-}
+const goFourNews = () => {
+  router.push("/home/index/flexible/foruenews");
+};
 //就业街小圆桌
-const goFourEmployment=()=>{
-window.location.href="/home/index/flexible/fouremployment"
-}
+const goFourEmployment = () => {
+  router.push("/home/index/flexible/fouremployment");
+};
 </script>
 
 <style scoped lang="scss">
 .prouct_box {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 100rem;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   h1 {
     width: 100%;
     height: 5rem;
@@ -104,77 +125,197 @@ window.location.href="/home/index/flexible/fouremployment"
   }
   .modules_box {
     width: 100%;
-    height: calc(100% - 5rem);
-    // background-color: rgb(59, 110, 155);
-    display: flex;
-    justify-content: space-between;
-    > div:hover {
-      border: 1px solid #dcdcdc;
-      transition: 0.2s;
-      box-shadow: 0.4rem 0.4rem 0.6rem 0.1rem #00000073;
-    }
-   
-    .show_box{
-        .showImg{
-            width: 100%;
-            height: 100%;
-            display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-        }
-    }
-    .showMou{
-        width: 100%;
-            height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid #ededed;
-      background-color: #ededed;
-        border-radius: 1rem;
-        div{
-            width: 70%;
-            height: 3rem;
-            text-align: center;
-            line-height: 3rem;
-            // box-sizing: border-box;
-            // border: 4px solid #1b1a1a;
-            background-color: #5f5e5e;
-            color: #ffffff;
-            margin: 2.2rem 0;
-            cursor: pointer;
-            border-radius: 1rem;
-        }
-       
-    }
-    > div {
-      width: 15%;
-      height: 100%;
-      // background-color: #f00;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      border-radius: .4rem;
-      border: 1px solid #ededed;
-      background-color: #ededed;
-      box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem #0000002b;
-      img {
-        width: 5rem;
-        height: 5rem;
-        position: relative;
-        top: 1rem;
-      }
-      span {
+    height: 90rem;
+    $color: rgb(197, 229, 174);
+      $color2: rgb(130, 196, 179);
+      $color3: rgb(83, 169, 187);
+      $color4:rgb(179, 167, 133);
+      $color5:rgb(57,112,172);
+      $color6:rgb(18,74,126);
+      @mixin spanCss {
+        display: block;
+        width: 10rem;
+        height: 2rem;
+        font-size: 2.2rem;
+        white-space: nowrap;
+        line-height: 2rem;
+        text-overflow: normal;
         font-weight: bold;
-        position: relative;
-        top: 2rem;
+        margin-left: 2rem;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
       }
-      p {
-        position: relative;
-        top: -2rem;
-        text-align: center;
+      @mixin butonCss {
+        width: 18rem;
+        height: 5rem;
+        background-color: #fff;
+        border-radius: 0.6rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+    .top_box {
+      width: 100%;
+      height: 45rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .modukrs_boxs {
+        width: 26rem;
+        height: 30rem;
+        border: 0.2rem solid $color;
+        border-radius: 2rem;
+        box-shadow: 0 0 0.3rem 0.2rem $color;
+        .box_tip_icon {
+          width: 10rem;
+          height: 10rem;
+          background-color: $color;
+          border-radius: 50%;
+          margin: 3rem 0 0 2rem;
+          box-shadow: 0 0 0.3rem 0.24rem  rgb(182, 181, 192);
+        }
+        span {
+          @include spanCss;
+          border-bottom: 0.5rem solid $color;
+        }
+        p {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 1rem;
+        }
+        button {
+          @include butonCss;
+          color: $color;
+          border: 0.15rem solid $color;
+          color: $color;
+        }
+      }
+      .two {
+        border: 0.2rem solid $color2;
+        box-shadow: 0 0 0.3rem 0.2rem $color2;
+        .box_tip_icon {
+          background-color: $color2;
+        }
+        span {
+          @include spanCss;
+          border-bottom: 0.5rem solid $color2;
+        }
+        button {
+          @include butonCss;
+          color: $color2;
+          border: 0.15rem solid $color2;
+        }
+      }
+      .three {
+        border: 0.2rem solid $color3;
+        box-shadow: 0 0 0.3rem 0.2rem $color3;
+        .box_tip_icon {
+          background-color: $color3;
+        }
+        span {
+          @include spanCss;
+          border-bottom: 0.5rem solid $color3;
+        }
+        button {
+          @include butonCss;
+          color: $color3;
+          border: 0.15rem solid $color3;
+        }
+      }
+    }
+    .bottom_box {
+      width: 100%;
+      height: 45rem;
+      display: flex;
+      justify-content: space-between;
+      .modukrs_boxs {
+        width: 26rem;
+        height: 30rem;
+        border: 0.2rem solid $color4;
+        border-radius: 2rem;
+        box-shadow: 0 0 0.3rem 0.2rem $color4;
+        .box_tip_icon {
+          width: 10rem;
+          height: 10rem;
+          background-color: $color4;
+          border-radius: 50%;
+          margin: 3rem 0 0 2rem;
+          box-shadow: 0 0 0.2rem 0.2rem rgb(200, 200, 200);
+        }
+        span {
+          display: block;
+          width: 10rem;
+          height: 2rem;
+          font-size: 2.2rem;
+          white-space: nowrap;
+          line-height: 2rem;
+          text-overflow: normal;
+          font-weight: bold;
+          border-bottom: 0.5rem solid $color4;
+          margin-left: 2rem;
+          padding-left: 1rem;
+          margin-top: 1rem;
+          padding-bottom: 1rem;
+        }
+        p {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 1rem;
+        }
+        button {
+          width: 18rem;
+          height: 5rem;
+          background-color: #fff;
+          color: $color4;
+          border: 0.15rem solid $color4;
+          border-radius: 0.6rem;
+          font-size: 1.8rem;
+          cursor: pointer;
+          margin-left: 4rem;
+          margin-top: 1rem;
+          font-weight: bold;
+        }
+      }
+      
+      .five{
+        border: 0.2rem solid $color5;
+        box-shadow: 0 0 0.3rem 0.2rem $color5;
+        .box_tip_icon {
+          background-color: $color5;
+        }
+        span {
+          @include spanCss;
+          border-bottom: 0.5rem solid $color5;
+        }
+        button {
+          @include butonCss;
+          color: $color5;
+          border: 0.15rem solid $color5;
+        }
+      }
+      .six{
+        border: 0.2rem solid $color6;
+        box-shadow: 0 0 0.3rem 0.2rem $color6;
+        .box_tip_icon {
+          background-color: $color6;
+        }
+        span {
+          @include spanCss;
+          border-bottom: 0.5rem solid $color6;
+        }
+        button {
+          @include butonCss;
+          color: $color6;
+          border: 0.15rem solid $color6;
+        }
       }
     }
   }
