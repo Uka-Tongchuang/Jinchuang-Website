@@ -25,16 +25,20 @@ import newsAut from "../pages/news/index.vue"
 
 // 三级路由
 //产品服务 
+//人事管理
+import Personnel from "../threePage/productsPage/operate/index.vue"
+//劳务派遣
+import Labor from "../threePage/productsPage/Labor/index.vue"
 // 外包模块
 import OutSource from "../threePage/productsPage/outsource/index.vue"
 //托管模块
 import Hosting from "../threePage/productsPage/Hosting/index.vue"
 //招聘模块
 import Recruitment from "../threePage/productsPage/Recruitment/index.vue" 
-//产业园区
-import Operate from "../threePage/productsPage/operate/index.vue"
 //用工模块
 import Flexible from "../threePage/productsPage/Flexible/index.vue"
+
+
 // 新闻详情
 import newDetailsList from "../threePage/productsPage/newDetails/index.vue"
 
@@ -86,10 +90,26 @@ export const fourChildrenRoute=[
 //产品服务 三级
 export const threeChildrenRoute=[
   {
+    path:"/home/index/ersonnel",
+    name:"personnel",
+    meta:{
+      title:"人事管理"
+    },
+    component:Personnel
+  },
+  {
+    path:"/home/index/labor",
+    name:"labor",
+    meta:{
+      title:"劳务派遣"
+    },
+    component:Labor
+  },
+  {
     path:"/home/index/outsource",
     name: "outsource",
     meta:{
-      title:"外包模块"
+      title:"岗位外包"
     },
     component: OutSource
   },
@@ -97,7 +117,7 @@ export const threeChildrenRoute=[
     path:"/home/index/hosting",
     name: "hosting",
     meta:{
-      title:"托管模块"
+      title:"业务外包"
     },
     component: Hosting
   },
@@ -105,23 +125,15 @@ export const threeChildrenRoute=[
     path:"/home/index/recruitment",
     name: "recruitment",
     meta:{
-      title:"招聘模块"
+      title:"招聘流程外包"
     },
     component: Recruitment
   },
-  // {
-  //   path:"/home/index/operate",
-  //   name: "operate",
-  //   meta:{
-  //     title:"产业园区"
-  //   },
-  //   component: Operate
-  // },
   {
     path:"/home/index/flexible",
     name: "flexible",
     meta:{
-      title:"用工模块"
+      title:"灵活用工解决方案"
     },
     component: Flexible,
     children:fourChildrenRoute

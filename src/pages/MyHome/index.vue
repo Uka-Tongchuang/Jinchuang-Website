@@ -10,6 +10,6 @@
 .main {
   padding: 0;
   margin: 0;
-  overflow: scroll;
+
 }
 </style>

@@ -31,7 +31,7 @@
         @click="fourRouteFun(item)"
       >
         <router-link v-if="!item.children" :to="item.path">
-          <span>{{ item.meta?.title }}</span>
+          <span>{{ item.meta?.title }}</span> 
         </router-link>
         <span v-else>
           {{ item.meta?.title
@@ -40,6 +40,7 @@
           /></el-icon>
         </span>
       </div>
+
       <!-- //四级弹窗 -->
       <div class="content_box_four" v-show="showFourDiv" ref="showFourbBox">
         <div
@@ -107,7 +108,7 @@ const showFourbBox = ref();
 const fourRouteFuns = (item: ChildrenRouteItemType) => {
  
   //判断是否点击的用工
-  if (item.meta.title === "用工模块") {
+  if (item.meta.title === "灵活用工解决方案") {
     showFourDiv.value = !showFourDiv.value;
     //动画
     gsap.from(showFourbBox.value, {
@@ -159,7 +160,7 @@ const goFourRoute = () => {
     font-size: 1.3rem;
     .content_box_four {
       position: absolute;
-      width: 25%;
+      width: 16.66%;
       height: 12rem;
       background-color: #cbcbcb;
       z-index: 66;
