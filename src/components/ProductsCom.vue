@@ -51,9 +51,9 @@
             <button @click="enterDiv">了解更多</button>
           </div>
           <div v-else class="showMou animate__animated animate__flipInY">
-            <div @click="goFourRectuitment">招聘业务</div>
-            <div @click="goFourNews">新媒体带货</div>
-            <div @click="goFourEmployment">就业街小圆桌</div>
+            <div @click="goFourRectuitment"><el-icon><Guide /></el-icon><text>招聘业务</text></div>
+            <div @click="goFourNews"><el-icon><Guide /></el-icon><text>新媒体带货</text></div>
+            <div @click="goFourEmployment"><el-icon><Guide /></el-icon><text>就业街小圆桌</text></div>
           </div>
         </div>
       </div>
@@ -64,6 +64,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import {Guide} from "@element-plus/icons-vue"
 import "animate.css";
 const flagDiv = ref(true);
 const router = useRouter();
@@ -326,9 +327,17 @@ const goFourEmployment = () => {
     justify-content: space-around;
    align-items: self-start;
     div{
-      width: 80%;
+      width: 70%;
       height: 5rem;
-      border: 0.2rem solid #817ee3;
+      margin: 0 auto;
+      border: 0.2rem solid rgb(18,74,126);
+      color: rgb(18,74,126);
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 1.4rem;;
     }
   }
 }
