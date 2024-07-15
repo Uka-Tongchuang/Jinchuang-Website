@@ -166,7 +166,7 @@ const switchover1=()=>{
 // 初始化加载下标线
 onMounted(()=>{
   console.log(dataList)
-  state.title=dataList[2].data[0].title
+  state.title=dataList[2].typetitle
   state.content=dataList[2].data[0].content
   switchoverBorder.value.children[0].style.borderBottom="2px solid #617bc1"
 })

@@ -16,7 +16,7 @@ import dataList from '../../../utils/producDes.json'
     })
     onMounted(()=>{
         console.log(dataList)
-        state.title=dataList[1].data[0].title
+        state.title=dataList[1].typetitle
         state.content=dataList[1].data[0].content
     })
 </script>

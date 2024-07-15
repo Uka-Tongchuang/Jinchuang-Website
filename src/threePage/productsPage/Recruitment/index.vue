@@ -66,7 +66,7 @@ const state = reactive({
 });
 onMounted(()=>{
         console.log(dataList)
-        state.title=dataList[3].data[0].title
+        state.title=dataList[3].typetitle
         state.content=dataList[3].data[0].content
     })
 </script>

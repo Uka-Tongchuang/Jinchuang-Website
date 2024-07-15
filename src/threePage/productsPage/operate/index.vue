@@ -5,8 +5,17 @@
             <p v-html="state?.content"></p>
         </div> 
         <div class="card">
-            <h1>服务内容</h1>
-            <!-- 卡片 -->
+            <h1>服务模式</h1>
+            <div class="">
+                    <div></div>
+                    <div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div></div>
+                    </div>
+            </div>
         </div>
          <div class="advantage">
             <div class="title">
@@ -35,7 +44,7 @@ import dataList from '../../../utils/producDes.json'
     })
     onMounted(()=>{
         console.log(dataList)
-        state.title=dataList[0].data[0].title
+        state.title=dataList[0].typetitle
         state.content=dataList[0].data[0].content
     })
 </script>
