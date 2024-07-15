@@ -101,11 +101,7 @@ const arr = reactive({
   margin: 5rem 0 ;
 }
 // 第三个区域
-.main_merchant {
-  width: 100%;
-  height: 32rem;
-  background: url("../assets/Slideshow.jpeg") 100%;
-}
+
 // 第四个区域
 .business-partner{
  width: calc(100% - 4rem);

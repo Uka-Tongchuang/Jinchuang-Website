@@ -29,13 +29,13 @@ import newsAut from "../pages/news/index.vue"
 import Personnel from "../threePage/productsPage/operate/index.vue"
 //劳务派遣
 import Labor from "../threePage/productsPage/Labor/index.vue"
-// 外包模块
+// 岗位外包
 import OutSource from "../threePage/productsPage/outsource/index.vue"
-//托管模块
+// 业务外包
 import Hosting from "../threePage/productsPage/Hosting/index.vue"
-//招聘模块
+//招聘流程外包
 import Recruitment from "../threePage/productsPage/Recruitment/index.vue" 
-//用工模块
+//灵活用工用工模块
 import Flexible from "../threePage/productsPage/Flexible/index.vue"
 
 
