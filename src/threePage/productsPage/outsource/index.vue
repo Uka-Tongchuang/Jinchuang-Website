@@ -1,8 +1,9 @@
 <template>
   <div class="main">
-    <div class="content">
-      <h1>外包服务</h1>
-    </div>
+   <div class="merchant">
+            <h1>{{ state?.title }}</h1>
+            <p v-html="state?.content"></p>
+        </div> 
     <div class="card-list">
       <el-card style="max-width: 25rem">
         <h3>用工人员招募</h3>
@@ -73,10 +74,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted, onUnmounted } from "vue"; 
+import { ref, reactive, onMounted, onUnmounted } from "vue";
+import dataList from '../../../utils/producDes.json' 
 const showTime =ref(true)
 const switchoverBorder =ref()
 const state=reactive({
+    title:"",
+        content:"",
   flowList:[
     {
       step:'Step',
@@ -161,6 +165,9 @@ const switchover1=()=>{
 }
 // 初始化加载下标线
 onMounted(()=>{
+  console.log(dataList)
+  state.title=dataList[2].data[0].title
+  state.content=dataList[2].data[0].content
   switchoverBorder.value.children[0].style.borderBottom="2px solid #617bc1"
 })
 </script>
@@ -184,17 +191,18 @@ onMounted(()=>{
   margin: 0;
   padding: 0;
   overflow-y: hidden; 
-  .content {
-    background-color: #ededed;
+   .merchant { 
+      background-color: aqua;
     width: 100%;
-    height: 20rem;
-    margin: 0 auto;
-    h1 {
-      font-size: 5rem;
-      text-align: center;
-      line-height: 20rem;
-      margin: 0;
-      padding: 0;
+    height: 30rem;
+    // padding-top: 7rem;
+    // padding-left: 7rem;
+    margin: auto;  
+    h1{
+        font-size: 4rem;
+    } 
+    p{
+        font-size: 2rem;
     }
   }
   .card-list {

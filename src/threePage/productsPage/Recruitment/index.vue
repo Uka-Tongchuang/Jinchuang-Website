@@ -1,8 +1,9 @@
 <template>
   <div class="main">
-    <div class="applications">
-      <h1>招聘业务</h1>
-    </div>
+     <div class="merchant">
+        <h1>{{ state?.title }}</h1>
+        <p v-html="state?.content"></p>
+    </div> 
     <div class="content">
       <p>
         通过就业街小圆桌系统、职播播人才直播平台，我们为企业和个人提供全方位的人力资源服务，涵盖人才招聘、人才培
@@ -20,28 +21,21 @@
       </div>
     </div>
     <div class="service">
-      <h1 style="font-size: 4.5rem">服务流程</h1>
-        <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-          <el-tab-pane label="User" name="first">User</el-tab-pane>
-          <el-tab-pane label="Config" name="second">Config</el-tab-pane> 
-        </el-tabs>
+      <h1 style="font-size: 4.5rem">服务流程</h1> 
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import swpOne from "../../../assets/th.jpg";
-import { ref, reactive, onMounted, onUnmounted } from "vue"; 
-import type { TabsPaneContext } from 'element-plus'
+import { ref, reactive, onMounted, onUnmounted } from "vue";  
+import dataList from '../../../utils/producDes.json'
 
-const activeName = ref('first')
-
-const handleClick = (tab: TabsPaneContext, event: Event) => {
-  console.log(tab, event)
-}
 
 const state = reactive({
   getNewsData: [],
+  title:'',
+  content:'',
   arr: [
     {
       id: 1,
@@ -70,13 +64,11 @@ const state = reactive({
     },
   ],
 });
-// const activeStep = ref(0);
-// const steps = ref([
-//   { title: '1.前期对接工作', cardTitle: 'a.通过项目启动，核对用人需求、岗位职责与录用标准', cardContent: 'b.与客户核对并确认各岗位的面试/入职/合同签约流程' },
-//   { title: '2.人员寻访', cardTitle: 'a.外部代理招聘渠道', cardContent: 'b.通过公司内部网招渠道' },
-//   { title: '3.面试邀约及入职', cardTitle: 'a.进行线上、线下面试及面试辅导', cardContent: 'b.岗前培训及试岗工作、上岗通知及入职须知宣导' },
-//   { title: '4.交付、个保温及离补', cardTitle: 'a.确保员工稳定性，及时答疑化解工作中问题', cardContent: 'b.做好离职补招工作，避免用人压力' },
-// ]);
+onMounted(()=>{
+        console.log(dataList)
+        state.title=dataList[3].data[0].title
+        state.content=dataList[3].data[0].content
+    })
 </script>
 
 <style scoped lang="scss">
@@ -91,16 +83,18 @@ const state = reactive({
   height: 100%;
   margin: 0;
   padding: 0;
-  .applications {
+   .merchant { 
+      background-color: aqua;
     width: 100%;
     height: 30rem;
-    background-color: #ededed;
-    h1 {
-      font-size: 5rem;
-      text-align: center;
-      line-height: 30rem;
-      margin: 0;
-      padding: 0;
+    // padding-top: 7rem;
+    // padding-left: 7rem;
+    margin: auto;  
+    h1{
+        font-size: 4rem;
+    } 
+    p{
+        font-size: 2rem;
     }
   }
   .content {

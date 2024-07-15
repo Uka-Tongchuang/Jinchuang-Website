@@ -1,8 +1,8 @@
 <template>
    <div class="content">
         <div class="merchant">
-            <h1>{{ state.title }}</h1>
-            <p v-html="state.content"></p>
+            <h1>{{ state?.title }}</h1>
+            <p v-html="state?.content"></p>
         </div> 
         <div class="card">
             <h1>服务内容</h1>
@@ -27,22 +27,30 @@
 </template>
 
 <script setup lang="ts"> 
-import { ref,reactive} from 'vue'
+import { ref,reactive,onMounted} from 'vue'
+import dataList from '../../../utils/producDes.json'
     const state=reactive({
-        title:"产品介绍",
-        content:"为企业解决人力资源管理过程中<br/>的事务性、操作性工作，如劳动合同代签、<br/>用退工申报、社保和公积金申报与缴纳办理、人事档案<br/>传递和信息管理等，使企业人力资源工作人员能够将更多时间投入到人力<br/>资源核心业务中，为企业发展提供更多支持，以降低企业成本，实现效率最大化"
+        title:"",
+        content:""
+    })
+    onMounted(()=>{
+        console.log(dataList)
+        state.title=dataList[0].data[0].title
+        state.content=dataList[0].data[0].content
     })
 </script>
 
 <style lang="scss" scoped>
 .content {
   width: 100%; 
+  padding: 0;
+  margin: 0;
   .merchant { 
       background-color: aqua;
     width: 100%;
     height: 30rem;
-    padding-top: 7rem;
-    padding-left: 7rem;
+    // padding-top: 7rem;
+    // padding-left: 7rem;
     margin: auto;  
     h1{
         font-size: 4rem;
