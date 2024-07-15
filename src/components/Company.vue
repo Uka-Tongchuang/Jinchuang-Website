@@ -20,23 +20,25 @@
 
 <style scoped lang="scss">
 .Company_box {
-  width: 60%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
-  // background-color: #f00;
   margin-top: 1rem;
   border: 1px solid #ccc;
-  box-shadow: 0 0 0.05rem 0.01rem #ccc;
-  border-radius: 1rem;
-  background-color: #ededed;
+  box-shadow: 0.3rem 0.3rem 0.6rem 0.2rem #d8d8d8;
+  background:linear-gradient(to top,#ededed,#ededed,#d8d8d8);
+  background:linear-gradient(to right,#ededed,#ededed,#d8d8d8);
   .img_box{
     float: left;
     width: 40%;
     height: 100%;
     margin-left: 1rem;
     img{
-        width: 100%;
-        height: 95%;
+      display: block;
+        width: 20rem;
+        height: 20rem;
+        margin-top: 4rem;
+        margin-left: 5rem;
     }
   }
   .text_box{

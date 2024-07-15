@@ -337,7 +337,8 @@ const goFourEmployment = () => {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      border-radius: 1.4rem;;
+      border-radius: 1.4rem;
+      cursor: pointer;
     }
   }
 }
