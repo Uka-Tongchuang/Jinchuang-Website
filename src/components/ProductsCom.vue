@@ -17,7 +17,7 @@
           <div class="box_tip_icon"></div>
           <span>劳务派遣</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
-          <button @click="goOutsourcing">了解更多</button>
+          <button @click="golabor">了解更多</button>
         </div>
 
         <div class="modukrs_boxs three">
@@ -40,7 +40,7 @@
           <div class="box_tip_icon"></div>
           <span>招聘流程外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
-          <button @click="goRecruitment">了解更多</button>
+          <button @click="goOperate">了解更多</button>
         </div>
 
         <div class="modukrs_boxs six">
@@ -70,29 +70,27 @@ const router = useRouter();
 const enterDiv = () => {
   flagDiv.value = false;
 };
-const leaveDiv = () => {
-  flagDiv.value = true;
-};
 //跳转人事管理
 const goPersonnel = () => {
   router.push("/home/index/ersonnel");
 };
-//跳转外包
+//跳转劳务派遣
+const golabor = () => {
+  router.push("/home/index/labor");
+};
+//跳转岗位外包
 const goOutsourcing = () => {
   router.push("/home/index/outsource");
 };
-//跳转托管
-const goHosting = () => {
+//跳转业务外包
+const goRecruitment = () => {
   router.push("/home/index/hosting");
 };
-//跳转招聘
-const goRecruitment = () => {
+//跳转招聘外包流程
+const goOperate = () => {
   router.push("/home/index/recruitment");
 };
-//跳转园区
-const goOperate = () => {
-  router.push("/home/index/operate");
-};
+
 //跳转灵活用工的四级页面
 //招聘业务
 const goFourRectuitment = () => {
@@ -317,6 +315,20 @@ const goFourEmployment = () => {
           border: 0.15rem solid $color6;
         }
       }
+    }
+  }
+  .showMou{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   align-items: self-start;
+    div{
+      width: 80%;
+      height: 5rem;
+      border: 0.2rem solid #817ee3;
     }
   }
 }

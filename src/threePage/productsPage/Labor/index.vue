@@ -1,6 +1,6 @@
 <template>
     <div>
-劳务
+劳务派遣
     </div>
 </template>
 

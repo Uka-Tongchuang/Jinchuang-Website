@@ -1,6 +1,6 @@
 <template>
     <div>
-托管
+业务外包
     </div>
 </template>
 
