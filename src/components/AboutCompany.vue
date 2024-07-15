@@ -19,6 +19,7 @@ import 'animate.css';
     width: 100%;
     height: 40rem;
     margin: 0 auto;
+    padding: 0;
     color: #fff;
     background-image: url("https://ts1.cn.mm.bing.net/th/id/R-C.fb386fec342259e489fc2c256a81e250?rik=qLrPQiB%2b27haVQ&riu=http%3a%2f%2fwww.langyugz.com%2fuploads%2fallimg%2f190416%2f1-1Z416103G3H1.jpg&ehk=PCuyJG8ag8Wo3mGFsJ91k09KQESekMpAc5jkyhzoGYE%3d&risl=&pid=ImgRaw&r=0");
     background-size: 100% 100%;

@@ -270,7 +270,7 @@ ul li {
         }
         .concent_business {
           padding: 0 2rem;
-          width: 40%;
+          width: calc(40% - 4rem);
           display: flex;
           justify-content: space-between; 
           color: white; 
@@ -325,7 +325,7 @@ ul li {
             .hot_content_ui {
               width: 100%;
               height: 3rem;
-              overflow: auto;
+             
             }
           }
           .qrcode {
@@ -345,6 +345,7 @@ ul li {
     .bottom_ps_box {
       width: 100%;
       height: 5rem;
+     
       // background-color: black;
       //备案信息
       .infoRecord_box {

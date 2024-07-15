@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
-    <el-container>
-      <el-header>
+    <el-container >
+      <el-header >
         <Header />
       </el-header>
       <el-main>
@@ -16,7 +16,7 @@
           <Home />
         </template>
       </el-main>
-      <el-footer>
+      <el-footer >
         <Footer />
       </el-footer>
     </el-container>
@@ -69,9 +69,13 @@ onBeforeRouteUpdate((to, from) => {
     transform: translateY(-50%);
   }
 }
-
+.el-main{
+  height: auto;
+  overflow: hidden;
+}
 .el-footer {  
   width: 100%;
   height: 30rem;
+ 
 } 
 </style>

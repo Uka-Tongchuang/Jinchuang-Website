@@ -58,7 +58,10 @@ const arr = reactive({
 .demonstration {
   color: var(--el-text-color-secondary);
 }
-
+.home_child_box{
+  width: 100%;
+  height: 100%;
+}
 .el-carousel__item h3 {
   color: #475669;
   opacity: 0.75;
