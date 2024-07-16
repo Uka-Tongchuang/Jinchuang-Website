@@ -1,9 +1,12 @@
 <template>
   <div class="main">
-   <div class="merchant">
-            <h1>{{ state?.title }}</h1>
-            <p v-html="state?.content"></p>
-        </div> 
+    <div class="trapezoid">
+      <div class="merchant ">
+        <h1>{{ state?.title }}</h1>
+        <p v-html="state?.content"></p>
+      </div>
+      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
+    </div>
     <div class="card-list">
       <el-card style="max-width: 25rem">
         <h3>用工人员招募</h3>
@@ -191,19 +194,35 @@ onMounted(()=>{
   margin: 0;
   padding: 0;
   overflow-y: hidden; 
-   .merchant { 
-      background-color: aqua;
-    width: 100%;
-    height: 30rem;
-    // padding-top: 7rem;
-    // padding-left: 7rem;
-    margin: auto;  
-    h1{
-        font-size: 4rem;
-    } 
-    p{
-        font-size: 2rem;
+   .trapezoid {
+    position: relative;
+    width: 100%; 
+    height: 30rem; 
+    .merchant { 
+      background-color: blue;
+      height: 30rem;  
+      width: 65%; 
+      
+      clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
+      h1 {
+        padding-top: 5rem;
+        margin-left: 5rem;
+        font-size: 3rem;
+      }
+      p {
+        margin-left: 5rem;
+        font-size: 1.5rem;
+      }
     }
+    .urlImg { 
+        clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
+      width: 53%;
+      height: 30rem;  
+      background: url(../../../assets/swpOne.jpg);  
+      position: absolute;
+      top: 0;
+      right: 0;
+    } 
   }
   .card-list {
     width: 95%;
