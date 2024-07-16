@@ -7,21 +7,23 @@
       <!-- //上部分 -->
       <div class="top_box">
         <div class="modukrs_boxs">
-          <div class="box_tip_icon"></div>
+          <div class="box_tip_icon">
+            <el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><Avatar /></el-icon>
+          </div>
           <span>人事管理</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goPersonnel">了解更多</button>
         </div>
 
         <div class="modukrs_boxs two">
-          <div class="box_tip_icon"></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><WalletFilled /></el-icon></div>
           <span>劳务派遣</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="golabor">了解更多</button>
         </div>
 
         <div class="modukrs_boxs three">
-          <div class="box_tip_icon"></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><Briefcase /></el-icon></div>
           <span>岗位外包</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="goOutsourcing">了解更多</button>
@@ -30,31 +32,31 @@
       <!-- //下部分 -->
       <div class="bottom_box four">
         <div class="modukrs_boxs">
-          <div class="box_tip_icon"></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><BrushFilled /></el-icon></div>
           <span>业务外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goRecruitment">了解更多</button>
         </div>
 
         <div class="modukrs_boxs five">
-          <div class="box_tip_icon"></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><UserFilled /></el-icon></div>
           <span>招聘流程外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goOperate">了解更多</button>
         </div>
 
         <div class="modukrs_boxs six">
-          <div v-if="flagDiv" class="showImg animate__animated animate__fadeIn">
-            <div class="box_tip_icon"></div>
-            <span>灵活用解决方案</span>
+          <div class="showImg animate__animated " >
+            <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><Platform /></el-icon></div>
+            <span>灵活用工解决方案</span>
             <p>多元化的灵活用工<br />结算解决方案</p>
-            <button @click="enterDiv">了解更多</button>
+            <button @click="goFiexble">了解更多</button>
           </div>
-          <div v-else class="showMou animate__animated animate__flipInY">
+          <!-- <div v-else class="showMou animate__animated animate__flipInY">
             <div @click="goFourRectuitment"><el-icon><Guide /></el-icon><text>招聘业务</text></div>
             <div @click="goFourNews"><el-icon><Guide /></el-icon><text>新媒体带货</text></div>
             <div @click="goFourEmployment"><el-icon><Guide /></el-icon><text>就业街小圆桌</text></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -64,7 +66,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import {Guide} from "@element-plus/icons-vue"
+import {Avatar,WalletFilled,Briefcase,BrushFilled,UserFilled,Platform} from "@element-plus/icons-vue"
 import "animate.css";
 const flagDiv = ref(true);
 const router = useRouter();
@@ -93,18 +95,21 @@ const goOperate = () => {
 };
 
 //跳转灵活用工的四级页面
+const goFiexble = () => {
+  router.push("/home/index/flexible");
+};
 //招聘业务
-const goFourRectuitment = () => {
-  router.push("/home/index/flexible/fourectuitments");
-};
-//新媒体带货
-const goFourNews = () => {
-  router.push("/home/index/flexible/foruenews");
-};
-//就业街小圆桌
-const goFourEmployment = () => {
-  router.push("/home/index/flexible/fouremployment");
-};
+// const goFourRectuitment = () => {
+//   router.push("/home/index/flexible/fourectuitments");
+// };
+// //新媒体带货
+// const goFourNews = () => {
+//   router.push("/home/index/flexible/foruenews");
+// };
+// //就业街小圆桌
+// const goFourEmployment = () => {
+//   router.push("/home/index/flexible/fouremployment");
+// };
 </script>
 
 <style scoped lang="scss">

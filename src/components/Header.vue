@@ -30,19 +30,19 @@
         :key="index"
         @click="fourRouteFun(item)"
       >
-        <router-link v-if="!item.children" :to="item.path">
+        <router-link  :to="item.path">
           <span>{{ item.meta?.title }}</span> 
         </router-link>
-        <span v-else>
+        <!-- <span v-else>
           {{ item.meta?.title
           }}<el-icon class="icon_two" :class="showFourDiv ? 'is-rotateds' : ''"
             ><ArrowDown
           /></el-icon>
-        </span>
+        </span> -->
       </div>
 
       <!-- //四级弹窗 -->
-      <div class="content_box_four" v-show="showFourDiv" ref="showFourbBox">
+      <!-- <div class="content_box_four" v-show="showFourDiv" ref="showFourbBox">
         <div
           v-for="(item, index) in fourChildrenRoute"
           :key="index"
@@ -53,13 +53,13 @@
             <span>{{ item.meta?.title }}</span>
           </router-link>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="nav_right_box">
       <li><span></span> 售前电话: 100-400-600</li>
-      <span class="showDemo">预约演示</span>
-      <span class="loginSty">登录</span>
+      <span class="showDemo loginSty">预约演示</span>
+      
     </div>
   </div>
 </template>
@@ -104,29 +104,29 @@ const enterProductsBtn = (item: ChildrenRouteItemType) => {
 const enterProducts = throttle(enterProductsBtn, 500);
 //四级页面弹窗
 const showFourDiv = ref(false);
-const showFourbBox = ref();
+// const showFourbBox = ref();
 const fourRouteFuns = (item: ChildrenRouteItemType) => {
  
-  //判断是否点击的用工
-  if (item.meta.title === "灵活用工解决方案") {
-    showFourDiv.value = !showFourDiv.value;
-    //动画
-    gsap.from(showFourbBox.value, {
-      height: "0rem",
-      duration: 0.5, // 动画持续时间，单位秒
-    });
-  } else {
+  // //判断是否点击的用工
+  // if (item.meta.title === "灵活用工解决方案") {
+  //   showFourDiv.value = !showFourDiv.value;
+  //   //动画
+  //   gsap.from(showFourbBox.value, {
+  //     height: "0rem",
+  //     duration: 0.5, // 动画持续时间，单位秒
+  //   });
+  // } else {
     //跳转隐藏两个盒子
     showDivFlag.value = false;
     showFourDiv.value = false;
-  }
+  // }
 };
 const fourRouteFun = throttle(fourRouteFuns, 500);
 
-const goFourRoute = () => {
-  showDivFlag.value = false;
-  showFourDiv.value = false;
-};
+// const goFourRoute = () => {
+//   showDivFlag.value = false;
+//   showFourDiv.value = false;
+// };
 </script>
 
 <style scoped lang="scss">
@@ -148,11 +148,12 @@ const goFourRoute = () => {
   .showContent {
     width: 100%;
     height: 5rem;
+    font-family: "微软雅黑";
     position: absolute;
     top: calc(100% + 0.5rem);
     left: 0;
     opacity: 0.98;
-    background-color: #cbcbcb;
+    background-color: #cae6e2;
     z-index: 66;
     display: flex;
     justify-content: space-around;
@@ -206,7 +207,7 @@ const goFourRoute = () => {
         cursor: pointer;
         box-sizing: border-box;
         // border-bottom: .4rem solid #f3fafe;
-        background-color: #a2a2a2;
+        background-color: #9ab7e3;
       }
     }
     
@@ -279,7 +280,7 @@ const goFourRoute = () => {
     display: flex;
     width: 28%;
     height: 100%;
-    margin-right: 100px;
+    margin-right: 15rem;
     justify-content: space-around;
     align-items: center;
     span {
@@ -300,6 +301,7 @@ const goFourRoute = () => {
       text-align: center;
       border: none;
       border-radius: 20px;
+      cursor: pointer;
     }
     .loginSty {
       width: 20%;

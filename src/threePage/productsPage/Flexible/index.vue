@@ -1,6 +1,8 @@
 <template>
     <div class="main">
-        <RouterView/>
+        灵活用工
+        <!-- //当需要子级模块时 -->
+        <!-- <RouterView/> -->
     </div>
 </template>
 
