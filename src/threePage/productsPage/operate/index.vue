@@ -64,7 +64,7 @@ onMounted(() => {
     width: 100%; 
     height: 40rem; 
     .merchant { 
-      background-color: blue;
+      background-color: #82c4b3;
       height: 40rem;  
       width: 65%; 
       

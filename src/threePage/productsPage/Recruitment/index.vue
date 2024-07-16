@@ -289,7 +289,7 @@ const toggleExpand = (id: number) => {
     width: 100%;
     height: 30rem;
     .merchant {
-      background-color: blue;
+      background-color: #2d8fce;
       height: 40rem;
       width: 65%;
 

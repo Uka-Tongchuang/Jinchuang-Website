@@ -90,7 +90,7 @@ export const fourChildrenRoute=[
 //产品服务 三级
 export const threeChildrenRoute=[
   {
-    path:"/home/index/ersonnel",
+    path:"/home/index/operate",
     name:"personnel",
     meta:{
       title:"人事管理"
