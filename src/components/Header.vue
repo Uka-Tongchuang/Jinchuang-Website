@@ -302,7 +302,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
       line-height: 2rem;
       text-align: center;
       border: none;
-      border-radius: 20px;
+      border-radius: 2rem;
       cursor: pointer;
     }
     .loginSty {
@@ -314,8 +314,8 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
       line-height: 3rem;
       text-align: center;
       border: 1px solid rgb(68, 190, 218);
-      border-radius: 20px;
-      transition: 0.2s;
+      border-radius: 2rem;
+      transition: 0.4s;
     }
     .loginSty:hover {
       color: #fff;

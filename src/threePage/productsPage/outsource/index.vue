@@ -38,12 +38,14 @@
             </div>
           </div>
     </div>
+    <!-- //服务优势 -->
     <div class="service_box">
     
-      
+      <outCartSecondCom/>
     </div>
+    <!-- 服务价值 -->
     <div class="serviceValue_box">
-
+      <OutCartThreeValueCom/>
     </div>
   </div>
 </template>
@@ -52,6 +54,8 @@
 import { ref, reactive, onMounted, onUnmounted } from "vue";
 import dataList from '../../../utils/producDes.json' 
 import OutCartCom from "../../../components/outConmonent/OutCartCom.vue"
+import outCartSecondCom from "../../../components/outConmonent/OutCartSecondCom.vue"
+import OutCartThreeValueCom from "@/components/outConmonent/OutCartThreeValueCom.vue";
 
 const showTime =ref(true)
 const switchoverBorder =ref()
@@ -144,7 +148,7 @@ const switchover1=()=>{
 onMounted(()=>{
   console.log(dataList)
   state.title=dataList[2].typetitle
-  state.content=dataList[2].data[0].content
+  state.content=dataList[2].data[0].content as string
   switchoverBorder.value.children[0].style.borderBottom="2px solid #617bc1"
 })
 </script>
@@ -171,15 +175,15 @@ onMounted(()=>{
    .trapezoid {
     position: relative;
     width: 100%; 
-    height: 40rem; 
+    height: 30rem; 
     .merchant { 
-      background-color: #124a7e;
-      height: 40rem;  
+      background-color: blue;
+      height: 30rem;  
       width: 65%; 
       
       clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
       h1 {
-        padding-top: 15rem;
+        padding-top: 5rem;
         margin-left: 5rem;
         font-size: 3rem;
       }
@@ -191,7 +195,7 @@ onMounted(()=>{
     .urlImg { 
         clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
       width: 53%;
-      height: 40rem;  
+      height: 30rem;  
       background: url(../../../assets/swpOne.jpg);  
       position: absolute;
       top: 0;
@@ -200,13 +204,12 @@ onMounted(()=>{
   }
   .card-list{
     width: 80%;
-    height: 50rem;
+    height: 45rem;
     margin: 0 auto;
-    background-color: antiquewhite;
   }
   .service {
     width: 100%;
-    margin: 2rem auto;
+    margin: 0 auto;
     .title-top{
       width: 20%;
       height: 7rem;
@@ -256,6 +259,18 @@ onMounted(()=>{
         }
       }
        
+  }
+  .service_box{
+    width: 80%;
+    height: 40rem;
+    margin: 2rem auto;
+    // background-color: aqua;
+  }
+  .serviceValue_box{
+    width: 80%;
+    height: 40rem;
+    margin: 2rem auto;
+    // background-color: yellow;
   }
 }
 </style>
