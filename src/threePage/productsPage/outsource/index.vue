@@ -8,43 +8,8 @@
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
     </div>
     <div class="card-list">
-      <el-card style="max-width: 25rem">
-        <h3>用工人员招募</h3>
-        <p>
-          A.客户提供的用工需求和编制数量
-          ，确定项目的人员画像任职要求➆鑄赛熺築叛誕贑賀魎剎腰聘人数
-        </p>
-        <p>B.在招聘周期内完成招募爬坡信务和客户用</p>
-      </el-card>
-      <el-card style="max-width: 25rem">
-        <h3>日常项目管理</h3>
-        <p>
-          A.据服务标准要求
-          ，派驻专人项目驻场进行日常管理和监督，并对每日服务情况进行实时反馈
-        </p>
-        <p>B.如斗殴 、抱团闹事、工伤等群体性事件应急预警和处理</p>
-        <p>
-          C.周/月维度核对外包人员考勤及其他考核情况，做好服务质量的评估和相应的汰换
-          、补离工作
-        </p>
-      </el-card>
-      <el-card style="max-width: 25rem">
-        <h3>员工关系管理</h3>
-        <p>A.薪酬标准和考勤 ，员工应发薪资、应缴税款，薪资发放</p>
-        <p>B.福利标准 ，按月缴纳五险一金或商业雇主险，提供出险处置服务</p>
-        <p>C.员工入转调离相关手续办理、劳动合同签订/上传备份</p>
-        <p>D.员工的资料信息收集 、留档及相应管理工作</p>
-      </el-card>
-      <el-card style="max-width: 25rem">
-        <h3>用工风险承担</h3>
-        <p>
-          A.医疗险
-          :非因工病伤时享受疗期待遇和期满后无法从事原工作而解除合同时支付经济补偿及医疗补助费风险
-        </p>
-        <p>
-          B.工伤:因工伤退出工作岗位期间单位仍须缴纳社保的风险，5-6级伤残且无法安排工作时支付月工伤津贴的风险和5-10级残时依法解除劳动合同支付经济次性工伤医疗补助金补偿金和伤残就业补助金的风险
-        </p>
-      </el-card>
+    <OutCartCom/>
+      
     </div>
     <!-- 流程图 -->
 
@@ -73,12 +38,21 @@
             </div>
           </div>
     </div>
+    <div class="service_box">
+    
+      
+    </div>
+    <div class="serviceValue_box">
+
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, reactive, onMounted, onUnmounted } from "vue";
 import dataList from '../../../utils/producDes.json' 
+import OutCartCom from "../../../components/outConmonent/OutCartCom.vue"
+
 const showTime =ref(true)
 const switchoverBorder =ref()
 const state=reactive({
@@ -197,15 +171,15 @@ onMounted(()=>{
    .trapezoid {
     position: relative;
     width: 100%; 
-    height: 40rem; 
+    height: 30rem; 
     .merchant { 
       background-color: blue;
-      height: 40rem;  
+      height: 30rem;  
       width: 65%; 
       
       clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
       h1 {
-        padding-top: 15rem;
+        padding-top: 5rem;
         margin-left: 5rem;
         font-size: 3rem;
       }
@@ -217,18 +191,18 @@ onMounted(()=>{
     .urlImg { 
         clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
       width: 53%;
-      height: 40rem;  
+      height: 30rem;  
       background: url(../../../assets/swpOne.jpg);  
       position: absolute;
       top: 0;
       right: 0;
     } 
   }
-  .card-list {
-    width: 95%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-between;
+  .card-list{
+    width: 80%;
+    height: 50rem;
+    margin: 0 auto;
+    background-color: antiquewhite;
   }
   .service {
     width: 100%;
@@ -281,39 +255,7 @@ onMounted(()=>{
          }
         }
       }
-        .card-list {
-      width: 147rem;
-      height: 22.5rem ;
-      margin: auto;
-      background: url(../../../assets/流程图7.png);
-      background-size: 100%;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        justify-content: space-evenly;
-        .card-border { 
-          margin: 7rem 0 0 2rem;
-          width:10rem;
-          height:20rem;  
-         .card-border-top{ 
-          width: 5rem;
-          display: flex;
-          justify-content: center; 
-          p{
-            font-size: 1.5rem;
-          }
-          .step{
-            border-bottom: 1px solid black;
-          }
-          .number{
-            margin-left: 0.5rem;
-          }
-         }
-         span{
-          font-size: 1.5rem;
-         }
-        }
-      }
+       
   }
 }
 </style>
