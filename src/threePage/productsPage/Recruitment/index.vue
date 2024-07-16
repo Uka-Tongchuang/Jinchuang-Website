@@ -28,7 +28,7 @@
       <div class="content-box">
         <div class="flex1">
           <div class="border-box">
-            <div class="card-border-top" >
+            <div class="card-border-top">
               <p class="step">step</p>
               &emsp;
               <p class="number">01</p>
@@ -41,7 +41,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides2">
@@ -52,7 +52,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides3">
@@ -63,7 +63,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides4">
@@ -76,7 +76,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides">
@@ -87,7 +87,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides2">
@@ -98,7 +98,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides3">
@@ -109,7 +109,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides4">
@@ -120,7 +120,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides5">
@@ -133,7 +133,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides">
@@ -144,7 +144,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides2">
@@ -155,7 +155,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides3">
@@ -166,7 +166,7 @@
           <div class="border-box">
             <div class="card-border-top">
               <p class="step">step</p>
-               &emsp;
+              &emsp;
               <p class="number">01</p>
             </div>
             <div class="border-rides4">
@@ -176,6 +176,28 @@
         </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="footer-box">
+        <h1>服务价值</h1>
+        <div ref="titleList">
+          <div
+            v-for="item in state.items"
+            :key="item.id"
+            @click="toggleExpand(item.id)"
+            class="title"
+          >
+            <div class="title-box">
+              <p>{{ item.title }}</p>
+              <span>{{ item.isExpanded ? "-" : "+" }}</span>
+            </div>
+            <div v-if="item.isExpanded" class="details">
+              {{ item.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="../../../assets/swpTwo.jpg" alt="" />
+    </div>
   </div>
 </template>
 
@@ -183,7 +205,7 @@
 import swpOne from "../../../assets/th.jpg";
 import { ref, reactive, onMounted, onUnmounted } from "vue";
 import dataList from "../../../utils/producDes.json";
-
+const titleList = ref();
 const state = reactive({
   getNewsData: [],
   title: "",
@@ -215,27 +237,45 @@ const state = reactive({
       idVieo: swpOne,
     },
   ],
-  nodes: [
-    { id: 1, name: "Node 1", type: "card", x: 100, y: 100 },
-    { id: 2, name: "Node 2", type: "card", x: 200, y: 100 },
-    { id: 3, name: "Node 3", type: "card", x: 300, y: 100 },
-    { id: 4, name: "Node 4", type: "card", x: 400, y: 100 },
-    { id: 5, name: "Node 5", type: "card", x: 500, y: 100 },
-    { id: 6, name: "Node 6", type: "card", x: 600, y: 100 },
-    { id: 7, name: "Node 7", type: "card", x: 700, y: 100 },
-    { id: 8, name: "Node 8", type: "card", x: 800, y: 100 },
-    { id: 9, name: "Node 9", type: "card", x: 900, y: 100 },
-    { id: 10, name: "Node 10", type: "card", x: 1000, y: 100 },
-    { id: 11, name: "Node 11", type: "card", x: 1100, y: 100 },
-    { id: 12, name: "Node 12", type: "card", x: 1200, y: 100 },
-    { id: 13, name: "Node 13", type: "card", x: 1300, y: 100 },
+  items: [
+    {
+      title: "降低企业成本：",
+      id: 0,
+      isExpanded: false,
+      content:
+        "精简基础性岗位，把HR从繁琐的事务性工作中解放出来，使企业人力资源工作人员能够将更多时间投入到人力资源核心业务，为企业提供更多支持，以降低企业成本，实现效率最大化。",
+    },
+    {
+      title: "规避用工风险：",
+      id: 1,
+      isExpanded: false,
+      content: "全流程服务符合法律法规，提供专业指导帮助企业优化规避用工风险。",
+    },
+    {
+      title: "说明：",
+      id: 2,
+      isExpanded: false,
+      content: "这一个部分做成模块卡片，点击卡片后会显示详细信息",
+    },
   ],
 });
 onMounted(() => {
   console.log(dataList);
-  state.title = dataList[3].typetitle;
-  state.content = dataList[3].data[0].content;
+  state.title = dataList[4].typetitle;
+  state.content = dataList[4].data[0].content as string;
 });
+const toggleExpand = (id: number) => {
+  // 遍历所有项，根据id更新isExpanded
+  state.items.forEach((item) => {
+    if (item.id === id) {
+      //进行渲染
+      titleList.value.children[id].style.height = "8rem";
+      item.isExpanded = true
+    } else { 
+      item.isExpanded = false; // 如果不是当前点击的项，则隐藏其更多信息
+    }
+  });
+};
 </script>
 
 <style scoped lang="scss">
@@ -313,6 +353,12 @@ onMounted(() => {
       font-size: 2rem;
       color: rgb(0, 0, 0);
     }
+    p {
+      color: white;
+    }
+    span {
+      color: white;
+    }
     .content-box {
       width: 100%;
       min-height: 60rem;
@@ -324,62 +370,62 @@ onMounted(() => {
         padding: 0 13rem;
         .border-box {
           width: 18rem;
-          height: 18rem;  
+          height: 18rem;
           border-radius: 50%;
           position: relative;
           background: linear-gradient(to right, #9fe1fa, #f4edc9);
           box-shadow: 0 0 0.4rem 0.1rem #f4edc9;
-          .card-border-top{
+          .card-border-top {
             display: flex;
             position: absolute;
             left: 50%;
             top: 0;
             line-height: 0.6rem;
-            transform: translateX( -50%);
+            transform: translateX(-50%);
           }
           .border-rides {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
+            margin: 0 auto;
+            line-height: 13rem;
             margin-top: 2.5rem;
             background-color: #82c4b3;
             box-shadow: 0 0 0.4rem 0.1rem #82c4b3;
             text-align: center;
             border-radius: 50%;
           }
-           .border-rides2 { 
+          .border-rides2 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
             background-color: #6179b5;
-            box-shadow: 0 0 0.4rem 0.1rem #6179b5; 
+            box-shadow: 0 0 0.4rem 0.1rem #6179b5;
           }
-           .border-rides4 { 
+          .border-rides4 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
             background-color: #98c478;
-            box-shadow: 0 0 0.4rem 0.1rem #98c478; 
+            box-shadow: 0 0 0.4rem 0.1rem #98c478;
           }
-           .border-rides3 { 
+          .border-rides3 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
             background-color: #124a7e;
-            box-shadow: 0 0 0.4rem 0.1rem #124a7e; 
+            box-shadow: 0 0 0.4rem 0.1rem #124a7e;
           }
         }
         .singleArrow {
@@ -409,7 +455,6 @@ onMounted(() => {
         top: 1rem;
         right: 15rem;
         background-color: #2d8fc1;
-        
       }
 
       .flex2::after {
@@ -433,68 +478,68 @@ onMounted(() => {
           position: relative;
           background: linear-gradient(to right, #9fe1fa, #f4edc9);
           box-shadow: 0 0 0.4rem 0.1rem #f4edc9;
-          .card-border-top{
+          .card-border-top {
             display: flex;
             position: absolute;
             left: 50%;
             top: 0;
             line-height: 0.5rem;
-            transform: translateX( -50%);
+            transform: translateX(-50%);
           }
-             .border-rides {
+          .border-rides {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
+            margin: 0 auto;
+            line-height: 13rem;
             margin-top: 2.5rem;
-            background-color: #2D8FCE;
-            box-shadow: 0 0 0.4rem 0.1rem #2D8FCE;
+            background-color: #2d8fce;
+            box-shadow: 0 0 0.4rem 0.1rem #2d8fce;
             text-align: center;
             border-radius: 50%;
           }
-             .border-rides2 { 
+          .border-rides2 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
-            background-color: #261F4B;
-            box-shadow: 0 0 0.4rem 0.1rem #261F4B; 
+            background-color: #261f4b;
+            box-shadow: 0 0 0.4rem 0.1rem #261f4b;
           }
-           .border-rides4 { 
+          .border-rides4 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
-            background-color: #6179B5;
-            box-shadow: 0 0 0.4rem 0.1rem #6179B5; 
+            background-color: #6179b5;
+            box-shadow: 0 0 0.4rem 0.1rem #6179b5;
           }
-           .border-rides3 { 
+          .border-rides3 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
-            background-color: #82C4B3;
-            box-shadow: 0 0 0.4rem 0.1rem #82C4B3; 
+            background-color: #82c4b3;
+            box-shadow: 0 0 0.4rem 0.1rem #82c4b3;
           }
-           .border-rides5 { 
+          .border-rides5 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
-            background-color: #124A7E;
-            box-shadow: 0 0 0.4rem 0.1rem #124A7E; 
+            background-color: #124a7e;
+            box-shadow: 0 0 0.4rem 0.1rem #124a7e;
           }
         }
         .singleArrow2 {
@@ -543,61 +588,61 @@ onMounted(() => {
         .border-box {
           width: 18rem;
           height: 18rem;
-           border-radius: 50%;
+          border-radius: 50%;
           position: relative;
           background: linear-gradient(to right, #9fe1fa, #f4edc9);
           box-shadow: 0 0 0.4rem 0.1rem #f4edc9;
-            .card-border-top{
+          .card-border-top {
             display: flex;
             position: absolute;
             left: 50%;
             top: 0;
             line-height: 0.6rem;
-            transform: translateX( -50%);
+            transform: translateX(-50%);
           }
           .border-rides {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
+            margin: 0 auto;
+            line-height: 13rem;
             margin-top: 2.5rem;
             background-color: #82c4b3;
             box-shadow: 0 0 0.4rem 0.1rem #82c4b3;
             text-align: center;
             border-radius: 50%;
           }
-           .border-rides2 { 
+          .border-rides2 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
             background-color: #6179b5;
-            box-shadow: 0 0 0.4rem 0.1rem #6179b5; 
+            box-shadow: 0 0 0.4rem 0.1rem #6179b5;
           }
-           .border-rides4 { 
+          .border-rides4 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
             background-color: #98c478;
-            box-shadow: 0 0 0.4rem 0.1rem #98c478; 
+            box-shadow: 0 0 0.4rem 0.1rem #98c478;
           }
-           .border-rides3 { 
+          .border-rides3 {
             width: 13rem;
             height: 13rem;
-            margin: 0 auto; 
-            line-height: 13rem; 
-            margin-top: 2.5rem; 
+            margin: 0 auto;
+            line-height: 13rem;
+            margin-top: 2.5rem;
             text-align: center;
             border-radius: 50%;
             background-color: #124a7e;
-            box-shadow: 0 0 0.4rem 0.1rem #124a7e; 
+            box-shadow: 0 0 0.4rem 0.1rem #124a7e;
           }
         }
         .singleArrow {
@@ -619,6 +664,43 @@ onMounted(() => {
           border-left: 20px solid #2d8fc1; /* 箭头长度*/
         }
       }
+    }
+  }
+  .footer {
+    width: 80%;
+    height: 40rem;
+    margin: 3rem auto;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    .footer-box {
+      width: calc(45% - 5rem);
+      height: 100%;
+      padding-top: 3rem;
+      padding-left: 5rem;
+      h1 {
+        text-align: center;
+      }
+      .title {
+        height: 5rem;
+        border: 2px solid #82c4b3;
+        border-left: none;
+        border-right: none;
+        .title-box {
+          height: 3rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 2rem;
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+    img {
+      width: 50%;
+      height: 100%;
     }
   }
 }
