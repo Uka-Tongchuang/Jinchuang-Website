@@ -153,7 +153,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     top: calc(100% + 0.5rem);
     left: 0;
     opacity: 0.98;
-    background-color: #cae6e2;
+    background-color: #a4bfe2;
     z-index: 66;
     display: flex;
     justify-content: space-around;
@@ -207,7 +207,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
         cursor: pointer;
         box-sizing: border-box;
         // border-bottom: .4rem solid #f3fafe;
-        background-color: #9ab7e3;
+        background-color: #729edf;
       }
     }
     
@@ -242,8 +242,9 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
       flex: 1;
       cursor: pointer;
       display: flex;
-      font-size: 1.4rem;
-      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "微软雅黑";
       height: 100%;
       justify-content: center;
       align-items: center;
@@ -283,6 +284,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     margin-right: 15rem;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.4rem;
     span {
       display: inline-block;
       width: 16px;
@@ -305,10 +307,11 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     }
     .loginSty {
       width: 20%;
-      height: 2rem;
+      height: 3rem;
+      font-size: 1.4rem;
       color: #000000;
       background: rgb(255, 255, 255);
-      line-height: 2rem;
+      line-height: 3rem;
       text-align: center;
       border: 1px solid rgb(68, 190, 218);
       border-radius: 20px;
