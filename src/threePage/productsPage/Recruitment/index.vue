@@ -7,6 +7,11 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
     </div>
+    <div class="cart_box">
+    
+    <ZpwbCardCom/>
+
+</div>
     <div class="content">
       <p>
         通过就业街小圆桌系统、职播播人才直播平台，我们为企业和个人提供全方位的人力资源服务，涵盖人才招聘、人才培
@@ -205,6 +210,8 @@
 import swpOne from "../../../assets/th.jpg";
 import { ref, reactive, onMounted, onUnmounted } from "vue";
 import dataList from "../../../utils/producDes.json";
+import ZpwbCardCom from "../../../components/ZpwbCardCom.vue";
+
 const titleList = ref();
 const state = reactive({
   getNewsData: [],
@@ -702,6 +709,13 @@ const toggleExpand = (id: number) => {
       width: 50%;
       height: 100%;
     }
+    
   }
 }
+.cart_box {
+                    width: 90%;
+                    height: 40rem;
+                    margin: 0 auto;
+                    margin-top: 5rem;
+                }
 </style>

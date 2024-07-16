@@ -7,6 +7,9 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
     </div>
+    <div>
+            <OutsourcingCardCom/>
+        </div>
     <div class="footer">
       <div class="footer-box">
         <h1>服务价值</h1>
@@ -35,6 +38,8 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../../utils/producDes.json";
+import OutsourcingCardCom from '@/components/OutsourcingCardCom.vue';
+
 const titleList = ref();
 const state = reactive({
   title: "",

@@ -7,6 +7,9 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
     </div>
+    <div class="cart_box">
+        <FleBleGoodCom/>
+    </div>
     <div class="footer">
       <div class="footer-box">
         <h1>服务价值</h1>
@@ -35,6 +38,8 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../../utils/producDes.json";
+import FleBleGoodCom from '@/components/FleBleGoodCom.vue';
+
 const titleList = ref();
 const state = reactive({
   title: "",
@@ -151,6 +156,13 @@ const toggleExpand = (id: number) => {
       width: 50%;
       height: 100%;
     }
+    
   }
 }
+.cart_box {
+    width: 90%;
+    height: 40rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    }
 </style>
