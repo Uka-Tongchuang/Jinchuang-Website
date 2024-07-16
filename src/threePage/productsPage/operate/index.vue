@@ -62,15 +62,15 @@ onMounted(() => {
   .trapezoid {
     position: relative;
     width: 100%; 
-    height: 30rem; 
+    height: 40rem; 
     .merchant { 
       background-color: blue;
-      height: 30rem;  
+      height: 40rem;  
       width: 65%; 
       
       clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
       h1 {
-        padding-top: 5rem;
+        padding-top: 15rem;
         margin-left: 5rem;
         font-size: 3rem;
       }
@@ -82,7 +82,7 @@ onMounted(() => {
     .urlImg { 
         clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
       width: 53%;
-      height: 30rem;  
+      height: 40rem;  
       background: url(../../../assets/swpOne.jpg);  
       position: absolute;
       top: 0;
