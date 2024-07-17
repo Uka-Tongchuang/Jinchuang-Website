@@ -11,6 +11,10 @@
     <OutCartCom/>
       
     </div>
+    <PostWbCardCom/>
+    <div>
+
+    </div>
     <!-- 流程图 -->
 
     <div class="service">
@@ -56,7 +60,7 @@ import dataList from '../../../utils/producDes.json'
 import OutCartCom from "../../../components/outConmonent/OutCartCom.vue"
 import outCartSecondCom from "../../../components/outConmonent/OutCartSecondCom.vue"
 import OutCartThreeValueCom from "@/components/outConmonent/OutCartThreeValueCom.vue";
-
+import PostWbCardCom from '@/components/PostWbCardCom.vue';
 const showTime =ref(true)
 const switchoverBorder =ref()
 const state=reactive({
