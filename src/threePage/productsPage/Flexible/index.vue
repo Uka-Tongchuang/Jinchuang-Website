@@ -7,6 +7,9 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
     </div>
+    <div class="process">
+      <h1>服务流程</h1>
+    </div>
     <div class="cart_box">
         <FleBleGoodCom/>
     </div>
@@ -165,4 +168,11 @@ const toggleExpand = (id: number) => {
     margin: 0 auto;
     margin-top: 5rem;
     }
+.process{
+  width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background-color: #82c4b3;
+}    
 </style>

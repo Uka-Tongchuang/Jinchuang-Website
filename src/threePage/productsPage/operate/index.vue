@@ -8,7 +8,7 @@
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
     </div>
     <div class="card">
-      <h1>服务模式</h1>
+      <h1>服务内容</h1>
       <div class="">
         <div></div>
         <div>
