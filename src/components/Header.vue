@@ -220,9 +220,10 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   .nav_left_box {
-    width: 46%;
+    width: 60%;
     height: 100%;
     display: flex;
     margin: 0 100px;
@@ -262,6 +263,12 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
           align-items: center;
         }
       }
+      span:hover{
+        color: #729edf;
+        a{
+          color: #729edf!important;
+        }
+      }
       a {
         display: flex;
         width: 100%;
@@ -269,7 +276,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
         justify-content: center;
       }
     }
-  
+ 
     .el-icon {
       position: relative ;
       top: 3px ;
@@ -279,7 +286,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   }
   .nav_right_box {
     display: flex;
-    width: 28%;
+    width: 24%;
     height: 100%;
     margin-right: 15rem;
     justify-content: space-around;
@@ -294,32 +301,23 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
       background-image: url("../assets/th.jpg");
       background-size: 100% 100%;
     }
-    .showDemo {
-      width: 20%;
-      height: 2rem;
-      color: #fff;
-      background: rgb(68, 190, 218);
-      line-height: 2rem;
-      text-align: center;
-      border: none;
-      border-radius: 2rem;
-      cursor: pointer;
-    }
+   
     .loginSty {
-      width: 20%;
+      width: 10rem;
       height: 3rem;
       font-size: 1.4rem;
       color: #000000;
       background: rgb(255, 255, 255);
       line-height: 3rem;
       text-align: center;
-      border: 1px solid rgb(68, 190, 218);
+      border: 1px solid #729edf;
       border-radius: 2rem;
       transition: 0.4s;
+      cursor: pointer;
     }
     .loginSty:hover {
       color: #fff;
-      background-color: rgb(68, 190, 218);
+      background-color: #729edf;
     }
   }
 }

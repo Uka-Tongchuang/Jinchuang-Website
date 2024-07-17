@@ -7,7 +7,7 @@
       <div class="item_first_box item_boxs">
         <div v-if="flagFirst" class="animate__animated animate__fadeIn">
           <div class="icon_box">
-            <el-icon size="10rem" color="#ffefff" style="padding: 1rem;"><Promotion /></el-icon>
+            <el-icon size="10rem" color="#fff" style="padding: 1rem;"><Promotion /></el-icon>
           </div>
           <div class="text">转移派遣服务<br />Transfer Dispatch Service</div>
           <div class="emity_box"></div>
@@ -25,13 +25,13 @@
       <div class="item_two_box item_boxs">
         <div v-if="flagSecond" class="animate__animated animate__fadeIn">
             <div class="icon_box">
-              <el-icon size="10rem" color="#ffefff" style="padding: 1rem;"><List /></el-icon>
+              <el-icon size="10rem" color="#fff" style="padding: 1rem;"><List /></el-icon>
             </div>
         <div class="text">招聘派遣服务<br />Recruitment Dispatch Service</div>
         <div class="emity_box"></div>
         <div class="aboutAny" @click="anoutTwoBtn">了解更多</div>
         </div>
-        <div v-else class="animate__animated animate__slideInUp">
+        <div v-else class="animate__animated animate__fadeIn">
           <div class="texts">招聘派遣服务</div>
           <div class="emity_box"></div>
           <div class="text_box">
@@ -44,13 +44,13 @@
       <div class="item_three_box item_boxs">
         <div v-if="flagThirty"  class="animate__animated animate__fadeIn">
             <div class="icon_box">
-              <el-icon size="10rem" color="#ffefff" style="padding: 1rem;"><Watch /></el-icon>
+              <el-icon size="10rem" color="#fff" style="padding: 1rem;"><Watch /></el-icon>
             </div>
         <div class="text">短期派遣服务<br />Short-term Dispatch Service</div>
         <div class="emity_box"></div>
         <div class="aboutAny" @click="anoutThreeBtn">了解更多</div>
         </div>
-        <div v-else class="animate__animated animate__slideInUp">
+        <div v-else class="animate__animated animate__fadeIn">
           <div class="texts">短期派遣服务</div>
           <div class="emity_box"></div>
           <div class="text_box">
@@ -63,13 +63,13 @@
       <div class="item_four_box item_boxs">
         <div v-if="flagFourth" class="animate__animated animate__fadeIn">
             <div class="icon_box">
-              <el-icon size="10rem" color="#ffefff" style="padding: 1rem;"><AlarmClock /></el-icon>
+              <el-icon size="10rem" color="#fff" style="padding: 1rem;"><AlarmClock /></el-icon>
             </div>
         <div class="text">长期派遣服务<br />Long-term Dispatch Service</div>
         <div class="emity_box"></div>
         <div class="aboutAny" @click="aboutFourBtn">了解更多</div>
         </div>
-        <div v-else class="animate__animated animate__slideInUp">
+        <div v-else class="animate__animated animate__fadeIn">
           <div class="texts">长期派遣服务</div>
           <div class="emity_box"></div>
           <div class="text_box">
@@ -148,8 +148,8 @@ const backListFour=()=>{
         background-color: rgb(235, 212, 188);
         position: absolute;
         line-height: 3rem;
-        top: -0.5rem;
-        left: 1.4rem;
+        top: 2rem;
+        left: 1rem;
         font-size: 1rem;
         color: #fff;
         border-radius: 50%;
@@ -208,6 +208,12 @@ const backListFour=()=>{
         cursor: pointer;
         text-decoration: underline;
         font-size: 1.4rem;
+        transition: 0.2s;
+      }
+      .aboutAny:hover{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #0a0a0a;
       }
     }
     .item_two_box {
