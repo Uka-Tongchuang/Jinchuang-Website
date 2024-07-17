@@ -6,11 +6,11 @@
     <RecruitmentService/>
 
     <!-- 服务优势 -->
-     <div>
+     <div class="advantage">
       <h1>服务优势</h1>
      </div>
-     <!-- 服务价值 -->
-    <div class="footer">
+     <!-- 服务价值 serviceValue-->
+    <!-- <div class="serviceValue">
       <div class="footer-box">
         <h1>服务价值</h1>
         <div ref="titleList">
@@ -30,9 +30,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <img src="../../../assets/swpTwo.jpg" alt="" />
-    </div>
+      </div> 
+    </div> -->
+    <RecruitmentValue :titleArray="state.items"/>
   </div>
 </template>
 
@@ -41,6 +41,7 @@ import swpOne from "../../../assets/th.jpg";
 import { ref, reactive, onMounted, onUnmounted } from "vue";  
 import RecruitmentBanner from "../../../components/bannerList/RecruitmentBanner.vue"
 import  RecruitmentService from '../../../components/Service/RecruitmentService.vue'
+import  RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue'
 
 const titleList = ref();
 const state = reactive({
@@ -94,21 +95,25 @@ const state = reactive({
     },
   ],
 });
- 
-const toggleExpand = (index: number) => {
-  // 遍历所有项，根据id更新isExpanded
-  state.items.forEach((item,inde) => {
-    if (inde === index) {
-      //进行渲染
-      titleList.value.children[inde].style.height = "8rem";
-      item.isExpanded = true
-    } else { 
-        titleList.value.children[inde].style.height = "5rem";
-      item.isExpanded = false; // 如果不是当前点击的项，则隐藏其更多信息
-    }
-  });
-  // state.items[index].isExpanded=!state.items[index].isExpanded
-};
+// const number=ref(0)
+// const toggleExpand = (index: number) => {
+//   // 遍历所有项，根据id更新isExpanded
+//   state.items.forEach((item,inde) => {
+//     if (inde === index) { 
+//       number.value++
+//       titleList.value.children[inde].style.height = "8rem";
+//       item.isExpanded = true 
+//       console.log(number.value)
+//       if(number.value%2 !=1){
+//         titleList.value.children[inde].style.height = "5rem";
+//         item.isExpanded = false
+//       }
+//     } else { 
+//       titleList.value.children[inde].style.height = "5rem";
+//       item.isExpanded = false; // 如果不是当前点击的项，则隐藏其更多信息
+//     }
+//   }); 
+// };
 </script>
 
 <style scoped lang="scss">
@@ -128,44 +133,7 @@ const toggleExpand = (index: number) => {
       background-color: #6179b5;
       margin: auto;
   }
-  .footer {
-    width: 80%;
-    height: 40rem;
-    margin: 3rem auto;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: space-between;
-    .footer-box {
-      width: calc(45% - 5rem);
-      height: 100%;
-      padding-top: 3rem;
-      padding-left: 5rem;
-      h1 {
-        text-align: center;
-      }
-      .title {
-        height: 5rem;
-        border: 2px solid #82c4b3;
-        border-left: none;
-        border-right: none;
-        .title-box {
-          height: 3rem;
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          span {
-            font-size: 2rem;
-            margin-right: 2rem;
-          }
-        }
-      }
-    }
-    img {
-      width: 50%;
-      height: 100%;
-    }
-    
-  }
+
 }
 
 </style>

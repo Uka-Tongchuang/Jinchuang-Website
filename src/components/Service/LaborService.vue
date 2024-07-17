@@ -179,7 +179,7 @@
           }
         }
         .singleArrow {
-          width: 6rem;
+          width: 4rem;
           height: 10px;
           position: relative;
           top: 7rem;
@@ -245,7 +245,7 @@
         
         }
         .singleArrow2 {
-          width: 7rem;
+          width: 4rem;
           height: 10px;
           position: relative;
           top: 7rem;
@@ -256,7 +256,7 @@
           content: "";
           display: block;
           position: absolute;
-          right: 7rem; /* 箭头位置 */
+          right: 4rem; /* 箭头位置 */
           top: -5px; /* 箭头位置 */
           border-top: 10px solid transparent; /* 箭头高低 */
           border-bottom: 10px solid transparent; /* 箭头高低 */

@@ -7,28 +7,7 @@
     <div class="cart_box">
         <FleBleGoodCom/>
     </div>
-    <div class="footer">
-      <div class="footer-box">
-        <h1>服务价值</h1>
-        <div ref="titleList">
-          <div
-            v-for="item in state.items"
-            :key="item.id"
-            @click="toggleExpand(item.id)"
-            class="title"
-          >
-            <div class="title-box">
-              <p>{{ item.title }}</p>
-              <span>{{ item.isExpanded ? "-" : "+" }}</span>
-            </div>
-            <div v-if="item.isExpanded" class="details">
-              {{ item.content }}
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="../../../assets/swpTwo.jpg" alt="" />
-    </div>
+<RecruitmentValue :titleArray="state.items"/>
   </div>
 </template>
 
@@ -36,6 +15,7 @@
 import { ref, reactive, onMounted } from "vue"; 
 import FleBleGoodCom from '@/components/FleBleGoodCom.vue';
 import FlexibleBanner from '../../../components/bannerList/FlexibleBanner.vue'
+import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue'
 
 const titleList = ref();
 const state = reactive({ 
