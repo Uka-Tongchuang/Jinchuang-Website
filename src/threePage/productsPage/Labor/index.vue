@@ -1,9 +1,6 @@
 <template>
-     <div class="content">
-      <div class="trapezoid">
-        <LaborBanner/>
-      </div>
-    
+     <div class="content"> 
+        <LaborBanner/> 
       <!-- 服务模式 -->
       <div class="cart_box">
         <LaborCartComVue/>
@@ -21,18 +18,9 @@
     
     <script setup lang="ts">
     import { ref, reactive, onMounted } from "vue";
-    import LaborBanner from '../../../components/bannerList/LaborBanner.vue'
-    import dataList from "../../../utils/producDes.json";
+    import LaborBanner from '../../../components/bannerList/LaborBanner.vue' 
     import LaborCartComVue from "../../../components/laborComponent/LaborCartCom.vue"
-    const state = reactive({
-     title: "",
-     content: "",
-    });
-    onMounted(() => {
-    //  console.log(dataList);
-     state.title = dataList[1].typetitle;
-     state.content = dataList[1].data[0].content as string;
-    });
+  
     </script>
     
     <style lang="scss" scoped>

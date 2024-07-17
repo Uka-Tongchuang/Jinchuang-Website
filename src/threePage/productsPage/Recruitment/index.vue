@@ -1,33 +1,6 @@
 <template>
   <div class="main">
-    <div class="trapezoid">
-      <div class="merchant">
-        <h1>{{ state?.title }}</h1>
-        <p v-html="state?.content"></p>
-      </div>
-      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
-    </div>
-    <!-- <div class="cart_box">
-    
-        <ZpwbCardCom/>
-
-    </div>
-    <div class="content">
-      <p>
-        通过就业街小圆桌系统、职播播人才直播平台，我们为企业和个人提供全方位的人力资源服务，涵盖人才招聘、人才培
-        训以及直播带岗等多个方面，以全流程人才解决方案帮助企业应对“人怎么来”的种种难题
-      </p>
-    </div> -->
-    <!-- <div class="card-list">
-      <div v-for="item in state.arr" :key="item.id" class="card-title">
-        <el-card>
-          <p class="title">{{ item.title }}</p>
-          <div class="img">
-            <img :src="item.idVieo" />
-          </div>
-        </el-card>
-      </div>
-    </div> -->
+  <RecruitmentBanner/>
     <!-- 服务流程 -->
     <div class="service">
       <h1 style="font-size: 4.5rem">服务流程</h1>
@@ -214,15 +187,13 @@
 
 <script setup lang="ts">
 import swpOne from "../../../assets/th.jpg";
-import { ref, reactive, onMounted, onUnmounted } from "vue";
-import dataList from "../../../utils/producDes.json";
+import { ref, reactive, onMounted, onUnmounted } from "vue"; 
 import ZpwbCardCom from "../../../components/ZpwbCardCom.vue";
+import RecruitmentBanner from "../../../components/bannerList/RecruitmentBanner.vue"
 
 const titleList = ref();
 const state = reactive({
-  getNewsData: [],
-  title: "",
-  content: "",
+  getNewsData: [], 
   arr: [
     {
       id: 1,
@@ -272,11 +243,7 @@ const state = reactive({
     },
   ],
 });
-onMounted(() => {
-  console.log(dataList);
-  state.title = dataList[4].typetitle;
-  state.content = dataList[4].data[0].content as string;
-});
+ 
 const toggleExpand = (id: number) => {
   // 遍历所有项，根据id更新isExpanded
   state.items.forEach((item) => {
@@ -297,36 +264,7 @@ const toggleExpand = (id: number) => {
   height: 100%;
   margin: 0;
   padding: 0;
-  .trapezoid {
-    position: relative;
-    width: 100%;
-    height: 40rem;
-    .merchant {
-      background-color: #2d8fce;
-      height: 40rem;
-      width: 65%;
-      color: white;
-      clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%);
-      h1 {
-        padding-top: 15rem;
-        margin-left: 5rem;
-        font-size: 3rem;
-      }
-      p {
-        margin-left: 5rem;
-        font-size: 1.5rem;
-      }
-    }
-    .urlImg {
-      clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0);
-      width: 53%;
-      height: 40rem;
-      background: url(../../../assets/swpOne.jpg);
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
+ 
   .service {
     width: 80%;
     margin:5rem auto;

@@ -1,12 +1,6 @@
 <template>
   <div class="content">
-    <div class="trapezoid">
-      <div class="merchant ">
-        <h1>{{ state?.title }}</h1>
-        <p v-html="state?.content"></p>
-      </div>
-      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
-    </div>
+    <OperateBanner/>
     <div class="card">
       <h1>服务内容</h1>
       <div class="">
@@ -41,17 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted } from "vue";
-import dataList from "../../../utils/producDes.json";
-const state = reactive({
-  title: "",
-  content: "",
-});
-onMounted(() => {
-  console.log(dataList);
-  state.title = dataList[0].typetitle;
-  state.content = dataList[0].data[0].content;
-});
+import { ref, reactive, onMounted } from "vue"; 
+import OperateBanner from '../../../components/bannerList/OperateBanner.vue'
+
 </script>
 
 <style lang="scss" scoped> 
@@ -59,36 +45,7 @@ onMounted(() => {
   width: 100%;
   padding: 0;
   margin: 0;
-  .trapezoid {
-    position: relative;
-    width: 100%; 
-    height: 40rem; 
-    .merchant { 
-      background-color: #82c4b3;
-      height: 40rem;  
-      width: 65%; 
-      
-      clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
-      h1 {
-        padding-top: 15rem;
-        margin-left: 5rem;
-        font-size: 3rem;
-      }
-      p {
-        margin-left: 5rem;
-        font-size: 1.5rem;
-      }
-    }
-    .urlImg { 
-        clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
-      width: 53%;
-      height: 40rem;  
-      background: url(../../../assets/swpOne.jpg);  
-      position: absolute;
-      top: 0;
-      right: 0;
-    } 
-  }
+ 
   .card {
     width: 80%;
     height: 40rem;
