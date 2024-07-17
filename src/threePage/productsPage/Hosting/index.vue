@@ -7,9 +7,22 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
     </div>
+
+    <div class="servce_content">
+      服务内容
+    </div>
+    <div class="sevce_process">
+      服务流程
+    </div>
+    <div class="serve_advantage">
+      服务优势
+
+    </div>
+    <!-- //服务价值 -->
     <div>
             <OutsourcingCardCom/>
         </div>
+
     <div class="footer">
       <div class="footer-box">
         <h1>服务价值</h1>
@@ -39,7 +52,7 @@
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../../utils/producDes.json";
 import OutsourcingCardCom from '@/components/OutsourcingCardCom.vue';
-
+// console.log(navigator.userAgent,"1212");
 const titleList = ref();
 const state = reactive({
   title: "",
@@ -90,6 +103,24 @@ const toggleExpand = (id: number) => {
   width: 100%;
   padding: 0;
   margin: 0;
+  .servce_content{
+    width: 80%;
+    height: 40rem;
+    background-color: #98c478;
+    margin: 2rem auto;
+  }
+  .sevce_process{
+    width: 80%;
+    height: 40rem;
+    background-color: #98c478;
+    margin: 2rem auto;
+  }
+  .serve_advantage{
+    width: 80%;
+    height: 40rem;
+    background-color: #98c478;
+    margin: 2rem auto;
+  }
   .trapezoid {
     position: relative;
     width: 100%;

@@ -7,6 +7,7 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
     </div>
+    <!-- 服务内容 -->
     <div class="card-list">
     <OutCartCom/>
       
@@ -16,7 +17,9 @@
 
     </div>
     <!-- 流程图 -->
+    <!-- 适用场景 -->
 
+    <!-- 服务流程 -->
     <div class="service">
       <h1 style="font-size: 4.5rem;text-align: center;">服务流程</h1>
           <div class="title-top" ref="switchoverBorder">
@@ -179,15 +182,15 @@ onMounted(()=>{
    .trapezoid {
     position: relative;
     width: 100%; 
-    height: 30rem; 
+    height: 40rem; 
     .merchant { 
-      background-color: blue;
-      height: 30rem;  
+      background-color: rgb(42, 42, 184);
+      height: 40rem;  
       width: 65%; 
-      
+      color: #fff;
       clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
       h1 {
-        padding-top: 5rem;
+        padding-top: 15rem;
         margin-left: 5rem;
         font-size: 3rem;
       }
@@ -199,7 +202,7 @@ onMounted(()=>{
     .urlImg { 
         clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
       width: 53%;
-      height: 30rem;  
+      height: 40rem;  
       background: url(../../../assets/swpOne.jpg);  
       position: absolute;
       top: 0;

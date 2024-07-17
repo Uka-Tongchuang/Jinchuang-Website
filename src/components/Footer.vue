@@ -55,7 +55,7 @@
                 class="dataListItems"
               >
               
-                <router-link :to="item.path" v-if="!item.children">
+                <router-link :to="item.path" v-if="!item.children" style="color: #ccc;">
                   {{ item.meta?.title }}
                 </router-link>
                 <span  v-else>{{ item.meta?.title }}</span>
@@ -64,7 +64,7 @@
                   v-for="(v, i) in item.children"
                   :key="i"
                 >
-                  <router-link :to="v.path">
+                  <router-link :to="v.path" style="color: #ccc;">
                     {{ v.meta?.title }}
                   </router-link>
                 </p>
@@ -283,13 +283,13 @@ ul li {
           }
           .dataListItems {
             a{
-              color: #ccc !important;
+              color: #ccc;
             }
             line-height: 2rem;
             p {
               line-height: 1rem;
               a {
-                color: #ccc !important; 
+                color: #ccc ; 
               }
             }
           }
