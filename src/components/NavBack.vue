@@ -72,7 +72,7 @@ onUnmounted(()=>{
       cursor: pointer;
     }
     > div:nth-child(3) {
-      border-bottom: none !important;
+      border-bottom: none ;
     }
   }
   .icon_tip_box {

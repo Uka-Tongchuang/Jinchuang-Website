@@ -1,9 +1,28 @@
 <template>
   <div class="content">
-   <HostingBanner/>
+    <div class="trapezoid">
+      <div class="merchant">
+        <h1>{{ state?.title }}</h1>
+        <p v-html="state?.content"></p>
+      </div>
+      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
+    </div>
+
+    <div class="servce_content">
+      服务内容
+    </div>
+    <div class="sevce_process">
+      服务流程
+    </div>
+    <div class="serve_advantage">
+      服务优势
+
+    </div>
+    <!-- //服务价值 -->
     <div>
             <OutsourcingCardCom/>
         </div>
+
     <div class="footer">
       <div class="footer-box">
         <h1>服务价值</h1>
@@ -33,10 +52,11 @@
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../../utils/producDes.json";
 import OutsourcingCardCom from '@/components/OutsourcingCardCom.vue';
-import HostingBanner from '../../../components/bannerList/HostingBanner.vue'
-
+// console.log(navigator.userAgent,"1212");
 const titleList = ref();
-const state = reactive({ 
+const state = reactive({
+  title: "",
+  content: "",
    items: [
     {
       title: "降低企业成本：",
@@ -59,7 +79,11 @@ const state = reactive({
     },
   ],
 });
-
+onMounted(() => {
+  console.log(dataList);
+  state.title = dataList[3].typetitle;
+  state.content = dataList[3].data[0].content as string;
+});
 const toggleExpand = (id: number) => {
   // 遍历所有项，根据id更新isExpanded
   state.items.forEach((item) => {
@@ -79,6 +103,54 @@ const toggleExpand = (id: number) => {
   width: 100%;
   padding: 0;
   margin: 0;
+  .servce_content{
+    width: 80%;
+    height: 40rem;
+    background-color: #98c478;
+    margin: 2rem auto;
+  }
+  .sevce_process{
+    width: 80%;
+    height: 40rem;
+    background-color: #98c478;
+    margin: 2rem auto;
+  }
+  .serve_advantage{
+    width: 80%;
+    height: 40rem;
+    background-color: #98c478;
+    margin: 2rem auto;
+  }
+  .trapezoid {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    .merchant {
+      background-color: #98c478;
+      height: 40rem;
+      width: 65%;
+
+      clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%);
+      h1 {
+        padding-top: 15rem;
+        margin-left: 5rem;
+        font-size: 3rem;
+      }
+      p {
+        margin-left: 5rem;
+        font-size: 1.5rem;
+      }
+    }
+    .urlImg {
+      clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0);
+      width: 53%;
+      height: 40rem;
+      background: url(../../../assets/swpOne.jpg);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
    .footer {
     width: 80%;
     height: 40rem;

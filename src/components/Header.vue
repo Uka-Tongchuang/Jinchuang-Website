@@ -16,7 +16,7 @@
           /></el-icon>
         </span>
         <span v-else>
-          <router-link :to="item.path">
+          <router-link :to="item.path" style="color: #000;">
             {{ item.meta?.title }}
           </router-link>
         </span>
@@ -30,7 +30,7 @@
         :key="index"
         @click="fourRouteFun(item)"
       >
-        <router-link  :to="item.path">
+        <router-link  :to="item.path" style="color: #fff;">
           <span>{{ item.meta?.title }}</span> 
         </router-link>
         <!-- <span v-else>
@@ -190,7 +190,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
         height: 100%;
         display: flex;
         align-items: center;
-        color: #fff!important;
+        color: #fff;
         justify-content: center;
       }
       span {
@@ -203,7 +203,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
         color: #000000;
       }
       span:hover {
-        color: #ffffff !important;
+        color: #ffffff ;
         cursor: pointer;
         box-sizing: border-box;
         // border-bottom: .4rem solid #f3fafe;
@@ -271,9 +271,9 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     }
   
     .el-icon {
-      position: relative !important;
-      top: 3px !important;
-      left: 5px !important;
+      position: relative ;
+      top: 3px ;
+      left: 5px ;
       color: #b4b4b4;
     }
   }
