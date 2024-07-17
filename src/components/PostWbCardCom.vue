@@ -124,12 +124,13 @@
                 width: 80%;
                 height: 2.2rem;
                 font-size: 2.2rem;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 margin: 0 0;
                 margin-top: 1.8rem;
                 margin-left: 1rem;
                 text-align: left;
                 line-height: 2.2rem;
-                font-weight: 800;
+                font-weight: 500;
             }
             
             p {
@@ -191,14 +192,15 @@
                 height: 40rem;
     }
 
-      .title_num{
-        position: absolute;
-        font-size: 2.8rem;
-        margin-top: -2rem;
-        margin-left: 1rem;
-        z-index: 10;
-        font-family: '宋体', 'SimSun', sans-serif;
-      }
+    .title_num {
+  position: absolute;
+  font-size: 3rem;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  z-index: 10;
+  letter-spacing: 10px; /* 设置字体间的间距 */
+} 
       .card_box{
         margin-top: 3rem;
       }

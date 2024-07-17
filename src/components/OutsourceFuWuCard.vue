@@ -97,7 +97,7 @@
 </template>
 <style scoped lang="scss">
 .cart_box_com {
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
 
@@ -129,7 +129,7 @@
                 margin-left: 1rem;
                 text-align: left;
                 line-height: 2.2rem;
-                font-weight: 800;
+                font-weight: 500;
             }
             
             p {
@@ -191,14 +191,15 @@
                 height: 40rem;
     }
 
-      .title_num{
-        position: absolute;
-        font-size: 2.8rem;
-        margin-top: -2rem;
-        margin-left: 1rem;
-        z-index: 10;
-        font-family: '宋体', 'SimSun', sans-serif;
-      }
+    .title_num {
+  position: absolute;
+  font-size: 3rem;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  z-index: 10;
+  letter-spacing: 10px; /* 设置字体间的间距 */
+}  
       .card_box{
         margin-top: 3rem;
       }

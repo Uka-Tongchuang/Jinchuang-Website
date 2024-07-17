@@ -120,7 +120,7 @@
                 margin-left: 1rem;
                 text-align: left;
                 line-height: 2.2rem;
-                font-weight: 800;
+                font-weight: 500;
             }
             
             p {
@@ -183,15 +183,20 @@
                 height: 40rem;
     }
 
-      .title_num{
-        position: absolute;
-        font-size: 2.8rem;
-        margin-top: -2rem;
-        margin-left: 1rem;
-        z-index: 10;
-        font-family: '宋体', 'SimSun', sans-serif;
-      }
+    .title_num {
+  position: absolute;
+  font-size: 2.8rem;
+  margin-top: -3rem;
+  margin-left: 1rem;
+  z-index: 10;
+  font-size: 3rem;
+  color: #4b4848;
+  font-style: italic;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+} 
       .card_box{
-        margin-top: 3rem;
+        margin-top: 5rem;
       }
 </style>

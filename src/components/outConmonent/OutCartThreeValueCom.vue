@@ -50,7 +50,7 @@
         height: 12rem;
         border-radius: 50%;
         margin-top: 5rem;
-        background-image: linear-gradient( 110.6deg , #82C4B3 49%, #2D8FCE .7%);
+        background-image: linear-gradient( 110.6deg , #6179B5 49%, #2D8FCE .7%);
         // background: linear-gradient(to bottom,#f09,#0ff,#f90);
         box-shadow: 0 0 0.2rem 0.1rem rgb(187, 187, 187);
         display: flex;
