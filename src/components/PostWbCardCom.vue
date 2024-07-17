@@ -2,7 +2,7 @@
 <div class="cart_box_com">
     <h2>适用场景</h2>
 
-    <div>
+    <div class="card_box">
         <div class="cart_list_box">
             
                 <div class="null_box">
@@ -198,5 +198,8 @@
         margin-left: 1rem;
         z-index: 10;
         font-family: '宋体', 'SimSun', sans-serif;
+      }
+      .card_box{
+        margin-top: 3rem;
       }
 </style>
