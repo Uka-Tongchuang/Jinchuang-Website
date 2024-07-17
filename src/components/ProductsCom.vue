@@ -8,7 +8,7 @@
       <div class="top_box">
         <div class="modukrs_boxs">
           <div class="box_tip_icon">
-            <el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><Avatar /></el-icon>
+            <el-icon size="6rem" color="#fff" style="padding: 2rem;"><Avatar /></el-icon>
           </div>
           <span>人事管理</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
@@ -16,14 +16,14 @@
         </div>
 
         <div class="modukrs_boxs two">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><WalletFilled /></el-icon></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><WalletFilled /></el-icon></div>
           <span>劳务派遣</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="golabor">了解更多</button>
         </div>
 
         <div class="modukrs_boxs three">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><Briefcase /></el-icon></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><Briefcase /></el-icon></div>
           <span>岗位外包</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="goOutsourcing">了解更多</button>
@@ -32,14 +32,14 @@
       <!-- //下部分 -->
       <div class="bottom_box four">
         <div class="modukrs_boxs">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><BrushFilled /></el-icon></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><BrushFilled /></el-icon></div>
           <span>业务外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goRecruitment">了解更多</button>
         </div>
 
         <div class="modukrs_boxs five">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><UserFilled /></el-icon></div>
+          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><UserFilled /></el-icon></div>
           <span>招聘流程外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goOperate">了解更多</button>
@@ -47,7 +47,7 @@
 
         <div class="modukrs_boxs six">
           <div class="showImg animate__animated " >
-            <div class="box_tip_icon"><el-icon size="6rem" color="#ffefff" style="padding: 2rem;"><Platform /></el-icon></div>
+            <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><Platform /></el-icon></div>
             <span>灵活用工解决方案</span>
             <p>多元化的灵活用工<br />结算解决方案</p>
             <button @click="goFiexble">了解更多</button>
@@ -198,6 +198,11 @@ const goFiexble = () => {
           color: $color;
           border: 0.15rem solid $color;
           color: $color;
+          transition: 0.4s;
+        }
+        button:hover{
+          background-color: $color;
+          color: #fff;
         }
       }
       .two {
@@ -214,6 +219,11 @@ const goFiexble = () => {
           @include butonCss;
           color: $color2;
           border: 0.15rem solid $color2;
+          transition: 0.4s;
+        }
+        button:hover{
+          background-color: $color2;
+          color: #fff;
         }
       }
       .three {
@@ -228,8 +238,13 @@ const goFiexble = () => {
         }
         button {
           @include butonCss;
-          color: $color3;
+          color: $color2;
           border: 0.15rem solid $color3;
+          transition: 0.4s;
+        }
+        button:hover{
+          background-color: $color3;
+          color: #fff;
         }
       }
     }
@@ -286,6 +301,12 @@ const goFiexble = () => {
           margin-left: 4rem;
           margin-top: 1rem;
           font-weight: bold;
+          transition: 0.4s;
+        }
+      
+        button:hover{
+          background-color: $color4;
+          color: #fff;
         }
       }
       
@@ -301,8 +322,13 @@ const goFiexble = () => {
         }
         button {
           @include butonCss;
-          color: $color5;
+          color: $color2;
           border: 0.15rem solid $color5;
+          transition: 0.4s;
+        }
+        button:hover{
+          background-color: $color5;
+          color: #fff;
         }
       }
       .six{
@@ -317,8 +343,13 @@ const goFiexble = () => {
         }
         button {
           @include butonCss;
-          color: $color6;
+          color: $color2;
           border: 0.15rem solid $color6;
+          transition: 0.4s;
+        }
+        button:hover{
+          background-color: $color6;
+          color: #fff;
         }
       }
     }

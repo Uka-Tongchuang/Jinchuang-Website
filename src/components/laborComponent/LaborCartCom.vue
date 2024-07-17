@@ -31,7 +31,7 @@
         <div class="emity_box"></div>
         <div class="aboutAny" @click="anoutTwoBtn">了解更多</div>
         </div>
-        <div v-else class="animate__animated animate__slideInUp">
+        <div v-else class="animate__animated animate__fadeIn">
           <div class="texts">招聘派遣服务</div>
           <div class="emity_box"></div>
           <div class="text_box">
@@ -50,7 +50,7 @@
         <div class="emity_box"></div>
         <div class="aboutAny" @click="anoutThreeBtn">了解更多</div>
         </div>
-        <div v-else class="animate__animated animate__slideInUp">
+        <div v-else class="animate__animated animate__fadeIn">
           <div class="texts">短期派遣服务</div>
           <div class="emity_box"></div>
           <div class="text_box">
@@ -69,7 +69,7 @@
         <div class="emity_box"></div>
         <div class="aboutAny" @click="aboutFourBtn">了解更多</div>
         </div>
-        <div v-else class="animate__animated animate__slideInUp">
+        <div v-else class="animate__animated animate__fadeIn">
           <div class="texts">长期派遣服务</div>
           <div class="emity_box"></div>
           <div class="text_box">
@@ -148,8 +148,8 @@ const backListFour=()=>{
         background-color: rgb(235, 212, 188);
         position: absolute;
         line-height: 3rem;
-        top: -0.5rem;
-        left: 1.4rem;
+        top: 2rem;
+        left: 1rem;
         font-size: 1rem;
         color: #fff;
         border-radius: 50%;
@@ -208,6 +208,12 @@ const backListFour=()=>{
         cursor: pointer;
         text-decoration: underline;
         font-size: 1.4rem;
+        transition: 0.2s;
+      }
+      .aboutAny:hover{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #0a0a0a;
       }
     }
     .item_two_box {
