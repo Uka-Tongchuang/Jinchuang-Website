@@ -7,18 +7,18 @@
       </div>
       <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
     </div>
-    <div class="cart_box">
+    <!-- <div class="cart_box">
     
-    <ZpwbCardCom/>
+        <ZpwbCardCom/>
 
-</div>
+    </div>
     <div class="content">
       <p>
         通过就业街小圆桌系统、职播播人才直播平台，我们为企业和个人提供全方位的人力资源服务，涵盖人才招聘、人才培
         训以及直播带岗等多个方面，以全流程人才解决方案帮助企业应对“人怎么来”的种种难题
       </p>
-    </div>
-    <div class="card-list">
+    </div> -->
+    <!-- <div class="card-list">
       <div v-for="item in state.arr" :key="item.id" class="card-title">
         <el-card>
           <p class="title">{{ item.title }}</p>
@@ -27,7 +27,8 @@
           </div>
         </el-card>
       </div>
-    </div>
+    </div> -->
+    <!-- 服务流程 -->
     <div class="service">
       <h1 style="font-size: 4.5rem">服务流程</h1>
       <div class="content-box">
@@ -181,6 +182,11 @@
         </div>
       </div>
     </div>
+    <!-- 服务优势 -->
+     <div class="advantage">
+      <h1>服务优势</h1>
+     </div>
+     <!-- 服务价值 -->
     <div class="footer">
       <div class="footer-box">
         <h1>服务价值</h1>
@@ -294,12 +300,12 @@ const toggleExpand = (id: number) => {
   .trapezoid {
     position: relative;
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     .merchant {
       background-color: #2d8fce;
       height: 40rem;
       width: 65%;
-
+      color: white;
       clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%);
       h1 {
         padding-top: 15rem;
@@ -321,38 +327,9 @@ const toggleExpand = (id: number) => {
       right: 0;
     }
   }
-  .content {
-    width: 70%;
-    height: 5rem;
-    margin: 0 auto;
-    p {
-      font-size: 1.5rem;
-    }
-  }
-  .card-list {
-    width: 90%;
-    height: 13rem;
-    margin: 7rem auto;
-    display: flex;
-    justify-content: space-between;
-    .card-title {
-      width: 15rem;
-      text-align: center;
-      margin: 0 auto;
-      .img {
-        width: 5rem;
-        height: 5rem;
-        margin: 1rem auto;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
   .service {
     width: 80%;
-    margin: auto;
+    margin:5rem auto;
     h1 {
       text-align: center;
       overflow-y: hidden;
@@ -673,6 +650,12 @@ const toggleExpand = (id: number) => {
       }
     }
   }
+  .advantage{
+     width: 80%;
+      min-height: 40rem;
+      background-color: #6179b5;
+      margin: auto;
+  }
   .footer {
     width: 80%;
     height: 40rem;
@@ -712,10 +695,5 @@ const toggleExpand = (id: number) => {
     
   }
 }
-.cart_box {
-                    width: 90%;
-                    height: 40rem;
-                    margin: 0 auto;
-                    margin-top: 5rem;
-                }
+
 </style>
