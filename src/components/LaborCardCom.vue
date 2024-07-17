@@ -11,18 +11,14 @@
                     <div class="item_first_box item_boxs">
                     
                     <div class="text">
-                       <span>服务类</span>
-                       <p >Serve category</p>
+                       <span>员工</span>
+                       <p >Employee Rights and Interests</p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>销售</li>
-                       <li>收银</li>
-                       <li>服务员</li>
-                       <li>临时促销员</li>
-                       <li>仓管</li>
-                       <li>店员</li>
-                       <li>理货</li>
-                       <li>店长</li>
+                       <li>女工三期处理</li>
+                       <li>员工工伤处理</li>
+                       <li>用工风险处理</li>
+                       <li>疾病风险处理</li>
                            </ul>
                </div>
                </div>
@@ -35,36 +31,30 @@
                     <div class="item_two_box item_boxs">
                     
                     <div class="text">
-                       <span>业务类</span>
-                       <p >Business category</p>
+                       <span>劳务</span>
+                       <p >Labor Information</p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>业务助理</li>
-                       <li>财务助理 </li>
-                       <li>人事助理</li>
-                       <li>采购助理</li>
-                       <li>线上客服</li>
-                       <li>电话客服</li>
-                       <li>地推</li>
+                       <li>基础劳动法务资讯</li>
+                       <li>商业保险服务 </li>
                            </ul>
                </div>
                </div>
               
 
             </div>
-            <div class="null_box">
+            <div class="null_box">  
                     <div class="title_num">03</div>
 
                     <div class="item_two_box item_boxs">
                     
                     <div class="text">
-                       <span>技术类</span>
-                       <p >Technical category</p>
+                       <span>保险</span>
+                       <p >Insurance Services</p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>实习生</li>
-                       <li>咖啡师</li>
-                       <li>调酒师</li>
+                       <li>工资，社保公积金服务</li>
+                       <li>商业保险服务</li>
                            </ul>
                </div>
                </div>
@@ -77,13 +67,14 @@
                     <div class="item_two_box item_boxs">
                     
                     <div class="text">
-                       <span>人事类</span>
-                       <p >Personnel category</p>
+                       <span>人事</span>
+                       <p >personnel management</p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>材料审核</li>
-                       <li>行政文秘</li>
-                       <li>办公室文员</li>
+                       <li>员工招聘</li>
+                       <li>入离职手续办理</li>
+                       <li>人事档案管理</li>
+                       <li>灵活选择使用期限</li>
                            </ul>
                </div>
                </div>
@@ -134,7 +125,7 @@
             
             p {
           font-size: 1.4rem;
-          width: 80%;
+          width: 100%;
           margin: 0 0;
           display: flex;
           font-weight: 300; /* 设置字体为细 */
@@ -147,8 +138,9 @@
     }
 
     .custom-list li {
+        width: 100%;
       position: relative;
-      padding-left: 6rem; /* 为小圆点和文本之间增加距离 */
+      padding-left: 5rem; /* 为小圆点和文本之间增加距离 */
       margin-bottom: 1.2rem; /* 设置每行之间的间距 */
       font-size: 1.6rem; /* 调整字体大小 */
       margin-left: 2rem;

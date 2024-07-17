@@ -9,7 +9,7 @@
     <LaborService />
     <!-- 服务内容 -->
     <div class="content-box">
-      <h1>服务内容</h1>
+      <LaborCardCom/>
     </div>
   </div>
 </template>
@@ -19,6 +19,7 @@ import { ref, reactive, onMounted } from "vue";
 import LaborBanner from "../../../components/bannerList/LaborBanner.vue";
 import LaborService from "../../../components/Service/LaborService.vue";
 import LaborCartComVue from "../../../components/laborComponent/LaborCartCom.vue";
+import LaborCardCom from "@/components/LaborCardCom.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -42,8 +43,9 @@ import LaborCartComVue from "../../../components/laborComponent/LaborCartCom.vue
   .content-box {
     width: 90%;
     min-height: 40rem;
-    background-color: #6179b5;
+    background-color: #ffffff;
     margin: auto;
+    margin-bottom: 4rem;
   }
 }
 </style>
