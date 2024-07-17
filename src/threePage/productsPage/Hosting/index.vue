@@ -9,7 +9,7 @@
     </div>
 
     <div class="servce_content">
-      服务内容
+      <OutsurceFuWuCard/>
     </div>
     <div class="sevce_process">
       服务流程
@@ -31,7 +31,8 @@
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../../utils/producDes.json";
 import OutsourcingCardCom from '@/components/OutsourcingCardCom.vue';
-import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue'
+import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue';
+import OutsurceFuWuCard from '@/components/OutsourceFuWuCard.vue';
 // console.log(navigator.userAgent,"1212");
 const titleList = ref();
 const state = reactive({
@@ -72,8 +73,8 @@ onMounted(() => {
   margin: 0;
   .servce_content{
     width: 80%;
-    height: 40rem;
-    background-color: #98c478;
+    height: 50rem;
+    background-color: #ffffff;
     margin: 2rem auto;
   }
   .sevce_process{
