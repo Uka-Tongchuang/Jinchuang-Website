@@ -15,11 +15,11 @@
       服务流程
     </div>
     <div class="serve_advantage">
-      服务优势
-
+      
+      <ServeAdvantageCom/>
     </div>
     <!-- //服务价值 -->
-    <div>
+    <div class="serve_value_box">
             <OutsourcingCardCom/>
         </div>
 
@@ -33,8 +33,9 @@ import dataList from "../../../utils/producDes.json";
 import OutsourcingCardCom from '@/components/OutsourcingCardCom.vue';
 import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue';
 import OutsurceFuWuCard from '@/components/OutsourceFuWuCard.vue';
+import ServeAdvantageCom from "@/components/serveAdvantage/ServeAdvantage.vue"
 // console.log(navigator.userAgent,"1212");
-const titleList = ref();
+// const titleList = ref();
 const state = reactive({
   title: "",
   content: "",
@@ -86,7 +87,7 @@ onMounted(() => {
   .serve_advantage{
     width: 80%;
     height: 40rem;
-    background-color: #98c478;
+    // background-color: #98c478;
     margin: 2rem auto;
   }
   .trapezoid {
