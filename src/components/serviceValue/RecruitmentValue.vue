@@ -26,7 +26,7 @@
 import { ref, reactive, onMounted, onUnmounted,defineProps } from "vue";  
 // 定义组件接收的props类型  
 type Props = {  
-  titleArray: string | string[];  
+  titleArray: any;  
 };  
   
 // 使用defineProps定义props  

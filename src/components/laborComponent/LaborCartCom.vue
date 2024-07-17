@@ -118,6 +118,7 @@ const aboutFourBtn=()=>{
 const backListFour=()=>{
     flagFourth.value=true
 }
+
 </script>
 
 <style scoped lang="scss">
@@ -134,7 +135,7 @@ const backListFour=()=>{
     height: 34rem;
     display: flex;
     justify-content: space-between;
-    $color1: #fcc;
+    $color1: #2D8FCE;
     .item_boxs {
       width: 24rem;
       height: 30rem;
@@ -145,16 +146,23 @@ const backListFour=()=>{
       .closeBtn {
         width: 3rem;
         height: 3rem;
-        background-color: rgb(235, 212, 188);
+        background: #fff;
+        color: $color1;
         position: absolute;
         line-height: 3rem;
         top: 2rem;
         left: 1rem;
         font-size: 1rem;
-        color: #fff;
         border-radius: 50%;
         text-align: left;
         cursor: pointer;
+        border: 0.1rem solid $color1;
+        transition: 0.2s;
+      }
+      .closeBtn:hover{
+        font-weight: 700;
+        color: #fffdfd;
+        background-color: $color1;
       }
       .texts {
         width: 80%;
@@ -217,33 +225,60 @@ const backListFour=()=>{
       }
     }
     .item_two_box {
-      border: 0.2rem solid #f09;
-      box-shadow: 0 0 0.4rem 0.2rem #f09;
+      border: 0.2rem solid #6179B5;
+      box-shadow: 0 0 0.4rem 0.2rem #6179B5;
+      .closeBtn{
+        background: #fff;
+        color: #6179B5;
+      }
+      .closeBtn:hover{
+        font-weight: 700;
+        background: #6179B5;
+        color: #fff;
+      }
       .icon_box {
-        background-color: #f09;
+        background-color: #6179B5;
       }
       .emity_box {
-        background-color: #f09;
+        background-color: #6179B5;
       }
     }
     .item_three_box {
-      border: 0.2rem solid #f93;
-      box-shadow: 0 0 0.4rem 0.2rem #f93;
+      border: 0.2rem solid #261F4B;
+      box-shadow: 0 0 0.4rem 0.2rem #261F4B;
+      .closeBtn{
+        background: #fff;
+        color: #261F4B;
+      }
+      .closeBtn:hover{
+        font-weight: 700;
+        background: #261F4B;
+        color: #fff;
+      }
       .icon_box {
-        background-color: #f93;
+        background-color: #261F4B;
       }
       .emity_box {
-        background-color: #f93;
+        background-color: #261F4B;
       }
     }
     .item_four_box {
-      border: 0.2rem solid rgb(43, 51, 135);
-      box-shadow: 0 0 0.4rem 0.2rem rgb(43, 51, 135);
+      border: 0.2rem solid #124A7E;
+      box-shadow: 0 0 0.4rem 0.2rem #124A7E;
+      .closeBtn{
+          background: #fff;
+        color: #124A7E;
+      }
+      .closeBtn:hover{
+        font-weight: 700;
+        color: #fff;
+      background-color: #124A7E;
+      }
       .icon_box {
-        background-color: rgb(43, 51, 135);
+        background-color: #124A7E;
       }
       .emity_box {
-        background-color: rgb(43, 51, 135);
+        background-color: #124A7E;
       }
     }
   }

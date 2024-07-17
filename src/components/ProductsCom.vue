@@ -75,7 +75,7 @@ const enterDiv = () => {
 };
 //跳转人事管理
 const goPersonnel = () => {
-  router.push("/home/index/ersonnel");
+  router.push("/home/index/operate");
 };
 //跳转劳务派遣
 const golabor = () => {

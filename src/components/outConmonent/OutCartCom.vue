@@ -112,13 +112,15 @@ import {BrushFilled} from "@element-plus/icons-vue"
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: self-start;
-        font-size: 1.4rem;
+        margin-left: -0.2rem;
+        font-size: 1.52rem;
         text-indent: 4rem;
         white-space: nowrap;
         color: $color1;
+        font-size: 2rem;
         span{
           color: #000;
+          font-size: 1.6rem;
         }
       }
     }
@@ -159,6 +161,11 @@ import {BrushFilled} from "@element-plus/icons-vue"
       }
       .aboutAny{
         color: #6179B5;
+        
+         span{
+          color: #000;
+          display: inline-block;
+        }
       }
     }
   }

@@ -1,19 +1,13 @@
 <template>
   <div class="content">
-    <OperateBanner/>
+    <OperateBanner />
     <div class="card">
       <h1>服务内容</h1>
-      <div class="">
-        <div></div>
-        <div>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-          <div></div>
-        </div>
+      <div class="content_cart_list_box">
+       <PersonnelComCartVue/>
       </div>
     </div>
+
     <div class="advantage">
       <div class="title">
         <h1>服务优势</h1>
@@ -35,21 +29,28 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, onMounted } from "vue"; 
-import OperateBanner from '../../../components/bannerList/OperateBanner.vue'
-
+import { ref, reactive, onMounted } from "vue";
+import OperateBanner from "../../../components/bannerList/OperateBanner.vue";
+import PersonnelComCartVue from "../../../components/PersonnelManagement/PersonnelComCart.vue";
 </script>
 
-<style lang="scss" scoped> 
+<style lang="scss" scoped>
 .content {
   width: 100%;
   padding: 0;
   margin: 0;
- 
+
   .card {
     width: 80%;
-    height: 40rem;
-    margin: auto;
+    height: 50rem;
+    margin: 2rem auto;
+    h1{
+      font-size: 4rem;
+    }
+    .content_cart_list_box{
+      width: 100%;
+      height: 40rem;
+    }
   }
   .advantage {
     width: 80%;
