@@ -1,6 +1,6 @@
 <template>
 <div class="cart_box_com">
-    <h2>适用场景</h2>
+    <h2>服务内容</h2>
 
     <div class="card_box">
         <div class="cart_list_box">
@@ -11,18 +11,14 @@
                     <div class="item_first_box item_boxs">
                     
                     <div class="text">
-                       <span>服务类</span>
-                       <p >Serve category</p>
+                       <span>人力资源管理</span>
+                       <p >Human Resources </p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>销售</li>
-                       <li>收银</li>
-                       <li>服务员</li>
-                       <li>临时促销员</li>
-                       <li>仓管</li>
-                       <li>店员</li>
-                       <li>理货</li>
-                       <li>店长</li>
+                       <li>人员招聘</li>
+                       <li>资源配置</li>
+                       <li>团队搭建</li>
+                       <li>人事管理</li>
                            </ul>
                </div>
                </div>
@@ -35,17 +31,12 @@
                     <div class="item_two_box item_boxs">
                     
                     <div class="text">
-                       <span>业务类</span>
-                       <p >Business category</p>
+                       <span>运营管理</span>
+                       <p >Operational </p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>业务助理</li>
-                       <li>财务助理 </li>
-                       <li>人事助理</li>
-                       <li>采购助理</li>
-                       <li>线上客服</li>
-                       <li>电话客服</li>
-                       <li>地推</li>
+                       <li>业务运营</li>
+                       <li>风险管理 </li>
                            </ul>
                </div>
                </div>
@@ -58,13 +49,11 @@
                     <div class="item_two_box item_boxs">
                     
                     <div class="text">
-                       <span>技术类</span>
-                       <p >Technical category</p>
+                       <span>办公管理</span>
+                       <p >Office </p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>实习生</li>
-                       <li>咖啡师</li>
-                       <li>调酒师</li>
+                       <li>办公场所</li>
                            </ul>
                </div>
                </div>
@@ -77,13 +66,13 @@
                     <div class="item_two_box item_boxs">
                     
                     <div class="text">
-                       <span>人事类</span>
-                       <p >Personnel category</p>
+                       <span>福利与绩效管理</span>
+                       <p >Welfare and Performance </p>
                        <p><br/></p>
                            <ul class="custom-list">
-                       <li>材料审核</li>
-                       <li>行政文秘</li>
-                       <li>办公室文员</li>
+                       <li>薪酬管理</li>
+                       <li>福利管理</li>
+                       <li>绩效管理</li>
                            </ul>
                </div>
                </div>
@@ -134,7 +123,7 @@
             
             p {
           font-size: 1.4rem;
-          width: 80%;
+          width: 100%;
           margin: 0 0;
           display: flex;
           font-weight: 300; /* 设置字体为细 */
