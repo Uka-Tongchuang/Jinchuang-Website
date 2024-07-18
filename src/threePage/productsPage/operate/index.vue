@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="imgUrl">
-        <img src="../../../assets/swpOne.jpg" alt="" />
+        <img src="../../../assets/youshi.png" alt="" />
       </div>
       <div class="card-list">
         <p>专业化顾问团队</p>
@@ -70,7 +70,7 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
       }
     }
     .imgUrl {
-      width: 50rem;
+      width: 60rem;
       height: 70rem;
       img {
         width: 100%;
@@ -81,10 +81,9 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
       width: 80%;
       height: 10rem;
       position: absolute;
-      background-color: black;
+      background-color: #82C4B3;
       color: white;
-      line-height: 6rem;
-      opacity: 0.4;
+      line-height: 6rem; 
       font-size: 2rem;
       bottom: 6rem;
       left: 0;

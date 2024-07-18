@@ -13,26 +13,26 @@
 
 <script setup lang="ts">
 import swpOne from "../assets/th.jpg";
-import ajisen from "../assets/拉面.png"; //味千拉面
-import alibaba from "../assets/阿里巴巴.png"; //阿里
-import ane from "../assets/安能.png"; //安能
+import ajisen from "../assets/ajisen.png"; //味千拉面
+import alibaba from "../assets/alibaba.png"; //阿里
+import ane from "../assets/ane.png"; //安能
 import boss from "../assets/boss.png"; //boss
-import huoguo from "../assets/1718.png";
-import corporation from "../assets/中储粮.png"; //中储粮
-import cotti from "../assets/咖啡.png"; //库迪咖啡
-import dingtalk from "../assets/钉钉.png"; //钉钉
-import ems from "../assets/邮政.png"; //邮政
+import huoguo from "../assets/huoguo.png";
+import corporation from "../assets/corporation.png"; //中储粮
+import cotti from "../assets/cotti.png"; //库迪咖啡
+import dingtalk from "../assets/dingtalk.png"; //钉钉
+import ems from "../assets/EMSA.png"; //邮政
 import EMS from "../assets/ems.png"; //邮政
-import favicon from "../assets/抖音.png"; //抖音
-import luckin from "../assets/瑞幸.png"; // 瑞幸
-import meitaun from "../assets/美团.png"; //美团
-import miduoduo from "../assets/米多多.png"; //米多多
-import quick from "../assets/快手.png"; //快手
-import sfexpress from "../assets/顺丰.png"; //顺丰
-import simple from "../assets/朴朴.png"; //朴朴
-import tasting from "../assets/点米科技.png"; //点米
-import taobao from "../assets/淘宝.png"; //淘宝
-import changzuimao from "../assets/微信图片_20240711181538.png"; //淘宝
+import favicon from "../assets/favicon.png"; //抖音
+import luckin from "../assets/luckin.png"; // 瑞幸
+import meitaun from "../assets/meitaun.png"; //美团
+import miduoduo from "../assets/miduoduo.png"; //米多多
+import quick from "../assets/quick.png"; //快手
+import sfexpress from "../assets/sfexpress.png"; //顺丰
+import simple from "../assets/simple.png"; //朴朴
+import tasting from "../assets/tasting.png"; //点米
+import taobao from "../assets/taobao.png"; //淘宝
+import changzuimao from "../assets/changzuimao.png"; //长嘴猫
 import { reactive } from "vue";
 const state = reactive({
   arr: [

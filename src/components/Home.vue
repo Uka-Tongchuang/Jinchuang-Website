@@ -109,8 +109,10 @@ const arr = reactive({
  margin: 0 auto; 
 }
 .company-achievement{
+  background: url(../assets/ditu.png) no-repeat;
+background-position: center;
  width: calc(80% - 4rem);
- height: 30rem; 
+ height: 50rem; 
  margin: 0 auto; 
 }
 </style>

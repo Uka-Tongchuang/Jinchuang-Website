@@ -21,13 +21,13 @@
               </div>
               <div class="logo_arr">
                 <div class="logo_left" > 
-                  <img src="../assets/信息.png" alt=""> 
+                  <img src="../assets/xinxi.png" alt=""> 
                 </div>
                 <p>邮箱地址</p>
               </div>
               <div class="logo_arr">
                 <div class="logo_left">
-                  <img src="../assets/邮箱.png" alt="">
+                  <img src="../assets/dingwei.png" alt="">
                 </div>
                 <p>公司地址</p>
               </div>
@@ -118,9 +118,9 @@
               </div>
               <p>关注微信公众号了解更多</p>
               <div class="logo-arr">
-                <img src="../assets/微信.png" alt="">
+                <img src="../assets/weixin.png" alt="">
                 <img src="../assets/QQ.png" alt="">
-                <img src="../assets/邮箱.png" alt="">
+                <img src="../assets/youxiang.png" alt="">
               </div>
           </div>
         </div> 
