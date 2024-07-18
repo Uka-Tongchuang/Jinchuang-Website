@@ -223,7 +223,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   justify-content: space-around;
   align-items: center;
   .nav_left_box {
-    width: 60%;
+    width: 46%;
     height: 100%;
     display: flex;
     margin: 0 100px;

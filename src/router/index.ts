@@ -206,14 +206,14 @@ export const routerChildren=[
     component: MyHome,
     children:threeChildrenRoute
   },
-  {
-    path: "/home/talent",
-    name: "talent",
-    meta:{
-      title:"解决方案"
-    },
-    component: Talent
-  },
+  // {
+  //   path: "/home/talent",
+  //   name: "talent",
+  //   meta:{
+  //     title:"解决方案"
+  //   },
+  //   component: Talent
+  // },
   {
     path:"/home/special",
     name: "special",

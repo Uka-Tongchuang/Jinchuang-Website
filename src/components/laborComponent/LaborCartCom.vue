@@ -144,24 +144,23 @@ const backListFour=()=>{
       box-shadow: 0 0 0.4rem 0.2rem $color1;
       position: relative;
       .closeBtn {
-        width: 3rem;
+        width: 5rem;
         height: 3rem;
         background: #fff;
         color: $color1;
+        font-size: 1.2rem;
         position: absolute;
         line-height: 3rem;
         top: 2rem;
         left: 1rem;
-        font-size: 1rem;
         border-radius: 50%;
         text-align: left;
         cursor: pointer;
-        // border: 0.1rem solid $color1;
         transition: 0.2s;
       }
       .closeBtn:hover{
-        font-weight: 400;
-        text-decoration:underline
+        text-decoration-line:underline;
+        text-decoration-style: wavy;
       }
       .texts {
         width: 80%;
@@ -231,8 +230,8 @@ const backListFour=()=>{
         color: #6179B5;
       }
       .closeBtn:hover{
-        font-weight: 400;
-        text-decoration:underline
+        text-decoration-line:underline;
+        text-decoration-style: wavy;
       }
       .icon_box {
         background-color: #6179B5;
@@ -249,8 +248,8 @@ const backListFour=()=>{
         color: #261F4B;
       }
       .closeBtn:hover{
-        font-weight: 400;
-        text-decoration:underline
+        text-decoration-line:underline;
+        text-decoration-style: wavy;
       }
       .icon_box {
         background-color: #261F4B;
@@ -267,8 +266,8 @@ const backListFour=()=>{
         color: #124A7E;
       }
       .closeBtn:hover{
-        font-weight: 400;
-        text-decoration:underline
+        text-decoration-line:underline;
+        text-decoration-style: wavy;
       }
       .icon_box {
         background-color: #124A7E;

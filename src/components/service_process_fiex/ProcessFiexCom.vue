@@ -152,7 +152,7 @@
       .line_outside {
         width: 30rem;
         height: 30rem;
-        // box-sizing: border-box;
+        border-bottom-left-radius: 2rem;
         border-left: 0.4rem solid rgb(221, 184, 52);
         border-bottom: 0.4rem solid rgb(68, 214, 68);
         position: relative;
@@ -170,6 +170,7 @@
           height: 28.6rem;
           font-size: 1.4rem;
           line-height: 52.2rem;
+          border-bottom-left-radius: 2rem;
           border-left: 0.4rem solid rgb(97, 121, 181);
           border-bottom: 0.4rem solid rgb(97, 121, 181);
           margin-left: 1rem;
@@ -270,7 +271,7 @@
       .line_outside {
         width: 30rem;
         height: 30rem;
-        // box-sizing: border-box;
+        border-bottom-right-radius: 2rem;
         border-right: 0.4rem solid rgb(221, 184, 52);
         border-bottom: 0.4rem solid rgb(68, 214, 68);
         position: relative;
@@ -288,6 +289,7 @@
           height: 28.6rem;
           font-size: 1.4rem;
           line-height: 52.2rem;
+          border-bottom-right-radius: 2rem;
           border-right: 0.4rem solid rgb(97, 121, 181);
           border-bottom: 0.4rem solid rgb(97, 121, 181);
           margin-right: 1rem;
