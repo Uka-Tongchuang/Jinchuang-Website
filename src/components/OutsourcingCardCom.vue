@@ -83,7 +83,7 @@
   }
   .cart_list_box {
     width: 100%;
-    height: 34rem;
+    height: 22rem;
     display: flex;
     justify-content: space-between;
     $color1: #82c4b3;

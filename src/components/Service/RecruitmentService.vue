@@ -1,6 +1,6 @@
 <template>
  <div class="service">
-      <h1 style="font-size: 4.5rem">服务流程</h1>
+      <h1 >服务流程</h1>
       <div class="content-box">
         <div class="flex1">
           <div class="border-box">
@@ -135,11 +135,10 @@
   .service {
     width: 80%;
     margin:5rem auto;
-    h1 {
-      text-align: center;
+    h1 { 
       overflow-y: hidden;
       margin: 2rem auto;
-      font-size: 2rem;
+      font-size: 3rem;
       color: rgb(0, 0, 0);
     }
     p {
