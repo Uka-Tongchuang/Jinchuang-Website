@@ -14,7 +14,7 @@
             <p>{{ item.title }}</p>
             <span>{{ item.isExpanded ? "-" : "+" }}</span>
           </div>
-          <div v-if="item.isExpanded" class="details">
+          <div v-if="item.isExpanded" class="details animate__animated  animate__fadeInDown animate-duration=0.2s">
             {{ item.content }}
           </div>
         </div>
@@ -60,16 +60,15 @@ const toggleExpand = (index: number) => {
 </script>
 <style lang="scss" scoped>
 .serviceValue {
-  width: 80%;
-
+  width: 100%;
   height: 40rem;
-  margin: 3rem auto;
+  margin: auto;
   background: url(../../assets/swpOne.jpg);
   display: flex;
   justify-content: space-between;
   .footer-box {
     height: 60%;
-    margin-left: 5rem;
+    margin-left: 10%;
     width: calc(40% - 10rem);
     padding: 5rem;
     background-color: #f0f0f0;
