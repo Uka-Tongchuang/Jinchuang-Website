@@ -156,13 +156,12 @@ const backListFour=()=>{
         border-radius: 50%;
         text-align: left;
         cursor: pointer;
-        border: 0.1rem solid $color1;
+        // border: 0.1rem solid $color1;
         transition: 0.2s;
       }
       .closeBtn:hover{
-        font-weight: 700;
-        color: #fffdfd;
-        background-color: $color1;
+        font-weight: 400;
+        text-decoration:underline
       }
       .texts {
         width: 80%;
@@ -219,9 +218,9 @@ const backListFour=()=>{
         transition: 0.2s;
       }
       .aboutAny:hover{
+        font-weight: 500;
         font-size: 1.8rem;
-        font-weight: 400;
-        color: #0a0a0a;
+        color: #000;
       }
     }
     .item_two_box {
@@ -232,9 +231,8 @@ const backListFour=()=>{
         color: #6179B5;
       }
       .closeBtn:hover{
-        font-weight: 700;
-        background: #6179B5;
-        color: #fff;
+        font-weight: 400;
+        text-decoration:underline
       }
       .icon_box {
         background-color: #6179B5;
@@ -251,9 +249,8 @@ const backListFour=()=>{
         color: #261F4B;
       }
       .closeBtn:hover{
-        font-weight: 700;
-        background: #261F4B;
-        color: #fff;
+        font-weight: 400;
+        text-decoration:underline
       }
       .icon_box {
         background-color: #261F4B;
@@ -270,9 +267,8 @@ const backListFour=()=>{
         color: #124A7E;
       }
       .closeBtn:hover{
-        font-weight: 700;
-        color: #fff;
-      background-color: #124A7E;
+        font-weight: 400;
+        text-decoration:underline
       }
       .icon_box {
         background-color: #124A7E;
