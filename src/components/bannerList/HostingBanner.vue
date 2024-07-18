@@ -26,7 +26,7 @@
       width: 100%; 
       height: 40rem; 
       .merchant { 
-       background-color: #6179b5;
+       background-color: #98c478;
        height: 40rem; 
        width: 65%; 
          color: white;
