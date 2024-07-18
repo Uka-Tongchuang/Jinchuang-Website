@@ -63,7 +63,7 @@ const toggleExpand = (index: number) => {
   width: 100%;
   height: 40rem;
   margin: auto;
-  background: url(../../assets/swpOne.jpg);
+  background: url(../../assets/img/value.jpg) no-repeat 100%;
   display: flex;
   justify-content: space-between;
   .footer-box {

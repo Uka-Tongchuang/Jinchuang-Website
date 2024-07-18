@@ -4,7 +4,7 @@
         <h1>{{ state?.title }}</h1>
         <p v-html="state?.content"></p>
        </div>
-       <img src="../../assets/swpOne.jpg" alt="" class="urlImg" />
+       <img src="../../assets/img/yewu.png" alt="" class="urlImg" />
       </div>
 </template>
 <script setup lang="ts" >

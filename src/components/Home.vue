@@ -5,9 +5,8 @@
       <el-carousel height="40rem" autoplay :interval="3000">
         <el-carousel-item v-for="item in arr.arr" :key="item.id">
           <div class="description_box">
-            <p class="description">文本显示1231452154</p>  
           </div>
-          <img :src="item.idVieo" alt="" />
+          <img :src="item.idVieo" alt="" style="display: block; width: 100%; height: 100%; margin: 0; padding: 0;"/>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -38,17 +37,18 @@ import CompanyAchievement from "./CompanyAchievement.vue";
 import LogoList from "./LogoList.vue";
 import swpOne from "../assets/swpOne.jpg";
 import swpTwo from "../assets/swpTwo.jpg";
-
+import homePage from "../assets/img/homePage.png";
+import homePage2 from "../assets/img/homePage2.png";
 import { reactive } from "vue";
 const arr = reactive({
   arr: [
     {
       id: 1,
-      idVieo: swpOne,
+      idVieo: homePage,
     },
     {
       id: 2,
-      idVieo: swpTwo,
+      idVieo: homePage2,
     },
   ],
 });

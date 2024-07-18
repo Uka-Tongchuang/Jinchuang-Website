@@ -4,7 +4,7 @@
         <h1>{{ state?.title }}</h1>
         <p v-html="state?.content"></p>
        </div>
-       <img src="../../assets/swpOne.jpg" alt="" class="urlImg" />
+       <img src="../../assets/img/laowu1.png" alt="" class="urlImg" />
       </div>
 </template>
 <script setup lang="ts" >
@@ -46,7 +46,7 @@
         clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
        width: 53%;
        height: 40rem; 
-       background: url(../../../assets/swpOne.jpg); 
+      //  background: url(../../../assets/swpOne.jpg); 
        position: absolute;
        top: 0;
        right: 0;
