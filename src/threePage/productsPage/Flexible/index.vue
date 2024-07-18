@@ -101,13 +101,13 @@ const toggleExpand = (id: number) => {
   }
 }
 .cart_box {
-    width: 90%;
+    width: 80%;
     height: 40rem;
     margin: 0 auto;
     margin-top: 5rem;
     }
 .process{
-  width: 100%;
+  width: 80%;
     height: 40rem;
     margin: 0 auto;
     margin-top: 5rem;
