@@ -63,7 +63,8 @@ const toggleExpand = (index: number) => {
   width: 100%;
   height: 40rem;
   margin: auto;
-  background: url(../../assets/img/value.jpg) no-repeat 100%;
+  background: url(../../assets/img/meeting.jpg) no-repeat center center;  
+  background-size: cover; 
   display: flex;
   justify-content: space-between;
   .footer-box {
