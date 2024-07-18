@@ -130,10 +130,10 @@ const goFiexble = () => {
   .modules_box {
     width: 100%;
     height: 90rem;
-    $color: rgb(197, 229, 174);
+    $color: rgb(152, 217, 202);
       $color2: rgb(130, 196, 179);
       $color3: rgb(83, 169, 187);
-      $color4:rgb(179, 167, 133);
+      $color4:rgb(125, 153, 218);
       $color5:rgb(57,112,172);
       $color6:rgb(18,74,126);
       @mixin spanCss {
@@ -238,7 +238,7 @@ const goFiexble = () => {
         }
         button {
           @include butonCss;
-          color: $color2;
+          color: $color3;
           border: 0.15rem solid $color3;
           transition: 0.4s;
         }
@@ -322,7 +322,7 @@ const goFiexble = () => {
         }
         button {
           @include butonCss;
-          color: $color2;
+          color: $color5;
           border: 0.15rem solid $color5;
           transition: 0.4s;
         }
@@ -343,7 +343,7 @@ const goFiexble = () => {
         }
         button {
           @include butonCss;
-          color: $color2;
+          color: $color6;
           border: 0.15rem solid $color6;
           transition: 0.4s;
         }

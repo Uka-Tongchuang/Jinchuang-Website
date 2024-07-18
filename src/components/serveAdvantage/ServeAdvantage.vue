@@ -54,7 +54,7 @@
     justify-content: space-around;
     align-items: center;
     .first_box{
-        background-color: rgb(107, 204, 185);
+        background-color: rgb(82, 222, 194);
     }
     .two_box{
         background-color: rgb(100, 113, 169);
@@ -81,7 +81,9 @@
                 width: 11rem;
             height: 11rem;
             border: 0.2rem solid #fff;
+            // box-sizing: border-box;
             box-shadow: 0 0 0.24rem 0.1rem #fff;
+            box-shadow: 0 0 -0.24rem -0.1rem #fff;
             border-radius: 50%;
             display: flex;
            justify-content: center;

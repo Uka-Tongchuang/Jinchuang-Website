@@ -5,7 +5,7 @@
         <h1>{{ state?.title }}</h1>
         <p v-html="state?.content"></p>
       </div>
-      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg" />
+      <img src="https://ts1.cn.mm.bing.net/th/id/R-C.1ad2e780a73aa5b625eaa68e22ce3a3c?rik=nvCwpLIU%2ffvwkA&riu=http%3a%2f%2fimg.nnngu.com%2fuploads%2f20200828%2fFlK_HbLsCxESLxmEo-fYpIeIW8BA.jpeg&ehk=hE5IHpSaA3CWY%2bzxgW%2bnMuAIq%2fJrnMCqnXbBE0qMQbI%3d&risl=&pid=ImgRaw&r=0" alt="" class="urlImg" />
     </div>
 
     <div class="servce_content">
@@ -81,7 +81,7 @@ onMounted(() => {
   .sevce_process{
     width: 80%;
     height: 40rem;
-    background-color: #98c478;
+    background-color: #c49a78;
     margin: 2rem auto;
   }
   .serve_advantage{
@@ -95,10 +95,10 @@ onMounted(() => {
     width: 100%;
     height: 40rem;
     .merchant {
-      background-color: #98c478;
+      background-color: #6179b5;
       height: 40rem;
       width: 65%;
-
+      color: #fff;
       clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%);
       h1 {
         padding-top: 15rem;

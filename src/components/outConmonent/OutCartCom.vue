@@ -74,7 +74,7 @@ import {BrushFilled} from "@element-plus/icons-vue"
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    $color1: #D8E6FD;
+    $color1: #7d6dbd;
     .item_boxs {
       width: 28rem;
       height: 36rem;

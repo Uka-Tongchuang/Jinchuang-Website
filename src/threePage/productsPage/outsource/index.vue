@@ -5,7 +5,7 @@
         <h1>{{ state?.title }}</h1>
         <p v-html="state?.content"></p>
       </div>
-      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
+      <img src="https://img01.71360.com/file/read/www/M00/BC/3A/wKj0iWF60UaAL6K5ABYMDN4uCWU708.jpg" alt="" class="urlImg">
     </div>
     <!-- 服务内容 -->
     <div class="card-list">
@@ -184,7 +184,7 @@ onMounted(()=>{
     width: 100%; 
     height: 40rem; 
     .merchant { 
-      background-color: rgb(42, 42, 184);
+      background-color: rgb(118, 118, 199);
       height: 40rem;  
       width: 65%; 
       color: #fff;
