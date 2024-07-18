@@ -6,15 +6,20 @@
     <OutCartCom/>
       
     </div>
-    <PostWbCardCom/>
-    <div>
-
+  
+    <div >
+  <PostWbCardCom/>
     </div> 
+    <!-- 服务流程 -->
+    <div class="service——process">
+      <ServiceProcess/>
+    </div>
     <!-- //服务优势 -->
     <div class="service_box">
     
       <outCartSecondCom/>
     </div>
+
     <!-- 服务价值 -->
     <div class="serviceValue_box">
       <OutCartThreeValueCom/>
@@ -30,6 +35,7 @@ import outCartSecondCom from "../../../components/outConmonent/OutCartSecondCom.
 import OutsourceBanner from "../../../components/bannerList/OutsourceBanner.vue"
 import OutCartThreeValueCom from "@/components/outConmonent/OutCartThreeValueCom.vue";
 import PostWbCardCom from '@/components/PostWbCardCom.vue';
+import ServiceProcess from "@/components/serviceProcess/ServiceProcess.vue"
 
 const state=reactive({
     title:"",
@@ -121,6 +127,13 @@ onMounted(()=>{
   margin: 0;
   padding: 0;
   overflow-y: hidden;  
+  .service——process{
+    width: 80%;
+    height: 65rem;
+    margin: 2rem auto;
+    margin-top: 8rem;
+    // background-color: antiquewhite;
+  }
   .card-list{
     width: 80%;
     height: 45rem;

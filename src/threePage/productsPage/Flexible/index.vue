@@ -2,7 +2,7 @@
   <div class="content">
   <FlexibleBanner/>
     <div class="process">
-      <h1>服务流程</h1>
+      <ProcessFiexCom/>
     </div>
     <div class="cart_box">
         <FleBleGoodCom/>
@@ -16,6 +16,7 @@ import { ref, reactive, onMounted } from "vue";
 import FleBleGoodCom from '@/components/FleBleGoodCom.vue';
 import FlexibleBanner from '../../../components/bannerList/FlexibleBanner.vue'
 import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue'
+import ProcessFiexCom from "@/components/service_process_fiex/ProcessFiexCom.vue"
 
 const titleList = ref();
 const state = reactive({ 
@@ -114,9 +115,9 @@ const toggleExpand = (id: number) => {
     }
 .process{
   width: 80%;
-    height: 40rem;
+    height: 60rem;
     margin: 0 auto;
     margin-top: 5rem;
-    background-color: #82c4b3;
+    // background-color: #82c4b3;
 }    
 </style>
