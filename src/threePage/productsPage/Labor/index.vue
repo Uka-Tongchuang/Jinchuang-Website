@@ -29,7 +29,7 @@ import LaborCardCom from "@/components/LaborCardCom.vue";
   margin: 0;
 
   .cart_box {
-    width: 90%;
+    width: 80%;
     height: 40rem;
     margin: 0 auto;
     margin-top: 5rem;
@@ -41,7 +41,7 @@ import LaborCardCom from "@/components/LaborCardCom.vue";
     margin: auto;
   }
   .content-box {
-    width: 90%;
+    width: 80%;
     min-height: 40rem;
     background-color: #ffffff;
     margin: auto;
