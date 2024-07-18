@@ -67,10 +67,10 @@ const toggleExpand = (index: number) => {
   display: flex;
   justify-content: space-between;
   .footer-box {
-    height: 60%;
+    height: 75%;
     margin-left: 10%;
     width: calc(40% - 10rem);
-    padding: 5rem;
+    padding:3rem 5rem;
     background-color: #f0f0f0;
     opacity: 0.8;
     h1 {

@@ -180,7 +180,7 @@
 .null_box{
                 background-color: #ffff;
                 width: 20rem;
-                height: 40rem;
+                height: 36rem;
     }
 
     .title_num {

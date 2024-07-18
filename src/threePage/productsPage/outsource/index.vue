@@ -1,12 +1,6 @@
 <template>
-  <div class="main">
-    <div class="trapezoid">
-      <div class="merchant ">
-        <h1>{{ state?.title }}</h1>
-        <p v-html="state?.content"></p>
-      </div>
-      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
-    </div>
+  <div class="main"> 
+    <OutsourceBanner/>
     <!-- 服务内容 -->
     <div class="card-list">
     <OutCartCom/>
@@ -15,15 +9,7 @@
     <PostWbCardCom/>
     <div>
 
-    </div>
-    <!-- 流程图 -->
-    <!-- 适用场景 -->
-
-    <!-- 服务流程 -->
-    <div class="service">
-     
-         
-    </div>
+    </div> 
     <!-- //服务优势 -->
     <div class="service_box">
     
@@ -41,6 +27,7 @@ import { ref, reactive, onMounted, onUnmounted } from "vue";
 import dataList from '../../../utils/producDes.json' 
 import OutCartCom from "../../../components/outConmonent/OutCartCom.vue"
 import outCartSecondCom from "../../../components/outConmonent/OutCartSecondCom.vue"
+import OutsourceBanner from "../../../components/bannerList/OutsourceBanner.vue"
 import OutCartThreeValueCom from "@/components/outConmonent/OutCartThreeValueCom.vue";
 import PostWbCardCom from '@/components/PostWbCardCom.vue';
 
@@ -127,55 +114,13 @@ onMounted(()=>{
 })
 </script>
 
-<style lang="scss" scoped> 
-// 三角形
-// .demanda {
-//   display: inline-block;
-//   width: 13rem;
-//   height: 13rem;
-//   border-top: 1rem solid #d4e1fd;
-//   border-right: 1rem solid #d4e1fd;
-//   transform: rotate(45deg);
-//   position: absolute;
-//   right: -6rem;
-//   top: 3rem;
-// }
+<style lang="scss" scoped>  
 .main {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-y: hidden; 
-   .trapezoid {
-    position: relative;
-    width: 100%; 
-    height: 40rem; 
-    .merchant { 
-      background-color: rgb(42, 42, 184);
-      height: 40rem;  
-      width: 65%; 
-      color: #fff;
-      clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
-      h1 {
-        padding-top: 15rem;
-        margin-left: 5rem;
-        font-size: 3rem;
-      }
-      p {
-        margin-left: 5rem;
-        font-size: 1.5rem;
-      }
-    }
-    .urlImg { 
-        clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0); 
-      width: 53%;
-      height: 40rem;  
-      background: url(../../../assets/swpOne.jpg);  
-      position: absolute;
-      top: 0;
-      right: 0;
-    } 
-  }
+  overflow-y: hidden;  
   .card-list{
     width: 80%;
     height: 45rem;
