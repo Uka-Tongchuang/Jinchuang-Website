@@ -23,7 +23,7 @@
             <OutsourcingCardCom/>
         </div>
 
-<RecruitmentValue :titleArray="state.items"/>
+
   </div>
 </template>
 
@@ -31,7 +31,6 @@
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../../utils/producDes.json";
 import OutsourcingCardCom from '@/components/OutsourcingCardCom.vue';
-import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue';
 import OutsurceFuWuCard from '@/components/OutsourceFuWuCard.vue';
 import ServeAdvantageCom from "@/components/serveAdvantage/ServeAdvantage.vue"
 // console.log(navigator.userAgent,"1212");
