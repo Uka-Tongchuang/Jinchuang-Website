@@ -73,6 +73,7 @@
     .left_line {
       width: 28rem;
       height: 14rem;
+      border-top-left-radius: 2rem;
       border-left: 0.4rem solid rgb(98, 133, 223);
       border-top: 0.4rem solid rgb(98, 133, 223);
       margin-left: 7rem;
@@ -101,6 +102,7 @@
     .right_line {
       width: 28rem;
       height: 14rem;
+      border-top-right-radius: 2rem;
       border-right: 0.4rem solid rgb(98, 133, 223);
       border-top: 0.4rem solid rgb(98, 133, 223);
       margin-right: 7rem;
@@ -228,6 +230,7 @@
     .left_line {
       width: 28rem;
       height: 14rem;
+      border-bottom-left-radius: 2rem;
       border-left: 0.4rem solid rgb(98, 133, 223);
       border-bottom: 0.4rem solid rgb(98, 133, 223);
       margin-left: 7rem;
@@ -257,6 +260,7 @@
     .right_line {
       width: 28rem;
       height: 14rem;
+      border-bottom-right-radius: 2rem;
       border-right: 0.4rem solid rgb(98, 133, 223);
       border-bottom: 0.4rem solid rgb(98, 133, 223);
       margin-right: 7rem;
