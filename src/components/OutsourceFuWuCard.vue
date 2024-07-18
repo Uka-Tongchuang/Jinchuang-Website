@@ -97,7 +97,7 @@
 </template>
 <style scoped lang="scss">
 .cart_box_com {
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
 

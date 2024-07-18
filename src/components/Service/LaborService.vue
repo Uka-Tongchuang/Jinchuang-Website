@@ -147,6 +147,7 @@
     }
     span {
       color: black;
+      font-size: 1.4rem;
     }
     .content-box {
       width: 100%;

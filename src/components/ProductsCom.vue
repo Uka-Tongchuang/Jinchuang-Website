@@ -130,7 +130,7 @@ const goFiexble = () => {
   .modules_box {
     width: 100%;
     height: 90rem;
-    $color: rgb(152, 217, 202);
+    $color: rgb(191, 215, 162);
       $color2: rgb(130, 196, 179);
       $color3: rgb(83, 169, 187);
       $color4:rgb(125, 153, 218);

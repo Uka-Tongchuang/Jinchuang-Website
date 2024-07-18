@@ -7,7 +7,7 @@
     <div class="cart_box">
         <FleBleGoodCom/>
     </div>
-<RecruitmentValue :titleArray="state.items"/>
+    <RecruitmentValue :titleArray="state.items"/>
   </div>
 </template>
 
