@@ -5,7 +5,7 @@
         <h1>{{ state?.title }}</h1>
         <p v-html="state?.content"></p>
       </div>
-      <img src="https://img01.71360.com/file/read/www/M00/BC/3A/wKj0iWF60UaAL6K5ABYMDN4uCWU708.jpg" alt="" class="urlImg">
+      <img src="../../../assets/swpOne.jpg" alt="" class="urlImg">
     </div>
     <!-- 服务内容 -->
     <div class="card-list">
@@ -21,29 +21,8 @@
 
     <!-- 服务流程 -->
     <div class="service">
-      <h1 style="font-size: 4.5rem;text-align: center;">服务流程</h1>
-          <div class="title-top" ref="switchoverBorder">
-            <p @click="switchover">面试录用</p>
-            <p @click="switchover1">签订协议</p>
-          </div>
-          <div class="card-listAll" v-if="showTime">
-            <div class="card-border" v-for="(item,index) in state.flowList" :key="index">
-              <div class="card-border-top">
-                <p class="step">{{ item.step }}</p>
-                <p class="number">{{ item.number }}</p>
-              </div>
-              <span>{{ item.title }}</span>
-            </div>
-          </div>
-           <div class="card-list" v-else>
-            <div class="card-border" v-for="(item,index) in state.flowList1" :key="index">
-              <div class="card-border-top">
-                <p class="step">{{ item.step }}</p>
-                <p class="number">{{ item.number }}</p>
-              </div>
-              <span>{{ item.title }}</span>
-            </div>
-          </div>
+     
+         
     </div>
     <!-- //服务优势 -->
     <div class="service_box">
@@ -64,8 +43,7 @@ import OutCartCom from "../../../components/outConmonent/OutCartCom.vue"
 import outCartSecondCom from "../../../components/outConmonent/OutCartSecondCom.vue"
 import OutCartThreeValueCom from "@/components/outConmonent/OutCartThreeValueCom.vue";
 import PostWbCardCom from '@/components/PostWbCardCom.vue';
-const showTime =ref(true)
-const switchoverBorder =ref()
+
 const state=reactive({
     title:"",
         content:"",
@@ -140,23 +118,12 @@ const state=reactive({
   ],
 
 })
-  // 切换事件
-const switchover=()=>{ 
-  switchoverBorder.value.children[0].style.borderBottom="2px solid #617bc1"
-  switchoverBorder.value.children[1].style.borderBottom="none"
-  showTime.value=true
-}
-const switchover1=()=>{ 
-  switchoverBorder.value.children[0].style.borderBottom="none"
-  switchoverBorder.value.children[1].style.borderBottom="2px solid #617bc1"
-  showTime.value=false
-}
+
 // 初始化加载下标线
 onMounted(()=>{
   console.log(dataList)
   state.title=dataList[2].typetitle
   state.content=dataList[2].data[0].content as string
-  switchoverBorder.value.children[0].style.borderBottom="2px solid #617bc1"
 })
 </script>
 
@@ -184,7 +151,7 @@ onMounted(()=>{
     width: 100%; 
     height: 40rem; 
     .merchant { 
-      background-color: rgb(118, 118, 199);
+      background-color: rgb(42, 42, 184);
       height: 40rem;  
       width: 65%; 
       color: #fff;
