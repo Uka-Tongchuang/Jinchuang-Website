@@ -45,7 +45,8 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
     height: 50rem;
     margin: 2rem auto;
     h1{
-      font-size: 4rem;
+      font-size: 3rem;
+      text-align: center;
     }
     .content_cart_list_box{
       width: 100%;
@@ -63,7 +64,7 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
       width: 50rem;
       margin-top: 5rem;
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
       }
       p {
         font-size: 2rem;

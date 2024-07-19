@@ -1,7 +1,5 @@
 <template>
-    <div class="cart_box_com">
-      <!-- 劳务派遣卡片组件 -->
-      <h2>服务优势</h2>
+    <div class="cart_box_com"> 
       <!-- 卡片布局盒子 -->
       <div class="cart_list_box">
         <div class="item_first_box item_boxs">

@@ -90,11 +90,12 @@
 .cart_box_com {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 2rem auto;
 
     h2 {
         font-size: 2rem;
-        height: 4rem;
+        height: 6rem;
+        text-align: center;
         line-height: 6rem;
     }
     .cart_list_box {
@@ -106,7 +107,7 @@
         
         .item_boxs {
             width: 25rem;
-            height: 37rem;
+            height: 33rem;
             display: flex;
             // border: 0.2rem solid $color1;
             // box-shadow: 0 0 0.4rem 0.2rem $color1;

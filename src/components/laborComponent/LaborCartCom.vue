@@ -126,7 +126,8 @@ const backListFour=()=>{
   width: 100%;
   height: 100%;
   h2 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 3rem;
     height: 4rem;
     line-height: 6rem;
   }

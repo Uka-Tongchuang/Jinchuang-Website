@@ -69,7 +69,7 @@ const state = reactive({
     width: 80%;
     min-height: 40rem;
     background-color: #ffffff;
-    margin: auto;
+    margin:2rem auto;
     margin-bottom: 4rem;
   }
 }
