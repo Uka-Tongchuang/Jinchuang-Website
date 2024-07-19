@@ -28,16 +28,15 @@
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="goOutsourcing">了解更多</button>
         </div>
-      </div>
-      <!-- //下部分 -->
-      <div class="bottom_box four">
-        <div class="modukrs_boxs">
+        <div class="modukrs_boxs four">
           <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><BrushFilled /></el-icon></div>
           <span>业务外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goRecruitment">了解更多</button>
         </div>
-
+      </div>
+      <!-- //下部分 -->
+      <div class="bottom_box">
         <div class="modukrs_boxs five">
           <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><UserFilled /></el-icon></div>
           <span>招聘流程外包</span>
@@ -51,13 +50,17 @@
             <span>灵活用工解决方案</span>
             <p>多元化的灵活用工<br />结算解决方案</p>
             <button @click="goFiexble">了解更多</button>
-          </div>
-          <!-- <div v-else class="showMou animate__animated animate__flipInY">
-            <div @click="goFourRectuitment"><el-icon><Guide /></el-icon><text>招聘业务</text></div>
-            <div @click="goFourNews"><el-icon><Guide /></el-icon><text>新媒体带货</text></div>
-            <div @click="goFourEmployment"><el-icon><Guide /></el-icon><text>就业街小圆桌</text></div>
-          </div> -->
+           </div>
         </div>
+        <div class="modukrs_boxs seven">
+           
+              <span>更多服务<br/></span>
+              <span>等待你的发现 →</span>
+           
+          </div>
+          <div class="modukrs_boxs eight">
+
+          </div>
       </div>
     </div>
   </div>
@@ -115,40 +118,33 @@ const goFiexble = () => {
 <style scoped lang="scss">
 .prouct_box {
   width: 80%;
-  height: 100rem;
+  height: 75rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-top: 2rem;
   h1 {
     width: 100%;
-    height: 5rem;
+    height: 3rem;
     text-align: center;
-    line-height: 5rem;
+    line-height: 3rem;
     font-size: 3rem;
     color: rgb(11, 11, 11);
   }
   .modules_box {
     width: 100%;
-    height: 90rem;
-    $color: rgb(191, 215, 162);
-      $color2: rgb(130, 196, 179);
-      $color3: rgb(83, 169, 187);
-      $color4:rgb(125, 153, 218);
-      $color5:rgb(57,112,172);
-      $color6:rgb(18,74,126);
+    height: 70rem;
+    $color: rgb(39,88,223);
       @mixin spanCss {
         display: block;
         width: 10rem;
-        height: 2rem;
+        height: 4rem;
         font-size: 2.2rem;
         white-space: nowrap;
-        line-height: 2rem;
+        line-height: 4rem;
         text-overflow: normal;
         font-weight: bold;
-        margin-left: 2rem;
-        padding-left: 1rem;
-        margin-top: 1rem;
-        padding-bottom: 1rem;
+        text-align: center;
       }
       @mixin butonCss {
         width: 18rem;
@@ -157,41 +153,38 @@ const goFiexble = () => {
         border-radius: 0.6rem;
         font-size: 1.8rem;
         cursor: pointer;
-        margin-left: 4rem;
-        margin-top: 1rem;
         font-weight: bold;
       }
     .top_box {
       width: 100%;
-      height: 45rem;
+      height: 30rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
       .modukrs_boxs {
         width: 26rem;
         height: 30rem;
-        border: 0.2rem solid $color;
-        border-radius: 2rem;
-        box-shadow: 0 0 0.3rem 0.2rem $color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .box_tip_icon {
           width: 10rem;
           height: 10rem;
           background-color: $color;
           border-radius: 50%;
-          margin: 3rem 0 0 2rem;
           box-shadow: 0 0 0.3rem 0.24rem  rgb(182, 181, 192);
         }
         span {
           @include spanCss;
+          width: 12rem;
           border-bottom: 0.5rem solid $color;
         }
         p {
           font-size: 1.4rem;
           width: 80%;
-          margin: 0 auto;
+          margin: 1rem auto;
           text-align: center;
-          margin-top: 1rem;
         }
         button {
           @include butonCss;
@@ -206,152 +199,164 @@ const goFiexble = () => {
         }
       }
       .two {
-        border: 0.2rem solid $color2;
-        box-shadow: 0 0 0.3rem 0.2rem $color2;
+        
         .box_tip_icon {
-          background-color: $color2;
+          background-color: $color;
         }
         span {
           @include spanCss;
-          border-bottom: 0.5rem solid $color2;
+          width: 12rem;
+          border-bottom: 0.5rem solid $color;
         }
         button {
           @include butonCss;
-          color: $color2;
-          border: 0.15rem solid $color2;
+          color: $color;
+          border: 0.15rem solid $color;
           transition: 0.4s;
         }
         button:hover{
-          background-color: $color2;
+          background-color: $color;
           color: #fff;
         }
       }
       .three {
-        border: 0.2rem solid $color3;
-        box-shadow: 0 0 0.3rem 0.2rem $color3;
+       
         .box_tip_icon {
-          background-color: $color3;
+          background-color: $color;
         }
         span {
           @include spanCss;
-          border-bottom: 0.5rem solid $color3;
+          width: 12rem;
+          border-bottom: 0.5rem solid $color;
         }
         button {
           @include butonCss;
-          color: $color3;
-          border: 0.15rem solid $color3;
+          color: $color;
+          border: 0.15rem solid $color;
           transition: 0.4s;
         }
         button:hover{
-          background-color: $color3;
+          background-color: $color;
           color: #fff;
         }
       }
     }
-    .bottom_box {
+.bottom_box {
       width: 100%;
-      height: 45rem;
+      height: 30rem;
       display: flex;
       justify-content: space-between;
-      .modukrs_boxs {
-        width: 26rem;
-        height: 30rem;
-        border: 0.2rem solid $color4;
-        border-radius: 2rem;
-        box-shadow: 0 0 0.3rem 0.2rem $color4;
+      align-items: center;
+      margin-top: 2rem;
+     .modukrs_boxs{
+      width: 26rem;
+      height: 30rem;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .box_tip_icon {
           width: 10rem;
           height: 10rem;
-          background-color: $color4;
+          background-color: $color;
           border-radius: 50%;
-          margin: 3rem 0 0 2rem;
-          box-shadow: 0 0 0.2rem 0.2rem rgb(200, 200, 200);
+          box-shadow: 0 0 0.3rem 0.24rem  rgb(182, 181, 192);
         }
         span {
-          display: block;
-          width: 10rem;
-          height: 2rem;
-          font-size: 2.2rem;
-          white-space: nowrap;
-          line-height: 2rem;
-          text-overflow: normal;
-          font-weight: bold;
-          border-bottom: 0.5rem solid $color4;
-          margin-left: 2rem;
-          padding-left: 1rem;
-          margin-top: 1rem;
-          padding-bottom: 1rem;
+          @include spanCss;
+          border-bottom: 0.5rem solid $color;
         }
         p {
           font-size: 1.4rem;
           width: 80%;
-          margin: 0 auto;
+          margin: 1rem auto;
           text-align: center;
-          margin-top: 1rem;
-        }
-        button {
-          width: 18rem;
-          height: 5rem;
-          background-color: #fff;
-          color: $color4;
-          border: 0.15rem solid $color4;
-          border-radius: 0.6rem;
-          font-size: 1.8rem;
-          cursor: pointer;
-          margin-left: 4rem;
-          margin-top: 1rem;
-          font-weight: bold;
-          transition: 0.4s;
-        }
-      
-        button:hover{
-          background-color: $color4;
-          color: #fff;
-        }
-      }
-      
-      .five{
-        border: 0.2rem solid $color5;
-        box-shadow: 0 0 0.3rem 0.2rem $color5;
-        .box_tip_icon {
-          background-color: $color5;
-        }
-        span {
-          @include spanCss;
-          border-bottom: 0.5rem solid $color5;
         }
         button {
           @include butonCss;
-          color: $color5;
-          border: 0.15rem solid $color5;
+          color: $color;
+          border: 0.15rem solid $color;
+          color: $color;
           transition: 0.4s;
         }
         button:hover{
-          background-color: $color5;
+          background-color: $color;
+          color: #fff;
+        }
+     }
+      .five{
+       
+        .box_tip_icon {
+          background-color: $color;
+        }
+        span {
+          @include spanCss;
+          width: 15rem;
+          border-bottom: 0.5rem solid $color;
+        }
+        button {
+          @include butonCss;
+          color: $color;
+          border: 0.15rem solid $color;
+          transition: 0.4s;
+        }
+        button:hover{
+          background-color: $color;
           color: #fff;
         }
       }
       .six{
-        border: 0.2rem solid $color6;
-        box-shadow: 0 0 0.3rem 0.2rem $color6;
-        .box_tip_icon {
-          background-color: $color6;
+       >
+       div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  .box_tip_icon {
+          background-color: $color;
         }
         span {
           @include spanCss;
-          border-bottom: 0.5rem solid $color6;
+          width: 20rem;
+          border-bottom: 0.5rem solid $color;
         }
         button {
           @include butonCss;
-          color: $color6;
-          border: 0.15rem solid $color6;
+          color: $color;
+          border: 0.15rem solid $color;
           transition: 0.4s;
         }
         button:hover{
-          background-color: $color6;
+          background-color: $color;
           color: #fff;
         }
+       }
+      
       }
+      .seven{
+        width: 22rem;
+        height: 30rem;
+        padding-left: 4rem;
+        display: flex;
+        align-items: center;
+        border: none;
+       
+        span{
+          border:none;
+          padding: 0;
+          font-size: 2.8rem;
+        }
+        span:nth-child(1){
+          text-indent: -9rem;
+        }
+        span:nth-child(2){
+          display: inline-block;
+          height: 5rem;
+          width: 22rem;
+          
+          border-bottom: 0.2rem solid #000;
+        }
+      }
+
     }
   }
   .showMou{

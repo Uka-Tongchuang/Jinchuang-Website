@@ -13,7 +13,11 @@
     <!-- 第二块区域——————公司宣传 -->
     <div class="main_content">
       <Company/>
-    </div>
+    </div>  
+    <!-- 第五块区域——————合作商家 -->
+     <div class="business-partner">
+       <LogoList/>
+     </div>
     <!-- 第三块区域——————业务 -->
     <div class="main_merchant">
       <ProductsCom />
@@ -22,10 +26,7 @@
     <div class="company-achievement"> 
       <CompanyAchievement/>
     </div>
-      <!-- 第五块区域——————合作商家 -->
-     <div class="business-partner">
-       <LogoList/>
-     </div>
+    
     
   </div>
 </template>
@@ -37,8 +38,8 @@ import CompanyAchievement from "./CompanyAchievement.vue";
 import LogoList from "./LogoList.vue";
 import swpOne from "../assets/swpOne.jpg";
 import swpTwo from "../assets/swpTwo.jpg";
-import homePage from "../assets/img/homePage.png";
-import homePage2 from "../assets/img/homePage2.png";
+import homePage from "../assets/img/homebanner.png";
+import homePage2 from "../assets/img/homebanner.png";
 import { reactive } from "vue";
 const arr = reactive({
   arr: [
@@ -95,24 +96,34 @@ const arr = reactive({
 }
 // 第二个区域
 .main_content {
-  width: 100%;
-  height: 32rem;
+  width: 60%;
+  height: 34rem;
   background: url("../assets/main.jpg") 100%;
-  margin: 5rem 0 ;
+  margin: 0 auto ;
+  position: relative;
+  top: -8rem;
+  z-index: 99;
 }
 // 第三个区域
-
-// 第四个区域
+.main_merchant{
+  width: 100%;
+  height: 75rem;
+  background-color: rgb(241, 245, 249);
+  margin-top: -16rem;
+}
+// 第五个区域
 .business-partner{
  width: calc(100% - 4rem);
  height:20rem; 
- margin: 0 auto; 
+ margin: 0 auto;
+ margin-top: 10rem; 
+ margin-bottom: 7.5rem;
 }
 .company-achievement{
   background: url(../assets/ditu.png) no-repeat 100%;
 background-position: center;
  width: calc(60% - 4rem);
  height: 50rem; 
- margin: 0 auto; 
+ margin: 2rem auto; 
 }
 </style>

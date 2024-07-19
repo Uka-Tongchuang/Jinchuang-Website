@@ -281,7 +281,7 @@
           height: 0;
           position: absolute;
           bottom: -1.15rem;
-          left: -1.2rem;
+          left: -1.5rem;
           border: 1rem solid rgba(255, 255, 255, 0);
           border-right: 1.5rem solid rgb(68, 214, 68);
         }
@@ -300,7 +300,7 @@
             height: 0;
             position: absolute;
             right: -1.15rem;
-            top: -1.2rem;
+            top: -1.5rem;
             overflow: hidden;
             border: 1rem solid rgba(255, 255, 255, 0);
             border-bottom: 1.5rem solid rgb(97, 121, 181);

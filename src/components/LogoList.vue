@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-    <div class="merchant">合作商家</div>
     <div class="slider">
       <div class="slide-track">
         <div class="slide" v-for="item in state.arr" :key="item.id">
@@ -214,13 +213,8 @@ const state = reactive({
 
 <style lang="scss" scoped>
 .content {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-}
-.merchant {
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -241,11 +235,12 @@ const state = reactive({
 }
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
-  margin: 2rem auto;
+  margin: -0auto;
   overflow: hidden;
   position: relative;
+  top: -6rem;
 }
 .slider::after {
   right: 0;

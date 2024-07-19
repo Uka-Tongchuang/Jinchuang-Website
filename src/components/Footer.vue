@@ -110,7 +110,7 @@
                 </li>
             </ul>
             <div class="server_list">
-                <ul>
+                <!-- <ul>
                   <li
                     class="title_li"
                     style="font-weight: bold; margin-bottom: 2rem"
@@ -118,7 +118,16 @@
                   >
                     解决方案
                   </li>
-                </ul>
+                </ul> -->
+                 <ul>
+                <li
+                  class="title_li"
+                  style="font-weight: bold; margin-bottom: 2rem"
+                >
+                  了解公司
+                </li>
+                
+              </ul>
                 <ul>
                   <li
                     class="title_li"
@@ -139,15 +148,7 @@
                   客户案例
                 </li>
               </ul>
-              <ul>
-                <li
-                  class="title_li"
-                  style="font-weight: bold; margin-bottom: 2rem"
-                >
-                  了解公司
-                </li>
-                
-              </ul>
+            
             </div>
          
           </div>

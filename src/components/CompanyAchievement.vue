@@ -134,6 +134,7 @@ const outputValue3 = useTransition(source3, {
     .content{
         width: 100%;
         height: 60%;
+        margin: 7.5rem 0;
         .headline{
             width: 100%;
             height: 75%; 
@@ -171,7 +172,7 @@ const outputValue3 = useTransition(source3, {
             .border-solid{ 
               margin-left: 3rem;
               width: 5rem;
-                border: 4px solid #9ae5e5;
+                border: 4px solid rgb(39,88,223);
             }
             .introduce{
                 color: rgba(50, 50, 50, 0.7);

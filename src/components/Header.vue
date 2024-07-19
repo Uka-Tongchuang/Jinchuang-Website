@@ -2,7 +2,7 @@
   <div class="header_box">
     <div class="nav_left_box">
       <li @click="goHomeFun" class="logo_box">
-        <img src="../assets/logo.png" alt="" />
+        <img src="../assets/img/logotxt.png" alt="" />
       </li>
       <li
         v-for="(item, index) in routerChildren"
@@ -57,7 +57,7 @@
     </div>
 
     <div class="nav_right_box">
-      <li> 售前电话: 100-400-600</li>  
+      <!-- <li> 售前电话: 100-400-600</li>   -->
     </div>
   </div>
 </template>

@@ -4,8 +4,14 @@
         <h3 class="title_english animate__animated animate__bounceInRight animate__slow	1s">About Jinchuang, learn about Jinchuang</h3>
         <div class="about_content">
             <p>
-                今创人力资源于2024年开始布局并深耕，是国内最早开展中高端人才访寻业务的机构之一。 我们针对中高级管理、专业技术人才短缺，提供深入的行
-                科锐国际于1996年开始布局并深耕，是国内最早开展中高端人才访寻业务的机构之一。 我们针对中高级管理、专业技术人才短缺，提供深入的行业及职能解决方案。业及职能解决方案今创人力资源于2024年开始布局并深耕，是国内最早开展中高端人才访寻业务的机构之一。 我们针对中高级管理、专业技术人才短缺，提供深入的行业及职能解决方案。</p>
+                “今创人力”，是一家致力于全球为企业客户提供全面人力资源服务解决方案的专业公司 ，业务范围涵盖，人事管理、劳务派遣、岗位外包、灵活用工等在内的一站式人力资源综合解决方案。公司成立之初 ，主要为国内头部互联网企业提  供人力资源外包服务 ，发展至今建立了负责、高效、专业、进取的服务团队 ，赢得了客户的广泛信赖和好评 ，营业规模和企业实力处于国内人力资源服务行业先进水平。
+
+今创人力始终秉承“客户为先 ，诚信为本 ，开放包容 ，持续改进”的企业价值观 ，严格制定标准化服务和把关服务流程的每一个环节和细节 ，不断提升服务技能与服务水平 ，为客户提供专业的人力资源解决方案。始终关注客户需求 ，持续为客户解决问题、创造价值。
+
+
+目前今创已在全国一二线城市均设置自己的分支机构 ，服务范围遍及全国200多个城市及地区，自有专业管理团队近1000人 ，累计服务客户超2000家以上 ，涵盖IT、互联网、零售、金融、新能源、医药、物流运输等数十个行业 ，并凭借优质服务和雄厚实力获得了客户和业界的广泛认可。
+
+              </p>
         </div>
     </div>
 </template>
@@ -21,7 +27,7 @@ import 'animate.css';
     margin: 0 auto;
     padding: 0;
     color: #fff;
-    background-image: url("https://ts1.cn.mm.bing.net/th/id/R-C.fb386fec342259e489fc2c256a81e250?rik=qLrPQiB%2b27haVQ&riu=http%3a%2f%2fwww.langyugz.com%2fuploads%2fallimg%2f190416%2f1-1Z416103G3H1.jpg&ehk=PCuyJG8ag8Wo3mGFsJ91k09KQESekMpAc5jkyhzoGYE%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("../assets/img/aboutBackground.png");
     background-size: 100% 100%;
     position: relative;
     .title_about{
@@ -46,7 +52,8 @@ import 'animate.css';
         font-size: 1.2rem;
         p{
             text-indent: 2.4rem;
-            color: #736666;
+            color: #f6faff;
+            font-size: 1.8rem;
         }
     }
 }
