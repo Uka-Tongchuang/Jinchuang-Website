@@ -2,7 +2,7 @@
   <div class="home_child_box">
     <!-- 第一块区域————————轮播图 -->
     <div >
-      <el-carousel height="40rem" autoplay :interval="3000">
+      <el-carousel height="50rem" autoplay :interval="3000">
         <el-carousel-item v-for="item in arr.arr" :key="item.id">
           <div class="description_box">
           </div>
@@ -101,7 +101,7 @@ const arr = reactive({
   background: url("../assets/main.jpg") 100%;
   margin: 0 auto ;
   position: relative;
-  top: -8rem;
+  top: -16rem;
   z-index: 99;
 }
 // 第三个区域
@@ -116,7 +116,7 @@ const arr = reactive({
  width: calc(100% - 4rem);
  height:20rem; 
  margin: 0 auto;
- margin-top: 10rem; 
+ margin-top: 0rem; 
  margin-bottom: 7.5rem;
 }
 .company-achievement{

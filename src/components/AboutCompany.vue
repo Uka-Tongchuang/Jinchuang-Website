@@ -1,7 +1,7 @@
 <template>
     <div class="about_compony_box">
         <h1  class="title_about animate__animated animate__bounceInRight">关于今创，了解今创</h1>
-        <h3 class="title_english animate__animated animate__bounceInRight animate__slow	1s">About Jinchuang, learn about Jinchuang</h3>
+        <h3 class="title_english animate__animated animate__bounceInRight animate__slow	1s">About Our Company, Learn About Jinchuang</h3>
         <div class="about_content">
             <p>
                 “今创人力”，是一家致力于全球为企业客户提供全面人力资源服务解决方案的专业公司 ，业务范围涵盖，人事管理、劳务派遣、岗位外包、灵活用工等在内的一站式人力资源综合解决方案。公司成立之初 ，主要为国内头部互联网企业提  供人力资源外包服务 ，发展至今建立了负责、高效、专业、进取的服务团队 ，赢得了客户的广泛信赖和好评 ，营业规模和企业实力处于国内人力资源服务行业先进水平。
@@ -23,7 +23,7 @@ import 'animate.css';
 <style scoped lang="scss">
 .about_compony_box{
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     margin: 0 auto;
     padding: 0;
     color: #fff;
@@ -51,9 +51,11 @@ import 'animate.css';
         top: 18rem;
         font-size: 1.2rem;
         p{
+            width: 100rem;
             text-indent: 2.4rem;
-            color: #f6faff;
+            color: #fbfcfd;
             font-size: 1.8rem;
+            
         }
     }
 }

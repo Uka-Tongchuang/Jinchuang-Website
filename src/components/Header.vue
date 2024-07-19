@@ -233,10 +233,12 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     .logo_box {
       width: 100%;
       height: 100%;
+      margin-left: -6rem;
+      margin-right: 4rem;
       img {
         display: inline-block;
-        width: 8.6rem;
-        height: 8.2rem;
+        width: 15rem;
+        height: 15rem;
         overflow: hidden;
       }
     }
