@@ -26,10 +26,11 @@
       width: 100%; 
       height: 40rem; 
       .merchant { 
-       background-color: #6179b5;
+       background-color: 
+#F1F5F9;
        height: 40rem; 
        width: 65%; 
-         color: white;
+         color: black;
        clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
        h1 {
         padding-top: 15rem;

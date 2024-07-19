@@ -24,9 +24,9 @@
   .trapezoid {
       position: relative;
       width: 100%; 
-      height: 40rem; 
+      height: 37rem; 
       .merchant { 
-       background-color: #82C4B3;
+     background: #2758E9;
        height: 40rem; 
        width: 65%; 
          color: white;
@@ -35,7 +35,7 @@
         padding-top: 15rem;
         margin-left: 5rem;
         font-size: 3rem;
-      
+        
        }
        p {
         margin-left: 5rem;

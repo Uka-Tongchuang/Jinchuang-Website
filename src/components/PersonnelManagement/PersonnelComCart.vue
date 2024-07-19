@@ -70,13 +70,13 @@
       margin-top: 2rem;
       display: flex;
       justify-content: space-between;
-      $color1: #82C4B3;
+      $color1: #2758E9;
       .item_boxs {
         width: 22rem;
         height: 28rem;
         border-radius: 2rem;
         border: 0.2rem solid $color1;
-        box-shadow: 0 0 0.4rem 0.2rem $color1;
+        // box-shadow: 0 0 0.4rem 0.2rem $color1;
         position: relative;
         .icon_box {
           width: 8rem;
@@ -113,59 +113,68 @@
         }
       }
       .item_two_box {
-        border: 0.2rem solid #2D8FCE;
-        box-shadow: 0 0 0.4rem 0.2rem #2D8FCE;
+          background-color: #2758E9;
+        border: 0.2rem solid #2758E9;
+        // box-shadow: 0 0 0.4rem 0.2rem #2D8FCE;
         .text{
+          color: #fff;
             line-height: 4rem;
         }
         .icon_box {
-          background-color: #2D8FCE;
+          background-color: #2758E9;
         }
-        .emity_box {
-          background-color: #2D8FCE;
+        .emity_box { 
+          background-color: #fff;
         }
-       
+       .aboutAny{
+        color: #fff;
+        }
       }
       .item_three_box {
-        border: 0.2rem solid #6179B5;
-        box-shadow: 0 0 0.4rem 0.2rem #6179B5;
+        border: 0.2rem solid #2758E9;
+        // box-shadow: 0 0 0.4rem 0.2rem #6179B5;
         .icon_box {
-          background-color: #6179B5;
+          background-color: #2758E9;
         }
         .text{
             line-height: 4rem;
         }
         .emity_box {
-          background-color: #6179B5;
+          background-color: #2758E9;
         }
        
       }
     
-      .item_four_box {
-        border: 0.2rem solid #124A7E;
-        box-shadow: 0 0 0.4rem 0.2rem #124A7E;
+      .item_four_box { 
+        background-color: #2758E9;
+        // box-shadow: 0 0 0.4rem 0.2rem #124A7E;
         .icon_box {
-          background-color: #124A7E;
+          background-color: #2758E9;
         }
         .text{
+          color: #fff;
             line-height: 4rem;
         }
         .emity_box {
-          background-color: #124A7E;
+         
+          background-color: #fff;
+        }
+        .aboutAny{
+        color: #fff;
         }
        
       }
       .item_five_box {
-        border: 0.2rem solid #79599e;
-        box-shadow: 0 0 0.4rem 0.2rem #79599e;
+        border: 0.2rem solid #2758E9;
+        // box-shadow: 0 0 0.4rem 0.2rem #2758E9;
         .icon_box {
-          background-color: #79599e;
+          background-color: #2758E9;
         }
         .text{
             line-height: 4rem;
         }
         .emity_box {
-          background-color: #79599e;
+          background-color: #2758E9;
         }
        
       }

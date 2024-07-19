@@ -4,7 +4,7 @@
     <div class="card">
       <h1>服务内容</h1>
       <div class="content_cart_list_box">
-       <PersonnelComCartVue/>
+        <PersonnelComCartVue />
       </div>
     </div>
 
@@ -12,7 +12,12 @@
       <div class="title">
         <h1>服务优势</h1>
         <p>
-          服务优势服务优势服务优势服务优势服务优势服务优势服务优势服务优势服务优势服务优势服务优势服务优势服务优势
+          为企业解决人力资源管理过程中的事务性 、 操作性工作， 如劳动合同代签、
+          用退工申报 、 薪酬代发放 、 社保和公积金申报与缴纳办理 、
+          人事档案转递和信息管理等，
+          使企业人力资源工作人员能够将更多时间投入到人力资源核心业务中，
+          为企业发展提供更多支持， 以降低企业成本， 实现效率最大化。
+          人事管理的优势
         </p>
       </div>
       <div class="imgUrl">
@@ -39,16 +44,19 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
   width: 100%;
   margin: 0;
   .card {
-    width: 80%;
+    width: 100%;
     height: 50rem;
-    margin: 2rem auto;
-    h1{
+    padding-top: 5rem;
+    background: #f1f5f9;
+    h1 {
       font-size: 3rem;
       text-align: center;
+      color: #142e83;
     }
-    .content_cart_list_box{
-      width: 100%;
+    .content_cart_list_box {
+      width: 80%;
       height: 40rem;
+      margin: 2rem auto;
     }
   }
   .advantage {
@@ -63,6 +71,7 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
       margin-top: 5rem;
       h1 {
         font-size: 3rem;
+        color: #142e83;
       }
       p {
         font-size: 2rem;
@@ -80,9 +89,9 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
       width: 80%;
       height: 10rem;
       position: absolute;
-      background-color: #82C4B3;
+      background: #2758e9;
       color: white;
-      line-height: 6rem; 
+      line-height: 6rem;
       font-size: 2rem;
       bottom: 6rem;
       left: 0;
