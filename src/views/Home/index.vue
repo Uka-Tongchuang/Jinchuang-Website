@@ -13,7 +13,7 @@
           <router-view />
         </template>
         <template v-else>
-          <Home />
+          <Homes />
         </template>
       </el-main>
       <el-footer >
@@ -28,7 +28,7 @@
 <script setup lang="ts">
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
-import Home from "@/components/Home.vue";
+import Homes from "@/components/Home.vue";
 import NavBack from "@/components/NavBack.vue";
 //api
 import { loginApi, getDataApi } from "@/api/request";
@@ -62,6 +62,7 @@ onBeforeRouteUpdate((to, from) => {
 </script>
 <style scoped lang="scss">
 .common-layout {
+  padding: 0;
   .backCom {
     position: fixed;
     right: 1%;
@@ -69,14 +70,20 @@ onBeforeRouteUpdate((to, from) => {
     transform: translateY(-50%);
   }
 }
-
+.el-header{
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  padding: 0 20px;
+}
 .el-main{
-  height: auto;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
 }
 .el-footer {  
   width: 100%;
   height: 40rem;
- 
 } 
 </style>

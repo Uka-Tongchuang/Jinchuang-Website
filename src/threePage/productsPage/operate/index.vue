@@ -37,9 +37,7 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
 <style lang="scss" scoped>
 .content {
   width: 100%;
-  padding: 0;
   margin: 0;
-
   .card {
     width: 80%;
     height: 50rem;

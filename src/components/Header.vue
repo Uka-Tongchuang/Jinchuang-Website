@@ -138,15 +138,17 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   transform: rotateX(180deg);
 }
 .header_box {
+  width: 100%;
+  height: 5rem;
   margin: 0;
-  padding: 0.5rem 0 0 0 ;
   position: relative;
+  padding: 0;
   .showContent {
     width: 100%;
     height: 5rem;
     font-family: "微软雅黑";
     position: absolute;
-    top: calc(100% + 0.5rem);
+    top: 100% ;
     left: 0;
     opacity: 0.98;
     background-color: #a4bfe2;

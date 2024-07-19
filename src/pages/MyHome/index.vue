@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="mains">
     <RouterView />
   </div>
 </template>
@@ -7,9 +7,9 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-.main {
-  padding: 0;
+.mains {
   margin: 0;
-
+  position: relative;
+  top: -5rem;
 }
 </style>
