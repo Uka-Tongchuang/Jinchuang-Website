@@ -143,6 +143,9 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   margin: 0;
   position: relative;
   padding: 0;
+  a{
+    text-decoration: none!important;
+  }
   .showContent {
     width: 100%;
     height: 5rem;
