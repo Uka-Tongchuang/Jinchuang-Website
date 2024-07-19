@@ -154,7 +154,7 @@
         width: 30rem;
         height: 30rem;
         border-bottom-left-radius: 2rem;
-        border-left: 0.4rem solid rgb(221, 184, 52);
+        border-left: 0.4rem solid rgb(68, 214, 68);
         border-bottom: 0.4rem solid rgb(68, 214, 68);
         position: relative;
         .border_box_outside {
@@ -164,7 +164,7 @@
           top: -1.4rem;
           left: -1.1rem;
           border: 1rem solid rgba(255, 255, 255, 0);
-          border-bottom: 1.5rem solid rgb(221, 184, 52);
+          border-bottom: 1.5rem solid rgb(68, 214, 68);
         }
         .line_inside {
           width: 28.6rem;
@@ -273,7 +273,7 @@
         width: 30rem;
         height: 30rem;
         border-bottom-right-radius: 2rem;
-        border-right: 0.4rem solid rgb(221, 184, 52);
+        border-right: 0.4rem solid rgb(68, 214, 68);
         border-bottom: 0.4rem solid rgb(68, 214, 68);
         position: relative;
         .border_box_outside {

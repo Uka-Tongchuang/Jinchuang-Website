@@ -69,6 +69,7 @@ onBeforeRouteUpdate((to, from) => {
     transform: translateY(-50%);
   }
 }
+
 .el-main{
   height: auto;
   overflow: hidden;

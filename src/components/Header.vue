@@ -57,9 +57,7 @@
     </div>
 
     <div class="nav_right_box">
-      <li><span></span> 售前电话: 100-400-600</li>
-      <span class="showDemo loginSty">预约演示</span>
-      
+      <li> 售前电话: 100-400-600</li>  
     </div>
   </div>
 </template>
@@ -140,11 +138,9 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   transform: rotateX(180deg);
 }
 .header_box {
-  //   background-color: rgb(160, 172, 71);
   margin: 0;
   padding: 0.5rem 0 0 0 ;
   position: relative;
-  // border-bottom: 1px solid #ccc;
   .showContent {
     width: 100%;
     height: 5rem;
