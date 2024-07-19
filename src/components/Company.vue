@@ -24,7 +24,7 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  box-shadow: 0.3rem 0.3rem 0.6rem 0.2rem rgb(239, 244, 249);
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgb(222, 226, 230);
   background: rgb(239, 244, 249);
   .img_box {
     float: left;
@@ -33,7 +33,7 @@
     margin-left: 1rem;
     img {
       display: block;
-      width: 34rem;
+      width: 30rem;
       height: 26rem;
       margin-top: 4rem;
       margin-left: 2rem;
@@ -46,9 +46,11 @@
     margin-left: 4rem;
     h2{
       margin-left: 2rem;
-      margin-top: 3rem;
+      margin-top: 3.8rem;
     }
     p {
+      font-size: 1.2rem;
+      margin-left: 2rem;
       margin-top: 1rem;
       line-height: 3rem;
     }

@@ -101,7 +101,7 @@ const goFootCase = () => {
       .divs_f {
         width: 70%;
         height: 100%;
-        float: left;
+        // float: left;
         h3 {
           margin-top: 5rem;
           font-size: 2rem;
@@ -134,7 +134,7 @@ const goFootCase = () => {
       .divs_f {
         width: 70%;
         height: 100%;
-        float: left;
+        // float: left;
         h3 {
           margin-top: 5rem;
           font-size: 2rem;

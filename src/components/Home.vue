@@ -96,7 +96,7 @@ const arr = reactive({
 }
 // 第二个区域
 .main_content {
-  width: 60%;
+  width: 70%;
   height: 34rem;
   background: url("../assets/main.jpg") 100%;
   margin: 0 auto ;

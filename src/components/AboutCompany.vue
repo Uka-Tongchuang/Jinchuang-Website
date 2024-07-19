@@ -24,10 +24,9 @@ import 'animate.css';
 .about_compony_box{
     width: 100%;
     height: 50rem;
-    margin: 0 auto;
     padding: 0;
     color: #fff;
-    background-image: url("../assets/img/aboutBackground.png");
+    background-image: url("../assets/img/aboutBackground.png") ;
     background-size: 100% 100%;
     position: relative;
     .title_about{
@@ -51,10 +50,10 @@ import 'animate.css';
         top: 18rem;
         font-size: 1.2rem;
         p{
-            width: 100rem;
-            text-indent: 2.4rem;
+            width: 68rem;
+            text-indent: 2rem;
             color: #fbfcfd;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             
         }
     }
