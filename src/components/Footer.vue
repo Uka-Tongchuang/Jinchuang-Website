@@ -32,16 +32,7 @@
                 <p>公司地址</p>
               </div>
           </div>
-          <div class="concent_business">
-            <!-- <ul>
-              <li
-                class="title_li"
-                style="font-weight: bold; margin-bottom: 2rem"
-                @click="goAbouRoute"
-              >
-                了解金创
-              </li>
-            </ul> -->
+          <div class="concent_business"> 
             <ul>
               <li
                 class="title_li"
@@ -49,16 +40,16 @@
               >
                 产品服务
               </li>
-              <li
+              <!-- <li
                 v-for="(item, index) in threeChildrenRoute"
                 :key="index"
                 class="dataListItems"
               >
-              
+                <li></li>
                 <router-link :to="item.path" v-if="!item.children" style="color: #ccc;" id="dataListItems">
                   {{ item.meta?.title }}
                 </router-link>
-                <!-- <span  v-else>{{ item.meta?.title }}</span>
+                <span  v-else>{{ item.meta?.title }}</span>
                 <p
                   v-show="item.children && item.children.length > 0"
                   v-for="(v, i) in item.children"
@@ -67,8 +58,56 @@
                   <router-link :to="v.path" style="color: #ccc;">
                     {{ v.meta?.title }}
                   </router-link>
-                </p> -->
-              </li>
+                </p> >
+              </li> -->
+                 <li
+                  class="title_li1"
+                  style="font-weight: bold; margin-bottom: 2rem;color: #ccc;"
+                  @click="goOperate"
+                  id="dataListItems"
+                >
+                  人事管理
+                </li>
+                <li
+                id="dataListItems"
+                  class="title_li1"
+                  style="font-weight: bold; margin-bottom: 2rem;color: #ccc;"
+                  @click="goLabor"
+                >
+                  劳务派遣
+                </li>
+                <li
+                id="dataListItems"
+                  class="title_li1"
+                  style="font-weight: bold; margin-bottom: 2rem;color: #ccc;"
+                  @click="goOutsource"
+                >
+                 岗位外包
+                </li>
+                <li
+                id="dataListItems"
+                  class="title_li1"
+                  style="font-weight: bold; margin-bottom: 2rem;color: #ccc;"
+                  @click="goHosting"
+                >
+                 业务外包
+                </li>
+                <li
+                id="dataListItems"
+                  class="title_li1"
+                  style="font-weight: bold; margin-bottom: 2rem;color: #ccc;"
+                  @click="goRecruitment"
+                >
+               招聘流程外包
+                </li>
+                <li
+                id="dataListItems"
+                  class="title_li1"
+                  style="font-weight: bold; margin-bottom: 2rem;color: #ccc;"
+                  @click="goFlexible"
+                >
+                  灵活用工解决方案
+                </li>
             </ul>
             <div class="server_list">
                 <ul>
@@ -170,12 +209,38 @@ const goTalentRoute = () => {
 const goNewsRoute = () => {
   router.push("/home/news");
 };
-//
+//人事管理
+const goOperate =()=>{ 
+  window.location.href='/home/index/operate'
+}
+// 劳务派遣
+const goLabor =()=>{ 
+  window.location.href='/home/index/labor'
+}
+// 岗位外包
+const goOutsource =()=>{ 
+  window.location.href='/home/index/outsource'
+}
+// 业务外包
+const goHosting =()=>{ 
+  window.location.href='/home/index/hosting'
+}
+// 招聘流程外包
+const goRecruitment =()=>{ 
+  window.location.href='/home/index/recruitment'
+}
+// 灵活用工解决方案
+const goFlexible =()=>{ 
+  window.location.href='/home/index/flexible'
+}
 </script>
 
 <style scoped lang="scss">
 .title_li{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+.title_li1{
+  font-size: 1rem;
 }
 ul li {
   list-style: none;
@@ -219,6 +284,7 @@ ul li {
           height: 4rem;
           background-color: #b4b4b4;
           color: white;
+          font-size: 1.2rem;
         }
        button:hover{
           cursor: pointer;
