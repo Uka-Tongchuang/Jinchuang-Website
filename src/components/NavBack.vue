@@ -30,6 +30,8 @@ const overIcon=()=>{
 // 划出icon
 const leaveIcon=()=>{
      icon.value="#000"
+     //划出清除延时器  --  (效果优化)
+     clearTimeout(setTimeIcon.value)
 }
 //回到顶部
 const goTopBtnFun=()=>{

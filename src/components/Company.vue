@@ -26,7 +26,6 @@
   height: 100%;
   margin: 0 auto;
   margin-top: 1rem;
-  border: 1px solid #ccc;
   box-shadow: 0.3rem 0.3rem 0.6rem 0.2rem #d8d8d8;
   background: linear-gradient(to right,  #d8d8d8,#ededed, #ededed);
   .img_box {
