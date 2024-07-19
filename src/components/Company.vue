@@ -2,7 +2,7 @@
   <div class="Company_box">
     <!-- 公司宣传模块 -->
     <div class="img_box">
-      <img src="../assets/imghomeban.png" alt="" />
+      <img src="../assets/bannerHome.png" alt="" />
     </div>
     <div class="text_box">
       <h2>成都今创人力资源有限公司</h2>
