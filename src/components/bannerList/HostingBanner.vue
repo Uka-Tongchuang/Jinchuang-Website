@@ -35,7 +35,7 @@
         padding-top: 15rem;
         margin-left: 5rem;
         font-size: 3rem;
-      
+        width: 100%;
        }
        p {
         margin-left: 5rem;

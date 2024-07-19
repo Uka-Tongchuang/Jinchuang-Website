@@ -40,8 +40,9 @@
     height: 40rem;
     margin: 2rem auto;
     h1 {
-      font-size: 2rem;
-      height: 5rem;
+      font-size: 3rem;
+      height: 3rem;
+      text-align: center;
     }
     .content-box {
       width: 90%;

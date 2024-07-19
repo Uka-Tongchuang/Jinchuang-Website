@@ -62,7 +62,8 @@
   height: 100%;
 //   border: 1px solid #ccc;
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
   }
   .onbox_title {
     width: 100%;
