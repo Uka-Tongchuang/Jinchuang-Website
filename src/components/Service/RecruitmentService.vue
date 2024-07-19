@@ -8,7 +8,7 @@
               <p class="number">01</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>初步了解客户需求</span>
             </div>
           </div>
           <div class="singleArrow"></div>
@@ -17,7 +17,7 @@
               <p class="number">02</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>根据需求进行评估调查及岗位分析</span>
             </div>
           </div>
           <div class="singleArrow"></div>
@@ -26,7 +26,7 @@
               <p class="number">03</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>提供专业的招聘项目建议</span>
             </div>
           </div>
           <div class="singleArrow"></div>
@@ -35,7 +35,7 @@
               <p class="number">04</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>签署协议</span>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
               <p class="number">05</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>成立专项项目组</span>
             </div>
           </div>
           <div class="singleArrow2"></div>
@@ -55,7 +55,7 @@
               <p class="number">06</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>多渠道宣传收集挖掘简历</span>
             </div>
           </div>
           <div class="singleArrow2"></div>
@@ -64,7 +64,7 @@
               <p class="number">07</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>简历筛选</span>
             </div>
           </div>
           <div class="singleArrow2"></div>
@@ -73,7 +73,7 @@
               <p class="number">08</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>人才筛选</span>
             </div>
           </div>
           <div class="singleArrow2"></div>
@@ -82,7 +82,7 @@
               <p class="number">09</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>推荐简历</span>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@
               <p class="number">10</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>客户面试</span>
             </div>
           </div>
           <div class="singleArrow"></div>
@@ -102,7 +102,7 @@
               <p class="number">11</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>确定意向</span>
             </div>
           </div>
           <div class="singleArrow"></div>
@@ -111,7 +111,7 @@
               <p class="number">12</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>背景调查</span>
             </div>
           </div>
           <div class="singleArrow"></div>
@@ -120,7 +120,25 @@
               <p class="number">13</p>
             </div>
             <div class="border-rides">
-              <span>出用人需求</span>
+              <span>保障服务</span>
+            </div>
+          </div>
+          <div class="singleArrow"></div>
+          <div class="border-box">
+            <div class="card-border-top"> 
+              <p class="number">14</p>
+            </div>
+            <div class="border-rides">
+              <span>费用结算</span>
+            </div>
+          </div>
+          <div class="singleArrow"></div>
+          <div class="border-box">
+            <div class="card-border-top"> 
+              <p class="number">15</p>
+            </div>
+            <div class="border-rides">
+              <span>跟踪总结</span>
             </div>
           </div>
         </div>
