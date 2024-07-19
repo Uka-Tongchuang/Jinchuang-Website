@@ -77,9 +77,10 @@
   height: 100%;
   margin: 0 auto;
   h2 {
-    font-size: 2rem;
-    height: 4rem;
-    line-height: 6rem;
+    font-size: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
   }
   .cart_list_box {
     width: 100%;

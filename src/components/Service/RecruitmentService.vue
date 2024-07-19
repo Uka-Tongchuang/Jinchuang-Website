@@ -155,9 +155,9 @@
     margin:5rem auto;
     h1 { 
       overflow-y: hidden;
-      margin: 2rem auto;
       font-size: 3rem;
-      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-bottom: 2rem;
     }
     p {
       color: black;

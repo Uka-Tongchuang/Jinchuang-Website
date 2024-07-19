@@ -43,7 +43,8 @@
 <style lang="scss" scoped>
  .title_box{
         h1{
-            font-size: 2rem;
+            font-size: 3rem;
+            text-align: center;
         }
     }
 .box{
