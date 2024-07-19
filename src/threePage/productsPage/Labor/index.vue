@@ -7,7 +7,7 @@
     </div>
     <!-- 服务流程 -->
     <LaborService />
-    <!-- 服务内容 -->
+    <!-- 适用场景 -->
     <div class="content-box">
       <LaborCardCom/>
     </div>

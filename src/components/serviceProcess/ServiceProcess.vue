@@ -63,13 +63,15 @@
 //   border: 1px solid #ccc;
 .title{
     h1{
-        font-size: 2.4rem;
+        font-size: 3rem;
+        text-align: center;
     }
 }
   .top_box {
     width: 100%;
     height: 15rem;
     display: flex;
+    margin-top: 1rem;
     .left_line {
       width: 28rem;
       height: 14rem;

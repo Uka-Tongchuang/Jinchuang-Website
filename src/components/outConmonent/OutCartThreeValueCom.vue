@@ -35,21 +35,22 @@
 .cart_box——value_com {
   width: 100%;
   height: 100%;
+  margin-top: 6rem;
   h2 {
-    font-size: 2rem;
-    height: 4rem;
-    line-height: 6rem;
+    font-size: 3rem;
+   text-align: center;
   }
   .cart_list {
     width: 100%;
     height: 34rem;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
     >div{
         width: 16rem;
         height: 12rem;
         border-radius: 50%;
-        margin-top: 5rem;
+        margin-top: 1rem;
         background-image: linear-gradient( 110.6deg , #6179B5 49%, #2D8FCE .7%);
         // background: linear-gradient(to bottom,#f09,#0ff,#f90);
         box-shadow: 0 0 0.2rem 0.1rem rgb(187, 187, 187);

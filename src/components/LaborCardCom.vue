@@ -93,10 +93,8 @@
     margin: 2rem auto;
 
     h2 {
-        font-size: 2rem;
-        height: 6rem;
+        font-size: 3rem;
         text-align: center;
-        line-height: 6rem;
     }
     .cart_list_box {
         width: 100%;
