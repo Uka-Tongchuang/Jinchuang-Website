@@ -92,7 +92,7 @@
     $color1: #82c4b3;
 
     .item_boxs {
-      width: 25rem;
+      width: 22rem;
       height: 33rem;
       display: flex;
       // border: 0.2rem solid $color1;
@@ -116,7 +116,7 @@
       }
 
       p {
-        font-size: 1.4rem;
+        font-size: 1rem;
         width: 100%;
         margin: 0 0;
         display: flex;
@@ -131,7 +131,7 @@
       .custom-list li {
         width: 100%;
         position: relative;
-        padding-left: 5rem; /* 为小圆点和文本之间增加距离 */
+        padding-left: 1rem; /* 为小圆点和文本之间增加距离 */
         margin-bottom: 1.2rem; /* 设置每行之间的间距 */
         font-size: 1.6rem; /* 调整字体大小 */
         margin-left: 2rem;
@@ -141,7 +141,7 @@
       .custom-list li::before {
         content: "";
         position: absolute;
-        left: 0;
+        left: -1.5rem;
         top: 50%;
         transform: translateY(-50%);
         width: 1rem; /* 小圆点的大小 */

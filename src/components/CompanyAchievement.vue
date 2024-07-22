@@ -36,8 +36,8 @@
                     </div>
                 </template>
             </el-statistic>
-             <p class="border-solid"></p>
-            <p class="introduce" style="line-height: 5rem;">行业涉岗对口人群</p>
+             <p class="border-solid " style="margin-top: 2.4rem;"></p>
+            <p class="introduce solid" style="line-height: 2.1rem;">行业涉岗对口人群</p>
         </div>
     </div> 
   </div>
@@ -138,7 +138,7 @@ const outputValue3 = useTransition(source3, {
         .headline{
             width: 100%;
             height: 75%; 
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 700; 
             display: flex;
             justify-content: center;
@@ -174,11 +174,17 @@ const outputValue3 = useTransition(source3, {
               width: 5rem;
                 border: 4px solid rgb(39,88,223);
             }
-            .introduce{
+            // .solid{
+            //   padding-top: 3rem;
+            // }
+            .introduce{ 
                 color: rgba(50, 50, 50, 0.7);
                 letter-spacing: 5px;
                 font-weight: 700;
                 font-size: 1.5rem;
+            }
+            .solid{
+              height: 3rem  ;
             }
         }
 
