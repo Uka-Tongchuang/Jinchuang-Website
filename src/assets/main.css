@@ -5,10 +5,15 @@ html,body{
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: clamp(10px, 14px, 18px);
   a{
     text-decoration: none;
     color: #000;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* 针对小屏幕设备调整字体大小 */
   }
 }
 #app{

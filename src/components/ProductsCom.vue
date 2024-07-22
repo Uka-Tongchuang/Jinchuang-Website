@@ -63,7 +63,7 @@
         </div>
 
         <div class="modukrs_boxs six">
-          <div class="showImg animate__animated">
+        
             <div class="box_tip_icon">
               <el-icon size="6rem" color="#fff" style="padding: 2rem"
                 ><Platform
@@ -72,7 +72,7 @@
             <span>灵活用工解决方案</span>
             <p>多元化的灵活用工<br />结算解决方案</p>
             <button @click="goFiexble">了解更多</button>
-          </div>
+          
         </div>
         <div class="modukrs_boxs seven" @click="goFind">
           <span>更多服务<br /></span>
@@ -210,8 +210,10 @@ const goFiexble = () => {
           border-bottom: 0.5rem solid $color;
         }
         p {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           width: 80%;
+          height: 2.8rem;
+          line-height: 1.4rem;
           margin: 1rem auto;
           text-align: center;
         }
@@ -294,8 +296,10 @@ const goFiexble = () => {
           border-bottom: 0.5rem solid $color;
         }
         p {
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           width: 80%;
+          height: 2.8rem;
+          line-height: 1.4rem;
           margin: 1rem auto;
           text-align: center;
         }
@@ -312,12 +316,13 @@ const goFiexble = () => {
         }
       }
       .five {
+
         .box_tip_icon {
           background-color: $color;
         }
         span {
           @include spanCss;
-          width: 15rem;
+          width: 18rem;
           border-bottom: 0.5rem solid $color;
         }
         button {
@@ -332,18 +337,14 @@ const goFiexble = () => {
         }
       }
       .six {
-        > div {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
           .box_tip_icon {
             background-color: $color;
           }
           span {
             @include spanCss;
-            width: 20rem;
-            border-bottom: 0.5rem solid $color;
+            width: 18rem;
+          border-bottom: 0.5rem solid $color;
+           
           }
           button {
             @include butonCss;
@@ -356,31 +357,18 @@ const goFiexble = () => {
             color: #fff;
           }
         }
-      }
-      .seven {
-        width: 22rem;
-        height: 10rem;
-        padding-left: 4rem;
-        display: flex;
-        align-items: center;
-        border: none;
-        cursor: pointer;
-        span {
-          border: none;
-          padding: 0;
-          font-size: 2.8rem;
+        .seven{
+          span{
+            border: none;
+          }
+          span:nth-child(1){
+            text-indent: -1rem;
+          }
+          span:nth-child(2) {
+            text-decoration: underline;
+            cursor: pointer;
+          }
         }
-        span:nth-child(1) {
-          text-indent: -9rem;
-        }
-        span:nth-child(2) {
-          display: inline-block;
-          height: 5rem;
-          width: 22rem;
-
-          border-bottom: 0.2rem solid #000;
-        }
-      }
     }
   }
   .showMou {
