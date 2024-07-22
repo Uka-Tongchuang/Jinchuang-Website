@@ -78,7 +78,6 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
 <style scoped lang="scss">
 .cart_box_com {
   width: 80%;
-  height: 100%;
   margin: 0 auto;
   h2 {
     font-size: 3rem;
@@ -89,11 +88,11 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
     height: 34rem;
     margin-top: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     $color1: #2758e9;
     .item_boxs {
-      width: 22rem;
-      height: 36rem;
+      width: 20.6rem;
+      height: 34rem;
       border-radius: 2rem;
       border: 0.2rem solid $color1;
       position: relative;
@@ -143,7 +142,7 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
     }
     .item_two_box {
       li {
-        content: ".";
+        content: "";
         color: #2758e9;
       }
       background-color: #fff;
