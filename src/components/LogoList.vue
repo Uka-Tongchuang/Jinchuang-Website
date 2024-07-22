@@ -14,14 +14,14 @@
 import swpOne from "../assets/th.jpg";
 import ajisen from "../assets/logo/logo/ajisen.jpg"; //味千拉面
 import alibaba from "../assets/logo/logo/alibaba.jpg"; //阿里
-import ane from "../assets/logo/logo/ane.jpg"; //安能
+import ane from "../assets/logo/logo/ANE.jpg"; //安能
 import boss from "../assets/logo/logo/boss.jpg"; //boss
 import huoguo from "../assets/logo/logo/huoguo.jpg";
 import corporation from "../assets/logo/logo/corporation.jpg"; //中储粮
 import cotti from "../assets/logo/logo/cotti.jpg"; //库迪咖啡
 import dingtalk from "../assets/logo/logo/dingtalk.jpg"; //钉钉
 import ems from "../assets/logo/logo/EMSA.jpg"; //邮政
-import EMS from "../assets/logo/logo/ems.jpg"; //邮政
+import EMS from "../assets/logo/logo/EMS.jpg"; //邮政
 import favicon from "../assets/logo/logo/favicon.jpg"; //抖音
 import luckin from "../assets/logo/logo/luckin.jpg"; // 瑞幸
 import meitaun from "../assets/logo/logo/meitaun.jpg"; //美团
