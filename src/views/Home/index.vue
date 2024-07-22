@@ -44,7 +44,8 @@ const routerCurrent = ref();
 const router = useRouter();
 onMounted(async () => {
   const screenWidth = window.screen.width;
-  boxs.value.style.width=screenWidth-60+"px"
+  const body=document.querySelector("#app") as any;
+  body.style.width=screenWidth-40+"px"
   routerCurrent.value = router.currentRoute.value.name;
   // console.log(routerCurrent.value);
   const token = window.localStorage.getItem("token") || "";
@@ -66,7 +67,6 @@ onBeforeRouteUpdate((to, from) => {
 </script>
 <style scoped lang="scss">
 .common-layout {
-  margin: 0 auto;
   padding: 0;
   .backCom {
     position: fixed;

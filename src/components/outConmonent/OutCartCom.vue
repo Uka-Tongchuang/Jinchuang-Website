@@ -91,7 +91,7 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
     justify-content: space-between;
     $color1: #2758e9;
     .item_boxs {
-      width: 20.6rem;
+      width: 24%;
       height: 34rem;
       border-radius: 2rem;
       border: 0.2rem solid $color1;
