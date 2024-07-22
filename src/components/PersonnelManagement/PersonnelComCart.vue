@@ -3,7 +3,7 @@
       <!-- 卡片布局盒子 -->
       <div class="cart_list_box">
         <div class="item_first_box item_boxs">
-          <div class="icon_box"><el-icon size="6rem" color="#fff" style="padding: 1rem;"><BrushFilled /></el-icon></div>
+          <div class="icon_box"><el-icon size="4rem" color="#fff" style="padding: 1rem;"><Briefcase /></el-icon></div>
           <div class="text">社会保险和住房公积金服务</div>
           <div class="emity_box"></div>
           <div class="aboutAny">
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="item_two_box item_boxs">
-          <div class="icon_box"><el-icon size="6rem" color="#fff" style="padding: 1rem;"><BrushFilled /></el-icon></div>
+          <div class="icon_box"><el-icon size="4rem" color="#2758E9" style="padding: 1rem;"><Connection /></el-icon></div>
           <div class="text">员工关系管理</div>
           <div class="emity_box"></div>
           <div class="aboutAny">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="item_three_box item_boxs">
-          <div class="icon_box"><el-icon size="6rem" color="#fff" style="padding: 1rem;"><BrushFilled /></el-icon></div>
+          <div class="icon_box"><el-icon size="4rem" color="#fff" style="padding: 1rem;"><Postcard /></el-icon></div>
           <div class="text">健康体检服务</div>
           <div class="emity_box"></div>
           <div class="aboutAny" >
@@ -29,7 +29,7 @@
         </div>
        
         <div class="item_four_box item_boxs">
-          <div class="icon_box"><el-icon size="6rem" color="#fff" style="padding: 1rem;"><BrushFilled /></el-icon></div>
+          <div class="icon_box"><el-icon size="4rem" color="#2758E9" style="padding: 1rem;"><OfficeBuilding /></el-icon></div>
           <div class="text">商业保障服务</div>
           <div class="emity_box"></div>
           <div class="aboutAny" >
@@ -38,7 +38,7 @@
         </div>
 
         <div class="item_five_box item_boxs">
-          <div class="icon_box"><el-icon size="6rem" color="#fff" style="padding: 1rem;"><BrushFilled /></el-icon></div>
+          <div class="icon_box"><el-icon size="4rem" color="#fff" style="padding: 1rem;"><Wallet /></el-icon></div>
           <div class="text">人事档案</div>
           <div class="emity_box"></div>
           <div class="aboutAny" >
@@ -52,7 +52,7 @@
     
     <script setup lang="ts">
   import { ref } from "vue";
-  import {BrushFilled} from "@element-plus/icons-vue"
+  import {BrushFilled,Briefcase,Connection,Postcard,OfficeBuilding,Wallet} from "@element-plus/icons-vue"
   </script>
     
     <style scoped lang="scss">
@@ -72,40 +72,40 @@
       justify-content: space-between;
       $color1: #2758E9;
       .item_boxs {
-        width: 20rem;
-        height: 26rem;
+        width: 15rem;
+        height: 19rem;
         border-radius: 2rem;
         border: 0.2rem solid $color1;
         // box-shadow: 0 0 0.4rem 0.2rem $color1;
         position: relative;
         .icon_box {
-          width: 8rem;
-          height: 8rem;
+          width: 6rem;
+          height: 6rem;
           background-color: $color1;
           border-radius: 50%;
           margin: 1rem auto 1rem auto;
         }
         .text {
           width: 80%;
-          height: 4rem;
-          font-size: 1.8rem;
+          height: 2.4rem;
+          font-size: 1.2rem;
           margin: 0 auto;
           text-align: center;
-          line-height: 2.4rem;
+          line-height: 1.8rem;
           font-weight: 800;
         }
         .emity_box {
           width: 70%;
           height: 0.5rem;
           background-color: $color1;
-          margin: 1rem auto;
+          margin: 1.5rem auto;
           border-radius: 0.5rem;
         }
         .aboutAny {
           width: 70%;
           height: 20rem;
           margin: 0 auto;
-          font-size: 1rem;
+          font-size: 0.9rem;
           margin-top: 2rem;
           color: #000;
           text-align: center;
@@ -121,7 +121,7 @@
             line-height: 4rem;
         }
         .icon_box {
-          background-color: #2758E9;
+          background-color: #ffffff;
         }
         .emity_box { 
           background-color: #fff;
@@ -149,7 +149,7 @@
         background-color: #2758E9;
         // box-shadow: 0 0 0.4rem 0.2rem #124A7E;
         .icon_box {
-          background-color: #2758E9;
+          background-color: #ffffff;
         }
         .text{
           color: #fff;

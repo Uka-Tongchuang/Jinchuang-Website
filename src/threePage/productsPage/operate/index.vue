@@ -20,6 +20,7 @@
         </p>
       </div>
       <div class="imgUrl"> 
+        <img src="../../../assets/youshi.png"/>
       </div>
       <div class="card-list">
         <p>专业化顾问团队</p>
@@ -43,7 +44,7 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
   margin: 0;
   .card {
     width: 100%;
-    height: 45rem;
+    height: 36rem;
     padding-top: 5rem;
     background: #f1f5f9;
     h1 {
@@ -53,8 +54,9 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
     }
     .content_cart_list_box {
       width: 80%;
-      height: 40rem;
+      height: 33rem;
       margin: 2rem auto;
+      
     }
   }
   .advantage {
@@ -78,10 +80,12 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
     .imgUrl {
       width: 60rem;
       height: 60rem;
-      background: url(../../../assets/youshi.png) no-repeat;
-      background-size: 100% 100%;
-      object-fit: cover; 
       margin-top: 8rem;
+      margin-left: 2rem;
+      img{
+        width: 60rem;
+        height: 60rem;
+      }
     }
     .card-list {
       width: 80%;
