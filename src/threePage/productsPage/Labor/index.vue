@@ -86,12 +86,6 @@ const state = reactive({
       isExpanded: false,
       content: "全流程服务符合法律法规，提供专业指导帮助企业优化规避用工风险。",
     },
-    {
-      title: "说明：",
-      id: 2,
-      isExpanded: false,
-      content: "这一个部分做成模块卡片，点击卡片后会显示详细信息",
-    },
   ],
 });
 </script>
