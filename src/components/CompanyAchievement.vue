@@ -135,6 +135,7 @@ const outputValue3 = useTransition(source3, {
         width: 100%;
         height: 60%;
         margin: 7.5rem 0;
+        position: relative;
         .headline{
             width: 100%;
             height: 75%; 

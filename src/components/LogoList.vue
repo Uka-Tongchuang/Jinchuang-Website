@@ -212,10 +212,15 @@ const state = reactive({
 </script>
 
 <style lang="scss" scoped>
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
 .content {
   width: 100%;
   margin: 0 auto;
 }
+
 @-webkit-keyframes scroll {
   0% {
     transform: translateX(0);
@@ -233,14 +238,19 @@ const state = reactive({
     transform: translateX(calc(-250px * 7));
   }
 }
+
 .slider {
   background: white;
   // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 10rem;
-  margin: -0auto;
+  height: 12rem;
+  width: 100%;
+  margin: auto;
   overflow: hidden;
   position: relative;
-  top: -6rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  top: -10rem;
 }
 .slider::after {
   right: 0;
@@ -258,12 +268,15 @@ const state = reactive({
   width: calc(25rem * 14);
 }
 .slider .slide {
-  height: 10rem;
-  width: 10rem;
-  margin-left: 3.5rem;
+  height: 80px;
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   .img{
-    width: 100%;
     height: 100%;
+    width: auto;
   }
 }
 </style>

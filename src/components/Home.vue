@@ -113,17 +113,44 @@ const arr = reactive({
 }
 // 第五个区域
 .business-partner{
- width: calc(100% - 4rem);
- height:20rem; 
- margin: 0 auto;
- margin-top: 0rem; 
- margin-bottom: 7.5rem;
+  width: calc(100% - 4rem);
+  height:20rem; 
+  margin: 0 auto;
+  margin-top: 0rem; 
+  margin-bottom: 7.5rem;
 }
-.company-achievement{
-  background: url(../assets/ditu.png) no-repeat 100%;
-background-position: center;
- width: calc(60% - 4rem);
- height: 50rem; 
- margin: 2rem auto; 
+
+.company-achievement {
+    position: relative; 
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: url(../assets/ditu.png) no-repeat 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
+.company-achievement::before {    
+      content: " ";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      // width: 100%;
+      // height: 100%; 
+      // opacity: 0.5;
+      background-color: rgba(255, 255, 255, 0.6);
+} 
+// .company-achievement{
+//   background: url(../assets/ditu.png) no-repeat 100%;
+//   background-position: center;
+//   width: calc(60% - 4rem);
+//   height: 50rem; 
+//   margin: 2rem auto; 
+// }
 </style>
