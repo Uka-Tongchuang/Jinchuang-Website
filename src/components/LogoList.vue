@@ -21,7 +21,7 @@ import corporation from "../assets/corporation.png"; //中储粮
 import cotti from "../assets/cotti.png"; //库迪咖啡
 import dingtalk from "../assets/dingtalk.png"; //钉钉
 import ems from "../assets/EMSA.png"; //邮政
-import EMS from "../assets/EMS.png"; //邮政
+import EMS from "../assets/ems.png"; //邮政
 import favicon from "../assets/favicon.png"; //抖音
 import luckin from "../assets/luckin.png"; // 瑞幸
 import meitaun from "../assets/meitaun.png"; //美团
