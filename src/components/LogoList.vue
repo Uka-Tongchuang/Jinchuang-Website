@@ -12,26 +12,26 @@
 
 <script setup lang="ts">
 import swpOne from "../assets/th.jpg";
-import ajisen from "../assets/ajisen.png"; //味千拉面
-import alibaba from "../assets/alibaba.png"; //阿里
-import ane from "../assets/ane.png"; //安能
-import boss from "../assets/boss.png"; //boss
-import huoguo from "../assets/huoguo.png";
-import corporation from "../assets/corporation.png"; //中储粮
-import cotti from "../assets/cotti.png"; //库迪咖啡
-import dingtalk from "../assets/dingtalk.png"; //钉钉
-import ems from "../assets/EMSA.png"; //邮政
-import EMS from "../assets/ems.png"; //邮政
-import favicon from "../assets/favicon.png"; //抖音
-import luckin from "../assets/luckin.png"; // 瑞幸
-import meitaun from "../assets/meitaun.png"; //美团
-import miduoduo from "../assets/miduoduo.png"; //米多多
-import quick from "../assets/quick.png"; //快手
-import sfexpress from "../assets/sfexpress.png"; //顺丰
-import simple from "../assets/simple.png"; //朴朴
-import tasting from "../assets/tasting.png"; //点米
-import taobao from "../assets/taobao.png"; //淘宝
-import changzuimao from "../assets/changzuimao.png"; //长嘴猫
+import ajisen from "../assets/logo/logo/ajisen.jpg"; //味千拉面
+import alibaba from "../assets/logo/logo/alibaba.jpg"; //阿里
+import ane from "../assets/logo/logo/ane.jpg"; //安能
+import boss from "../assets/logo/logo/boss.jpg"; //boss
+import huoguo from "../assets/logo/logo/huoguo.jpg";
+import corporation from "../assets/logo/logo/corporation.jpg"; //中储粮
+import cotti from "../assets/logo/logo/cotti.jpg"; //库迪咖啡
+import dingtalk from "../assets/logo/logo/dingtalk.jpg"; //钉钉
+import ems from "../assets/logo/logo/EMSA.jpg"; //邮政
+import EMS from "../assets/logo/logo/ems.jpg"; //邮政
+import favicon from "../assets/logo/logo/favicon.jpg"; //抖音
+import luckin from "../assets/logo/logo/luckin.jpg"; // 瑞幸
+import meitaun from "../assets/logo/logo/meitaun.jpg"; //美团
+import miduoduo from "../assets/logo/logo/miduoduo.jpg"; //米多多
+import quick from "../assets/logo/logo/quick.jpg"; //快手
+import sfexpress from "../assets/logo/logo/sfexpress.jpg"; //顺丰
+import simple from "../assets/logo/logo/simple.jpg"; //朴朴
+import tasting from "../assets/logo/logo/tasting.jpg"; //点米
+import taobao from "../assets/logo/logo/taobao.jpg"; //淘宝
+import changzuimao from "../assets/logo/logo/changzuimao.jpg"; //长嘴猫
 import { reactive } from "vue";
 const state = reactive({
   arr: [
@@ -236,7 +236,7 @@ const state = reactive({
 .slider {
   background: white;
   // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 10rem;
   margin: -0auto;
   overflow: hidden;
   position: relative;
@@ -258,9 +258,9 @@ const state = reactive({
   width: calc(25rem * 14);
 }
 .slider .slide {
-  height: 6rem;
-  width: 15rem;
-  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
+  margin-left: 3.5rem;
   .img{
     width: 100%;
     height: 100%;
