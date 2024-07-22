@@ -96,7 +96,7 @@
         }
         .emity_box {
           width: 70%;
-          height: 0.5rem;
+          height: 0.2rem;
           background-color: $color1;
           margin: 1.5rem auto;
           border-radius: 0.5rem;

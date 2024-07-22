@@ -68,7 +68,6 @@ const toggleExpand = (index: number) => {
   display: flex;
   justify-content: space-between;
   .footer-box {
-  
     height: 75%;
     margin-left: 10%;
     width: calc(40% - 10rem);
@@ -81,7 +80,7 @@ const toggleExpand = (index: number) => {
     }
     .title {
       height: 5rem;
-      border: 2px solid #82c4b3;
+      border: 2px solid #2758E9;
       border-left: none;
       border-right: none;
       .title-box {

@@ -322,9 +322,9 @@ ul li {
             display: flex;
             justify-content: space-between;
             .logo_left{
-              width: 1.5rem;
-              height: 1.5rem;
-              line-height: 5rem;
+              width: 1.9rem;
+              height: 1.9rem;
+              line-height: 5.5rem;
               img{
                 width: 100%;
                 height: 100%;
@@ -384,8 +384,7 @@ ul li {
             display: flex;
             justify-content: space-between;
             img{
-              width: 16%;
-              height: 1.8rem;
+              width: 16%; 
             }
           }
         }

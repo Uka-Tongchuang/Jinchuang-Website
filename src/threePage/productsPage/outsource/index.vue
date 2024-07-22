@@ -14,16 +14,13 @@
     <div class="service——process">
       <ServiceProcess/>
     </div>
-    <!-- //服务优势 -->
-    <div class="service_box">
-    
-      <outCartSecondCom/>
-    </div>
-
-    <!-- 服务价值 -->
+      <!-- 服务价值 -->
     <div class="serviceValue_box">
       <OutCartThreeValueCom/>
     </div>
+    <!-- //服务优势 -->
+ <RecruitmentValue :titleArray="state.items"/>
+  
   </div>
 </template>
 
@@ -31,6 +28,7 @@
 import { ref, reactive, onMounted, onUnmounted } from "vue";
 import dataList from '../../../utils/producDes.json' 
 import OutCartCom from "../../../components/outConmonent/OutCartCom.vue"
+import RecruitmentValue from '../../../components/serviceValue/RecruitmentValue.vue'
 import outCartSecondCom from "../../../components/outConmonent/OutCartSecondCom.vue"
 import OutsourceBanner from "../../../components/bannerList/OutsourceBanner.vue"
 import OutCartThreeValueCom from "@/components/outConmonent/OutCartThreeValueCom.vue";
@@ -109,7 +107,27 @@ const state=reactive({
       title:'正式录用'
     },
   ],
-
+ items: [
+    {
+      title: "岗位类别多样",
+      id: 0,
+      isExpanded: false,
+      content:
+        "自2014年开展外包业务以来，目前已为众多不同行业知名企业提供行政文员、运营、客服、配送、店员、技术开发等多元化岗位外包服务。",
+    },
+    {
+      title: "服务经验丰富",
+      id: 1,
+      isExpanded: false,
+      content: "多次承接万人以上的岗位外包项目，针对项目的转签、日常服务、裁撤等均有丰富的服务和管理经验。",
+    },
+    {
+      title: "方案专属定制",
+      id: 2,
+      isExpanded: false,
+      content: "可根据客户需求提供个性化岗位外包解决方案，以客户为导向，满足客户的个性化需求，保证服务质量。",
+    },
+  ],
 })
 
 // 初始化加载下标线
@@ -135,9 +153,8 @@ onMounted(()=>{
     // background-color: antiquewhite;
   }
   .card-list{
-    width: 80%;
-    height: 45rem;
-    margin: 0 auto;
+    width: 100%;
+    height: 45rem; 
   }
   .service {
     width: 100%;
@@ -147,7 +164,7 @@ onMounted(()=>{
       height: 7rem;
       margin: auto;
       display: flex; 
-      justify-content: space-around;
+      justify-content: space-between;
       p{
         font-size: 1.5rem; 
       }
@@ -199,10 +216,10 @@ onMounted(()=>{
     // background-color: aqua;
   }
   .serviceValue_box{
-    width: 80%;
+    width: 100%;
     height: 40rem;
-    margin: 2rem auto;
-    // background-color: yellow;
+    margin:  auto;
+    background-color: #F1F5F9;
   }
 }
 </style>
