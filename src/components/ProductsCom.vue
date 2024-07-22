@@ -8,7 +8,9 @@
       <div class="top_box">
         <div class="modukrs_boxs">
           <div class="box_tip_icon">
-            <el-icon size="6rem" color="#fff" style="padding: 2rem;"><Avatar /></el-icon>
+            <el-icon size="6rem" color="#fff" style="padding: 2rem"
+              ><Avatar
+            /></el-icon>
           </div>
           <span>人事管理</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
@@ -16,20 +18,32 @@
         </div>
 
         <div class="modukrs_boxs two">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><WalletFilled /></el-icon></div>
+          <div class="box_tip_icon">
+            <el-icon size="6rem" color="#fff" style="padding: 2rem"
+              ><WalletFilled
+            /></el-icon>
+          </div>
           <span>劳务派遣</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="golabor">了解更多</button>
         </div>
 
         <div class="modukrs_boxs three">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><Briefcase /></el-icon></div>
+          <div class="box_tip_icon">
+            <el-icon size="6rem" color="#fff" style="padding: 2rem"
+              ><Briefcase
+            /></el-icon>
+          </div>
           <span>岗位外包</span>
           <p>岗位，业务流程外包<br />人力资源外包</p>
           <button @click="goOutsourcing">了解更多</button>
         </div>
         <div class="modukrs_boxs four">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><BrushFilled /></el-icon></div>
+          <div class="box_tip_icon">
+            <el-icon size="6rem" color="#fff" style="padding: 2rem"
+              ><BrushFilled
+            /></el-icon>
+          </div>
           <span>业务外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goRecruitment">了解更多</button>
@@ -38,29 +52,33 @@
       <!-- //下部分 -->
       <div class="bottom_box">
         <div class="modukrs_boxs five">
-          <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><UserFilled /></el-icon></div>
+          <div class="box_tip_icon">
+            <el-icon size="6rem" color="#fff" style="padding: 2rem"
+              ><UserFilled
+            /></el-icon>
+          </div>
           <span>招聘流程外包</span>
           <p>委托招聘、招聘流程外包<br />人才引进与劳务中介</p>
           <button @click="goOperate">了解更多</button>
         </div>
 
         <div class="modukrs_boxs six">
-          <div class="showImg animate__animated " >
-            <div class="box_tip_icon"><el-icon size="6rem" color="#fff" style="padding: 2rem;"><Platform /></el-icon></div>
+          <div class="showImg animate__animated">
+            <div class="box_tip_icon">
+              <el-icon size="6rem" color="#fff" style="padding: 2rem"
+                ><Platform
+              /></el-icon>
+            </div>
             <span>灵活用工解决方案</span>
             <p>多元化的灵活用工<br />结算解决方案</p>
             <button @click="goFiexble">了解更多</button>
-           </div>
+          </div>
         </div>
-        <div class="modukrs_boxs seven">
-           
-              <span>更多服务<br/></span>
-              <span>等待你的发现 →</span>
-           
-          </div>
-          <div class="modukrs_boxs eight">
-
-          </div>
+        <div class="modukrs_boxs seven" @click="goFind">
+          <span>更多服务<br /></span>
+          <span>等待你的发现 →</span>
+        </div>
+        <div class="modukrs_boxs eight"></div>
       </div>
     </div>
   </div>
@@ -69,13 +87,24 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import {Avatar,WalletFilled,Briefcase,BrushFilled,UserFilled,Platform} from "@element-plus/icons-vue"
+import {
+  Avatar,
+  WalletFilled,
+  Briefcase,
+  BrushFilled,
+  UserFilled,
+  Platform,
+} from "@element-plus/icons-vue";
 import "animate.css";
-const flagDiv = ref(true);
+// const flagDiv = ref(true);
 const router = useRouter();
-const enterDiv = () => {
-  flagDiv.value = false;
+//跳转人事管理
+const goFind = () => {
+  router.push("/home/index/operate");
 };
+// const enterDiv = () => {
+//   flagDiv.value = false;
+// };
 //跳转人事管理
 const goPersonnel = () => {
   router.push("/home/index/operate");
@@ -134,27 +163,27 @@ const goFiexble = () => {
   .modules_box {
     width: 100%;
     height: 70rem;
-    $color: rgb(39,88,223);
-      @mixin spanCss {
-        display: block;
-        width: 10rem;
-        height: 4rem;
-        font-size: 2.2rem;
-        white-space: nowrap;
-        line-height: 4rem;
-        text-overflow: normal;
-        font-weight: bold;
-        text-align: center;
-      }
-      @mixin butonCss {
-        width: 18rem;
-        height: 5rem;
-        background-color: #fff;
-        border-radius: 0.6rem;
-        font-size: 1.8rem;
-        cursor: pointer;
-        font-weight: bold;
-      }
+    $color: rgb(39, 88, 223);
+    @mixin spanCss {
+      display: block;
+      width: 10rem;
+      height: 4rem;
+      font-size: 2.2rem;
+      white-space: nowrap;
+      line-height: 4rem;
+      text-overflow: normal;
+      font-weight: bold;
+      text-align: center;
+    }
+    @mixin butonCss {
+      width: 18rem;
+      height: 5rem;
+      background-color: #fff;
+      border-radius: 0.6rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
     .top_box {
       width: 100%;
       height: 30rem;
@@ -173,7 +202,7 @@ const goFiexble = () => {
           height: 10rem;
           background-color: $color;
           border-radius: 50%;
-          box-shadow: 0 0 0.3rem 0.24rem  rgb(182, 181, 192);
+          box-shadow: 0 0 0.3rem 0.24rem rgb(182, 181, 192);
         }
         span {
           @include spanCss;
@@ -193,13 +222,12 @@ const goFiexble = () => {
           color: $color;
           transition: 0.4s;
         }
-        button:hover{
+        button:hover {
           background-color: $color;
           color: #fff;
         }
       }
       .two {
-        
         .box_tip_icon {
           background-color: $color;
         }
@@ -214,13 +242,12 @@ const goFiexble = () => {
           border: 0.15rem solid $color;
           transition: 0.4s;
         }
-        button:hover{
+        button:hover {
           background-color: $color;
           color: #fff;
         }
       }
       .three {
-       
         .box_tip_icon {
           background-color: $color;
         }
@@ -235,23 +262,23 @@ const goFiexble = () => {
           border: 0.15rem solid $color;
           transition: 0.4s;
         }
-        button:hover{
+        button:hover {
           background-color: $color;
           color: #fff;
         }
       }
     }
-.bottom_box {
+    .bottom_box {
       width: 100%;
       height: 30rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 2rem;
-     .modukrs_boxs{
-      width: 26rem;
-      height: 30rem;
-      display: flex;
+      .modukrs_boxs {
+        width: 26rem;
+        height: 30rem;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -260,7 +287,7 @@ const goFiexble = () => {
           height: 10rem;
           background-color: $color;
           border-radius: 50%;
-          box-shadow: 0 0 0.3rem 0.24rem  rgb(182, 181, 192);
+          box-shadow: 0 0 0.3rem 0.24rem rgb(182, 181, 192);
         }
         span {
           @include spanCss;
@@ -279,13 +306,12 @@ const goFiexble = () => {
           color: $color;
           transition: 0.4s;
         }
-        button:hover{
+        button:hover {
           background-color: $color;
           color: #fff;
         }
-     }
-      .five{
-       
+      }
+      .five {
         .box_tip_icon {
           background-color: $color;
         }
@@ -300,79 +326,77 @@ const goFiexble = () => {
           border: 0.15rem solid $color;
           transition: 0.4s;
         }
-        button:hover{
+        button:hover {
           background-color: $color;
           color: #fff;
         }
       }
-      .six{
-       >
-       div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;  .box_tip_icon {
-          background-color: $color;
+      .six {
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .box_tip_icon {
+            background-color: $color;
+          }
+          span {
+            @include spanCss;
+            width: 20rem;
+            border-bottom: 0.5rem solid $color;
+          }
+          button {
+            @include butonCss;
+            color: $color;
+            border: 0.15rem solid $color;
+            transition: 0.4s;
+          }
+          button:hover {
+            background-color: $color;
+            color: #fff;
+          }
         }
-        span {
-          @include spanCss;
-          width: 20rem;
-          border-bottom: 0.5rem solid $color;
-        }
-        button {
-          @include butonCss;
-          color: $color;
-          border: 0.15rem solid $color;
-          transition: 0.4s;
-        }
-        button:hover{
-          background-color: $color;
-          color: #fff;
-        }
-       }
-      
       }
-      .seven{
+      .seven {
         width: 22rem;
-        height: 30rem;
+        height: 10rem;
         padding-left: 4rem;
         display: flex;
         align-items: center;
         border: none;
-       
-        span{
-          border:none;
+        cursor: pointer;
+        span {
+          border: none;
           padding: 0;
           font-size: 2.8rem;
         }
-        span:nth-child(1){
+        span:nth-child(1) {
           text-indent: -9rem;
         }
-        span:nth-child(2){
+        span:nth-child(2) {
           display: inline-block;
           height: 5rem;
           width: 22rem;
-          
+
           border-bottom: 0.2rem solid #000;
         }
       }
-
     }
   }
-  .showMou{
+  .showMou {
     width: 100%;
     height: 100%;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   align-items: self-start;
-    div{
+    align-items: self-start;
+    div {
       width: 70%;
       height: 5rem;
       margin: 0 auto;
-      border: 0.2rem solid rgb(18,74,126);
-      color: rgb(18,74,126);
+      border: 0.2rem solid rgb(18, 74, 126);
+      color: rgb(18, 74, 126);
       font-size: 1.8rem;
       font-weight: bold;
       display: flex;
