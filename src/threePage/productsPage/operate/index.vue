@@ -19,8 +19,7 @@
           为企业发展提供更多支持， 以降低企业成本， 实现效率最大化。
         </p>
       </div>
-      <div class="imgUrl">
-        <img src="../../../assets/youshi.png" alt="" />
+      <div class="imgUrl"> 
       </div>
       <div class="card-list">
         <p>专业化顾问团队</p>
@@ -44,7 +43,7 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
   margin: 0;
   .card {
     width: 100%;
-    height: 50rem;
+    height: 45rem;
     padding-top: 5rem;
     background: #f1f5f9;
     h1 {
@@ -73,16 +72,16 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
         color: #142e83;
       }
       p {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
     .imgUrl {
       width: 60rem;
-      height: 70rem;
-      img {
-        width: 100%;
-        height: 100%;
-      }
+      height: 60rem;
+      background: url(../../../assets/youshi.png) no-repeat;
+      background-size: 100% 100%;
+      object-fit: cover; 
+      margin-top: 8rem;
     }
     .card-list {
       width: 80%;

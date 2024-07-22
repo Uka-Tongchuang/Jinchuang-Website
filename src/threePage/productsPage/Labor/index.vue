@@ -115,8 +115,8 @@ const state = reactive({
       margin: auto;
       line-height: 40rem;
       position: relative;
-      width: 20rem;
-      height: 20rem;
+      width: 16rem;
+      height: 16rem;
       border-radius: 50%;
       padding: 50px;
       box-sizing: border-box;
@@ -176,8 +176,8 @@ const state = reactive({
       height: 10rem;
       background: black;
       position: absolute;
-      top: 7rem;
-      left: 10rem;
+      top: 6rem;
+      left: 2rem;
       display: flex;
       justify-content: space-between;
       .content-box {
@@ -200,8 +200,8 @@ const state = reactive({
       height: 10rem;
       background: black;
       position: absolute;
-      top: 7rem;
-      right: 10rem;
+      top: 6rem;
+      right: 2rem;
       display: flex;
       justify-content: space-between;
       .content-box {
@@ -224,7 +224,7 @@ const state = reactive({
       background: black;
       position: absolute;
       top: 25rem;
-      left: 10rem;
+      left: 2rem;
       display: flex;
       justify-content: space-between;
       .content-box {
@@ -248,7 +248,7 @@ const state = reactive({
       background: black;
       position: absolute;
       top: 25rem;
-      right: 10rem;
+      right: 2rem;
       display: flex;
       justify-content: space-between;
       .content-box {
@@ -276,8 +276,7 @@ const state = reactive({
     width: 80%;
     min-height: 40rem;
     background-color: #ffffff;
-    margin: 2rem auto;
-    margin-bottom: 4rem;
+    margin: 2rem auto; 
   }
 }
 </style>

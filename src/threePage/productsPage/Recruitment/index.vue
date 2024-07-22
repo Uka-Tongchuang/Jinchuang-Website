@@ -7,29 +7,7 @@
 
     <!-- 服务优势 -->
     <ServeRecruitment/>
-    <!-- 服务价值 serviceValue-->
-    <!-- <div class="serviceValue">
-      <div class="footer-box">
-        <h1>服务价值</h1>
-        <div ref="titleList">
-          <div
-            v-for="(item, index) in state.items"
-            :key="item.id"
-            @click="toggleExpand(index)"
-            class="title"
-            :class="{'expanded':item.isExpanded}"
-          >
-            <div class="title-box">
-              <p>{{ item.title }}</p>
-              <span>{{ item.isExpanded ? "-" : "+" }}</span>
-            </div>
-            <div v-if="item.isExpanded" class="details">
-              {{ item.content }}
-            </div>
-          </div>
-        </div>
-      </div> 
-    </div> -->
+    <!-- 服务价值 serviceValue--> 
     <RecruitmentValue :titleArray="state.items" />
   </div>
 </template>

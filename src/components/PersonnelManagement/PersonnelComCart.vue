@@ -72,8 +72,8 @@
       justify-content: space-between;
       $color1: #2758E9;
       .item_boxs {
-        width: 22rem;
-        height: 28rem;
+        width: 20rem;
+        height: 26rem;
         border-radius: 2rem;
         border: 0.2rem solid $color1;
         // box-shadow: 0 0 0.4rem 0.2rem $color1;
@@ -96,7 +96,7 @@
         }
         .emity_box {
           width: 70%;
-          height: 1rem;
+          height: 0.5rem;
           background-color: $color1;
           margin: 1rem auto;
           border-radius: 0.5rem;
@@ -105,7 +105,7 @@
           width: 70%;
           height: 20rem;
           margin: 0 auto;
-          font-size: 1.6rem;
+          font-size: 1rem;
           margin-top: 2rem;
           color: #000;
           text-align: center;
@@ -159,7 +159,7 @@
          
           background-color: #fff;
         }
-        .aboutAny{
+        .aboutAny{ 
         color: #fff;
         }
        

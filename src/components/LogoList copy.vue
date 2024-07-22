@@ -6,7 +6,7 @@
     <div class="slider">
     <div class="slide-track">
         <div class="slide" v-for="item in state.arr" :key="item.id">
-          <img :src="item.idVieo" height="100" width="250" alt="" />
+          <img :src="item.idVieo" class="img"  alt="" />
         </div>
       </div>
     </div>  
@@ -242,10 +242,9 @@ const state = reactive({
   }
 }
 .slider {
-
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  height: 10rem;
   margin:2rem auto;
   overflow: hidden;
   position: relative; 
@@ -263,10 +262,6 @@ const state = reactive({
   -webkit-animation: scroll 40s linear infinite;
           animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  height: 100px;
-  width: 250px;
-}
+  width: calc(5rem * 14);
+} 
 </style>

@@ -161,7 +161,7 @@
 .null_box {
   background-color: #ffff;
   width: 20rem;
-  height: 36rem;
+  height: 32rem;
 }
 
 .title_num {
