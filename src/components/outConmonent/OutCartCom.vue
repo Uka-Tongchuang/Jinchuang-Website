@@ -38,7 +38,7 @@
           <li><span>工伤、工亡等特殊事件处理</span></li>
         </div>
       </div>
-      <div class="item_three_box item_boxs">
+      <div class="item_first_box item_boxs">
         <div class="icon_box">
           <el-icon size="4rem" color="#2758E9" style="padding: 1rem"
             ><Suitcase
@@ -89,10 +89,10 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
     height: 34rem;
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     $color1: #2758e9;
     .item_boxs {
-      width: 28rem;
+      width: 22rem;
       height: 36rem;
       border-radius: 2rem;
       border: 0.2rem solid $color1;
@@ -130,14 +130,14 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
         flex-direction: column;
         justify-content: space-around;
         margin-left: -0.2rem;
-        font-size: 1.52rem;
-        text-indent: 4rem;
+        font-size: 1rem;
+        text-indent: 3rem;
         white-space: nowrap;
         color: #fff;
         font-size: 2rem;
         span {
           color: #fff;
-          font-size: 1.6rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -164,36 +164,6 @@ import { SetUp,Avatar,Suitcase,Memo } from "@element-plus/icons-vue";
         }
       }
     }
-    // .item_three_box {
-    //   border: 0.2rem solid #2D8FCE;
-    //   .icon_box {
-    //     background-color: #2D8FCE;
-    //   }
-    //   .emity_box {
-    //     background-color: #2D8FCE;
-    //   }
-    //   .aboutAny{
-    //     color: #2D8FCE;
-    //   }
-    // }
-    // .item_four_box {
-    //   border: 0.2rem solid #6179B5;
-    //   box-shadow: 0 0 0.4rem 0.2rem #6179B5;
-    //   .icon_box {
-    //     background-color: #6179B5;
-    //   }
-    //   .emity_box {
-    //     background-color: #6179B5;
-    //   }
-    //   .aboutAny{
-    //     color: #6179B5;
-
-    //      span{
-    //       color: #000;
-    //       display: inline-block;
-    //     }
-    //   }
-    // }
   }
 }
 </style>

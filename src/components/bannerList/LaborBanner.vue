@@ -29,7 +29,7 @@
        background-color: 
 #F1F5F9;
        height: 40rem; 
-       width: 68%; 
+       width: 100%; 
          color: black;
        clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
        h1 {
