@@ -1,5 +1,5 @@
 <template>
-  <div class="common-layout">
+  <div class="common-layout" ref="boxs">
     <el-container >
       <el-header >
         <Header />
@@ -36,11 +36,15 @@ import { loginApi, getDataApi } from "@/api/request";
 import { ref, onMounted } from "vue";
 import { onBeforeRouteUpdate, useRouter } from "vue-router";
 
+const boxs=ref()
+
 //路由守卫 ---- 获取路由信息控制是否为主页显示主页
 const routerPath = ref();
 const routerCurrent = ref();
 const router = useRouter();
 onMounted(async () => {
+  const screenWidth = window.screen.width;
+  boxs.value.style.width=screenWidth-60+"px"
   routerCurrent.value = router.currentRoute.value.name;
   // console.log(routerCurrent.value);
   const token = window.localStorage.getItem("token") || "";
@@ -62,6 +66,7 @@ onBeforeRouteUpdate((to, from) => {
 </script>
 <style scoped lang="scss">
 .common-layout {
+  margin: 0 auto;
   padding: 0;
   .backCom {
     position: fixed;
