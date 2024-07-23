@@ -79,41 +79,45 @@
 <style lang="scss" scoped>
 .advantage {
   width: 80%;
+  height: 56rem;
   margin: auto;
   h1 {
+    margin:0;
     overflow-y: hidden;
     font-size: 3rem;
     text-align: center;
   }
   .content {
     width: 80%;
-    margin: auto;
-    height: 82rem;
+    margin:2rem auto;
+    height: 51rem;
     .content-box {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       img {
-        width: 40%;
-        height: 50%;
+        width: 25rem;
+        height: 25rem;
       }
       .title {
-        width: 40%;
+        width: calc(62% - 20rem);
+        height: 20rem;
         .flex-box {
           display: flex;
           justify-content: space-between;
           p {
-            width: 0.5rem;
+            width: 0.4rem;
             height: 2rem;
-            background-color: #82c4b3;
-            margin-top: 2rem;
+            background-color: #2758E9;
+            margin-top: 1rem;
           }
           .title-box {
             width: 90%;
             h2 {
-              font-size: 2rem;
+              font-size: 1.5rem;
             }
             span {
-              font-size: 1.5rem;
+              font-size: 1rem;
               color: #000;
               opacity: 0.5;
             }
@@ -122,10 +126,10 @@
             width: 90%;
             text-align: right;
             h2 {
-              font-size: 2rem;
+              font-size: 1.5rem;
             }
             span {
-              font-size: 1.5rem;
+              font-size: 1rem;
               color: #000;
               opacity: 0.5;
             }

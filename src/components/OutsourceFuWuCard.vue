@@ -106,15 +106,13 @@ li {
       line-height: 44rem;
       .icon_box {
         width: 6rem;
-        height: 6rem;
-        background-color: #F1F5F9; 
-        margin: -8rem 10rem;
+        height: 6rem; 
+        margin: -9rem 9rem;
       }
        .icon_box1 {
         width: 6rem;
-        height: 6rem;
-        background-color: #F1F5F9; 
-        margin: -8rem 3rem;
+        height: 6rem;  
+        margin: -9rem 2rem;
       }
     }
     .content-list {

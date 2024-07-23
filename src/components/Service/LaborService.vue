@@ -87,7 +87,7 @@ const nodes = ref([
   },
   { 
     id: '7', 
-    position: { x: 1600, y: 200 },
+    position: { x: 1600, y: 230 },
     data: { label: '入职体检和岗前培训' },
     style: {
       background: 'rgb(39, 58, 233, .3)',
@@ -98,7 +98,7 @@ const nodes = ref([
   },
   { 
     id: '8', 
-    position: { x: 1600, y: 400 },
+    position: { x: 1600, y: 450 },
     data: { label: '签订第三方合同' },
     sourcePosition: 'left',
     targetPosition: 'top',
@@ -112,7 +112,7 @@ const nodes = ref([
   },
   { 
     id: '9', 
-    position: { x: 1300, y: 400 },
+    position: { x: 1300, y: 450 },
     data: { label: '派遣员工上岗' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -125,7 +125,7 @@ const nodes = ref([
   },
   { 
     id: '10', 
-    position: { x: 1000, y: 400 },
+    position: { x: 1000, y: 450 },
     data: { label: '统一管理人事档案' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -139,7 +139,7 @@ const nodes = ref([
   },
   { 
     id: '11', 
-    position: { x: 700, y: 400 },
+    position: { x: 700, y: 450 },
     data: { label: '社保公积金、工资发放等人事系统' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -152,7 +152,7 @@ const nodes = ref([
   },
   { 
     id: '12', 
-    position: { x: 400, y: 400 },
+    position: { x: 400, y: 450 },
     data: { label: '派遣员工关系维护' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -166,7 +166,7 @@ const nodes = ref([
   },
   { 
     id: '13', 
-    position: { x: 100, y: 400 },
+    position: { x: 100, y: 450 },
     data: { label: '协议、合同的解除及续签' },
     type: 'output',
     targetPosition: 'right',
@@ -253,8 +253,11 @@ const edges = ref([
 
   </VueFlow>
   <div class="title-alinets">
-    <p class="title-title">服务流程</p>
-<p class="title-title">Recruitment Process</p>
+    <p class="title-title">服务流程</p> 
+    <div class="title-flex">
+      <p class="color">Recruitment</p>
+      <p class="color-right">Process</p>
+    </div>
 </div>
 </template>
 
@@ -271,19 +274,22 @@ const edges = ref([
   margin:7rem auto 0 auto;
 }
 .vue-flow__node-input{
-  width: 14rem;
+  width: 15rem;
   height: 8rem;
   line-height: 7rem;
+  font-size: 1rem;
 }
 .vue-flow__node-output{
-  width: 14rem !important;
+  width: 15rem !important;
   height: 8rem;
   line-height: 7rem;
+  font-size: 1rem;
 }
 .vue-flow__node-default{
-  width: 14rem;
+  width: 15rem;
   height: 8rem;
   line-height: 7rem;
+   font-size: 0.9rem;
 }
 .title-alinets{
   position: absolute;
@@ -292,8 +298,32 @@ const edges = ref([
 }
 .title-title{
   margin: 0;
+  font-weight: 700;
   text-align: center;
   font-size: 2.5rem;
+}
+.title-flex{
+  width: 17rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+} 
+.color{
+  text-align: center;
+  line-height: 2.5rem;
+  width: 10rem;
+  height: 100%;
+  padding-top: 0.5rem;
+  background-color:rgba(39, 88, 233, 0.3);
+  border-radius: 5rem;
+}
+.color-right{
+  text-align: center;
+  line-height: 2.5rem;
+  width: 7em;
+  height: 100%;
+  padding-top: 0.5rem;
 }
 </style>
 <!-- <template>
