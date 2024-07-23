@@ -262,8 +262,8 @@ const state = reactive({
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 5s linear infinite;
+  animation: scroll 5s linear infinite;
   display: flex;
   width: calc(25rem * 14);
 }
