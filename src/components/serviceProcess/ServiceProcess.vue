@@ -96,7 +96,7 @@
       height: 5rem;
       border: 0.2rem solid rgb(133, 126, 202);
       line-height: 5rem;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       text-align: center;
       font-weight: 700;
     }

@@ -29,7 +29,7 @@
       .merchant { 
        background-color: #98c478;
        height: 40rem; 
-       width: 100%; 
+       width: 90%; 
          color: white;
        clip-path: polygon(0 0, 73% 0, calc(100% - 11rem) 100%, 0 100%); 
        h1 {

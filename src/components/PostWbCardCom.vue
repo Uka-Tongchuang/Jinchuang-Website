@@ -72,7 +72,7 @@ li {
   .card_box {
     position: absolute;
     top: 19%;
-    left: 35%;
+    left: 31%;
     transform: translate(-50% -50%);
     width: 40%;
     height: 40rem;

@@ -30,6 +30,7 @@
         </li>
       </div>
       <div class="content-center">
+        <img src="../assets/yuanhuan.png" alt="">
         <div class="icon_box">
          <img src="../assets/logo/zhaopin.png" alt="">
         </div>
@@ -100,19 +101,31 @@ li {
     .content-center {
       margin-top: 6rem;
       width: 44rem;
-      height: 24rem;
-      background: url(../assets/yuanhuan.png) no-repeat;
+      height: 24rem; 
       display: flex;
       line-height: 44rem;
-      .icon_box {
+      position: relative;
+      .icon_box { 
         width: 6rem;
-        height: 6rem; 
-        margin: -9rem 9rem;
+        height: 6rem;
+        position: absolute;
+        top: -28%;
+        left: 20%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
       }
-       .icon_box1 {
-        width: 6rem;
-        height: 6rem;  
-        margin: -9rem 2rem;
+       .icon_box1 { 
+         width: 6rem;
+        height: 6rem;
+         position: absolute;
+        top: -28%;
+        left:67%;
+         img{
+          width: 100%;
+          height: 100%;
+        }
       }
     }
     .content-list {
