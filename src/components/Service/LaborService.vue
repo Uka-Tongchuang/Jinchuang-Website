@@ -1,4 +1,272 @@
+<script setup>
+import { ref } from 'vue'
+import { VueFlow } from '@vue-flow/core'
+
+// these are our nodes
+const nodes = ref([
+  { 
+    id: '1',
+    position: { x: 100, y: 5 },
+    data: { label: '提出用人需求' },
+    sourcePosition: 'right',
+    type: 'input',
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '2', 
+    position: { x: 300, y: 5 },
+    data: { label: '确认岗位需求' },
+    sourcePosition: 'right',
+    targetPosition: 'left',
+    style: {
+      background: '#fff',
+      border: '1px solid #2758E9',
+      color:'#2758E9',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '3', 
+    position: { x: 500, y: 5 },
+    data: { label: '公开招聘' },
+    sourcePosition: 'right',
+    targetPosition: 'left',
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '4', 
+    position: { x: 700, y: 5 },
+    data: { label: '面试甄选' },
+    sourcePosition: 'right',
+    targetPosition: 'left',
+    style: {
+      background: '#fff',
+      border: '1px solid #2758E9',
+      color:'#2758E9',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '5', 
+    position: { x: 900, y: 5 },
+    data: { label: '用人单位复试' },
+    sourcePosition: 'right',
+    targetPosition: 'left',
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '6', 
+    position: { x: 1100, y: 5 },
+    data: { label: '正式录用' },
+    sourcePosition: 'bottom',
+    targetPosition: 'left',
+    style: {
+      background: '#fff',
+      border: '1px solid #2758E9',
+      color:'#2758E9',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '7', 
+    position: { x: 1100, y: 100 },
+    data: { label: '入职体检和岗前培训' },
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '8', 
+    position: { x: 1100, y: 200 },
+    data: { label: '签订第三方合同' },
+    sourcePosition: 'left',
+    targetPosition: 'top',
+    style: {
+      background: '#fff',
+      border: '1px solid #2758E9',
+      color:'#2758E9',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '9', 
+    position: { x: 900, y: 200 },
+    data: { label: '派遣员工上岗' },
+    sourcePosition: 'left',
+    targetPosition: 'right',
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '10', 
+    position: { x: 700, y: 200 },
+    data: { label: '统一管理人事档案' },
+    sourcePosition: 'left',
+    targetPosition: 'right',
+    style: {
+      background: '#fff',
+      border: '1px solid #2758E9',
+      color:'#2758E9',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '11', 
+    position: { x: 500, y: 200 },
+    data: { label: '社保公积金、工资发放等人事系统' },
+    sourcePosition: 'left',
+    targetPosition: 'right',
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '12', 
+    position: { x: 300, y: 200 },
+    data: { label: '派遣员工关系维护' },
+    sourcePosition: 'left',
+    targetPosition: 'right',
+    style: {
+      background: '#fff',
+      border: '1px solid #2758E9',
+      color:'#2758E9',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+  { 
+    id: '13', 
+    position: { x: 100, y: 200 },
+    data: { label: '协议、合同的解除及续签' },
+    type: 'output',
+    targetPosition: 'right',
+    style: {
+      background: 'rgb(39, 58, 233, .3)',
+      border: 'none',
+      borderRadius: 8,
+      fontSize: 20,
+    },
+  },
+])
+
+const edges = ref([
+  { 
+    id: 'e1-2',
+    source: '1', 
+    target: '2',
+  },
+  { 
+    id: 'e2->3',
+    source: '2', 
+    target: '3',
+  },
+  { 
+    id: 'e3->4',
+    source: '3', 
+    target: '4',
+  },
+  { 
+    id: 'e4->5',
+    source: '4', 
+    target: '5',
+  },
+  { 
+    id: 'e5->6',
+    source: '5', 
+    target: '6',
+  },
+  { 
+    id: 'e6->7',
+    source: '6', 
+    target: '7',
+  },
+  { 
+    id: 'e7->8',
+    source: '7', 
+    target: '8',
+  },
+  { 
+    id: 'e8->9',
+    source: '8', 
+    target: '9',
+  },
+  { 
+    id: 'e9->10',
+    source: '9', 
+    target: '10',
+  },
+  { 
+    id: 'e10->11',
+    source: '10', 
+    target: '11',
+  },
+  { 
+    id: 'e11->12',
+    source: '11', 
+    target: '12',
+  },
+  { 
+    id: 'e12->13',
+    source: '12', 
+    target: '13',
+  },
+
+])
+</script>
+
 <template>
+  <VueFlow :nodes="nodes" :edges="edges" :default-viewport="{ zoom: 1 }" :max-zoom="1" :min-zoom="1" :pan-on-drag="false" :nodes-draggable="false" :prevent-scrolling="false">
+    <!-- <Handle id="source-a" type="source" :position="Position.Right" />
+    <Handle id="source-b" type="source" :position="Position.Right" />
+    <Handle id="target-a" type="target" :position="Position.Left" />
+    <Handle id="target-b" type="target" :position="Position.Left" /> -->
+  </VueFlow>
+</template>
+
+<style>
+/* import the necessary styles for Vue Flow to work */
+@import '@vue-flow/core/dist/style.css';
+
+/* import the default theme, this is optional but generally recommended */
+@import '@vue-flow/core/dist/theme-default.css';
+
+.vue-flow{
+  height: 70vh;
+  width: 90vw;
+}
+
+</style>
+<!-- <template>
   <div class="service">
     <h1 >服务流程</h1>
     <div class="content-box">
@@ -333,4 +601,4 @@
       }
     }
   }
-</style>
+</style> -->
