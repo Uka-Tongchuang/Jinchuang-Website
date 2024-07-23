@@ -45,7 +45,7 @@ const router = useRouter();
 onMounted(async () => {
   const screenWidth = window.screen.width;
   const body=document.querySelector("#app") as any;
-  body.style.width=screenWidth-40+"px"
+  body.style.width=screenWidth+"px"
   routerCurrent.value = router.currentRoute.value.name;
   // console.log(routerCurrent.value);
   const token = window.localStorage.getItem("token") || "";

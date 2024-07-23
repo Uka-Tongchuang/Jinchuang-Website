@@ -5,21 +5,73 @@ html,body{
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  font-size: 14px;
+  display: grid;
+  place-items: center; /* 水平居中和垂直居中 */
   a{
     text-decoration: none;
     color: #000;
   }
 }
-@media (max-width: 768px) {
-  html ,body,#app{
-    font-size: 10px; /* 针对小屏幕设备调整字体大小 */
+@media screen and (max-width: 768px) {
+  /* 超小屏幕样式 */
+  html{
+    font-size: 4px;
   }
 }
+/*900断点*/
+@media screen  and (min-width: 769px) and (max-width: 900px) {
+  /* 超小屏幕样式 */
+  html{
+    font-size: 7px;
+  }
+}
+/* 小屏幕断点 */
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  html{
+    font-size: 8px;
+  }
+}
+
+/* 中屏幕断点 */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* 中等屏幕样式 */
+  html{
+    font-size: 9px;
+  }
+}
+
+/* 中大屏幕断点 */
+@media screen and (min-width: 1281px) and (max-width: 1420px) {
+  /* 大屏幕样式 */
+  html{
+    font-size: 12px;
+  }
+}
+/* 大屏幕断点 */
+ @media screen and (min-width: 1421px) and (max-width: 1920px) {
+  html{
+    font-size: 14px;
+  }
+}
+/* 超大屏幕断点 */
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  /* 超大屏幕样式 */
+  html{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2561px) {
+  /* 极端大屏幕样式 */
+  html{
+    font-size: 20px;
+  }
+}
+
+
+
 #app{
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
   a{
     text-decoration: none;
   }
