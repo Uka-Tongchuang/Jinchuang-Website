@@ -369,6 +369,11 @@ const goFiexble = () => {
             cursor: pointer;
           }
         }
+        .seven:hover{
+          span{
+            color: rgb(39, 88, 223);
+          }
+        }
     }
   }
   .showMou {

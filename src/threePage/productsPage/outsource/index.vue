@@ -146,7 +146,7 @@ onMounted(()=>{
   overflow-y: hidden;  
   .service——process{
     width: 80%;
-    height: 65rem;
+    height: 70rem;
     margin: 2rem auto;
     margin-top: 8rem;
     // background-color: antiquewhite;

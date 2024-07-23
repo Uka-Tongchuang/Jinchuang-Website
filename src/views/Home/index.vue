@@ -42,10 +42,12 @@ const boxs=ref()
 const routerPath = ref();
 const routerCurrent = ref();
 const router = useRouter();
+const widths=ref()
 onMounted(async () => {
   const screenWidth = window.screen.width;
   const body=document.querySelector("#app") as any;
-  body.style.width=screenWidth+"px"
+  body.style.width=body.innerWidth
+
   routerCurrent.value = router.currentRoute.value.name;
   // console.log(routerCurrent.value);
   const token = window.localStorage.getItem("token") || "";
@@ -67,6 +69,7 @@ onBeforeRouteUpdate((to, from) => {
 </script>
 <style scoped lang="scss">
 .common-layout {
+ 
   padding: 0;
   .backCom {
     position: fixed;
@@ -78,7 +81,7 @@ onBeforeRouteUpdate((to, from) => {
 .el-header{
   width: 100%;
   height: 5rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 20px;
 }
 .el-main{

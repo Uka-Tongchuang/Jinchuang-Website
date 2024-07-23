@@ -268,7 +268,7 @@ const state = reactive({
   width: calc(25rem * 14);
 }
 .slider .slide {
-  height: 80px;
+  height: 5rem;
   width: fit-content;
   padding-top: 10px;
   padding-bottom: 10px;

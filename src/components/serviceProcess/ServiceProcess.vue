@@ -60,7 +60,6 @@
 .box {
   width: 100%;
   height: 100%;
-//   border: 1px solid #ccc;
 .title{
     h1{
         font-size: 3rem;
@@ -72,8 +71,9 @@
     height: 15rem;
     display: flex;
     margin-top: 1rem;
+    justify-content: space-between;
     .left_line {
-      width: 28rem;
+      width: 20%;
       height: 14rem;
       border-top-left-radius: 2rem;
       border-left: 0.4rem solid rgb(98, 133, 223);
@@ -92,17 +92,16 @@
       }
     }
     .banner_box {
-      width: 40rem;
+      width: 30%;
       height: 5rem;
-      margin: 0 auto;
       border: 0.2rem solid rgb(133, 126, 202);
       line-height: 5rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       text-align: center;
       font-weight: 700;
     }
     .right_line {
-      width: 28rem;
+      width: 20%;
       height: 14rem;
       border-top-right-radius: 2rem;
       border-right: 0.4rem solid rgb(98, 133, 223);
@@ -123,8 +122,10 @@
   }
   .center_box {
     width: 100%;
-    height: 15rem;
+    height: 33%;
     display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
     .title_first {
       width: 14rem;
       height: 14rem;
@@ -137,11 +138,11 @@
       margin-top: 5rem;
     }
     .line_box_one {
-      width: 32rem;
+      width: 20%;
       height: 14rem;
     //   border: 1px solid #ccc;
       margin-top: 5rem;
-      margin-left: 5rem;
+      margin-left: 2rem;
       .line_top_title {
         width: 100%;
         height: 7rem;
@@ -177,15 +178,15 @@
         font-size: 2rem;
         text-align: center;
         line-height: 14rem;
-        margin-left: 5rem;
+        margin-left: 2rem;
         margin-top: 5rem;
     }
     .line_box_two{
-        width: 32rem;
+        width: 20%;
       height: 14rem;
     //   border: 1px solid #ccc;
       margin-top: 5rem;
-      margin-left: 5rem;
+      margin-left: 2rem;
       .line_top_title {
         width: 100%;
         height: 7rem;
@@ -221,7 +222,7 @@
         font-size: 2rem;
         text-align: center;
         line-height: 14rem;
-        margin-left: 5rem;
+        margin-left: 2rem;
         margin-top: 5rem;
     }
   }
@@ -229,50 +230,50 @@
     width: 100%;
     height: 15rem;
     display: flex;
+    justify-content: space-between;
     .left_line {
-      width: 28rem;
+      width: 20%;
       height: 14rem;
       border-bottom-left-radius: 2rem;
       border-left: 0.4rem solid rgb(98, 133, 223);
       border-bottom: 0.4rem solid rgb(98, 133, 223);
       margin-left: 7rem;
-      margin-top: 7rem;
+      margin-top: 1rem;
       position: relative;
       .border_box {
         width: 0;
         height: 0;
         position: absolute;
-        bottom: -1.1rem;
+        top: 13.2rem;
         right: -2rem;
         border: 1rem solid rgba(255, 255, 255, 0);
         border-left: 1.5rem solid rgb(98, 133, 223);
       }
     }
     .banner_box {
-      width: 40rem;
+      width: 30%;
       height: 5rem;
-      margin: 0 auto;
       border: 0.2rem solid rgb(133, 126, 202);
       line-height: 5rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       text-align: center;
       font-weight: 700;
-      margin-top: 18.5rem;
+      margin-top: 12.2rem;;
     }
     .right_line {
-      width: 28rem;
+      width: 20%;
       height: 14rem;
       border-bottom-right-radius: 2rem;
       border-right: 0.4rem solid rgb(98, 133, 223);
       border-bottom: 0.4rem solid rgb(98, 133, 223);
       margin-right: 7rem;
-      margin-top: 7rem;
+      margin-top: 1rem;
       position: relative;
       .border_box {
         width: 0;
         height: 0;
         position: absolute;
-        bottom: -1.1rem;
+        top: 13.2rem;
         left: -2rem;
         border: 1rem solid rgba(255, 255, 255, 0);
         border-right: 1.5rem solid rgb(98, 133, 223);

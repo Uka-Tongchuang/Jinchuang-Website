@@ -15,8 +15,8 @@
       </div>
       <div class="title_two">服务提供者</div>
       <div class="title_three">税务局</div>
-      <div style="clear: both"></div>
     </div>
+    <div style="clear: both"></div>
     <!-- //下边的盒子 -->
     <div class="unbox_line">
       <div class="left">
@@ -31,6 +31,7 @@
           签订商务协议(业务费用代发)<br />
           开具发票\提供发票服务
         </div>
+        <div></div>
       </div>
       <div class="center">
         <div class="cen_top">
@@ -60,7 +61,7 @@
 .main {
   width: 100%;
   height: 100%;
-//   border: 1px solid #ccc;
+  border: 1px solid #ccc;
   h1 {
     font-size: 3rem;
     text-align: center;
