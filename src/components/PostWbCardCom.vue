@@ -61,7 +61,7 @@ li {
   list-style: none;
 }
 .cart_box_com {
-  width: 100%;
+  width: 60%;
   height: 100%;
   margin: 0 auto;
    
@@ -72,9 +72,9 @@ li {
   .card_box {
     position: absolute;
     top: 19%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50% -50%);
-    width: 100%;
+    width: 40%;
     height: 40rem;
     font-size: 1.2rem; 
     .box {

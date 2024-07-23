@@ -25,6 +25,7 @@
       position: relative;
       width: 100%; 
       height: 37rem; 
+       margin-top: -5rem;
       .merchant { 
      background: #2758E9;
        height: 40rem; 

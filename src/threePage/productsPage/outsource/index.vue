@@ -5,7 +5,7 @@
     <div class="card-list">
       <OutCartCom />
     </div>
-
+    <!-- 服务场景 -->
     <div class="service-box">
       <PostWbCardCom />
     </div>
@@ -157,7 +157,7 @@ onMounted(() => {
     height: 45rem;
   }
   .service-box {
-    width: 80%;
+    width: 100%;
     height: 40rem;
     margin: 2rem auto;
     position: relative;

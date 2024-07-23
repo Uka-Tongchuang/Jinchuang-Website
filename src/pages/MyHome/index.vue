@@ -9,7 +9,6 @@
 <style scoped>
 .mains {
   margin: 0;
-  position: relative;
-  top: -5rem;
+  position: relative; 
 }
 </style>

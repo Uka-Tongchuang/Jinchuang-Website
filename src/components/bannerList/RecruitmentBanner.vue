@@ -24,6 +24,7 @@
   .trapezoid {
       position: relative;
       width: 100%; 
+       margin-top: -5rem;
       height: 40rem; 
       .merchant { 
        background-color: #2d8fce;
