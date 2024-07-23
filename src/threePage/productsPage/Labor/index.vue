@@ -137,7 +137,7 @@ const state = reactive({
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 20px;
+        font-size: 1.4rem;
         color: white;
         text-align: center;
       }

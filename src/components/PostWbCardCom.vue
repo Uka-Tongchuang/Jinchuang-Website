@@ -70,11 +70,11 @@ li {
     text-align: center;
   }
   .card_box {
-    position: absolute;
-    top: 19%;
-    left: 31%;
-    transform: translate(-50% -50%);
-    width: 40%;
+    // position: absolute;
+    // top: 8rem;
+    // left: 39rem; 
+    margin: 0 auto;
+    width: 43rem;
     height: 40rem;
     font-size: 1.2rem; 
     .box {
