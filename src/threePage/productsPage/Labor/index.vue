@@ -54,7 +54,9 @@
       </div>
     </div>
     <!-- 服务流程 -->
-    <LaborService />
+    <div style="position: relative;">
+      <LaborService />
+    </div>
     <!-- 适用场景 -->
     <div class="content-box">
       <LaborCardCom />

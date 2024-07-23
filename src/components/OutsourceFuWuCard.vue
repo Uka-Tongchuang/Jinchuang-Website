@@ -1,197 +1,151 @@
 <template>
-<div class="cart_box_com">
+  <div class="cart_box_com">
     <h2>服务内容</h2>
-
-    <div class="card_box">
-        <div class="cart_list_box">
-            
-                <div class="null_box">
-                    <div class="title_num">01</div>
-
-                    <div class="item_first_box item_boxs">
-                    
-                    <div class="text">
-                       <span>人力资源管理</span>
-                       <p >Human Resources </p>
-                       <p><br/></p>
-                           <ul class="custom-list">
-                       <li>人员招聘</li>
-                       <li>资源配置</li>
-                       <li>团队搭建</li>
-                       <li>人事管理</li>
-                           </ul>
-               </div>
-               </div>
-              
-
-            </div>
-            <div class="null_box">
-                    <div class="title_num">02</div>
-
-                    <div class="item_two_box item_boxs">
-                    
-                    <div class="text">
-                       <span>运营管理</span>
-                       <p >Operational </p>
-                       <p><br/></p>
-                           <ul class="custom-list">
-                       <li>业务运营</li>
-                       <li>风险管理 </li>
-                           </ul>
-               </div>
-               </div>
-              
-
-            </div>
-            <div class="null_box">
-                    <div class="title_num">03</div>
-
-                    <div class="item_two_box item_boxs">
-                    
-                    <div class="text">
-                       <span>办公管理</span>
-                       <p >Office </p>
-                       <p><br/></p>
-                           <ul class="custom-list">
-                       <li>办公场所</li>
-                           </ul>
-               </div>
-               </div>
-              
-
-            </div>
-            <div class="null_box">
-                    <div class="title_num">04</div>
-
-                    <div class="item_two_box item_boxs">
-                    
-                    <div class="text">
-                       <span>福利与绩效管理</span>
-                       <p >Welfare and Performance </p>
-                       <p><br/></p>
-                           <ul class="custom-list">
-                       <li>薪酬管理</li>
-                       <li>福利管理</li>
-                       <li>绩效管理</li>
-                           </ul>
-               </div>
-               </div>
-              
-
-            </div>
-        </div> 
+    <div class="content">
+      <div class="content-list">
+        <li>
+          <div class="list-top"></div>
+          <div>人员招聘</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>资源配置</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>办公场所</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>团队搭建</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>业务运营</div>
+          <div class="list-bottom"></div>
+        </li>
+      </div>
+      <div class="content-center">
+        <div class="icon_box">
+         <img src="../assets/logo/zhaopin.png" alt="">
+        </div>
+        <div class="icon_box1">
+            <img src="../assets/logo/guanli.png" alt="">
+        </div>
+      </div>
+      <div class="content-list">
+        <li>
+          <div class="list-top"></div>
+          <div>人事管理</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>薪酬管理</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>福利管理</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>绩效管理</div>
+          <div class="list-bottom"></div>
+        </li>
+        <li>
+          <div class="list-top"></div>
+          <div>风险管理</div>
+          <div class="list-bottom"></div>
+        </li>
+      </div>
     </div>
-</div>
-
+  </div>
 </template>
+<script>
+import {
+  BrushFilled,
+  Briefcase,
+  Connection,
+  Postcard,
+  OfficeBuilding,
+  Wallet,
+} from "@element-plus/icons-vue";
+</script>
 <style scoped lang="scss">
-.cart_box_com {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-
-    h2 {
-        font-size: 3rem;
-        height: 3rem;
-        line-height: 3rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .cart_list_box {
-        width: 100%;
-        height: 34rem;
-        display: flex;
-        justify-content: space-between;
-        $color1: #82C4B3;
-        
-        .item_boxs {
-            width: 25rem;
-            height: 37rem;
-            display: flex;
-            // border: 0.2rem solid $color1;
-            // box-shadow: 0 0 0.4rem 0.2rem $color1;
-            background-image: linear-gradient( 0deg , rgb(233,239,242) 80%, #82C4B3 .25%);
-            .text {
-                width: 80%;
-                height: 2.2rem;
-                font-size: 2.2rem;
-                margin: 0 0;
-                margin-top: 1.8rem;
-                margin-left: 1rem;
-                text-align: left;
-                line-height: 2.2rem;
-                font-weight: 500;
-            }
-            
-            p {
-          font-size: 1.4rem;
-          width: 100%;
-          margin: 0 0;
-          display: flex;
-          font-weight: 300; /* 设置字体为细 */
-
-        }
-        .custom-list {
-      list-style: none; /* 移除默认的小圆点 */
-      padding: 0;
-      margin: 0;
-    }
-
-    .custom-list li {
-      position: relative;
-      padding-left: 6rem; /* 为小圆点和文本之间增加距离 */
-      margin-bottom: 1.2rem; /* 设置每行之间的间距 */
-      font-size: 1.6rem; /* 调整字体大小 */
-      margin-left: 2rem;
-      font-weight: 400; /* 设置字体为细 */
-    }
-
-    .custom-list li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1rem; /* 小圆点的大小 */
-      height: 1rem; /* 小圆点的大小 */
-      background-color: rgb(97,121,181); /* 小圆点的颜色 */
-      border-radius: 50%;
-    }
-   
-
-
-        }
-        .item_two_box {
-  
-         
-           
-        }
-        .item_three_box {
-           
-        }
-        .item_four_box {
-           
-        }
-
-    }
-    
+li {
+  list-style: none;
+  font-size: 1.2rem;
 }
-.null_box{
-                background-color: #ffff;
-                width: 20rem;
-                height: 40rem;
-    }
+.cart_box_com {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
 
-    .title_num {
-  position: absolute;
-  font-size: 3rem;
-  font-family:'Times New Roman', Times, serif;
-  margin-top: -2rem;
-  margin-left: 1rem;
-  z-index: 10;
-  letter-spacing: 10px; /* 设置字体间的间距 */
-}  
-      .card_box{
-        margin-top: 3rem;
+  h2 {
+    font-size: 3rem;
+    height: 3rem;
+    line-height: 10rem;
+    text-align: center;
+  }
+  .content {
+    height: 28rem;
+    display: flex;
+    justify-content: space-between;
+    .content-center {
+      margin-top: 6rem;
+      width: 44rem;
+      height: 24rem;
+      background: url(../assets/yuanhuan.png) no-repeat;
+      display: flex;
+      line-height: 44rem;
+      .icon_box {
+        width: 6rem;
+        height: 6rem;
+        background-color: #F1F5F9; 
+        margin: -8rem 10rem;
       }
+       .icon_box1 {
+        width: 6rem;
+        height: 6rem;
+        background-color: #F1F5F9; 
+        margin: -8rem 3rem;
+      }
+    }
+    .content-list {
+      padding: 5rem;
+      width: 30rem;
+      height: 30rem;
+      text-align: center;
+      li {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        .list-top {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-top: 1px solid #307eff;
+          border-left: 1px solid #307eff;
+        }
+        div {
+          width: 5rem;
+        }
+        .list-bottom {
+          margin-top: 1.1rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-bottom: 1px solid #307eff;
+          border-right: 1px solid #307eff;
+        }
+      }
+    }
+  }
+}
 </style>

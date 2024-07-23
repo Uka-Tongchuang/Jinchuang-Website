@@ -10,7 +10,7 @@ const nodes = ref([
     data: { label: '提出用人需求' },
     sourcePosition: 'right',
     type: 'input',
-    style: {
+    style: { 
       background: 'rgb(39, 58, 233, .3)',
       border: 'none',
       borderRadius: 8,
@@ -19,7 +19,7 @@ const nodes = ref([
   },
   { 
     id: '2', 
-    position: { x: 300, y: 5 },
+    position: { x: 400, y: 5 },
     data: { label: '确认岗位需求' },
     sourcePosition: 'right',
     targetPosition: 'left',
@@ -33,7 +33,7 @@ const nodes = ref([
   },
   { 
     id: '3', 
-    position: { x: 500, y: 5 },
+    position: { x: 700, y: 5 },
     data: { label: '公开招聘' },
     sourcePosition: 'right',
     targetPosition: 'left',
@@ -46,7 +46,7 @@ const nodes = ref([
   },
   { 
     id: '4', 
-    position: { x: 700, y: 5 },
+    position: { x: 1000, y: 5 },
     data: { label: '面试甄选' },
     sourcePosition: 'right',
     targetPosition: 'left',
@@ -60,7 +60,7 @@ const nodes = ref([
   },
   { 
     id: '5', 
-    position: { x: 900, y: 5 },
+    position: { x: 1300, y: 5 },
     data: { label: '用人单位复试' },
     sourcePosition: 'right',
     targetPosition: 'left',
@@ -73,7 +73,7 @@ const nodes = ref([
   },
   { 
     id: '6', 
-    position: { x: 1100, y: 5 },
+    position: { x: 1600, y: 5 },
     data: { label: '正式录用' },
     sourcePosition: 'bottom',
     targetPosition: 'left',
@@ -87,7 +87,7 @@ const nodes = ref([
   },
   { 
     id: '7', 
-    position: { x: 1100, y: 100 },
+    position: { x: 1600, y: 200 },
     data: { label: '入职体检和岗前培训' },
     style: {
       background: 'rgb(39, 58, 233, .3)',
@@ -98,7 +98,7 @@ const nodes = ref([
   },
   { 
     id: '8', 
-    position: { x: 1100, y: 200 },
+    position: { x: 1600, y: 400 },
     data: { label: '签订第三方合同' },
     sourcePosition: 'left',
     targetPosition: 'top',
@@ -112,7 +112,7 @@ const nodes = ref([
   },
   { 
     id: '9', 
-    position: { x: 900, y: 200 },
+    position: { x: 1300, y: 400 },
     data: { label: '派遣员工上岗' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -125,7 +125,7 @@ const nodes = ref([
   },
   { 
     id: '10', 
-    position: { x: 700, y: 200 },
+    position: { x: 1000, y: 400 },
     data: { label: '统一管理人事档案' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -139,7 +139,7 @@ const nodes = ref([
   },
   { 
     id: '11', 
-    position: { x: 500, y: 200 },
+    position: { x: 700, y: 400 },
     data: { label: '社保公积金、工资发放等人事系统' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -152,7 +152,7 @@ const nodes = ref([
   },
   { 
     id: '12', 
-    position: { x: 300, y: 200 },
+    position: { x: 400, y: 400 },
     data: { label: '派遣员工关系维护' },
     sourcePosition: 'left',
     targetPosition: 'right',
@@ -166,7 +166,7 @@ const nodes = ref([
   },
   { 
     id: '13', 
-    position: { x: 100, y: 200 },
+    position: { x: 100, y: 400 },
     data: { label: '协议、合同的解除及续签' },
     type: 'output',
     targetPosition: 'right',
@@ -250,10 +250,15 @@ const edges = ref([
     <Handle id="source-b" type="source" :position="Position.Right" />
     <Handle id="target-a" type="target" :position="Position.Left" />
     <Handle id="target-b" type="target" :position="Position.Left" /> -->
+
   </VueFlow>
+  <div class="title-alinets">
+    <p class="title-title">服务流程</p>
+<p class="title-title">Recruitment Process</p>
+</div>
 </template>
 
-<style>
+<style >
 /* import the necessary styles for Vue Flow to work */
 @import '@vue-flow/core/dist/style.css';
 
@@ -261,10 +266,35 @@ const edges = ref([
 @import '@vue-flow/core/dist/theme-default.css';
 
 .vue-flow{
-  height: 70vh;
-  width: 90vw;
+  height: 40rem;
+  width: 80%;
+  margin:7rem auto 0 auto;
 }
-
+.vue-flow__node-input{
+  width: 14rem;
+  height: 8rem;
+  line-height: 7rem;
+}
+.vue-flow__node-output{
+  width: 14rem !important;
+  height: 8rem;
+  line-height: 7rem;
+}
+.vue-flow__node-default{
+  width: 14rem;
+  height: 8rem;
+  line-height: 7rem;
+}
+.title-alinets{
+  position: absolute;
+  top: 13rem;
+  left: 60rem;
+}
+.title-title{
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
 </style>
 <!-- <template>
   <div class="service">

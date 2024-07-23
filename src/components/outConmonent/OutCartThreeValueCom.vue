@@ -75,8 +75,7 @@
         padding: 4rem 2rem;
         justify-content: space-around; 
         color: black;
-         text-align: center;
-        font-weight: 600;
+         text-align: center; 
         li{
             margin-left: 1rem;
             list-style:none; 

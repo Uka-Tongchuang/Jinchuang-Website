@@ -132,9 +132,9 @@ const outputValue3 = useTransition(source3, {
 
 <style lang="scss" scoped>
     .content{
-        width: 100%;
+        width: 80%;
         height: 60%;
-        margin: 7.5rem 0;
+        margin: 7.5rem auto;
         position: relative;
         .headline{
             width: 100%;

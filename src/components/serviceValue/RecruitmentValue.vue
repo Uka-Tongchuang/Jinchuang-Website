@@ -1,7 +1,7 @@
 <template>
   <div class="serviceValue">
     <div class="footer-box">
-      <h1>服务价值</h1>
+      <p class="title-top">服务价值</p>
       <div ref="titleList">
         <div
           v-for="(item, index) in props.titleArray"
@@ -74,15 +74,19 @@ const toggleExpand = (index: number) => {
     padding:3rem 5rem;
     background-color: #f0f0f0;
     opacity: 0.8;
-    h1 {
+    .title-top{
+      height: 5rem;
+      margin: 0;
+      padding: 0;
       font-size: 3rem;
       text-align: center;
+      border-bottom: 2px solid #2758E9;
     }
     .title {
       height: 5rem;
-      border: 2px solid #2758E9;
-      border-left: none;
-      border-right: none;
+      // border: 2px solid #2758E9;
+      // border-left: none;
+      border-bottom: 2px solid #2758E9;
       .title-box {
         font-size: 1.6rem;
         height: 3rem;
@@ -90,7 +94,8 @@ const toggleExpand = (index: number) => {
         display: flex;
         justify-content: space-between;
         span {
-          font-size: 2rem;
+          margin-top: 0.5rem;
+          font-size: 3rem;
           margin-right: 2rem;
         }
       }
