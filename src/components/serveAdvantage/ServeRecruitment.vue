@@ -78,19 +78,21 @@
 <script lang="ts" setup></script>
 <style lang="scss" scoped>
 .advantage {
-  width: 80%;
-  height: 56rem;
+  width: 100%;
+  height: 60rem;
   margin: auto;
   h1 {
+    padding-top: 2rem;
     margin:0;
     overflow-y: hidden;
     font-size: 3rem;
     text-align: center;
   }
   .content {
+   padding: 2.5rem;
     width: 80%;
-    margin:2rem auto;
-    height: 51rem;
+    margin: 0rem auto;
+    height: 49rem;
     .content-box {
       width: 100%;
       display: flex;

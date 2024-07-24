@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from 'vue'
 import { VueFlow } from '@vue-flow/core'
 
@@ -242,15 +242,10 @@ const edges = ref([
   },
 
 ])
-</script>
+</script> -->
 
-<template>
+<!-- <template>
   <VueFlow :nodes="nodes" :edges="edges" :default-viewport="{ zoom: 1 }" :max-zoom="1" :min-zoom="1" :pan-on-drag="false" :nodes-draggable="false" :prevent-scrolling="false">
-    <!-- <Handle id="source-a" type="source" :position="Position.Right" />
-    <Handle id="source-b" type="source" :position="Position.Right" />
-    <Handle id="target-a" type="target" :position="Position.Left" />
-    <Handle id="target-b" type="target" :position="Position.Left" /> -->
-
   </VueFlow>
   <div class="title-alinets">
     <p class="title-title">服务流程</p> 
@@ -259,9 +254,9 @@ const edges = ref([
       <p class="color-right">Process</p>
     </div>
 </div>
-</template>
+</template> -->
 
-<style >
+<!-- <style >
 /* import the necessary styles for Vue Flow to work */
 @import '@vue-flow/core/dist/style.css';
 
@@ -325,7 +320,7 @@ const edges = ref([
   height: 100%;
   padding-top: 0.5rem;
 }
-</style>
+</style> -->
 <!-- <template>
   <div class="service">
     <h1 >服务流程</h1>
@@ -662,3 +657,207 @@ const edges = ref([
     }
   }
 </style> -->
+
+
+
+<template>
+  <div class="service">
+    <h1>服务流程</h1>  
+    <el-carousel :interval="3000" arrow="always" style="margin-top: 3rem;height: 40rem; background-color: rgba(241, 245, 249, 1);" direction="vertical">
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);"> 
+              <div class="title">{{ state.arr1.title }}</div>
+              <div class="text">{{ state.arr1.text }}</div> 
+              <div class="card-list">
+                <div class="item" v-for="item in state.arr1.list" :key="item.id">
+                <p class="id">{{ item.id }}</p>
+                <p class="dest">{{ item.dest }}</p>
+              </div>
+              </div>
+            </el-card> 
+          </el-carousel-item>
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);"> 
+               <div class="title">{{ state.arr2.title }}</div>
+              <div class="text">{{ state.arr2.text }}</div> 
+             <div class="card-list">
+                <div class="item item1" v-for="item in state.arr2.list" :key="item.id">
+                <p class="id">{{ item.id }}</p>
+                <p class="dest">{{ item.dest }}</p>
+              </div>
+              </div>
+            </el-card>
+          </el-carousel-item>
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);">  
+               <div class="title">{{ state.arr3.title }}</div>
+              <div class="text">{{ state.arr3.text }}</div> 
+             <div class="card-list">
+                <div class="item item1" v-for="item in state.arr3.list" :key="item.id">
+                <p class="id">{{ item.id }}</p>
+                <p class="dest">{{ item.dest }}</p>
+              </div>
+              </div>
+            </el-card>
+          </el-carousel-item>
+          <el-carousel-item v-for="(item, index) in 1" :key="index">
+            <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);" > 
+               <div class="title">{{ state.arr4.title }}</div>
+              <div class="text">{{ state.arr4.text }}</div> 
+           <div class="card-list">
+                <div class="item item1" v-for="item in state.arr4.list" :key="item.id">
+                <p class="id">{{ item.id }}</p>
+                <p class="dest">{{ item.dest }}</p>
+              </div>
+              </div>
+            </el-card>
+          </el-carousel-item>
+        </el-carousel>
+  </div>
+</template>
+<script lang="ts" setup>
+import {ref,reactive} from 'vue'
+const state =reactive({
+  arr1:
+    {
+      title:'招聘需求与公开招聘',
+      text:'招聘需求与公开招聘是招聘流程的起点，涉及明确职位空缺、设定岗位要求，并通过多种渠道发布招聘信息。这个阶段的关键在于准确识别企业对人才的需求，并通过有效的招聘方式将信息传达给潜在应聘者。通过这一过程，企业能够找到符合条件的候选人，为后续的面试和选拔奠定基础。',
+      list:[
+        {
+          id:'01',
+          dest:'提出用人需求'
+        },
+          {
+          id:'02',
+          dest:'确认岗位需求'
+        },
+          {
+          id:'03',
+          dest:'公开招聘'
+        }, 
+      ]
+    },
+  
+   arr2:
+    {
+      title:'面试与选拔流程',
+      text:'面试与选拔流程是招聘的核心环节，目的是从众多应聘者中筛选出最适合的候选人。此阶段包括初试、复试和最终录用三个关键步骤。初试通常由人力资源部门进行，以筛选出符合基本条件的候选人；复试则由用人部门进行，以更深入地评估候选人的实际能力和潜在价值；最终录用则是确认最合适的人选并完成录用手续。',
+      text2:'此外，项目组还会进行市场和行业研究，以确保招聘策略与当前市场条件相匹配，并且根据行业趋势的变化，实时调整招聘计划以吸引最合适的候选人。收集到的简历会经过严格筛选，保留符合岗位要求的候选人，为客户提供高质量的候选简历。',
+      list:[
+        {
+          id:'04',
+          dest:'面试甄选'
+        },
+          {
+          id:'05',
+          dest:'用人单位复试'
+        },
+          {
+          id:'06',
+          dest:'正式录用'
+        }, 
+      ]
+    },
+   arr3:
+    {
+      title:'入职准备与培训',
+      text:'入职准备与培训阶段确保新员工能够顺利融入公司，并掌握必要的岗位技能。此阶段包括入职体检、岗前培训以及合同签订。入职体检确保新员工的健康状况适合工作要求，岗前培训则帮助员工了解公司文化、流程和具体岗位要求。签订第三方合同是处理法律和合同事务，确保双方的权利和义务明确。',
+      list:[
+        {
+          id:'07',
+          dest:'入职体检和岗前培训'
+        },
+          {
+          id:'08',
+          dest:'签订第三方合同'
+        },
+          {
+          id:'09',
+          dest:'派遣员工上岗'
+        }, 
+      ]
+    },
+  arr4:
+    {
+      title:'人事管理与关系维护',
+      text:'人事管理与关系维护阶段涉及员工入职后的日常管理及关系维护。此阶段包括人事档案管理、社保公积金及工资发放，以及维护员工关系和处理合同相关事宜。有效的人事管理能够确保员工的福利待遇按时到位，并处理员工与公司的各种关系问题，维护良好的工作氛围和法律合规。',
+      list:[
+        {
+          id:'10',
+          dest:'统一管理人事档案'
+        },
+          {
+          id:'11',
+          dest:'社保公积金、工资发放等人事'
+        },
+          {
+          id:'12',
+          dest:'派遣员工关系维护'
+        },
+          {
+          id:'13',
+          dest:'协议、合同的解除及续签'
+        }, 
+      ]
+    },
+})
+</script>
+<style lang="scss" scoped>
+::v-deep(.el-carousel__container){
+  height: 40rem !important;
+}
+::v-deep(.el-card){
+  border: none;
+  box-shadow: none;
+}
+::v-deep(.el-carousel__indicators--right){
+  right: 10rem;
+}
+.service { 
+   background-color: rgba(241, 245, 249, 1);
+  width: 100%;
+  height: 50rem;
+  margin: 0 auto;
+  h1 {
+    padding-top: 2rem;
+    overflow-y: hidden;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .title{
+    line-height: 8rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .text{
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  .card-list{
+    margin-top: 5rem;
+    width: 100%;
+    height: 30rem; 
+     display: flex;
+     justify-content: space-between;
+     .item{
+      width: 18%;
+      height: 35%; 
+      background-color: rgba(39, 88, 233, 0.3);
+      border-radius:2rem;
+      .id{
+        color: white;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+      }
+      .dest{
+        text-align: center;
+        font-size: 1.5rem;
+      }
+     }
+     .item1{
+        width: 22%; 
+     }
+  }
+}
+</style>

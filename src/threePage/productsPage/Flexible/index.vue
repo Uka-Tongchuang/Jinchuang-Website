@@ -109,7 +109,7 @@ const toggleExpand = (id: number) => {
 }
 .cart_box {
     width: 80%;
-    height: 40rem;
+    height: 60rem;
     margin: 0 auto;
     margin-top: 5rem;
     }

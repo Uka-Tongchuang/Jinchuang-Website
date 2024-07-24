@@ -226,7 +226,7 @@ const state = reactive({
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 2));
   }
 }
 
@@ -235,7 +235,7 @@ const state = reactive({
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 2));
   }
 }
 
@@ -262,8 +262,8 @@ const state = reactive({
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 5s linear infinite;
-  animation: scroll 5s linear infinite;
+  -webkit-animation: scroll 3s linear infinite;
+  animation: scroll 3s linear infinite;
   display: flex;
   width: calc(25rem * 14);
 }
