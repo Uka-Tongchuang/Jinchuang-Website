@@ -1,14 +1,9 @@
-html{
-  max-width: 200vw;
-}
-body{
-  max-width: 100vw;
-  height: 100vh;
+
+html,body{
   margin: 0;
   padding: 0;
-  margin: 0 auto;
-  display: grid;
-  place-items: center; /* 水平居中和垂直居中 */
+  font-size: 14px;
+  font-family: "微软雅黑";
   a{
     text-decoration: none;
     color: #000;
@@ -72,11 +67,14 @@ body{
 
 
 #app{
+  /* transform-origin: 0 0; */
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
-  a{
-    text-decoration: none;
-  }
+  /* margin: 0 auto; */
+  /* background-color: #f00; */
+
+  /* position: fixed;
+  top: 50%;
+  left: 50%; */
 }
 

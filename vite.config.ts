@@ -8,17 +8,17 @@ import postcssPxToRem from 'postcss-pxtorem';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [
-        postcssPxToRem({
-          rootValue: 192, // 这个值取决于你的设计稿基础尺寸
-          propList: ['*'], // 转换所有可转换的属性
-          // 其他配置选项...
-        }),
-      ],
-    },
-  },
+  // css: {
+  //   postcss: {
+  //     plugins: [
+  //       postcssPxToRem({
+  //         rootValue: 192, // 这个值取决于你的设计稿基础尺寸
+  //         propList: ['*'], // 转换所有可转换的属性
+  //         // 其他配置选项...
+  //       }),
+  //     ],
+  //   },
+  // },
   plugins: [
     vue(),
   ],

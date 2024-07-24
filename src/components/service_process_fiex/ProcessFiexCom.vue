@@ -69,8 +69,8 @@
   .onbox_title {
     width: 100%;
     height: 5rem;
-    // border-bottom: 0.2rem solid rgb(200, 151, 151);
     display: flex;
+    justify-content: space-between;
     .title_one {
       width: 20rem;
       height: 5rem;
@@ -126,12 +126,14 @@
   .unbox_line {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
     .left {
-      width: 30rem;
+      width: 33%;
       height: 35rem;
-      margin-left: 10rem;
+
       margin-top: 10rem;
-      // background-color: #ccc;
+      // background-color: #cc;
       text-align: center;
       .title_bottom_two {
         width: 100%;
@@ -191,11 +193,13 @@
       }
     }
     .center {
+      width: 33%;
+      margin-left:6%;
       .cen_top {
         width: 20rem;
         height: 25rem;
         margin-top: 10rem;
-        margin-left: 15rem;
+     
         margin-bottom: 1.5rem;
         display: flex;
         justify-content: space-around;
@@ -247,21 +251,22 @@
         }
       }
       .cen_bottom {
-        width: 20rem;
+        width: 12rem;
         height: 5rem;
         color: #fff;
         font-size: 1.6rem;
         background-color: rgb(97, 121, 181);
         text-align: center;
         line-height: 5rem;
-        margin-left: 15rem;
+        margin-left: 4rem;
+     
       }
     }
     .right {
-      width: 30rem;
+      width: 33%;
       height: 35rem;
-      margin-left: 10rem;
       margin-top: 10rem;
+      margin-right: 10rem;
       text-align: center;
       .title_bottom_first {
         height: 5rem;

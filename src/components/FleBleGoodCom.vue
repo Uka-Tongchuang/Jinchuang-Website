@@ -88,18 +88,16 @@
         justify-content: space-between;
         $color1: #82C4B3;
         .item_boxs {
-            width: 24rem;
+            width: 20rem;
             height: 30rem;
             border-radius: 2rem;
             border: 0.2rem solid $color1;
             box-shadow: 0 0 0.4rem 0.2rem $color1;
-            // .icon_box {
-            //     width: 12rem;
-            //     height: 12rem;
-            //     background-color: $color1;
-            //     border-radius: 50%;
-            //     margin: 3rem auto 1rem auto;
-            // }
+            .icon_box {
+                width: 100%;
+                height: 12rem;
+                
+            }
             .text {
                 width: 80%;
                 height: 2.2rem;
@@ -158,10 +156,13 @@
             }
         }
         .icon_img{
-            width: 12rem;
-            height: 12rem;
-            margin: 1rem auto 2rem auto;
-            margin-left: 6rem;
+            width: 10rem;
+            height: 10rem;
+            text-align: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            line-height: 12rem;
+            margin-top: 1rem;
         }
     }
 }

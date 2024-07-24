@@ -69,7 +69,6 @@ onBeforeRouteUpdate((to, from) => {
 </script>
 <style scoped lang="scss">
 .common-layout {
- 
   padding: 0;
   .backCom {
     position: fixed;
@@ -89,6 +88,8 @@ onBeforeRouteUpdate((to, from) => {
   height: 100%;
   margin: 0;
   padding: 0 20px;
+  overflow-y: hidden;
+ 
 }
 .el-footer {  
   width: 100%;
