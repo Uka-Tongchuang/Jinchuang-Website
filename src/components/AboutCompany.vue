@@ -34,16 +34,66 @@
           -->
     <div class="content_box">
       <div class="first_box">
-        <div></div>
-        <div></div>
+        <div class="img_box">
+            <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.9dd180a7faeee8b4bfb04a34a3e03d42&pid=Wdp&w=612&h=328&qlt=90&c=1&rs=1&dpr=1&p=0" />
+        </div>
+        <div class="decs_card">
+            <h2>公司概况</h2>
+            <p>
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+            </p>
+        </div>
       </div>
       <div class="second_box">
-        <div></div>
-        <div></div>
+        <div class="decs_card">
+            <h2>公司简介</h2>
+            <p>
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+            </p>
+        </div>
+        <div class="img_box">
+            <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.ac045ee52cb48d3c361100d13f1afe20&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=1&p=0" />
+        </div>
       </div>
       <div class="three_box">
-        <div></div>
-        <div></div>
+        <div class="img_box">
+            <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.9dd180a7faeee8b4bfb04a34a3e03d42&pid=Wdp&w=612&h=328&qlt=90&c=1&rs=1&dpr=1&p=0" />
+        </div>
+        <div class="decs_card">
+            <h2>公司成就</h2>
+            <p>
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+              公司成立之初，主要为国内头部互联网企业提供人力资源外包服务，发展至今建立了负责、高效、专业、
+              进取的服务团队，得到了客户的广泛信赖和好评，营业规模和企业实力处于国内人力资源服务行业先进水平。
+            </p>
+            <div class="imgs">
+                <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.9dd180a7faeee8b4bfb04a34a3e03d42&pid=Wdp&w=612&h=328&qlt=90&c=1&rs=1&dpr=1&p=0" />
+                <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.9dd180a7faeee8b4bfb04a34a3e03d42&pid=Wdp&w=612&h=328&qlt=90&c=1&rs=1&dpr=1&p=0" />
+                <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.9dd180a7faeee8b4bfb04a34a3e03d42&pid=Wdp&w=612&h=328&qlt=90&c=1&rs=1&dpr=1&p=0" />
+                <img src="https://ts3.cn.mm.bing.net/th?id=ORMS.9dd180a7faeee8b4bfb04a34a3e03d42&pid=Wdp&w=612&h=328&qlt=90&c=1&rs=1&dpr=1&p=0" />
+            </div>
+        </div>
       </div>
     </div>
 </template>
@@ -88,12 +138,85 @@ import "animate.css";
       font-size: 1.6rem;
     }
   }
-
 } 
  .content_box{
     width: 80%;
-    height: 60rem;
-    background-color: antiquewhite;
+    height: 150rem;
+   
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .first_box{
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        justify-content: space-around;
+        
+        .img_box{
+            width: 40%;
+            height: 50rem;
+            img{
+                width: 40rem;
+                height: 40rem;
+                margin-top: 5rem;
+            }
+        }
+        .decs_card{
+            width: 50%;
+            height: 50rem;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+    }
+    .second_box{
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        justify-content: space-between;
+        .img_box{
+            width: 40%;
+            height: 50rem;
+            img{
+                width: 40rem;
+                height: 40rem;
+                margin-top: 2rem;
+            }
+        }
+        .decs_card{
+            width: 50%;
+            height: 50rem;
+            font-size: 1.5rem;
+        }
+    }
+    .three_box{
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        justify-content: space-between;
+        .img_box{
+            width: 40%;
+            height: 50rem;
+            img{
+                width: 40rem;
+                height: 40rem;
+                margin-top: 2rem;
+            }
+        }
+        .decs_card{
+            width: 50%;
+            height: 50rem;
+            font-size: 1.5rem;
+            .imgs{
+                display: flex;
+                justify-content: space-around;
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
   }
 </style>

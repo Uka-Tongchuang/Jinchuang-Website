@@ -44,10 +44,11 @@ const routerCurrent = ref();
 const router = useRouter();
 
 onMounted(async () => {
+  const bodyWidth=document.body.clientWidth
   const widths = window.screen.width;
   const body = document.querySelector("#app") as any;
   //基于根元素字体大小设置
-  body.style.width = widths / 14 + "rem";
+  body.style.width = widths / 18 + "rem";
   routerCurrent.value = router.currentRoute.value.name;
   // console.log(routerCurrent.value);
   const token = window.localStorage.getItem("token") || "";
