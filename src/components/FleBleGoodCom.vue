@@ -61,10 +61,7 @@
 .advantage {
   width: 100%;
   margin: auto;
-  h1 {
-    padding-top: 2rem;
-    margin: 0;
-    overflow-y: hidden;
+  h1 { 
     font-size: 3rem;
     text-align: center;
   }
@@ -72,7 +69,6 @@
     width: 80%;
     margin: 0 auto;
     height: 51rem;
-    padding: 2.5rem;
     .content-box {
       width: 100%;
       display: flex;

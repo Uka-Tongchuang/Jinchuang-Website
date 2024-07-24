@@ -663,7 +663,7 @@ const edges = ref([
 <template>
   <div class="service">
     <h1>服务流程</h1>  
-    <el-carousel :interval="3000" arrow="always" style="margin-top: 3rem;height: 40rem; background-color: rgba(241, 245, 249, 1);" direction="vertical">
+    <el-carousel :interval="3000"  arrow="always" style="margin-top: 3rem;height: 40rem; background-color: rgba(241, 245, 249, 1);" direction="vertical">
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);"> 
               <div class="title">{{ state.arr1.title }}</div>
@@ -812,6 +812,9 @@ const state =reactive({
 }
 ::v-deep(.el-carousel__indicators--right){
   right: 10rem;
+}
+::v-deep(.el-carousel__button){
+  background-color: #2758E9;
 }
 .service { 
    background-color: rgba(241, 245, 249, 1);

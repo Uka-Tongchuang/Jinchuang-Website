@@ -174,6 +174,9 @@ const state =reactive({
 ::v-deep(.el-carousel__indicators--right){
   right: 10rem;
 }
+::v-deep(.el-carousel__button){
+  background-color: #2758E9;
+}
 .service { 
    background-color: rgba(241, 245, 249, 1);
   width: 100%;

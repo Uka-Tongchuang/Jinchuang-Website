@@ -89,10 +89,10 @@
     text-align: center;
   }
   .content {
-   padding: 2.5rem;
     width: 80%;
-    margin: 0rem auto;
-    height: 49rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    height: 51rem;
     .content-box {
       width: 100%;
       display: flex;
@@ -102,8 +102,8 @@
         height: 25rem;
       }
       .title {
-        width: calc(62% - 20rem);
-        height: 20rem;
+        width: calc(60% - 20rem);
+        height: 25rem;
         .flex-box {
           display: flex;
           justify-content: space-between;
