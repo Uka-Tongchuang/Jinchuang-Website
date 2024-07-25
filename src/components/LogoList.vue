@@ -2,7 +2,7 @@
   <div class="content">
     <div class="slider">
       <div class="slide-track">
-        <div class="slide" v-for="item in state.arr" :key="item.id">
+        <div class="slide" v-for="item,index in arr2" :key="index">
           <img :src="item.idVieo" class="img" alt="" />
         </div>
       </div>
@@ -32,87 +32,67 @@ import simple from "../assets/logo/logo/simple.jpg"; //朴朴
 import tasting from "../assets/logo/logo/tasting.jpg"; //点米
 import taobao from "../assets/logo/logo/taobao.jpg"; //淘宝
 import changzuimao from "../assets/logo/logo/changzuimao.jpg"; //长嘴猫
-import { reactive } from "vue";
+import { reactive,computed } from "vue";
 const state = reactive({
   arr: [
-    {
-      id: 1,
+    { 
       idVieo: favicon,
     },
-    {
-      id: 2,
+    { 
       idVieo: luckin,
     },
-    {
-      id: 3,
+    { 
       idVieo: ajisen,
     },
-    {
-      id: 4,
+    { 
       idVieo: cotti,
     },
-    {
-      id: 5,
+    { 
       idVieo: huoguo,
     },
-    {
-      id: 6,
+    { 
       idVieo: corporation,
     },
-    {
-      id: 7,
+    { 
       idVieo: sfexpress,
     },
-    {
-      id: 8,
+    { 
       idVieo: simple,
     },
-    {
-      id: 9,
+    { 
       idVieo: meitaun,
     },
-    {
-      id: 10,
+    { 
       idVieo: boss,
     },
-    {
-      id: 11,
+    { 
       idVieo: tasting,
     },
-    {
-      id: 12,
+    { 
       idVieo: EMS,
     },
-    {
-      id: 13,
+    { 
       idVieo: ane,
     },
-    {
-      id: 14,
+    { 
       idVieo: dingtalk,
     },
-    {
-      id: 15,
+    { 
       idVieo: alibaba,
     },
-    {
-      id: 16,
+    { 
       idVieo: taobao,
     },
-    {
-      id: 17,
+    { 
       idVieo: ems,
     },
-    {
-      id: 18,
+    { 
       idVieo: miduoduo,
     },
-    {
-      id: 19,
+    { 
       idVieo: changzuimao,
     },
-    {
-      id: 20,
+    { 
       idVieo: quick,
     },
   ],
@@ -209,6 +189,21 @@ const state = reactive({
     },
   ],
 });
+
+const repeatedImageArrays = computed(() => {
+  let result = [];
+  for (let i = 0; i < 10; i++) {
+    result.push(state.arr); // 使用扩展运算符来复制数组，避免直接引用
+  }
+  return result;
+}); 
+const arr=repeatedImageArrays.value.flat()
+const arr2:any[]=[]
+arr.map((item)=>{
+  console.log(item)
+  arr2.push(item)
+})
+console.log(arr2)
 </script>
 
 <style lang="scss" scoped>
@@ -221,21 +216,14 @@ const state = reactive({
   margin: 0 auto;
 }
 
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 2));
-  }
-}
+
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 2));
+    transform: translateX(-100%);
   }
 }
 
@@ -262,10 +250,10 @@ const state = reactive({
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 3s linear infinite;
-  animation: scroll 3s linear infinite;
+  -webkit-animation: scroll 800s linear infinite;
+  animation: scroll 800s linear infinite;
   display: flex;
-  width: calc(25rem * 14);
+  width: calc(25rem * 200);
 }
 .slider .slide {
   height: 5rem;
@@ -280,3 +268,4 @@ const state = reactive({
   }
 }
 </style>
+
