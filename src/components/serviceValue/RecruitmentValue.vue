@@ -14,7 +14,10 @@
             <p>{{ item.title }}</p>
             <span>{{ item.isExpanded ? "-" : "+" }}</span>
           </div>
-          <div v-if="item.isExpanded" class="details animate__animated  animate__fadeInDown animate-duration=0.2s">
+          <div
+            v-if="item.isExpanded"
+            class="details animate__animated animate__fadeInDown animate-duration=0.2s"
+          >
             {{ item.content }}
           </div>
         </div>
@@ -41,7 +44,7 @@ const toggleExpand = (index: number) => {
     if (index === inde) {
       //进入到点击的列表
       // 判断当前元素是否隐藏
-      console.log(item.isExpanded)
+      console.log(item.isExpanded);
       if (item.isExpanded) {
         titleList.value.children[index].style.height = "5rem";
         item.isExpanded = false;
@@ -63,30 +66,30 @@ const toggleExpand = (index: number) => {
   width: 100%;
   height: 40rem;
   margin: auto;
-  background: url(../../assets/img/meeting.jpg) no-repeat center center;  
-  background-size: cover; 
+  background: url(../../assets/img/meeting.jpg) no-repeat center center;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   .footer-box {
     height: 75%;
     margin-left: 10%;
     width: calc(40% - 10rem);
-    padding:3rem 5rem;
+    padding: 3rem 5rem;
     background-color: #f0f0f0;
     opacity: 0.8;
-    .title-top{
+    .title-top {
       height: 5rem;
       margin: 0;
       padding: 0;
       font-size: 3rem;
       text-align: center;
-      border-bottom: 2px solid #2758E9;
+      border-bottom: 2px solid #2758e9;
     }
     .title {
       height: 5rem;
       // border: 2px solid #2758E9;
       // border-left: none;
-      border-bottom: 2px solid #2758E9;
+      border-bottom: 2px solid #2758e9;
       .title-box {
         font-size: 1.6rem;
         height: 3rem;
@@ -109,7 +112,7 @@ const toggleExpand = (index: number) => {
 .expanded {
   height: 5rem;
 }
-.details{
+.details {
   margin-top: 1rem;
 }
 </style>

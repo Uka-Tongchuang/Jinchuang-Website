@@ -10,17 +10,13 @@
     <div class="serve_advantage">
       <ServeAdvantageCom />
     </div>
-    <!-- //服务价值 -->
-    <div class="serve_value_box">
-      <OutsourcingCardCom />
-    </div>
+
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
-import dataList from "../../../utils/producDes.json";
-import OutsourcingCardCom from "@/components/OutsourcingCardCom.vue";
+import dataList from "../../../utils/producDes.json"; 
 import OutsurceFuWuCard from "@/components/OutsourceFuWuCard.vue";
 import ServeAdvantageCom from "@/components/serveAdvantage/ServeAdvantage.vue";
 import HostingBanner from "../../../components/bannerList/HostingBanner.vue";

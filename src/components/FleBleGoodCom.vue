@@ -3,7 +3,9 @@
     <h1>服务优势</h1>
     <div class="content">
       <div class="content-box">
-        <img src="../assets/left.png" alt="" />
+       <div class="img">
+         <img src="../assets/left.png" alt="" />
+       </div>
         <div class="title">
           <div class="flex-box">
             <p></p>
@@ -46,7 +48,9 @@
             <p></p>
           </div>
         </div>
-        <img src="../assets/right.png" alt="" />
+        <div class="img">
+                <img src="../assets/right.png" alt="" />
+        </div>
       </div>
     </div>
   </div>
@@ -68,12 +72,16 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      img {
-        width: 25rem;
-        height: 25rem;
+      .img{
+        width: 45%;
+        text-align: center;
+        img {
+          width: 25rem;
+          height: 25rem;
+        }
       }
       .title {
-        width: calc(62% - 20rem);
+        width: 45%;
         height: 25rem;
         display: flex;
         flex-wrap: wrap;

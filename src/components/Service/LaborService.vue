@@ -666,7 +666,7 @@ const edges = ref([
     <el-carousel :interval="3000"  arrow="always" style="margin-top: 3rem;height: 40rem; background-color: rgba(241, 245, 249, 1);" direction="vertical">
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);"> 
-              <div class="title">{{ state.arr1.title }}</div>
+              <div class="title">01 &nbsp;{{ state.arr1.title }}</div>
               <div class="text">{{ state.arr1.text }}</div> 
               <div class="card-list">
                 <div class="item" v-for="item in state.arr1.list" :key="item.id">
@@ -678,7 +678,7 @@ const edges = ref([
           </el-carousel-item>
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);"> 
-               <div class="title">{{ state.arr2.title }}</div>
+               <div class="title"> 02 &nbsp;{{ state.arr2.title }}</div>
               <div class="text">{{ state.arr2.text }}</div> 
              <div class="card-list">
                 <div class="item item1" v-for="item in state.arr2.list" :key="item.id">
@@ -690,7 +690,7 @@ const edges = ref([
           </el-carousel-item>
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);">  
-               <div class="title">{{ state.arr3.title }}</div>
+               <div class="title">03 &nbsp;{{ state.arr3.title }}</div>
               <div class="text">{{ state.arr3.text }}</div> 
              <div class="card-list">
                 <div class="item item1" v-for="item in state.arr3.list" :key="item.id">
@@ -702,7 +702,7 @@ const edges = ref([
           </el-carousel-item>
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);" > 
-               <div class="title">{{ state.arr4.title }}</div>
+               <div class="title">03 &nbsp;{{ state.arr4.title }}</div>
               <div class="text">{{ state.arr4.text }}</div> 
            <div class="card-list">
                 <div class="item item1" v-for="item in state.arr4.list" :key="item.id">
@@ -803,6 +803,9 @@ const state =reactive({
 })
 </script>
 <style lang="scss" scoped>
+::v-deep(.el-card__body){
+  padding: 7rem;
+}
 ::v-deep(.el-carousel__container){
   height: 40rem !important;
 }

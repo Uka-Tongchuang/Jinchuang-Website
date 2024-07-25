@@ -3,7 +3,10 @@
     <h1>服务优势</h1>
     <div class="content">
       <div class="content-box">
-        <img src="../../assets/zhaopinone.png" alt="" />
+       <div class="img">
+         <img src="../../assets/zhaopinone.png" alt="" />
+       </div>
+       
         <div class="title">
           <div class="flex-box">
             <p></p>
@@ -64,7 +67,9 @@
             <p></p>
           </div>
         </div>
-        <img src="../../assets/zhaopintwo.png" alt="" />
+      <div class="img">
+          <img src="../../assets/zhaopintwo.png" alt="" />
+      </div>
       </div>
     </div>
   </div>
@@ -93,12 +98,16 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      img {
-        width: 30rem;
-        height: 30rem;
+      .img{
+        width: 45%;
+        text-align: center;
+        img {
+          width: 30rem;
+          height: 30rem;
+        }
       }
       .title {
-        width: calc(60% - 20rem);
+        width:45%;
         height: 25rem;
         .flex-box {
           display: flex;
