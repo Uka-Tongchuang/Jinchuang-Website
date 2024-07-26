@@ -106,4 +106,7 @@ const state = reactive({
 ::v-deep(.el-tab-pane) {
   padding-left: 5rem;
 }
+::v-deep(.el-tabs--left .el-tabs__active-bar.is-left) {
+  height: 5rem !important;
+}
 </style>

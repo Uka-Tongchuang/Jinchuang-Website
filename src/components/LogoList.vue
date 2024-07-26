@@ -193,17 +193,15 @@ const state = reactive({
 const repeatedImageArrays = computed(() => {
   let result = [];
   for (let i = 0; i < 10; i++) {
-    result.push(state.arr); // 使用扩展运算符来复制数组，避免直接引用
+    result.push(state.arr); 
   }
   return result;
 }); 
 const arr=repeatedImageArrays.value.flat()
 const arr2:any[]=[]
-arr.map((item)=>{
-  console.log(item)
+arr.map((item)=>{ 
   arr2.push(item)
-})
-console.log(arr2)
+}) 
 </script>
 
 <style lang="scss" scoped>

@@ -38,7 +38,7 @@
           src="../assets/img/flex.jpg"
         />
       </div>
-      <div class="decs_card" style="padding: 12rem 0;">
+      <div class="decs_card" style="padding: 4.5rem 0;">
         <h2>公司概况</h2>
         <p>
           “今创人力”是一家领先的人力资源服务公司，自成立以来致力于为全球企业客户提供全面的人力资源解决方案。公司业务涵盖人事管理、劳务派遣、岗位外包和灵活用工等多种服务，致力于为企业提供一站式的人力资源综合解决方案。从最初主要为国内顶尖的互联网企业提供人力资源外包服务起，公司已经建立了一个负责任、高效率、专业性强和积极进取的服务团队，其出色表现赢得了广泛的客户信赖与高度评价。
@@ -49,7 +49,7 @@
       </div>
     </div>
     <div class="second_box">
-      <div class="decs_card" style="padding: 9rem 0;">
+      <div class="decs_card" style="padding: 4rem 0;">
         <h2>公司简介</h2>
         <p>
           今创人力始终秉承“客户为先，诚信为本，开放包容，持续改进”的企业价值观，致力于为客户提供无缝和高效的人力资源服务。公司采用严格的标准化流程来保障服务的每一个环节和细节，从而确保服务质量始终符合甚至超过客户的期望。通过不断提升服务技能与水平，今创人力的专业团队能够精确理解并满足客户多样化的需求，无论是人事管理、劳务派遣，还是岗位外包和灵活用工等业务，公司的专业团队都能超标完成。
@@ -70,7 +70,7 @@
           src="../assets/img/value.jpg"
         />
       </div>
-      <div class="decs_card" style="padding: 6rem 0;">
+      <div class="decs_card" style="padding: 3rem 0;">
         <h2>公司成就</h2>
         <p>
           今创人力目前已在全国一线和二线城市建立了多个分支机构，服务网络广泛，涵盖全国200多个城市及地区。公司自有的专业管理团队近1000人，他们的专业知识和经验是公司强大服务能力的重要保障。今创人力累计服务的客户已超过2000家，客户群体涉及IT、互联网、零售、金融、新能源、医药、物流运输等多个行业，展示了其跨行业的服务能力和深厚的行业理解。
@@ -151,9 +151,9 @@ import "animate.css";
       }
     }
     .decs_card {
-      width: 50%;
+      width: 40%;
       height: 50rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-top: 2rem;
     }
   }
@@ -173,9 +173,9 @@ import "animate.css";
       }
     }
     .decs_card {
-      width: 50%;
+      width: 40%;
       height: 50rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
   .three_box {
@@ -194,9 +194,9 @@ import "animate.css";
       }
     }
     .decs_card {
-      width: 50%;
+      width: 40%;
       height: 50rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       .imgs {
         display: flex;
         justify-content: space-around;

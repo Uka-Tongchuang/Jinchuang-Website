@@ -114,5 +114,6 @@ const toggleExpand = (index: number) => {
 }
 .details {
   margin-top: 1rem;
+  font-size: 1.2rem;
 }
 </style>

@@ -36,8 +36,8 @@
                     </div>
                 </template>
             </el-statistic>
-             <p class="border-solid " style="margin-top: 2.4rem;"></p>
-            <p class="introduce solid" style="line-height: 2.1rem;">行业涉岗对口人群</p>
+             <p class="border-solid "></p>
+            <p class="introduce solid" >行业涉岗对口人群</p>
         </div>
     </div> 
   </div>
@@ -131,6 +131,9 @@ const outputValue3 = useTransition(source3, {
 </script>
 
 <style lang="scss" scoped>
+::v-deep( .el-statistic__content){
+  height: 5rem !important;
+}
     .content{
         width: 80%;
         height: 60%;
@@ -173,14 +176,14 @@ const outputValue3 = useTransition(source3, {
             .border-solid{ 
               margin-left: 3rem;
               width: 5rem;
-                border: 4px solid rgb(39,88,223);
+                border: 0.2rem solid rgb(39,88,223);
             }
             // .solid{
             //   padding-top: 3rem;
             // }
             .introduce{ 
                 color: rgba(50, 50, 50, 0.7);
-                letter-spacing: 5px;
+                letter-spacing: 0.3rem;
                 font-weight: 700;
                 font-size: 1.5rem;
             }

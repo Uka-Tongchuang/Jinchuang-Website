@@ -243,6 +243,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
       }
     }
     li {
+      width: 9rem;
       flex: 1;
       cursor: pointer;
       display: flex;

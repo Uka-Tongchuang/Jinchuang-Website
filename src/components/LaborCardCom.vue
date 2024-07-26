@@ -3,77 +3,118 @@
     <h2>适用场景</h2>
     <div class="card_box">
       <div class="cart_list_box">
-        <div class="null_box">
-          <div class="title_num">01</div>
-
-          <div class="item_first_box item_boxs">
-            <div class="text">
-              <span class="withe">员工</span>
-              <p class="withe">Employee Rights and Interests</p>
-              <p><br /></p>
-              <ul class="custom-list">
-                <li>女工三期处理</li>
-                <li>员工工伤处理</li>
-                <li>用工风险处理</li>
-                <li>疾病风险处理</li>
-              </ul>
+        <el-row :gutter="gutterValue">
+          <el-col  :sm="24" :md="12" :lg="8" :xl="6">
+            <div class="null_box">
+              <div class="title_num">01</div>
+              <div class="item_first_box item_boxs">
+                <div class="text">
+                  <span class="withe">员工</span>
+                  <p class="withe">Employee Rights and Interests</p>
+                  <p><br /></p>
+                  <ul class="custom-list">
+                    <li>女工三期处理</li>
+                    <li>员工工伤处理</li>
+                    <li>用工风险处理</li>
+                    <li>疾病风险处理</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="null_box">
-          <div class="title_num">02</div>
+          </el-col>
+          <el-col  :sm="24" :md="12" :lg="8" :xl="6">
+            <div class="null_box">
+              <div class="title_num">02</div>
 
-          <div class="item_two_box item_boxs">
-            <div class="text">
-              <span class="withe">劳务</span>
-              <p class="withe">Labor Information</p>
-              <p><br /></p>
-              <ul class="custom-list">
-                <li>基础劳动法务资讯</li>
-                <li>商业保险服务</li>
-              </ul>
+              <div class="item_two_box item_boxs">
+                <div class="text">
+                  <span class="withe">劳务</span>
+                  <p class="withe">Labor Information</p>
+                  <p><br /></p>
+                  <ul class="custom-list">
+                    <li>基础劳动法务资讯</li>
+                    <li>商业保险服务</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="null_box">
-          <div class="title_num">03</div>
+          </el-col>
+          <el-col  :sm="24" :md="12" :lg="8" :xl="6">
+            <div class="null_box">
+              <div class="title_num">03</div>
 
-          <div class="item_two_box item_boxs">
-            <div class="text">
-              <span class="withe">保险</span>
-              <p class="withe">Insurance Services</p>
-              <p><br /></p>
-              <ul class="custom-list">
-                <li>工资，社保公积金服务</li>
-                <li>商业保险服务</li>
-              </ul>
+              <div class="item_two_box item_boxs">
+                <div class="text">
+                  <span class="withe">保险</span>
+                  <p class="withe">Insurance Services</p>
+                  <p><br /></p>
+                  <ul class="custom-list">
+                    <li>工资，社保公积金服务</li>
+                    <li>商业保险服务</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="null_box">
-          <div class="title_num">04</div>
+          </el-col>
+          <el-col  :sm="24" :md="12" :lg="8" :xl="6">
+            <div class="null_box">
+              <div class="title_num">04</div>
 
-          <div class="item_two_box item_boxs">
-            <div class="text">
-              <span class="withe">人事</span>
-              <p class="withe">personnel management</p>
-              <p><br /></p>
-              <ul class="custom-list">
-                <li>员工招聘</li>
-                <li>入离职手续办理</li>
-                <li>人事档案管理</li>
-                <li>灵活选择使用期限</li>
-              </ul>
+              <div class="item_two_box item_boxs">
+                <div class="text">
+                  <span class="withe">人事</span>
+                  <p class="withe">personnel management</p>
+                  <p><br /></p>
+                  <ul class="custom-list">
+                    <li>员工招聘</li>
+                    <li>入离职手续办理</li>
+                    <li>人事档案管理</li>
+                    <li>灵活选择使用期限</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </el-col>
+        </el-row>
       </div>
     </div>
   </div>
 </template>
+<script lang="ts" setup>
+import { ref, reactive, onMounted, onUnmounted } from "vue";
+const gutterValue = ref(200); // 初始gutter值
+
+// 监听窗口大小变化
+const handleResize = () => {
+  // 根据窗口宽度动态设置gutter值 
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth);
+  if (windowWidth >= 1920) {
+    gutterValue.value = 150; // 大屏幕使用较大的间隔
+  } else if (windowWidth >= 1200 ) {
+    gutterValue.value = 180; // 中等屏幕使用适中的间隔
+  } else if(windowWidth >= 992) {
+    gutterValue.value = 100; // 中等屏幕使用适中的间隔
+  } else {
+     gutterValue.value = 0; // 小屏幕使用较小的间隔
+  }
+};
+
+// 组件挂载时添加事件监听器
+onMounted(() => {
+  window.addEventListener("resize", handleResize);
+  // 初始时调用一次，确保根据当前窗口大小设置gutter
+  handleResize();
+});
+
+// 组件卸载前移除事件监听器
+onUnmounted(() => {
+  window.removeEventListener("resize", handleResize);
+});
+</script>
 <style scoped lang="scss">
-.withe{
-    color: white;
+.withe {
+  color: white;
 }
 .cart_box_com {
   width: 100%;
@@ -86,9 +127,7 @@
   }
   .cart_list_box {
     width: 100%;
-    height: 34rem;
-    display: flex;
-    justify-content: space-between;
+    min-height: 34rem; 
     $color1: #82c4b3;
 
     .item_boxs {
@@ -159,6 +198,7 @@
   }
 }
 .null_box {
+  margin-top: 3rem;
   background-color: #ffff;
   width: 20rem;
   height: 32rem;
@@ -175,7 +215,7 @@
   font-style: italic;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-//   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  //   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 .card_box {
   margin-top: 5rem;

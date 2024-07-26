@@ -237,7 +237,12 @@ const goFlexible =()=>{
 </script>
 
 <style scoped lang="scss">
+ul{
+  margin: 0;
+  padding: 0;
+}
 .title_li{
+  width: 5rem;
   font-size: 1.2rem;
 }
 .title_li1{
@@ -276,13 +281,11 @@ ul li {
           color: white; 
         }
       }
-      .join_company_button{
-        width: 7rem;
-        height: 6rem;
-        line-height: 8rem;
+      .join_company_button{  
+        margin-top: 1rem;
         button{
-          width: 7rem;
-          height: 4rem;
+          width: 13rem;
+          height: 6rem;
           background-color: #b4b4b4;
           color: white;
           font-size: 1.2rem;
@@ -303,7 +306,7 @@ ul li {
         height: 23rem;
         padding: 2rem 0;
         display: flex;
-        justify-content: space-evenly; 
+        justify-content: space-around; 
         border-bottom: 1px solid #aaabab;
         border-top: 1px solid #aaabab; 
         .list_box_left{ 
@@ -331,12 +334,14 @@ ul li {
               }
             }
             p{
+              font-size: 1.2rem;
               margin-top: 1.5rem;
               color: #ccc;
             }
           }
         }
         .concent_business {
+          margin: 0;
           padding: 0 2rem;
           width: calc(40% - 4rem);
           display: flex;
@@ -366,25 +371,26 @@ ul li {
           }
         }
         .list_box_right{
-          width: 10%;
-          .logo-top{
-            width: 9rem;
-            height: 9rem;
-            margin-left: 0.5rem;
+          width: 14%;
+          text-align: center;
+          .logo-top{ 
+            width: 100%; 
             img{
-              width: 100%;
-              height: 100%;
+              width: 9rem;
+              height: 9rem;
             }
           }
           p{
+            font-size: 1.2rem;
             color: #ccc;
           }
           .logo-arr{
-            width: 10rem;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             img{
-              width: 16%; 
+              width: 2rem;
+              height: 2rem; 
             }
           }
         }
@@ -419,6 +425,7 @@ ul li {
       // background-color: black;
       //备案信息
       .infoRecord_box {
+        font-size: 1.2rem;
         width: 90%;
         height: 4rem;
         margin: 0 auto; 
@@ -428,6 +435,7 @@ ul li {
           width: 100%;
           height: 70%; 
           line-height: 3rem; 
+          font-size: 1.2rem;
           .company{ 
             margin-left: 1rem;
           } 

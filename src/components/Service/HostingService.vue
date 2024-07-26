@@ -81,7 +81,7 @@
           justify-content: space-between;
           .singleArrow {
             width: 10rem;
-            height: 4px;
+            height: 0.2rem;
             position: relative;
             top: 1.5rem;
             background-color: #6179b5;
@@ -91,13 +91,14 @@
             content: "";
             display: block;
             position: absolute;
-            right: -20px; /* 箭头位置 */
-            top: -7px; /* 箭头位置 */
-            border-top: 10px solid transparent; /* 箭头高低 */
-            border-bottom: 10px solid transparent; /* 箭头高低 */
-            border-left: 20px solid #6179b5; /* 箭头长度*/
+            right: -0.9rem; /* 箭头位置 */
+            top: -0.8rem; /* 箭头位置 */
+            border-top: 1rem solid transparent; /* 箭头高低 */
+            border-bottom: 1rem solid transparent; /* 箭头高低 */
+            border-left: 2rem solid #6179b5; /* 箭头长度*/
           }
           .content-list {
+            font-size: 1.2rem;
             width: 10rem;
             height: 3rem;
             line-height: 3rem;
@@ -108,7 +109,7 @@
           }
           .singleArrow2 {
             width: 10rem;
-            height: 4px;
+            height: 0.2rem;
             position: relative;
             top: 1.5rem;
             background-color: #6179b5;
@@ -118,11 +119,11 @@
             content: "";
             display: block;
             position: absolute;
-            right: 10rem; /* 箭头位置 */
-            top: -7px; /* 箭头位置 */
-            border-top: 10px solid transparent; /* 箭头高低 */
-            border-bottom: 10px solid transparent; /* 箭头高低 */
-            border-right: 20px solid #6179b5; /* 箭头长度*/
+            right: 8.5rem; /* 箭头位置 */
+            top: -0.8rem; /* 箭头位置 */
+            border-top: 1rem solid transparent; /* 箭头高低 */
+            border-bottom:1rem  solid transparent; /* 箭头高低 */
+            border-right: 2rem solid #6179b5; /* 箭头长度*/
           }
         }
       }

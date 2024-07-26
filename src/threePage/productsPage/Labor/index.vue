@@ -120,7 +120,7 @@ const state = reactive({
       width: 16rem;
       height: 16rem;
       border-radius: 50%;
-      padding: 50px;
+      padding: 3.2rem;
       box-sizing: border-box;
       overflow: hidden;
       .small-box {

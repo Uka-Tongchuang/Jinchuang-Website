@@ -78,7 +78,7 @@
 <style lang="scss" scoped>
 .advantage {
   width: 100%;
-  height: 80rem;
+  height: 90rem;
   margin: auto;
   h1 {
     padding-top: 2rem;
@@ -93,7 +93,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 2.5rem;
-    height: 68rem;
+    height: 77rem;
     .content-box {
       width: 100%;
       display: flex;
@@ -124,7 +124,7 @@
               font-size: 1.5rem;
             }
             span {
-              font-size: 1rem;
+              font-size: 1.2rem;
               color: #000;
               opacity: 0.5;
             }
@@ -136,7 +136,7 @@
               font-size: 1.5rem;
             }
             span {
-              font-size: 1rem;
+              font-size: 1.2rem;
               color: #000;
               opacity: 0.5;
             }

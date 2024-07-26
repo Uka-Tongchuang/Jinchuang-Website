@@ -702,7 +702,7 @@ const edges = ref([
           </el-carousel-item>
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);" > 
-               <div class="title">03 &nbsp;{{ state.arr4.title }}</div>
+               <div class="title">04 &nbsp;{{ state.arr4.title }}</div>
               <div class="text">{{ state.arr4.text }}</div> 
            <div class="card-list">
                 <div class="item item1" v-for="item in state.arr4.list" :key="item.id">

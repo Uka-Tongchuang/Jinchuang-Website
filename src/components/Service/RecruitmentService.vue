@@ -2,8 +2,7 @@
   <div class="service">
     <h1>服务流程</h1>
     <el-carousel
-      :interval="3000"
-      type="card"
+      :interval="3000" 
       arrow="always" 
       style="
         margin-top: 3rem;
