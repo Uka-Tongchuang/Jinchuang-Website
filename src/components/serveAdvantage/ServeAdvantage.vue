@@ -1,16 +1,19 @@
 <template>
   <div class="title_box">
     <h1>服务优势</h1>
-    <el-tabs :tab-position="tabPosition" class="demo-tabs">
-      <el-tab-pane
-        v-for="item in state.list"
-        :key="item.id"
-        :label="item.label"
-      >
-        <p class="title">{{ item.title }}</p>
-        <p class="content">{{ item.content }}</p>
-      </el-tab-pane>
-    </el-tabs>
+    <div class="content-border">
+
+      <el-tabs :tab-position="tabPosition" class="demo-tabs">
+        <el-tab-pane
+          v-for="item in state.list"
+          :key="item.id"
+          :label="item.label"
+        >
+          <p class="title">{{ item.title }}</p>
+          <p class="content">{{ item.content }}</p>
+        </el-tab-pane>
+      </el-tabs>
+    </div>
   </div>
 </template>
 
@@ -108,5 +111,10 @@ const state = reactive({
 }
 ::v-deep(.el-tabs--left .el-tabs__active-bar.is-left) {
   height: 5rem !important;
+}
+.content-border{
+  box-shadow: 0px 0px 15px 13px #e4e7ed;  
+  border: 1px solid #e4e7ed;
+  padding: 1rem;
 }
 </style>

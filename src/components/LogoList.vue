@@ -205,6 +205,10 @@ arr.map((item)=>{
 </script>
 
 <style lang="scss" scoped>
+
+@media screen and (max-width: 768px) {
+ 
+}
 @mixin white-gradient {
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }

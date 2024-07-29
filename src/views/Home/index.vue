@@ -86,13 +86,16 @@ onBeforeRouteUpdate((to, from) => {
 }
 .el-main {
   width: 100%;
-  height: 100%;
+  min-height: 80rem;
   margin: 0;
   padding: 0 20px;
   overflow-y: hidden;
 }
 .el-footer {
   width: 100%;
-  height: 40rem;
+  min-height: 40rem;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 </style>

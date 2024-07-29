@@ -663,6 +663,7 @@ const edges = ref([
 <template>
   <div class="service">
     <h1>服务流程</h1>  
+        <el-button :icon="ArrowUp" @click="prev" class="arrowUp" circle ></el-button>
     <el-carousel :interval="3000"  arrow="always" style="margin-top: 3rem;height: 40rem; background-color: rgba(241, 245, 249, 1);" direction="vertical">
           <el-carousel-item v-for="(item, index) in 1" :key="index">
             <el-card style="width: 80%;margin: auto; height: 40rem; padding: 3rem 5rem;background-color: rgba(241, 245, 249, 1);"> 
@@ -713,9 +714,12 @@ const edges = ref([
             </el-card>
           </el-carousel-item>
         </el-carousel>
+         <el-button circle  :icon="ArrowDown" @click="next" class="ArrowDown"
+      ></el-button>
   </div>
 </template>
 <script lang="ts" setup>
+import {ArrowUp,ArrowDown} from '@element-plus/icons-vue'
 import {ref,reactive} from 'vue'
 const state =reactive({
   arr1:
@@ -801,8 +805,29 @@ const state =reactive({
       ]
     },
 })
+const carousel = ref(null);
+
+function prev() {
+  carousel.value.prev();
+}
+
+function next() {
+  carousel.value.next();
+}
 </script>
 <style lang="scss" scoped>
+.arrowUp{
+  z-index: 99999999;
+  position: absolute;
+  right: 9.8rem;
+  top: 22.8rem;
+}
+.ArrowDown{
+  z-index: 99999999;
+  position: absolute;
+  right: 9.8rem;
+  bottom: 15rem;
+}
 ::v-deep(.el-card__body){
   padding: 7rem;
 }
@@ -823,6 +848,7 @@ const state =reactive({
    background-color: rgba(241, 245, 249, 1);
   width: 100%;
   height: 50rem;
+    position: relative;
   margin: 0 auto;
   h1 {
     padding-top: 2rem;

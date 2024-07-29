@@ -20,39 +20,82 @@
 </script>
 
 <style scoped lang="scss">
-.Company_box {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgb(222, 226, 230);
-  background: rgb(239, 244, 249);
-  .img_box {
-    float: left;
-    width: 40%;
+@media screen and (max-width: 2660px) {
+  .Company_box {
+    width: 100%;
     height: 100%;
-    margin-left: 1rem;
-    img {
-      display: block;
-      width: 30rem;
-      height: 26rem;
-      margin-top: 4rem;
-      margin-left: 2rem;
+    margin: 0 auto;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgb(222, 226, 230);
+    background: rgb(239, 244, 249);
+    .img_box {
+      float: left;
+      width: 40%;
+      height: 100%;
+      margin-left: 1rem;
+      img {
+        display: block;
+        width: 30rem;
+        height: 26rem;
+        margin-top: 4rem;
+        margin-left: 2rem;
+      }
+    }
+    .text_box {
+      width: 50%;
+      float: left;
+      font-size: 1.6rem;
+      margin-left: 4rem;
+      h2{
+        margin-left: 2rem;
+        margin-top: 3.8rem;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        line-height: 3rem;
+      }
     }
   }
-  .text_box {
-    width: 50%;
-    float: left;
-    font-size: 1.6rem;
-    margin-left: 4rem;
-    h2{
-      margin-left: 2rem;
-      margin-top: 3.8rem;
+}
+@media screen and (max-width: 768px) {
+  .Company_box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgb(222, 226, 230);
+    background: rgb(239, 244, 249);
+    .img_box {
+      display: none;
+      float: left;
+      width: 40%;
+      height: 40%;
+      margin-left: 1rem;
+      img {
+        display: block;
+        width: 17rem;
+        height: 13rem;
+        margin-top: 4rem;
+        margin-left: 2rem;
+      }
     }
-    p {
-      font-size: 1.2rem;
-      margin-left: 2rem;
-      margin-top: 1rem;
-      line-height: 3rem;
+    .text_box {
+      width: 100%;
+      float: left;
+      font-size: 0;
+      margin-left: 0;
+      h2{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 3.8rem;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        line-height: 3rem;
+      }
     }
   }
 }
