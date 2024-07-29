@@ -43,7 +43,7 @@
         <el-drawer v-model="drawer" title="" :with-header="false" size="300px">
           <el-menu default-active="2" class="el-menu-vertical-demo">
             <el-sub-menu index="1" class="first-sub-menu-item">
-              <template #title> 
+              <template #title>
                 <span>产品服务</span>
               </template>
               <el-menu-item-group title="">
@@ -53,15 +53,15 @@
                 <el-menu-item index="1-4">业务外包</el-menu-item>
                 <el-menu-item index="1-5">招聘流程外包</el-menu-item>
                 <el-menu-item index="1-6">灵活用工解决方案</el-menu-item>
-              </el-menu-item-group> 
+              </el-menu-item-group>
             </el-sub-menu>
-            <el-menu-item index="2"> 
+            <el-menu-item index="2">
               <span>解决方案</span>
             </el-menu-item>
-            <el-menu-item index="3" > 
+            <el-menu-item index="3">
               <span>客服案列</span>
             </el-menu-item>
-            <el-menu-item index="4"> 
+            <el-menu-item index="4">
               <span>了解公司</span>
             </el-menu-item>
           </el-menu>
@@ -393,11 +393,25 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   }
 }
 @media screen and (max-width: 768px) {
- ::v-deep(.first-sub-menu-item > .el-sub-menu__title) {
-  /* 在这里添加你的样式 */
-  color: red; /* 示例：将文字颜色改为红色 */
-  display: block;
-}
+  ::v-deep(.first-sub-menu-item) {
+    /* 在这里添加你的样式 */
+    display: block;
+  }
+  ::v-deep(.el-sub-menu__title) {
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+  }
+  ::v-deep(.el-drawer__body){ 
+    ul li:first-child{
+      display: block;
+    }
+    .el-sub-menu .el-sub-menu__icon-arrow{
+      right: -1rem;
+    }
+    ul li{
+      width: 5rem;
+    }
+  }
   .boxShow {
     margin-left: 5rem;
     display: block;
