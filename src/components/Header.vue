@@ -40,7 +40,7 @@
         <el-button type="" @click="drawer = true">
           <el-icon><Fold /></el-icon>
         </el-button>
-        <el-drawer v-model="drawer" title="" :with-header="false" size="300px">
+        <el-drawer v-model="drawer" title="" :with-header="false" size="250px">
           <el-menu default-active="2" class="el-menu-vertical-demo">
             <el-sub-menu index="1" class="first-sub-menu-item">
               <template #title>
@@ -397,7 +397,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     /* 在这里添加你的样式 */
     display: block;
   }
-  ::v-deep(.el-sub-menu__title) {
+  ::v-deep(.el-sub-menu__title) { 
     font-size: 1.5rem;
     margin-left: 2.5rem;
   }
@@ -407,10 +407,7 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
     }
     .el-sub-menu .el-sub-menu__icon-arrow{
       right: -1rem;
-    }
-    ul li{
-      width: 5rem;
-    }
+    } 
   }
   .boxShow {
     margin-left: 5rem;

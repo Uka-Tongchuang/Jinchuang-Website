@@ -448,6 +448,9 @@ const goFlexible = () => {
   }
 }
 @media screen and (max-width: 768px) {
+  .infoRecord_box{
+    font-size: 1rem !important;
+  }
   .footer_box {
     width: 100%;
     min-height: 60rem;

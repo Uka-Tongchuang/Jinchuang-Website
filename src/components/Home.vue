@@ -164,15 +164,15 @@ const arr = reactive({
   }
   .main_content{
     width: 80%;
-    height: 44rem;
+    height: 46rem;
     top: -3rem;
   }
    .business-partner{
-    height: 12rem;
+    height: 0;
     margin-top: 9rem;
    }
    .main_merchant{
-    min-height: 125rem;
+    min-height: 95rem;
     margin-top: 0;
    }
 }

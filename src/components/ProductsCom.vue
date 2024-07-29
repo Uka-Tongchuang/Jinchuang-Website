@@ -415,7 +415,7 @@ const goFiexble = () => {
       height: 3rem;
       text-align: center;
       line-height: 3rem;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: rgb(11, 11, 11);
     }
     .modules_box {
@@ -426,7 +426,7 @@ const goFiexble = () => {
         display: block;
         width: 9rem;
         height: 4rem;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         white-space: nowrap;
         line-height: 4rem;
         text-overflow: normal;
@@ -450,7 +450,7 @@ const goFiexble = () => {
         justify-content: space-between;
         align-items: center;
         .modukrs_boxs {
-          width: 13rem;
+          width: 12rem;
           height: 30rem;
           display: flex;
           flex-direction: column;
@@ -537,7 +537,7 @@ const goFiexble = () => {
         justify-content: space-between;
         margin-top: 2rem;
         .modukrs_boxs {
-          width: 30rem;
+          width: 12rem;
           height: 30rem;
           display: flex;
           flex-direction: column;
@@ -557,7 +557,7 @@ const goFiexble = () => {
           p {
             font-size: 1.3rem;
             width: 80%;
-            height: 2.8rem;
+            height: 3.8rem;
             line-height: 1.4rem;
             margin: 1rem auto;
             text-align: center;
@@ -581,7 +581,7 @@ const goFiexble = () => {
           }
           span {
             @include spanCss;
-            width: 18rem;
+            width: 10rem;
             border-bottom: 0.5rem solid $color;
           }
           button {
@@ -601,7 +601,7 @@ const goFiexble = () => {
             }
             span {
               @include spanCss;
-              width: 18rem;
+              width: 10rem;
             border-bottom: 0.5rem solid $color;
              
             }
