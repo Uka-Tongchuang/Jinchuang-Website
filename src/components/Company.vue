@@ -1,8 +1,7 @@
 <template>
   <div class="Company_box">
     <!-- 公司宣传模块 -->
-    <div class="img_box">
-      <img src="../assets/bannerHome.png" alt="" />
+    <div class="img_box"> 
     </div>
     <div class="text_box">
       <h2>成都今创人力资源有限公司</h2>
@@ -24,21 +23,20 @@
   .Company_box {
     width: 100%;
     height: 100%;
+    display: flex;
     margin: 0 auto;
     box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem rgb(222, 226, 230);
     background: rgb(239, 244, 249);
     .img_box {
       float: left;
-      width: 40%;
-      height: 100%;
+      width: 30rem;
+      height: 26rem;
       margin-left: 1rem;
-      img {
-        display: block;
-        width: 30rem;
-        height: 26rem;
-        margin-top: 4rem;
-        margin-left: 2rem;
-      }
+      margin-top: 3.5rem;
+      background: url(../assets/bannerHome.png) no-repeat;
+      background-size: 100% 100%;
+      object-fit: contain;
+
     }
     .text_box {
       width: 50%;
@@ -70,14 +68,7 @@
       float: left;
       width: 40%;
       height: 40%;
-      margin-left: 1rem;
-      img {
-        display: block;
-        width: 17rem;
-        height: 13rem;
-        margin-top: 4rem;
-        margin-left: 2rem;
-      }
+      margin-left: 1rem; 
     }
     .text_box {
       width: 100%;

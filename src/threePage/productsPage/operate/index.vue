@@ -39,7 +39,8 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
 </script>
 
 <style lang="scss" scoped>
-.content {
+@media screen and (max-width: 2660px) {
+  .content {
   width: 100%;
   margin: 0;
   .card {
@@ -110,4 +111,76 @@ import PersonnelComCartVue from "../../../components/PersonnelManagement/Personn
     }
   }
 }
+}
+@media screen and (max-width: 768px) {
+  .content {
+  width: 100%;
+  margin: 0;
+  .card {
+    min-height: 67rem;
+    padding-top: 1rem; 
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: #142e83;
+    }
+    .content_cart_list_box {
+      width: 95%;
+      min-height: 33rem;
+      margin: 0 auto;
+    }
+  }
+  .advantage {
+    width: 100%; 
+    height: 50rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .title {
+      width: 100%;
+      height: 10rem;
+      margin-top: 0;
+      h1 {
+        font-size: 2rem;
+        color: #142e83;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .imgUrl {
+      width: 30rem;
+      height: 0;
+      margin-top: -12rem;
+      margin-left: 0;
+      img{
+        width: 30rem;
+        height: 30rem;
+      }
+    }
+    .card-list { 
+      width: 100%;
+        height: 4rem; 
+        background: #2758e9;
+        color: white;
+        line-height: 2rem;
+        font-size: 0.8rem;
+        bottom: 2rem; 
+        display: flex;
+        justify-content: space-around;
+      p {
+        width: 23%;
+        text-align: center;
+        border-right: 1px solid white;
+      }
+      p:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+}
+
 </style>

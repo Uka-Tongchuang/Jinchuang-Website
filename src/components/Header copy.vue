@@ -37,42 +37,26 @@
       </div>
 
       <div class="boxShow">
-        <el-icon size="2rem" @click="drawer = true"><Fold /></el-icon>
+        <el-button type="" @click="drawer = true">
+          <el-icon><Fold /></el-icon>
+        </el-button>
         <el-drawer v-model="drawer" title="" :with-header="false" size="250px">
-          <el-icon
-            size="2rem"
-            @click="drawer = false"
-            style="margin-left: 13rem"
-            ><Fold
-          /></el-icon>
-          <el-menu
-            :style="{ background: 'transparent' }"
-            default-active="2"
-            class="el-menu-vertical-demo"
-          >
-            <el-sub-menu index="1" class="first-sub-menu-item">
-              <template #title>
-              <span>产品服务</span>
-              </template>
-              <el-menu-item-group title="" class="content">
-                <el-menu-item index="1-1" @click="goPersonnel">人事派遣</el-menu-item>
-                <el-menu-item index="1-2" @click="golabor">劳务派遣</el-menu-item>
-                <el-menu-item index="1-3" @click="goOutsourcing">岗位外包</el-menu-item>
-                <el-menu-item index="1-4" @click="goRecruitment">业务外包</el-menu-item>
-                <el-menu-item index="1-5" @click="goOperate">招聘流程外包</el-menu-item>
-                <el-menu-item index="1-6" @click="goFiexble">灵活用工解决方案</el-menu-item>
-              </el-menu-item-group>
-            </el-sub-menu>
-            <el-menu-item index="2">
-              <span @click="goFiexble1">客户案列</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <span @click="goFiexble2">新闻中心</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <span @click="goFiexble3">了解公司</span>
-            </el-menu-item>
-          </el-menu>
+          <div ref="abc" class="abc">
+
+            <div
+              v-for="(item, index) in state.menuItems"
+              :key="index"
+              class="menu-item"
+              @click="toggleSubMenu(index)"
+            >
+              <span>{{ item.name }}</span>
+              <ul v-if="item.showSubMenu && index === selectedMenuItem">
+                <li v-for="(subItem, subIndex) in item.subMenu" :key="subIndex">
+                  {{ subItem.name }}
+                </li>
+              </ul>
+            </div>
+          </div>
         </el-drawer>
       </div>
     </div>
@@ -119,14 +103,13 @@
 <script setup lang="ts">
 import { CirclePlusFilled, Fold } from "@element-plus/icons-vue";
 import { routerChildren } from "../router";
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import { ArrowDown } from "@element-plus/icons-vue";
 import { ChildrenRouteItemType } from "@/typeFile/type";
 import { gsap } from "gsap";
 import { throttle } from "lodash";
 //获取弹窗路由的三级路由信息   //四级路由信息
 import { threeChildrenRoute, fourChildrenRoute } from "@/router/index";
-import { useRouter } from "vue-router";
 const boxList = ref();
 const showNone = ref();
 const showBlock = ref();
@@ -137,6 +120,51 @@ const boxShowEvent = () => {
   showBlock.value.style.display = "block";
   showNone.value.style.display = "none";
 };
+const state = reactive({
+  menuItems: [
+    {
+      name: "产品服务",
+      showSubMenu: false,
+      id:1,
+      subMenu: [
+        { name: "人事派遣" ,id:2 },
+        { name: "劳务派遣"  ,id:3},
+        { name: "岗位外包"  ,id:4},
+        { name: "业务外包"  ,id:5},
+        { name: "招聘流程外包"  ,id:6},
+        { name: "灵活用工解决方案"  ,id:7},
+      ],
+    },
+    {
+      name: "解决方案",
+      id:8,
+      showSubMenu: false,
+    },
+    {
+      name: "客服案列",
+      id:9,
+      showSubMenu: false,
+    },
+    {
+      name: "了解公司",
+      id:10,
+      showSubMenu: false,
+    },
+  ],
+});
+const selectedMenuItem = ref(null);
+
+const toggleSubMenu = (index:any) => {
+  console.log(index)
+  state.menuItems.forEach((item, i) => {
+    if (i === index) {
+      item.showSubMenu = !item.showSubMenu;
+    } else {
+      item.showSubMenu = false;
+    }
+  });
+  selectedMenuItem.value = index;
+};
 const blockEvent = () => {
   boxList.value.style.display = "none";
   showNone.value.style.display = "block";
@@ -145,54 +173,6 @@ const blockEvent = () => {
 };
 const goHomeFun = () => {
   window.location.href = "/home";
-};
-
-const router = useRouter();
-//跳转人事管理
-const goPersonnel = () => {
-  router.push("/home/index/operate");
-  drawer.value = false;
-};
-//跳转劳务派遣
-const golabor = () => {
-  router.push("/home/index/labor");
-  drawer.value = false;
-};
-//跳转岗位外包
-const goOutsourcing = () => {
-  router.push("/home/index/outsource");
-  drawer.value = false;
-};
-//跳转业务外包
-const goRecruitment = () => {
-  router.push("/home/index/hosting");
-  drawer.value = false;
-};
-//跳转招聘外包流程
-const goOperate = () => {
-  router.push("/home/index/recruitment");
-  drawer.value = false;
-};
-
-//跳转灵活用工的四级页面
-const goFiexble = () => {
-  router.push("/home/index/flexible");
-  drawer.value = false;
-};
-//跳转客户案列
-const goFiexble1 = () => {
-  router.push("/home/special/specialHome");
-  drawer.value = false;
-};
-//跳转新闻中心
-const goFiexble2 = () => {
-  router.push("/home/news/newDetailsHome");
-  drawer.value = false;
-};
-//跳转了解公司
-const goFiexble3 = () => {
-  router.push("/home/about");
-  drawer.value = false;
 };
 
 //二级页面划过
@@ -450,37 +430,46 @@ const fourRouteFun = throttle(fourRouteFuns, 500);
   }
 }
 @media screen and (max-width: 768px) {
-  ::v-deep(.el-menu-item:focus, .el-submenu__title:focus) {
-    outline: none;
-    background-color: inherit;
-  }
   ::v-deep(.first-sub-menu-item) {
     /* 在这里添加你的样式 */
     display: block;
   }
-  ::v-deep(.el-drawer__body ul li:first-child) {
-    display: inline-flex;
-  }
-  ::v-deep(.header_box .nav_left_box li) {
-    width: 13rem !important;
-  }
   ::v-deep(.el-sub-menu__title) {
     font-size: 1.5rem;
-    margin-left: 0;
-  }
-  .content {
-    z-index: 999999;
-    ul li {
-      font-size: 1rem;
-    }
+    margin-left: 2.5rem;
   }
   ::v-deep(.el-drawer__body) {
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-left: 1rem;
+      li {
+        height: 5rem;
+      }
+    }
     ul li:first-child {
-      display: block;
+      height: 5rem;
     }
     .el-sub-menu .el-sub-menu__icon-arrow {
       right: -1rem;
     }
+  }
+  .header_box .nav_left_box li {
+    width: 13rem !important;
+    height: 5rem;
+  }
+  .menu-item {
+    width: 13rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .menu-item:hover {
+    background-color: #d8e6fd;
+  }
+  ::v-deep(.el-drawer__body) {
+    display: flex;
+    flex-wrap: wrap;
   }
   .boxShow {
     margin-left: 5rem;
