@@ -184,30 +184,14 @@
 
 <script lang="ts" setup>
 import { useRouter } from "vue-router";
-import { ref, onMounted } from "vue";
-import { newsHotApi } from "@/api/request";
-const hotNewsData = ref();
-onMounted(async () => {
-  const { data } = await newsHotApi();
-  // console.log(data);
-  hotNewsData.value = data.content;
-});
 
-//产品下的数据
-import { threeChildrenRoute } from "@/router";
 const router = useRouter();
-//了解公司
-const goAbouRoute = () => {
-  router.push("/home/about");
-};
+
 // 客户案例/home/special
 const goSpecialRoute = () => {
   router.push("/home/special");
 };
-//解决方案
-const goTalentRoute = () => {
-  router.push("/home/talent");
-};
+
 //新闻中心
 const goNewsRoute = () => {
   router.push("/home/news");

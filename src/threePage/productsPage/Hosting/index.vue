@@ -5,22 +5,21 @@
       <OutsurceFuWuCard />
     </div>
     <!-- 服务流程 -->
-   <HostingService/>
+    <HostingService />
     <!-- 服务优势 -->
     <div class="serve_advantage">
       <ServeAdvantageCom />
     </div>
-
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
-import dataList from "../../../utils/producDes.json"; 
-import OutsurceFuWuCard from "@/components/OutsourceFuWuCard.vue";
-import ServeAdvantageCom from "@/components/serveAdvantage/ServeAdvantage.vue";
+import OutsurceFuWuCard from "../../../components/OutsourceFuWuCard.vue";
+import dataList from "../../../utils/producDes.json";
+import ServeAdvantageCom from "../../../components/serveAdvantage/ServeAdvantage.vue";
 import HostingBanner from "../../../components/bannerList/HostingBanner.vue";
-import HostingService from "../../../components/Service/HostingService.vue"
+import HostingService from "../../../components/Service/HostingService.vue";
 // console.log(navigator.userAgent,"1212");
 // const titleList = ref();
 const state = reactive({
@@ -60,18 +59,17 @@ onMounted(() => {
   padding: 0;
   margin: 0;
   .servce_content {
-    background-color: #F1F5F9;
+    background-color: #f1f5f9;
     width: 100%;
     height: 44rem;
     margin: 2rem auto;
   }
-  
+
   .serve_advantage {
     width: 80%;
     height: 40rem;
     // background-color: #98c478;
     margin: 5rem auto 2rem;
   }
-  
 }
 </style>

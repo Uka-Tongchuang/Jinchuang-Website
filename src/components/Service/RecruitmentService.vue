@@ -222,7 +222,7 @@ const state = reactive({
   },
 });
 
-const carousel = ref(null);
+const carousel = ref();
 
 function prev() {
   carousel.value.prev();

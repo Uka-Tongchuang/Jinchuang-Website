@@ -121,7 +121,6 @@ import { CirclePlusFilled, Fold } from "@element-plus/icons-vue";
 import { routerChildren } from "../router";
 import { ref } from "vue";
 import { ArrowDown } from "@element-plus/icons-vue";
-import { ChildrenRouteItemType } from "@/typeFile/type";
 import { gsap } from "gsap";
 import { throttle } from "lodash";
 //获取弹窗路由的三级路由信息   //四级路由信息
@@ -203,7 +202,7 @@ const showDataArray = ref(threeChildrenRoute);
 //划过显示弹窗元素
 const showbox = ref();
 //鼠标点击nav元素
-const enterProductsBtn = (item: ChildrenRouteItemType) => {
+const enterProductsBtn = (item: any) => {
   //判断是否点击的产品
   if (item.meta.title === "产品服务") {
     showDivFlag.value = !showDivFlag.value;
@@ -222,7 +221,7 @@ const enterProducts = throttle(enterProductsBtn, 500);
 //四级页面弹窗
 const showFourDiv = ref(false);
 // const showFourbBox = ref();
-const fourRouteFuns = (item: ChildrenRouteItemType) => {
+const fourRouteFuns = (item: any) => {
   // //判断是否点击的用工
   // if (item.meta.title === "灵活用工解决方案") {
   //   showFourDiv.value = !showFourDiv.value;

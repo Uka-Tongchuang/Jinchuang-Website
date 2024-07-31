@@ -30,12 +30,12 @@
         </li>
       </div>
       <div class="content-center">
-        <img src="../assets/yuanhuan.png" alt="">
+        <img src="../assets/yuanhuan.png" alt="" />
         <div class="icon_box">
-         <img src="../assets/logo/zhaopin.png" alt="">
+          <img src="../assets/logo/zhaopin.png" alt="" />
         </div>
         <div class="icon_box1">
-            <img src="../assets/logo/guanli.png" alt="">
+          <img src="../assets/logo/guanli.png" alt="" />
         </div>
       </div>
       <div class="content-list">
@@ -68,7 +68,7 @@
     </div>
   </div>
 </template>
-<script>
+<script setup lang="ts">
 import {
   BrushFilled,
   Briefcase,
@@ -77,6 +77,7 @@ import {
   OfficeBuilding,
   Wallet,
 } from "@element-plus/icons-vue";
+
 </script>
 <style scoped lang="scss">
 li {
@@ -101,28 +102,28 @@ li {
     .content-center {
       margin-top: 6rem;
       width: 44rem;
-      height: 24rem; 
+      height: 24rem;
       display: flex;
       line-height: 44rem;
       position: relative;
-      .icon_box { 
+      .icon_box {
         width: 6rem;
         height: 6rem;
         position: absolute;
         top: -28%;
         left: 20%;
-        img{
+        img {
           width: 100%;
           height: 100%;
         }
       }
-       .icon_box1 { 
-         width: 6rem;
+      .icon_box1 {
+        width: 6rem;
         height: 6rem;
-         position: absolute;
+        position: absolute;
         top: -28%;
-        left:67%;
-         img{
+        left: 67%;
+        img {
           width: 100%;
           height: 100%;
         }

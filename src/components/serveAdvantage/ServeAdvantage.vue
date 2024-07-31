@@ -19,9 +19,8 @@
 
 <script lang="ts" setup>
 import { ref, reactive } from "vue";
-import { TabsInstance } from "element-plus";
 
-const tabPosition = ref<TabsInstance["tabPosition"]>("left");
+const tabPosition = ref<any["tabPosition"]>("left");
 const state = reactive({
   list: [
     {

@@ -33,18 +33,21 @@
 
 <script setup lang="ts">
 import { onMounted, reactive, ref } from "vue";
-import { newsHotApi } from "@/api/request";
+
 import { useRouter } from "vue-router";
 const router = useRouter();
-let state = ref();
+let state = ref([{
+  id: 1,
+  title: "新闻1",
+  data: "2022-01-01",
+  content: "<p>新闻1内容</p>",
+  media: "https://th.bing.com/th?id=OIP.CrKeUBnJx0CfPSoIDAijVgHaFJ&w=299&h=208&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+  type: "新闻类型1",
+}]);
 const toDetails = (index: number) => {
   router.push(`/home/news/newDetailsList/${index}`);
 };
-onMounted(async () => {
-  const { data } = await newsHotApi();
-  // console.log(data);
-  state.value = data.content;
-});
+
 </script>
 
 <style lang="scss" scoped>

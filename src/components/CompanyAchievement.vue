@@ -49,7 +49,7 @@ import { useTransition } from "@vueuse/core";
 const source1 = ref(0);
 const source2 = ref(0);
 const source3 = ref(0);
-const statisticRef = ref(null);
+const statisticRef = ref();
 const outputValue1 = useTransition(source1, {
   duration: 1500,
 });
@@ -116,11 +116,11 @@ onMounted(() => {
         startCounting();
         startCounting2();
         startCounting3();
-        observer.unobserve(statisticRef.value);
+        observer.unobserve(statisticRef.value as Element);
       }
     });
   });
-  observer.observe(statisticRef.value);
+  observer.observe(statisticRef.value as Element);
 });
 </script>
 

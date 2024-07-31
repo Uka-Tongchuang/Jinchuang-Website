@@ -13,8 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import swpOne from "../../../assets/th.jpg";
-import { ref, reactive, onMounted, onUnmounted } from "vue";
+import { ref, reactive} from "vue";
 import RecruitmentBanner from "../../../components/bannerList/RecruitmentBanner.vue";
 import RecruitmentService from "../../../components/Service/RecruitmentService.vue";
 import RecruitmentValue from "../../../components/serviceValue/RecruitmentValue.vue";
@@ -27,27 +26,27 @@ const state = reactive({
     {
       id: 1,
       title: "社招",
-      idVieo: swpOne,
+      idVieo: "https://th.bing.com/th?id=OIP.TqOcb_ha068A0hnDZEbrGgHaEX&w=325&h=192&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     },
     {
       id: 2,
       title: "网招",
-      idVieo: swpOne,
+      idVieo: "https://th.bing.com/th?id=OIP.TqOcb_ha068A0hnDZEbrGgHaEX&w=325&h=192&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     },
     {
       id: 3,
       title: "校招",
-      idVieo: swpOne,
+      idVieo: "https://th.bing.com/th?id=OIP.TqOcb_ha068A0hnDZEbrGgHaEX&w=325&h=192&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     },
     {
       id: 4,
       title: "新媒体带岗",
-      idVieo: swpOne,
+      idVieo: "https://th.bing.com/th?id=OIP.TqOcb_ha068A0hnDZEbrGgHaEX&w=325&h=192&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     },
     {
       id: 5,
       title: "猎头",
-      idVieo: swpOne,
+      idVieo: "https://th.bing.com/th?id=OIP.TqOcb_ha068A0hnDZEbrGgHaEX&w=325&h=192&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
     },
   ],
   items: [

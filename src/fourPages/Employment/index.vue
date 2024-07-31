@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
 import dataList from "../../utils/producDes.json";
-const state = reactive({
+const state = reactive<any>({
   title: "",
   content: "",
 });

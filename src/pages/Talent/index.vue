@@ -15,16 +15,15 @@
 </template>
 
 <script setup lang="ts">
-import { getDataApi } from '@/api/request';
-import { onMounted, reactive,ref } from 'vue';
+import { ref } from 'vue';
 
-const state=ref()
-onMounted(async()=>{
-    const respose=await getDataApi();
-    state.value=respose.data
-    console.log(state.value,"数据库的健身卡");
-    
+const state=ref({
+    title: '文章标题',
+    author: '文章作者',
+    data: '2022-01-01',
+    content: '文章内容...'
 })
+
 
 </script>
 

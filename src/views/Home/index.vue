@@ -31,7 +31,7 @@ import Footer from "../../components/Footer.vue";
 import Homes from "@/components/Home.vue";
 import NavBack from "@/components/NavBack.vue";
 //api
-import { loginApi, getDataApi } from "@/api/request";
+import { loginApi } from "@/api/request";
 
 import { ref, onMounted } from "vue";
 import { onBeforeRouteUpdate, useRouter } from "vue-router";
@@ -56,9 +56,6 @@ onMounted(async () => {
     });
     // console.log(data);
     window.localStorage.setItem("token", data.jwt);
-  } else {
-    const res = await getDataApi("0");
-    console.log(res);
   }
 });
 onBeforeRouteUpdate((to, from) => {

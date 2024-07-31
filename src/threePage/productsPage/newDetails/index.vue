@@ -22,18 +22,19 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { getDataApi } from "../../../api/request";
 import { useRoute,useRouter } from "vue-router";
 const route=useRoute()
 // console.log(route);
 const router=useRouter()
 const id=ref(route.params.id)
-const state = ref();
-onMounted(async () => {
-  const { data } = await getDataApi(id.value as string);
-  console.log(data,"111");
-  state.value=data
+const state = ref({
+  title: '标题',
+  media: 'https://th.bing.com/th?id=OIP.CrKeUBnJx0CfPSoIDAijVgHaFJ&w=299&h=208&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2',
+  data: '2022.08.11',
+  author: '暂无',
+  content: '<p>文章内容</p>'
 });
+
 const goBackBtn=()=>{
   router.back()
 }
