@@ -33,7 +33,7 @@
       height: 26rem;
       margin-left: 1rem;
       margin-top: 3.5rem;
-      background: url(../assets/bannerHome.png) no-repeat;
+      background: url("../assets/bannerHome.png") no-repeat;
       background-size: 100% 100%;
       object-fit: contain;
 

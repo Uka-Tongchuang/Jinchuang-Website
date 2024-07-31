@@ -150,7 +150,6 @@ onMounted(() => {
     height: 70rem;
     margin: 2rem auto;
     margin-top: 8rem;
-    // background-color: antiquewhite;
   }
   .card-list {
     width: 100%;
@@ -185,8 +184,6 @@ onMounted(() => {
       width: 126rem;
       height: 22.5rem;
       margin: auto;
-      background: url(../../../assets/服务流程.png);
-      background-size: 100%;
       display: flex;
       justify-content: center;
       justify-items: center;

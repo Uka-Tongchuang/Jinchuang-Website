@@ -1,3 +1,7 @@
+type LoginType={
+    identifier:string;
+    password:string;
+}
 import instance from "@/utils/request";
 
 export const loginApi=(paramss:LoginType)=>instance.post("/api/api/auth/local",paramss)

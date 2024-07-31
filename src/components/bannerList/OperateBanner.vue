@@ -48,7 +48,7 @@ onMounted(() => {
       clip-path: polygon(0 0, 0 0, 100% 500%, 100% 0);
       width: 53%;
       height: 40rem;
-      background: url(../../../assets/swpOne.jpg);
+      // background: url("../../../assets/swpOne.jpg");
       position: absolute;
       top: 0;
       right: 0;
@@ -63,7 +63,7 @@ onMounted(() => {
     margin-top: -5rem;
     .merchant {
       z-index: 99;
-      background: url(../../../assets/swpOne.jpg);
+      // background: url("../../../assets/swpOne.jpg");
       object-fit: contain;
       position: absolute;
       top: 1rem;

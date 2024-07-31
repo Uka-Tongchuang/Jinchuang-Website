@@ -109,7 +109,7 @@ const arr = reactive({
   .main_content {
     width: 70%;
     height: 34rem;
-    background: url("../assets/main.jpg") 100%;
+   
     margin: 0 auto;
     position: relative;
     top: -16rem;
