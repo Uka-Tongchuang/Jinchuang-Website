@@ -223,17 +223,17 @@ export const routerChildren=[
     children:specialList,
     component: Special
   },
-  {
-    path:"/home/news",
-    name: "newsDetails",
-    component: newsAut,
-     meta:{
-      title:"新闻中心"
-    },
-    children:newsDetailsList,
-   redirect: "/home/news/newDetailsHome"
+  // {
+  //   path:"/home/news",
+  //   name: "newsDetails",
+  //   component: newsAut,
+  //    meta:{
+  //     title:"新闻中心"
+  //   },
+  //   children:newsDetailsList,
+  //  redirect: "/home/news/newDetailsHome"
     
-  },
+  // },
   // {
   //   path:"/home/ServiceSupport",
   //   name:"ServiceSupport",
